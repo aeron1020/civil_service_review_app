@@ -1,35 +1,76 @@
 from django.db import models
 
-
 class Quiz(models.Model):
+    QUIZ_TYPES = [
+        ('NUM', 'Numerical Ability'),
+        ('VER', 'Verbal Ability'),
+        ('ANA', 'Analytical Ability'),
+        ('CLE', 'Clerical Ability'),
+        ('GEN', 'General Information'),
+    ]
+
     title = models.CharField(max_length=200)
     description = models.TextField(blank=True)
-    created_at = models.DateTimeField(auto_now_add=True)
+    quiz_type = models.CharField(max_length=3, choices=QUIZ_TYPES, default='GEN')
+    time_limit = models.IntegerField(default=0, help_text="Time limit in minutes (0 = untimed)")
 
     def __str__(self):
-        return self.title
+        return f"{self.get_quiz_type_display()} - {self.title}"
+
+
+class Passage(models.Model):
+    quiz = models.ForeignKey(Quiz, related_name='passages', on_delete=models.CASCADE)
+    title = models.CharField(max_length=255, blank=True)
+    text = models.TextField()
+
+    class Meta:
+        ordering = ['id']
+
+    def __str__(self):
+        return self.title or f"Passage {self.id}"
 
 
 class Question(models.Model):
-    quiz = models.ForeignKey(
-        Quiz,
-        related_name='questions',
-        on_delete=models.CASCADE,
-        null=True,  # allow empty while still adding data
-        blank=True, # makes it optional in admin forms too
-    )
-    text = models.CharField(max_length=500, null=True, blank=True)
+    QUESTION_TYPES = [
+        ('MCQ', 'Multiple Choice'),
+        ('TF', 'True or False'),
+        ('ID', 'Identification'),
+    ]
+
+    quiz = models.ForeignKey(Quiz, related_name='questions', on_delete=models.CASCADE, null=True, blank=True)
+    passage = models.ForeignKey(Passage, related_name='questions', on_delete=models.CASCADE, null=True, blank=True)
+    text = models.CharField(max_length=500)
     explanation = models.TextField(blank=True)
+    question_type = models.CharField(max_length=3, choices=QUESTION_TYPES, default='MCQ')
+
+    class Meta:
+        ordering = ['id']
 
     def __str__(self):
-        return self.text or "Untitled Question"
-
+        return self.text
 
 
 class Choice(models.Model):
     question = models.ForeignKey(Question, related_name='choices', on_delete=models.CASCADE)
-    text = models.CharField(max_length=500, null=True, blank=True)
+    text = models.CharField(max_length=255, null=True, blank=True)
     is_correct = models.BooleanField(default=False)
 
     def __str__(self):
-        return self.text
+        return self.text or "(No text)"
+    
+
+class QuizResult(models.Model):
+    quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE, related_name='results')
+    # optional: link to user later
+    user = models.CharField(max_length=255, blank=True, null=True)
+    score = models.FloatField(default=0)
+    correct = models.IntegerField(default=0)
+    total = models.IntegerField(default=0)
+    submitted_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.quiz.title} - {self.score}% ({self.correct}/{self.total})"
+    
+
+
+
