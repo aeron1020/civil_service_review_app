@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Quiz, Passage, Question, Choice
+from .models import Quiz, Passage, Question, Choice, QuizResult
 
 class ChoiceSerializer(serializers.ModelSerializer):
     class Meta:
@@ -40,3 +40,21 @@ class QuizSerializer(serializers.ModelSerializer):
         if sampled_questions:
             return QuestionSerializer(sampled_questions, many=True).data
         return QuestionSerializer(obj.questions.all(), many=True).data
+    
+
+class QuizResultSerializer(serializers.ModelSerializer):
+    quiz_title = serializers.CharField(source='quiz.title', read_only=True)
+    quiz_type = serializers.CharField(source='quiz.get_quiz_type_display', read_only=True)
+
+    class Meta:
+        model = QuizResult
+        fields = [
+            'id',
+            'quiz_title',
+            'quiz_type',
+            'score',
+            'correct',
+            'total',
+            'submitted_at',
+        ]
+

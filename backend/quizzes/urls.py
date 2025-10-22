@@ -6,4 +6,6 @@ urlpatterns = [
     path('grouped/', views.QuizGroupedAPIView.as_view(), name='quiz-grouped'),
     path('<int:pk>/', views.QuizDetailAPIView.as_view(), name='quiz-detail'),
     path('<int:pk>/submit/', views.QuizSubmissionAPIView.as_view(), name='quiz-submit'),
+    path('results/my/', views.UserResultsAPIView.as_view(), name='user-results'),  
 ]
+

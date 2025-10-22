@@ -5,7 +5,10 @@ from .models import Quiz
 from .serializers import QuizSerializer
 import random
 from rest_framework import status
-from .models import Quiz, Question, Choice, QuizResult 
+from .models import Quiz, Question, Choice, QuizResult
+from rest_framework.permissions import IsAuthenticated
+from .models import QuizResult
+from .serializers import QuizResultSerializer 
 
 
 class QuizListAPIView(generics.ListAPIView):
@@ -127,9 +130,10 @@ class QuizSubmissionAPIView(APIView):
 
         # ✅ Save result in the database
         from .models import QuizResult
+
         QuizResult.objects.create(
             quiz=quiz,
-            user=request.data.get('user', 'Anonymous'),
+            user=request.user if request.user.is_authenticated else None,
             score=score,
             correct=correct_answers,
             total=total_questions
@@ -143,3 +147,11 @@ class QuizSubmissionAPIView(APIView):
             "total": total_questions,
             "details": details,
         }, status=status.HTTP_200_OK)
+
+
+class UserResultsAPIView(generics.ListAPIView):
+    serializer_class = QuizResultSerializer
+    permission_classes = [IsAuthenticated]
+
+    def get_queryset(self):
+        return QuizResult.objects.filter(user=self.request.user).order_by('-submitted_at')

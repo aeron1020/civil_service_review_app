@@ -1,4 +1,6 @@
 from django.db import models
+from django.conf import settings
+
 
 class Quiz(models.Model):
     QUIZ_TYPES = [
@@ -61,16 +63,21 @@ class Choice(models.Model):
 
 class QuizResult(models.Model):
     quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE, related_name='results')
-    # optional: link to user later
-    user = models.CharField(max_length=255, blank=True, null=True)
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,  
+        on_delete=models.CASCADE,
+        related_name='quiz_results',
+        null=True,
+        blank=True
+    )
     score = models.FloatField(default=0)
     correct = models.IntegerField(default=0)
     total = models.IntegerField(default=0)
     submitted_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.quiz.title} - {self.score}% ({self.correct}/{self.total})"
-    
+        username = self.user.username if self.user else "Anonymous"
+        return f"{username} - {self.quiz.title} ({self.score}%)"
 
 
 
