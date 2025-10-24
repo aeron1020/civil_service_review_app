@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from django.contrib.auth.models import User 
 
 
 class Quiz(models.Model):
@@ -62,14 +63,8 @@ class Choice(models.Model):
     
 
 class QuizResult(models.Model):
-    quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE, related_name='results')
-    user = models.ForeignKey(
-        settings.AUTH_USER_MODEL,  
-        on_delete=models.CASCADE,
-        related_name='quiz_results',
-        null=True,
-        blank=True
-    )
+    quiz = models.ForeignKey('Quiz', on_delete=models.CASCADE, related_name='results')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='quiz_results', null=True, blank=True)
     score = models.FloatField(default=0)
     correct = models.IntegerField(default=0)
     total = models.IntegerField(default=0)

@@ -88,6 +88,8 @@ class QuizGroupedAPIView(APIView):
         })
 
 class QuizSubmissionAPIView(APIView):
+    permission_classes = [IsAuthenticated]  
+
     def post(self, request, pk):
         try:
             quiz = Quiz.objects.get(pk=pk)
@@ -110,11 +112,9 @@ class QuizSubmissionAPIView(APIView):
                 choice = Choice.objects.get(pk=c_id, question=question)
                 total_questions += 1
 
+                result = "correct" if choice.is_correct else "wrong"
                 if choice.is_correct:
                     correct_answers += 1
-                    result = "correct"
-                else:
-                    result = "wrong"
 
                 details.append({
                     "question": question.text,
@@ -125,21 +125,17 @@ class QuizSubmissionAPIView(APIView):
             except (Question.DoesNotExist, Choice.DoesNotExist):
                 continue
 
-        # Calculate score percentage
         score = round((correct_answers / total_questions) * 100, 2) if total_questions > 0 else 0
 
-        # ✅ Save result in the database
-        from .models import QuizResult
-
+        # ✅ Save with logged-in user
         QuizResult.objects.create(
             quiz=quiz,
-            user=request.user if request.user.is_authenticated else None,
+            user=request.user,
             score=score,
             correct=correct_answers,
-            total=total_questions
+            total=total_questions,
         )
 
-        # Return the response to frontend
         return Response({
             "quiz": quiz.title,
             "score": score,
@@ -147,6 +143,7 @@ class QuizSubmissionAPIView(APIView):
             "total": total_questions,
             "details": details,
         }, status=status.HTTP_200_OK)
+
 
 
 class UserResultsAPIView(generics.ListAPIView):
