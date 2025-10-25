@@ -165,11 +165,16 @@ export default function HomePage() {
   }, [router]);
 
   if (!isAuthenticated)
-    return <p className="text-center mt-10 text-red-600">Please log in.</p>;
+    if (loading)
+      // return <p className="text-center mt-10 text-red-600">Please log in.</p>;
 
-  if (loading) return <p className="text-center mt-10">Loading quizzes...</p>;
-  if (!quizzes.length)
-    return <p className="text-center mt-10">No quizzes found.</p>;
+      return (
+        <p className="text-center mt-10 " style={{ marginTop: "80px" }}>
+          Loading quizzes...
+        </p>
+      );
+  // if (!quizzes.length)
+  //   return <p className="text-center mt-10">No quizzes found.</p>;
 
   return (
     <div className="pt-24 px-6 animate-fadeIn">

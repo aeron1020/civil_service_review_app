@@ -24,7 +24,12 @@ export default function LoginPage() {
       if (res.ok) {
         saveToken(data.access);
         localStorage.setItem("refresh", data.refresh);
+
         router.push("/");
+
+        setTimeout(() => {
+          window.location.reload();
+        }, 100);
       } else {
         setError("Invalid credentials");
       }
