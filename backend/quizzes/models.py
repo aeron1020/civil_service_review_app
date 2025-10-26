@@ -31,6 +31,19 @@ class Passage(models.Model):
 
     def __str__(self):
         return self.title or f"Passage {self.id}"
+    
+class DataSet(models.Model):
+    quiz = models.ForeignKey(Quiz, related_name='datasets', on_delete=models.CASCADE)
+    title = models.CharField(max_length=255, blank=True)
+    description = models.TextField(blank=True)
+    image = models.ImageField(upload_to='datasets/', blank=True, null=True)
+
+    class Meta:
+        ordering = ['id']
+
+    def __str__(self):
+        return self.title or f"Data Set {self.id}"
+
 
 
 class Question(models.Model):
@@ -42,6 +55,8 @@ class Question(models.Model):
 
     quiz = models.ForeignKey(Quiz, related_name='questions', on_delete=models.CASCADE, null=True, blank=True)
     passage = models.ForeignKey(Passage, related_name='questions', on_delete=models.CASCADE, null=True, blank=True)
+    dataset = models.ForeignKey(DataSet, related_name='questions', on_delete=models.CASCADE, null=True, blank=True)
+    
     text = models.CharField(max_length=500)
     explanation = models.TextField(blank=True)
     question_type = models.CharField(max_length=3, choices=QUESTION_TYPES, default='MCQ')
@@ -51,6 +66,7 @@ class Question(models.Model):
 
     def __str__(self):
         return self.text
+
 
 
 class Choice(models.Model):

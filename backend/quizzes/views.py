@@ -5,8 +5,8 @@ from .models import Quiz
 from .serializers import QuizSerializer
 import random
 from rest_framework import status
-from .models import Quiz, Question, Choice, QuizResult
-from rest_framework.permissions import IsAuthenticated
+from .models import Quiz, Question, Choice, QuizResult, DataSet
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from .models import QuizResult
 from .serializers import QuizResultSerializer 
 
@@ -33,6 +33,7 @@ class QuizListAPIView(generics.ListAPIView):
 class QuizDetailAPIView(generics.RetrieveAPIView):
     queryset = Quiz.objects.all()
     serializer_class = QuizSerializer
+    permission_classes = [AllowAny]
 
     QUESTION_LIMITS = {
         'NUM': 40,  # Numerical Ability
@@ -46,23 +47,34 @@ class QuizDetailAPIView(generics.RetrieveAPIView):
         quiz = super().get_object()
         limit = self.QUESTION_LIMITS.get(quiz.quiz_type, 40)
 
-        # Pull all questions for this quiz
-        all_questions = list(quiz.questions.all())
-
-        # Randomly sample questions if needed
-        if len(all_questions) > limit:
-            quiz.sampled_questions = random.sample(all_questions, limit)
+        # Randomize standalone (non-passage, non-dataset) questions
+        non_passage_questions = list(
+            quiz.questions.filter(passage__isnull=True, dataset__isnull=True)
+        )
+        if len(non_passage_questions) > limit:
+            quiz.sampled_questions = random.sample(non_passage_questions, limit)
         else:
-            quiz.sampled_questions = all_questions
+            quiz.sampled_questions = non_passage_questions
 
+        # Randomize passages and datasets (optional)
+        passages = list(quiz.passages.all())
+        datasets = list(quiz.datasets.all())
+        random.shuffle(passages)
+        random.shuffle(datasets)
+
+        quiz.randomized_passages = passages
+        quiz.randomized_datasets = datasets
         return quiz
+
 
     def get_serializer_context(self):
         context = super().get_serializer_context()
         quiz = self.get_object()
-        if hasattr(quiz, 'sampled_questions'):
-            context['sampled_questions'] = quiz.sampled_questions
+        context['sampled_questions'] = getattr(quiz, 'sampled_questions', [])
+        context['randomized_passages'] = getattr(quiz, 'randomized_passages', [])
+        context['randomized_datasets'] = getattr(quiz, 'randomized_datasets', [])
         return context
+
 
 
 class QuizGroupedAPIView(APIView):
@@ -88,7 +100,7 @@ class QuizGroupedAPIView(APIView):
         })
 
 class QuizSubmissionAPIView(APIView):
-    permission_classes = [IsAuthenticated]  
+    permission_classes = [AllowAny]
 
     def post(self, request, pk):
         try:
@@ -97,44 +109,52 @@ class QuizSubmissionAPIView(APIView):
             return Response({"error": "Quiz not found."}, status=status.HTTP_404_NOT_FOUND)
 
         answers = request.data.get('answers', [])
-        if not answers:
-            return Response({"error": "No answers provided."}, status=status.HTTP_400_BAD_REQUEST)
+        user_answers = {a.get('question'): a.get('choice') for a in answers if a.get('question') and a.get('choice')}
 
-        total_questions = 0
+        # Get all questions belonging to this quiz (including those under passages)
+        all_questions = list(quiz.questions.all()) + list(
+            Question.objects.filter(passage__quiz=quiz)
+        )
+
+        total_questions = len(all_questions)
         correct_answers = 0
         details = []
 
-        for ans in answers:
-            q_id = ans.get('question')
-            c_id = ans.get('choice')
-            try:
-                question = Question.objects.get(pk=q_id, quiz=quiz)
-                choice = Choice.objects.get(pk=c_id, question=question)
-                total_questions += 1
+        for question in all_questions:
+            choice_id = user_answers.get(question.id)
+            if choice_id:
+                try:
+                    choice = Choice.objects.get(pk=choice_id, question=question)
+                    is_correct = choice.is_correct
+                    result = "correct" if is_correct else "wrong"
+                    if is_correct:
+                        correct_answers += 1
+                    your_answer = choice.text
+                except Choice.DoesNotExist:
+                    result = "unanswered"
+                    your_answer = "No answer selected"
+            else:
+                result = "unanswered"
+                your_answer = "No answer selected"
 
-                result = "correct" if choice.is_correct else "wrong"
-                if choice.is_correct:
-                    correct_answers += 1
-
-                details.append({
-                    "question": question.text,
-                    "your_answer": choice.text,
-                    "result": result,
-                    "explanation": question.explanation,
-                })
-            except (Question.DoesNotExist, Choice.DoesNotExist):
-                continue
+            details.append({
+                "question": question.text,
+                "your_answer": your_answer,
+                "result": result,
+                "explanation": question.explanation,
+            })
 
         score = round((correct_answers / total_questions) * 100, 2) if total_questions > 0 else 0
 
-        # ✅ Save with logged-in user
-        QuizResult.objects.create(
-            quiz=quiz,
-            user=request.user,
-            score=score,
-            correct=correct_answers,
-            total=total_questions,
-        )
+        # ✅ Only save if user is authenticated
+        if request.user.is_authenticated:
+            QuizResult.objects.create(
+                quiz=quiz,
+                user=request.user,
+                score=score,
+                correct=correct_answers,
+                total=total_questions,
+            )
 
         return Response({
             "quiz": quiz.title,

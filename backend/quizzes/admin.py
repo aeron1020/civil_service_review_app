@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import Quiz, Passage, Question, Choice
-from .models import QuizResult
+from .models import QuizResult, DataSet
 
 
 class ChoiceInline(admin.TabularInline):
@@ -49,3 +49,7 @@ class ChoiceAdmin(admin.ModelAdmin):
 class QuizResultAdmin(admin.ModelAdmin):
     list_display = ('quiz', 'score', 'correct', 'total', 'submitted_at')
     list_filter = ('quiz', 'submitted_at')
+
+@admin.register(DataSet)
+class DataSetAdmin(admin.ModelAdmin):
+    list_display = ('title', 'quiz')
