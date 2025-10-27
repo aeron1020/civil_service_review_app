@@ -1,0 +1,262 @@
+[
+  {
+    "text": "What is the supreme law of the land in the Philippines?",
+    "explanation": "The 1987 Philippine Constitution is the supreme law of the land.",
+    "choices": [
+      { "text": "Civil Code", "is_correct": false },
+      { "text": "Republic Acts", "is_correct": false },
+      { "text": "1987 Constitution", "is_correct": true },
+      { "text": "Bill of Rights", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who is known as the first President of the Philippines?",
+    "explanation": "Emilio Aguinaldo was the first President of the First Philippine Republic.",
+    "choices": [
+      { "text": "Manuel L. Quezon", "is_correct": false },
+      { "text": "Emilio Aguinaldo", "is_correct": true },
+      { "text": "Jose P. Laurel", "is_correct": false },
+      { "text": "Andres Bonifacio", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the capital city of the Philippines?",
+    "explanation": "Manila is the official capital of the Philippines.",
+    "choices": [
+      { "text": "Quezon City", "is_correct": false },
+      { "text": "Makati", "is_correct": false },
+      { "text": "Manila", "is_correct": true },
+      { "text": "Cebu", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which branch of government interprets the laws?",
+    "explanation": "The Judicial Branch, headed by the Supreme Court, interprets the laws.",
+    "choices": [
+      { "text": "Legislative", "is_correct": false },
+      { "text": "Judicial", "is_correct": true },
+      { "text": "Executive", "is_correct": false },
+      { "text": "Local Government", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In which year was the current Philippine Constitution ratified?",
+    "explanation": "It was ratified in 1987 after the EDSA People Power Revolution.",
+    "choices": [
+      { "text": "1973", "is_correct": false },
+      { "text": "1981", "is_correct": false },
+      { "text": "1987", "is_correct": true },
+      { "text": "1991", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which island is the largest in the Philippines?",
+    "explanation": "Luzon is the largest island in the Philippine archipelago.",
+    "choices": [
+      { "text": "Mindanao", "is_correct": false },
+      { "text": "Visayas", "is_correct": false },
+      { "text": "Luzon", "is_correct": true },
+      { "text": "Palawan", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who was known as the ‘Father of the Philippine Revolution’?",
+    "explanation": "Andres Bonifacio founded the Katipunan and led the revolution.",
+    "choices": [
+      { "text": "Jose Rizal", "is_correct": false },
+      { "text": "Emilio Aguinaldo", "is_correct": false },
+      { "text": "Andres Bonifacio", "is_correct": true },
+      { "text": "Apolinario Mabini", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which is the smallest province in the Philippines by land area?",
+    "explanation": "Batanes is the smallest province in land area and population.",
+    "choices": [
+      { "text": "Camiguin", "is_correct": false },
+      { "text": "Batanes", "is_correct": true },
+      { "text": "Marinduque", "is_correct": false },
+      { "text": "Guimaras", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the term length of a Philippine Senator?",
+    "explanation": "A senator serves a term of six years.",
+    "choices": [
+      { "text": "3 years", "is_correct": false },
+      { "text": "4 years", "is_correct": false },
+      { "text": "6 years", "is_correct": true },
+      { "text": "9 years", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the largest lake in the Philippines?",
+    "explanation": "Laguna de Bay is the largest lake in the country.",
+    "choices": [
+      { "text": "Taal Lake", "is_correct": false },
+      { "text": "Laguna de Bay", "is_correct": true },
+      { "text": "Lake Lanao", "is_correct": false },
+      { "text": "Lake Sebu", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who appoints the members of the Supreme Court?",
+    "explanation": "The President appoints them from a list by the Judicial and Bar Council.",
+    "choices": [
+      { "text": "Senate", "is_correct": false },
+      { "text": "House of Representatives", "is_correct": false },
+      { "text": "President", "is_correct": true },
+      { "text": "Chief Justice", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What does GDP stand for?",
+    "explanation": "GDP stands for Gross Domestic Product.",
+    "choices": [
+      { "text": "Gross Domestic Product", "is_correct": true },
+      { "text": "General Development Plan", "is_correct": false },
+      { "text": "Global Domestic Price", "is_correct": false },
+      { "text": "Gross Departmental Production", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which ocean surrounds the Philippines on the east?",
+    "explanation": "The Philippine Sea, part of the Pacific Ocean, lies to the east.",
+    "choices": [
+      { "text": "Indian Ocean", "is_correct": false },
+      { "text": "Atlantic Ocean", "is_correct": false },
+      { "text": "Pacific Ocean", "is_correct": true },
+      { "text": "Arctic Ocean", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the national flower of the Philippines?",
+    "explanation": "Sampaguita is the national flower symbolizing purity and simplicity.",
+    "choices": [
+      { "text": "Gumamela", "is_correct": false },
+      { "text": "Waling-waling", "is_correct": false },
+      { "text": "Sampaguita", "is_correct": true },
+      { "text": "Rosal", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who was the first woman President of the Philippines?",
+    "explanation": "Corazon Aquino became the first woman president in 1986.",
+    "choices": [
+      { "text": "Gloria Macapagal Arroyo", "is_correct": false },
+      { "text": "Corazon Aquino", "is_correct": true },
+      { "text": "Imelda Marcos", "is_correct": false },
+      { "text": "Leni Robredo", "is_correct": false }
+    ]
+  },
+  {
+    "text": "How many years make up one term of the Philippine President?",
+    "explanation": "The President serves a single 6-year term.",
+    "choices": [
+      { "text": "4 years", "is_correct": false },
+      { "text": "5 years", "is_correct": false },
+      { "text": "6 years", "is_correct": true },
+      { "text": "7 years", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which city is known as the ‘Summer Capital of the Philippines’?",
+    "explanation": "Baguio City is known for its cool climate and pine trees.",
+    "choices": [
+      { "text": "Tagaytay", "is_correct": false },
+      { "text": "Baguio City", "is_correct": true },
+      { "text": "Batanes", "is_correct": false },
+      { "text": "Sagada", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the national hero Dr. Jose Rizal’s famous novel?",
+    "explanation": "Noli Me Tangere exposed the injustices of Spanish rule.",
+    "choices": [
+      { "text": "Florante at Laura", "is_correct": false },
+      { "text": "Noli Me Tangere", "is_correct": true },
+      { "text": "Ibong Adarna", "is_correct": false },
+      { "text": "El Filibusterismo", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the smallest unit of government in the Philippines?",
+    "explanation": "The barangay is the basic political unit.",
+    "choices": [
+      { "text": "Municipality", "is_correct": false },
+      { "text": "City", "is_correct": false },
+      { "text": "Barangay", "is_correct": true },
+      { "text": "Province", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What do the three stars on the Philippine flag represent?",
+    "explanation": "They represent Luzon, Visayas, and Mindanao.",
+    "choices": [
+      { "text": "Freedom, peace, and unity", "is_correct": false },
+      { "text": "Luzon, Visayas, Mindanao", "is_correct": true },
+      { "text": "Courage, honor, justice", "is_correct": false },
+      { "text": "Sun, moon, stars", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who is the current Chief Justice of the Philippines as of 2025?",
+    "explanation": "Refer to the latest update of the Supreme Court leadership.",
+    "choices": [
+      { "text": "Lucas Bersamin", "is_correct": false },
+      { "text": "Alexander Gesmundo", "is_correct": true },
+      { "text": "Maria Lourdes Sereno", "is_correct": false },
+      { "text": "Diosdado Peralta", "is_correct": false }
+    ]
+  },
+  {
+    "text": "How many regions does the Philippines have as of 2025?",
+    "explanation": "The Philippines has 17 administrative regions.",
+    "choices": [
+      { "text": "15", "is_correct": false },
+      { "text": "16", "is_correct": false },
+      { "text": "17", "is_correct": true },
+      { "text": "18", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the currency of the Philippines?",
+    "explanation": "The official currency is the Philippine Peso (₱).",
+    "choices": [
+      { "text": "Dollar", "is_correct": false },
+      { "text": "Peso", "is_correct": true },
+      { "text": "Rupiah", "is_correct": false },
+      { "text": "Ringgit", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which volcano erupted in 1991 causing massive damage in Central Luzon?",
+    "explanation": "Mount Pinatubo erupted in 1991, one of the biggest eruptions of the century.",
+    "choices": [
+      { "text": "Taal Volcano", "is_correct": false },
+      { "text": "Mayon Volcano", "is_correct": false },
+      { "text": "Mount Pinatubo", "is_correct": true },
+      { "text": "Mount Bulusan", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which government agency is responsible for education in the Philippines?",
+    "explanation": "The Department of Education (DepEd) manages basic education.",
+    "choices": [
+      { "text": "CHED", "is_correct": false },
+      { "text": "TESDA", "is_correct": false },
+      { "text": "DepEd", "is_correct": true },
+      { "text": "DOH", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who composed the Philippine National Anthem?",
+    "explanation": "Julian Felipe composed the anthem titled 'Lupang Hinirang'.",
+    "choices": [
+      { "text": "Jose Palma", "is_correct": false },
+      { "text": "Julian Felipe", "is_correct": true },
+      { "text": "Antonio Luna", "is_correct": false },
+      { "text": "Leandro Locsin", "is_correct": false }
+    ]
+  }
+]

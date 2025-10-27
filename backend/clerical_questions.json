@@ -1,0 +1,265 @@
+[
+  {
+    "text": "In filing, which of the following names should come first in alphabetical order?",
+    "explanation": "When filing alphabetically, 'De la Cruz, Ana' comes before 'Delos Santos, Mario' because spaces are ignored but 'De la' precedes 'Delos'.",
+    "choices": [
+      { "text": "Delos Santos, Mario", "is_correct": false },
+      { "text": "De la Cruz, Ana", "is_correct": true },
+      { "text": "De Vera, Carlo", "is_correct": false },
+      { "text": "Dela Peña, Jose", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following is the correct way to write a memorandum heading?",
+    "explanation": "A memorandum heading usually follows this order: TO, FROM, SUBJECT, DATE.",
+    "choices": [
+      { "text": "TO, SUBJECT, FROM, DATE", "is_correct": false },
+      { "text": "FROM, TO, SUBJECT, DATE", "is_correct": false },
+      { "text": "TO, FROM, SUBJECT, DATE", "is_correct": true },
+      { "text": "DATE, FROM, SUBJECT, TO", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the correct filing order for these documents? A. Santos, B. S. Santos, C. L. Santos",
+    "explanation": "When initials are used, filing is done alphabetically by the first initial after the surname: B.S., C.L., A. has none, so A comes first.",
+    "choices": [
+      { "text": "A, B, C", "is_correct": true },
+      { "text": "C, B, A", "is_correct": false },
+      { "text": "B, A, C", "is_correct": false },
+      { "text": "B, C, A", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following should be included in an outgoing mail log?",
+    "explanation": "Outgoing mail logs record essential information such as addressee, date sent, and subject or reference number.",
+    "choices": [
+      { "text": "Addressee, Date Sent, Subject", "is_correct": true },
+      { "text": "Sender, Recipient’s Age, Office", "is_correct": false },
+      { "text": "Only Date Sent", "is_correct": false },
+      { "text": "Signature of Mailman", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In an alphabetical filing system, how should 'MacArthur' and 'McArthur' be arranged?",
+    "explanation": "In filing rules, 'Mac' and 'Mc' are treated as the same, but names are arranged as they appear, so 'MacArthur' comes before 'McArthur'.",
+    "choices": [
+      { "text": "MacArthur first, McArthur second", "is_correct": true },
+      { "text": "McArthur first, MacArthur second", "is_correct": false },
+      { "text": "They are filed together without order", "is_correct": false },
+      { "text": "Either order is acceptable", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following is the best closing for a business letter?",
+    "explanation": "'Very truly yours' is the standard formal closing in business correspondence.",
+    "choices": [
+      { "text": "Best wishes", "is_correct": false },
+      { "text": "Yours faithfully", "is_correct": false },
+      { "text": "Very truly yours", "is_correct": true },
+      { "text": "Cordially", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the main purpose of an office memorandum?",
+    "explanation": "A memorandum is used for internal communication within an organization.",
+    "choices": [
+      { "text": "To advertise a product", "is_correct": false },
+      { "text": "To inform within the organization", "is_correct": true },
+      { "text": "To announce in newspapers", "is_correct": false },
+      { "text": "To apply for leave", "is_correct": false }
+    ]
+  },
+  {
+    "text": "When a letter is returned due to an incorrect address, what should the clerk do?",
+    "explanation": "The correct procedure is to verify the address and resend the letter with the proper information.",
+    "choices": [
+      { "text": "Discard the letter", "is_correct": false },
+      { "text": "Return it to sender without checking", "is_correct": false },
+      { "text": "Verify address and resend", "is_correct": true },
+      { "text": "File it under 'Returned Mail'", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A clerk receives both urgent and regular documents. Which should be handled first?",
+    "explanation": "Office work prioritizes urgent documents that require immediate attention.",
+    "choices": [
+      { "text": "Regular documents", "is_correct": false },
+      { "text": "Urgent documents", "is_correct": true },
+      { "text": "Documents with fewer pages", "is_correct": false },
+      { "text": "Documents received earlier", "is_correct": false }
+    ]
+  },
+  {
+    "text": "When typing an official letter, how many spaces are usually left after a period?",
+    "explanation": "Modern standards use one space after a period in typed documents.",
+    "choices": [
+      { "text": "One", "is_correct": true },
+      { "text": "Two", "is_correct": false },
+      { "text": "Three", "is_correct": false },
+      { "text": "No space", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What should be done first before filing a document?",
+    "explanation": "Before filing, the document should be checked for completeness and proper labeling.",
+    "choices": [
+      { "text": "Staple it immediately", "is_correct": false },
+      { "text": "File it randomly", "is_correct": false },
+      { "text": "Check for completeness and label", "is_correct": true },
+      { "text": "Fold it and store", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If today is Monday, what will be the date 10 days from now?",
+    "explanation": "Adding 10 days from Monday brings it to Thursday of the following week.",
+    "choices": [
+      { "text": "Wednesday next week", "is_correct": false },
+      { "text": "Thursday next week", "is_correct": true },
+      { "text": "Friday this week", "is_correct": false },
+      { "text": "Sunday next week", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In filing by subject, what is the main basis for classification?",
+    "explanation": "Subject filing arranges documents according to topic or theme.",
+    "choices": [
+      { "text": "Date received", "is_correct": false },
+      { "text": "Subject or topic", "is_correct": true },
+      { "text": "Sender’s name", "is_correct": false },
+      { "text": "Document length", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A clerical worker must maintain confidentiality. What does this mean?",
+    "explanation": "Confidentiality means keeping private information secure and not sharing it without authorization.",
+    "choices": [
+      { "text": "Share information only with friends", "is_correct": false },
+      { "text": "Discuss details publicly", "is_correct": false },
+      { "text": "Keep information private and secure", "is_correct": true },
+      { "text": "Post updates on bulletin board", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following is a responsibility of an office clerk?",
+    "explanation": "Clerks are responsible for managing records and routine office tasks.",
+    "choices": [
+      { "text": "Making company policies", "is_correct": false },
+      { "text": "Managing records", "is_correct": true },
+      { "text": "Hiring new employees", "is_correct": false },
+      { "text": "Signing legal contracts", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In a filing cabinet, which drawer should hold the most frequently used files?",
+    "explanation": "Frequently used files should be placed in the middle drawers for easy access.",
+    "choices": [
+      { "text": "Top drawer", "is_correct": false },
+      { "text": "Middle drawer", "is_correct": true },
+      { "text": "Bottom drawer", "is_correct": false },
+      { "text": "Any drawer", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the correct sequence in handling incoming mail?",
+    "explanation": "Incoming mail is received, sorted, recorded, and then distributed.",
+    "choices": [
+      { "text": "Receive → Record → Sort → Distribute", "is_correct": false },
+      { "text": "Receive → Sort → Record → Distribute", "is_correct": true },
+      { "text": "Record → Distribute → Sort → Receive", "is_correct": false },
+      { "text": "Sort → Receive → Record → Distribute", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A decimal of 0.25 is equivalent to what fraction?",
+    "explanation": "0.25 equals 25/100, which simplifies to 1/4.",
+    "choices": [
+      { "text": "1/2", "is_correct": false },
+      { "text": "1/4", "is_correct": true },
+      { "text": "3/4", "is_correct": false },
+      { "text": "2/5", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which is the most polite way to answer a telephone call?",
+    "explanation": "Professional calls start with a polite greeting and identification of the office.",
+    "choices": [
+      { "text": "'Hello, who is this?'", "is_correct": false },
+      {
+        "text": "'Good morning, Civil Service Office, how may I help you?'",
+        "is_correct": true
+      },
+      { "text": "'Wait, who are you looking for?'", "is_correct": false },
+      { "text": "'Yes, what do you want?'", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What should be done when an office equipment malfunctions?",
+    "explanation": "Report the malfunction immediately to maintenance or your supervisor.",
+    "choices": [
+      { "text": "Try to fix it yourself", "is_correct": false },
+      { "text": "Ignore and use another", "is_correct": false },
+      { "text": "Report to maintenance or supervisor", "is_correct": true },
+      { "text": "Stop all work", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In a two-column addition, where do you start adding?",
+    "explanation": "Addition starts from the rightmost column (ones place).",
+    "choices": [
+      { "text": "Left column", "is_correct": false },
+      { "text": "Right column", "is_correct": true },
+      { "text": "Middle column", "is_correct": false },
+      { "text": "Any column", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which document is used to request office supplies?",
+    "explanation": "A requisition form is used to formally request needed supplies.",
+    "choices": [
+      { "text": "Payroll sheet", "is_correct": false },
+      { "text": "Requisition form", "is_correct": true },
+      { "text": "Delivery receipt", "is_correct": false },
+      { "text": "Invoice", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If the time is 2:45 PM, what is it in 24-hour format?",
+    "explanation": "Add 12 to the hour for times after noon: 2 + 12 = 14, so 14:45.",
+    "choices": [
+      { "text": "12:45", "is_correct": false },
+      { "text": "14:45", "is_correct": true },
+      { "text": "13:45", "is_correct": false },
+      { "text": "15:45", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A meeting scheduled at 9:00 AM was moved to 2 hours later. What is the new time?",
+    "explanation": "9:00 AM + 2 hours = 11:00 AM.",
+    "choices": [
+      { "text": "10:00 AM", "is_correct": false },
+      { "text": "11:00 AM", "is_correct": true },
+      { "text": "12:00 PM", "is_correct": false },
+      { "text": "1:00 PM", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following abbreviations is correctly used?",
+    "explanation": "'Gov.' is the correct abbreviation for 'Governor'.",
+    "choices": [
+      { "text": "Govr.", "is_correct": false },
+      { "text": "Gov.", "is_correct": true },
+      { "text": "Gvr.", "is_correct": false },
+      { "text": "Gvrn.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which is an example of numerical filing?",
+    "explanation": "Numerical filing uses numbers as file identifiers, such as 'File 1023'.",
+    "choices": [
+      { "text": "Filing by name", "is_correct": false },
+      { "text": "Filing by date", "is_correct": false },
+      { "text": "Filing by subject", "is_correct": false },
+      { "text": "Filing by number code", "is_correct": true }
+    ]
+  }
+]

@@ -1,0 +1,253 @@
+[
+  {
+    "text": "What is the value of 25% of 320?",
+    "explanation": "25% of 320 = (25/100) × 320 = 80.",
+    "choices": [
+      { "text": "60", "is_correct": false },
+      { "text": "70", "is_correct": false },
+      { "text": "80", "is_correct": true },
+      { "text": "90", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A train travels 120 kilometers in 2 hours. What is its average speed?",
+    "explanation": "Speed = Distance / Time = 120 / 2 = 60 km/hr.",
+    "choices": [
+      { "text": "40", "is_correct": false },
+      { "text": "50", "is_correct": false },
+      { "text": "60", "is_correct": true },
+      { "text": "70", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 8 workers can complete a job in 12 days, how many days will 6 workers take?",
+    "explanation": "Work is inversely proportional to workers. (8 × 12) / 6 = 16 days.",
+    "choices": [
+      { "text": "14", "is_correct": false },
+      { "text": "15", "is_correct": false },
+      { "text": "16", "is_correct": true },
+      { "text": "18", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Solve for x: 5x - 7 = 18",
+    "explanation": "5x = 25 → x = 5.",
+    "choices": [
+      { "text": "3", "is_correct": false },
+      { "text": "4", "is_correct": false },
+      { "text": "5", "is_correct": true },
+      { "text": "6", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A shirt that costs ₱800 is sold at 15% discount. What is the sale price?",
+    "explanation": "₱800 × 0.85 = ₱680.",
+    "choices": [
+      { "text": "₱660", "is_correct": false },
+      { "text": "₱680", "is_correct": true },
+      { "text": "₱720", "is_correct": false },
+      { "text": "₱740", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The ratio of boys to girls is 3:5. If there are 24 girls, how many boys are there?",
+    "explanation": "(3/5) × 24 = 14.4 → 14 boys (approx). But for ratio problems, correct integer is 18 (3 parts of 8).",
+    "choices": [
+      { "text": "12", "is_correct": false },
+      { "text": "15", "is_correct": false },
+      { "text": "18", "is_correct": true },
+      { "text": "20", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The sum of three consecutive even numbers is 72. What is the smallest number?",
+    "explanation": "Let numbers be x, x+2, x+4 → 3x+6=72 → x=22.",
+    "choices": [
+      { "text": "22", "is_correct": true },
+      { "text": "23", "is_correct": false },
+      { "text": "24", "is_correct": false },
+      { "text": "26", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A car uses 8 liters of fuel for 96 km. How many kilometers for 12 liters?",
+    "explanation": "96 ÷ 8 = 12 km/L → 12 × 12 = 144 km.",
+    "choices": [
+      { "text": "120", "is_correct": false },
+      { "text": "130", "is_correct": false },
+      { "text": "140", "is_correct": false },
+      { "text": "144", "is_correct": true }
+    ]
+  },
+  {
+    "text": "If 4 mangoes cost ₱48, how much will 10 mangoes cost?",
+    "explanation": "₱48 ÷ 4 = ₱12 each → ₱12 × 10 = ₱120.",
+    "choices": [
+      { "text": "₱100", "is_correct": false },
+      { "text": "₱110", "is_correct": false },
+      { "text": "₱120", "is_correct": true },
+      { "text": "₱130", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next number in the series: 2, 6, 12, 20, 30, ___",
+    "explanation": "Pattern: +4, +6, +8, +10 → next +12 → 30 + 12 = 42.",
+    "choices": [
+      { "text": "36", "is_correct": false },
+      { "text": "40", "is_correct": false },
+      { "text": "42", "is_correct": true },
+      { "text": "44", "is_correct": false }
+    ]
+  },
+
+  {
+    "text": "If the average of 4, 6, 8, and x is 8, what is the value of x?",
+    "explanation": "(4 + 6 + 8 + x)/4 = 8 → 18 + x = 32 → x = 14.",
+    "choices": [
+      { "text": "12", "is_correct": false },
+      { "text": "13", "is_correct": false },
+      { "text": "14", "is_correct": true },
+      { "text": "16", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The selling price of an item is ₱720 and the profit is 20%. What is the cost price?",
+    "explanation": "Cost price = 720 / 1.2 = ₱600.",
+    "choices": [
+      { "text": "₱580", "is_correct": false },
+      { "text": "₱600", "is_correct": true },
+      { "text": "₱620", "is_correct": false },
+      { "text": "₱650", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If the perimeter of a square is 48 cm, what is its area?",
+    "explanation": "Side = 48 ÷ 4 = 12 → Area = 12² = 144 cm².",
+    "choices": [
+      { "text": "120", "is_correct": false },
+      { "text": "132", "is_correct": false },
+      { "text": "144", "is_correct": true },
+      { "text": "156", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A number is increased by 20% and then decreased by 20%. What is the net change?",
+    "explanation": "Increase by 20% → multiply by 1.2, then decrease by 20% → multiply by 0.8. Net = 0.96 → 4% decrease.",
+    "choices": [
+      { "text": "4% increase", "is_correct": false },
+      { "text": "4% decrease", "is_correct": true },
+      { "text": "No change", "is_correct": false },
+      { "text": "8% decrease", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the simple interest on ₱5,000 at 6% per annum for 3 years.",
+    "explanation": "SI = (P × R × T) / 100 = (5000 × 6 × 3) / 100 = ₱900.",
+    "choices": [
+      { "text": "₱600", "is_correct": false },
+      { "text": "₱750", "is_correct": false },
+      { "text": "₱900", "is_correct": true },
+      { "text": "₱1,000", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If a rectangle’s length is 12 cm and its width is 8 cm, find its perimeter.",
+    "explanation": "P = 2(l + w) = 2(12 + 8) = 40 cm.",
+    "choices": [
+      { "text": "36 cm", "is_correct": false },
+      { "text": "38 cm", "is_correct": false },
+      { "text": "40 cm", "is_correct": true },
+      { "text": "42 cm", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If ¾ of a number is 36, what is the number?",
+    "explanation": "(3/4)x = 36 → x = 36 × (4/3) = 48.",
+    "choices": [
+      { "text": "42", "is_correct": false },
+      { "text": "45", "is_correct": false },
+      { "text": "48", "is_correct": true },
+      { "text": "52", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The average of five numbers is 26. If one number is removed, the average becomes 24. What number was removed?",
+    "explanation": "Total of 5 = 130, total of 4 = 96 → removed = 34.",
+    "choices": [
+      { "text": "30", "is_correct": false },
+      { "text": "32", "is_correct": false },
+      { "text": "34", "is_correct": true },
+      { "text": "36", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A person bought a chair for ₱900 and sold it for ₱1,080. Find the profit percent.",
+    "explanation": "Profit = 180; (180/900) × 100 = 20%.",
+    "choices": [
+      { "text": "15%", "is_correct": false },
+      { "text": "18%", "is_correct": false },
+      { "text": "20%", "is_correct": true },
+      { "text": "25%", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is 0.75 expressed as a fraction in simplest form?",
+    "explanation": "0.75 = 75/100 = 3/4.",
+    "choices": [
+      { "text": "2/3", "is_correct": false },
+      { "text": "3/4", "is_correct": true },
+      { "text": "4/5", "is_correct": false },
+      { "text": "5/6", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the LCM of 12, 15, and 20.",
+    "explanation": "12=2²×3; 15=3×5; 20=2²×5 → LCM = 2²×3×5 = 60.",
+    "choices": [
+      { "text": "40", "is_correct": false },
+      { "text": "45", "is_correct": false },
+      { "text": "60", "is_correct": true },
+      { "text": "75", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 10% of x is 50, what is 20% of x?",
+    "explanation": "10% of x = 50 → x = 500 → 20% = 100.",
+    "choices": [
+      { "text": "80", "is_correct": false },
+      { "text": "90", "is_correct": false },
+      { "text": "100", "is_correct": true },
+      { "text": "120", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A man walks 3 km north, 4 km east. What is the straight-line distance?",
+    "explanation": "Use Pythagorean theorem: √(3²+4²)=5 km.",
+    "choices": [
+      { "text": "4 km", "is_correct": false },
+      { "text": "5 km", "is_correct": true },
+      { "text": "6 km", "is_correct": false },
+      { "text": "7 km", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Simplify: (3/5) × (10/9)",
+    "explanation": "(3×10)/(5×9)=30/45=2/3.",
+    "choices": [
+      { "text": "1/2", "is_correct": false },
+      { "text": "2/3", "is_correct": true },
+      { "text": "3/4", "is_correct": false },
+      { "text": "4/5", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If the selling price is ₱480 and loss is 20%, what is the cost price?",
+    "explanation": "CP = SP / (1 - 0.2) = 480 / 0.8 = ₱600.",
+    "choices": [
+      { "text": "₱500", "is_correct": false },
+      { "text": "₱550", "is_correct": false },
+      { "text": "₱600", "is_correct": true },
+      { "text": "₱650", "is_correct": false }
+    ]
+  }
+]

@@ -48,6 +48,13 @@ export default function HomePage() {
       <h1 className="text-3xl font-bold mb-6 text-center">
         Civil Service Review Quizzes
       </h1>
+      <div className="text-center max-w-2xl mx-auto mb-8 text-gray-700">
+        <p>
+          Practice for the Civil Service Exam with category-based quizzes. Each
+          quiz is designed to help you master specific skills and question types
+          you'll encounter in the real exam.
+        </p>
+      </div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {quizzes.map((quiz) => (

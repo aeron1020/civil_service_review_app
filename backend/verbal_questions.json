@@ -1,0 +1,74 @@
+[
+  {
+    "text": "Choose the correct spelling.",
+    "explanation": "The correct spelling is 'accommodate' which has double 'c' and double 'm'.",
+    "choices": [
+      { "text": "accomodate", "is_correct": false },
+      { "text": "accommodate", "is_correct": true },
+      { "text": "acommodate", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the word that is most similar in meaning to 'benevolent'.",
+    "explanation": "‘Benevolent’ means kind or charitable.",
+    "choices": [
+      { "text": "kind", "is_correct": true },
+      { "text": "selfish", "is_correct": false },
+      { "text": "hostile", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following sentences is grammatically correct?",
+    "explanation": "‘Each of the students has submitted his or her project’ is grammatically correct.",
+    "choices": [
+      {
+        "text": "Each of the students have submitted their projects.",
+        "is_correct": false
+      },
+      {
+        "text": "Each of the students has submitted his or her project.",
+        "is_correct": true
+      },
+      {
+        "text": "Each students has submitted their project.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Identify the correct analogy: Hand is to glove as foot is to ____.",
+    "explanation": "A glove covers the hand; a sock covers the foot.",
+    "choices": [
+      { "text": "sock", "is_correct": true },
+      { "text": "shoe", "is_correct": false },
+      { "text": "slipper", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct form: He insisted ____ paying the bill.",
+    "explanation": "We use ‘on’ after ‘insist’.",
+    "choices": [
+      { "text": "in", "is_correct": false },
+      { "text": "on", "is_correct": true },
+      { "text": "for", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the best word to complete the sentence: She is very good ___ singing.",
+    "explanation": "The correct preposition after ‘good’ when referring to a skill is ‘at’.",
+    "choices": [
+      { "text": "in", "is_correct": false },
+      { "text": "at", "is_correct": true },
+      { "text": "on", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following is the opposite of ‘ancient’?",
+    "explanation": "The opposite of ‘ancient’ is ‘modern’.",
+    "choices": [
+      { "text": "modern", "is_correct": true },
+      { "text": "historic", "is_correct": false },
+      { "text": "antique", "is_correct": false }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "passage": {
+      "title": "Philippine Biodiversity",
+      "text": "The Philippines is known for its rich biodiversity. Its forests are home to many unique plants and animals. However, deforestation continues to threaten this natural wealth."
+    },
+    "questions": [
+      {
+        "text": "What is the main idea of the passage?",
+        "explanation": "The passage highlights that biodiversity is threatened by deforestation.",
+        "choices": [
+          {
+            "text": "Forests in the Philippines are being replanted.",
+            "is_correct": false
+          },
+          {
+            "text": "Deforestation threatens the country’s biodiversity.",
+            "is_correct": true
+          },
+          {
+            "text": "Animals in the Philippines are extinct.",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "What does 'biodiversity' refer to?",
+        "explanation": "‘Biodiversity’ refers to the variety of living organisms in a certain area.",
+        "choices": [
+          { "text": "The variety of living organisms", "is_correct": true },
+          { "text": "The destruction of forests", "is_correct": false },
+          { "text": "The growth of trees", "is_correct": false }
+        ]
+      },
+      {
+        "text": "Which statement best expresses the author’s tone?",
+        "explanation": "The author expresses concern over the loss of biodiversity.",
+        "choices": [
+          { "text": "Optimistic", "is_correct": false },
+          { "text": "Concerned", "is_correct": true },
+          { "text": "Indifferent", "is_correct": false }
+        ]
+      }
+    ]
+  }
+]
