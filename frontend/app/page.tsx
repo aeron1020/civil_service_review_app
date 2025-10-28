@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { getToken } from "@/app/lib/auth";
+import Footer from "@/components/Footer";
 
 const API_BASE_URL = "http://127.0.0.1:8000/api";
 
@@ -68,6 +69,7 @@ export default function HomePage() {
           </Link>
         ))}
       </div>
+      <Footer />
     </div>
   );
 }

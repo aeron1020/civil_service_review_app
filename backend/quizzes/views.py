@@ -30,49 +30,121 @@ class QuizListAPIView(generics.ListAPIView):
         return queryset
 
 
+# class QuizDetailAPIView(generics.RetrieveAPIView):
+#     queryset = Quiz.objects.all()
+#     serializer_class = QuizSerializer
+#     permission_classes = [AllowAny]
+
+#     QUESTION_LIMITS = {
+#         'NUM': 40,  # Numerical Ability
+#         'VER': 30,  # Verbal Ability
+#         'ANA': 40,  # Analytical Ability
+#         'CLE': 30,  # Clerical Ability
+#         'GEN': 20,  # General Information
+#     }
+
+#     def get_object(self):
+#         quiz = super().get_object()
+#         limit = self.QUESTION_LIMITS.get(quiz.quiz_type, 40)
+
+#         # Randomize standalone (non-passage, non-dataset) questions
+#         non_passage_questions = list(
+#             quiz.questions.filter(passage__isnull=True, dataset__isnull=True)
+#         )
+#         if len(non_passage_questions) > limit:
+#             quiz.sampled_questions = random.sample(non_passage_questions, limit)
+#         else:
+#             quiz.sampled_questions = non_passage_questions
+
+#         # Randomize passages and datasets (optional)
+#         passages = list(quiz.passages.all())
+#         datasets = list(quiz.datasets.all())
+#         random.shuffle(passages)
+#         random.shuffle(datasets)
+
+#         quiz.randomized_passages = passages
+#         quiz.randomized_datasets = datasets
+#         return quiz
+
+
+#     def get_serializer_context(self):
+#         context = super().get_serializer_context()
+#         quiz = self.get_object()
+#         context['sampled_questions'] = getattr(quiz, 'sampled_questions', [])
+#         context['randomized_passages'] = getattr(quiz, 'randomized_passages', [])
+#         context['randomized_datasets'] = getattr(quiz, 'randomized_datasets', [])
+#         return context
+
 class QuizDetailAPIView(generics.RetrieveAPIView):
     queryset = Quiz.objects.all()
     serializer_class = QuizSerializer
     permission_classes = [AllowAny]
 
     QUESTION_LIMITS = {
-        'NUM': 40,  # Numerical Ability
-        'VER': 30,  # Verbal Ability
-        'ANA': 40,  # Analytical Ability
-        'CLE': 30,  # Clerical Ability
-        'GEN': 20,  # General Information
+        'NUM': 20,
+        'CLE': 20,
+        'GEN': 20,
+        'VER': 15,  # standalone questions (plus 1 passage)
+        'ANA': 15,  # standalone questions (plus 1 dataset)
     }
 
     def get_object(self):
+        """Retrieve and prepare randomized quiz questions."""
+        if hasattr(self, "_cached_quiz"):
+            return self._cached_quiz
+
         quiz = super().get_object()
-        limit = self.QUESTION_LIMITS.get(quiz.quiz_type, 40)
+        quiz_type = quiz.quiz_type
+        limit = self.QUESTION_LIMITS.get(quiz_type, 20)
 
         # Randomize standalone (non-passage, non-dataset) questions
-        non_passage_questions = list(
-            quiz.questions.filter(passage__isnull=True, dataset__isnull=True)
+        standalone_qs = list(
+            quiz.questions.filter(passage__isnull=True, dataset__isnull=True).distinct()
         )
-        if len(non_passage_questions) > limit:
-            quiz.sampled_questions = random.sample(non_passage_questions, limit)
-        else:
-            quiz.sampled_questions = non_passage_questions
+        random.shuffle(standalone_qs)
+        quiz.sampled_questions = standalone_qs[:limit]
 
-        # Randomize passages and datasets (optional)
-        passages = list(quiz.passages.all())
-        datasets = list(quiz.datasets.all())
-        random.shuffle(passages)
-        random.shuffle(datasets)
+        # Default (no passage/dataset)
+        quiz.randomized_passages = []
+        quiz.randomized_datasets = []
 
-        quiz.randomized_passages = passages
-        quiz.randomized_datasets = datasets
+        # 🔹 VERBAL ABILITY: 1 reading comprehension + 15 standalone
+        if quiz_type == "VER":
+            passages = list(quiz.passages.all())
+            if passages:
+                # randomly select one passage
+                chosen_passage = random.choice(passages)
+                quiz.randomized_passages = [chosen_passage]
+                # include all questions from that passage
+                passage_questions = list(chosen_passage.questions.all())
+                quiz.sampled_questions += passage_questions
+
+        # 🔹 ANALYTICAL ABILITY: 1 dataset + 15 standalone
+        elif quiz_type == "ANA":
+            if hasattr(quiz, "datasets"):
+                datasets = list(quiz.datasets.all())
+                if datasets:
+                    chosen_dataset = random.choice(datasets)
+                    quiz.randomized_datasets = [chosen_dataset]
+                    dataset_questions = list(chosen_dataset.questions.all())
+                    quiz.sampled_questions += dataset_questions
+
+        # ✅ Ensure we don’t exceed total expected number (failsafe)
+        quiz.sampled_questions = quiz.sampled_questions[:60]
+
+        # Cache
+        self._cached_quiz = quiz
         return quiz
 
-
     def get_serializer_context(self):
+        """Include randomized data in serializer context."""
         context = super().get_serializer_context()
         quiz = self.get_object()
-        context['sampled_questions'] = getattr(quiz, 'sampled_questions', [])
-        context['randomized_passages'] = getattr(quiz, 'randomized_passages', [])
-        context['randomized_datasets'] = getattr(quiz, 'randomized_datasets', [])
+        context.update({
+            "sampled_questions": getattr(quiz, "sampled_questions", []),
+            "randomized_passages": getattr(quiz, "randomized_passages", []),
+            "randomized_datasets": getattr(quiz, "randomized_datasets", []),
+        })
         return context
 
 
