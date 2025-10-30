@@ -42,5 +42,143 @@
         ]
       }
     ]
+  },
+  {
+    "passage": {
+      "title": "Workplace Discipline",
+      "text": "In government offices, discipline is essential for maintaining order and productivity. Employees who follow rules and procedures contribute to an efficient and trustworthy public service. On the other hand, repeated tardiness and absenteeism negatively affect the quality of work and the reputation of the office."
+    },
+    "questions": [
+      {
+        "text": "What is the main idea of the passage?",
+        "explanation": "The passage stresses the importance of discipline in maintaining efficient public service.",
+        "choices": [
+          {
+            "text": "Government employees should be punished strictly.",
+            "is_correct": false
+          },
+          {
+            "text": "Discipline ensures efficiency and good public service.",
+            "is_correct": true
+          },
+          {
+            "text": "Absenteeism is not a problem in offices.",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "According to the passage, what is the effect of repeated tardiness?",
+        "explanation": "Tardiness and absenteeism harm productivity and the office's reputation.",
+        "choices": [
+          { "text": "It improves teamwork.", "is_correct": false },
+          {
+            "text": "It affects work quality and reputation.",
+            "is_correct": true
+          },
+          { "text": "It helps employees rest better.", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What quality does the passage emphasize for employees?",
+        "explanation": "The passage emphasizes discipline as essential to public service.",
+        "choices": [
+          { "text": "Discipline", "is_correct": true },
+          { "text": "Creativity", "is_correct": false },
+          { "text": "Flexibility", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "passage": {
+      "title": "The Role of Communication",
+      "text": "Effective communication in the workplace helps prevent misunderstandings and builds cooperation among employees. When information is clear and timely, tasks are completed efficiently. Poor communication, however, often results in confusion and conflict, which slow down office operations."
+    },
+    "questions": [
+      {
+        "text": "What is the central idea of the passage?",
+        "explanation": "The passage highlights that clear communication leads to efficient and harmonious work.",
+        "choices": [
+          {
+            "text": "Communication causes confusion in offices.",
+            "is_correct": false
+          },
+          {
+            "text": "Clear communication improves efficiency and teamwork.",
+            "is_correct": true
+          },
+          {
+            "text": "Employees should avoid talking to each other.",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "What is the effect of poor communication?",
+        "explanation": "The passage explains that poor communication results in confusion and conflict.",
+        "choices": [
+          { "text": "It improves efficiency.", "is_correct": false },
+          { "text": "It causes confusion and conflict.", "is_correct": true },
+          { "text": "It speeds up decision-making.", "is_correct": false }
+        ]
+      },
+      {
+        "text": "How can communication help build cooperation?",
+        "explanation": "When employees understand each other clearly, they work together more effectively.",
+        "choices": [
+          {
+            "text": "By encouraging clear understanding among employees.",
+            "is_correct": true
+          },
+          { "text": "By avoiding feedback.", "is_correct": false },
+          { "text": "By limiting conversation.", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "passage": {
+      "title": "The Value of Public Trust",
+      "text": "Public officials and employees are entrusted with authority and resources to serve the people. This trust must be protected by acting with honesty, transparency, and accountability. Once public trust is broken through corruption or negligence, it is difficult to regain."
+    },
+    "questions": [
+      {
+        "text": "What is the main idea of the passage?",
+        "explanation": "The passage emphasizes the need to protect public trust through honesty and accountability.",
+        "choices": [
+          {
+            "text": "Public officials must gain wealth to earn trust.",
+            "is_correct": false
+          },
+          {
+            "text": "Honesty and accountability protect public trust.",
+            "is_correct": true
+          },
+          {
+            "text": "Negligence builds confidence in government.",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "According to the passage, what happens when public trust is broken?",
+        "explanation": "The passage states that once trust is broken, it is hard to regain.",
+        "choices": [
+          { "text": "It can be easily restored.", "is_correct": false },
+          { "text": "It becomes difficult to regain.", "is_correct": true },
+          { "text": "It improves employee loyalty.", "is_correct": false }
+        ]
+      },
+      {
+        "text": "Which of the following best preserves public trust?",
+        "explanation": "The passage highlights honesty, transparency, and accountability as essential.",
+        "choices": [
+          { "text": "Honesty and transparency", "is_correct": true },
+          { "text": "Personal ambition", "is_correct": false },
+          { "text": "Strict secrecy", "is_correct": false }
+        ]
+      }
+    ]
   }
 ]

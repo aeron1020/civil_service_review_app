@@ -138,49 +138,148 @@ export default function QuizDetailPage() {
         {/* 👇 Hide questions once result appears */}
         {!result && (
           <div className="space-y-8">
-            {/* Standalone Questions (e.g., Vocabulary, Grammar) */}
-            {quiz.questions?.map((q, index) => (
-              <div
-                key={q.id}
-                className="glass-card p-5 rounded-2xl border border-white/20 hover:border-[var(--accent)]/40 transition-all duration-200"
-              >
-                <h2 className="font-semibold text-lg mb-4 text-[var(--foreground)]">
-                  {index + 1}. {q.text}
-                </h2>
+            {/* 🧠 Standalone Questions (exclude passage & dataset questions) */}
+            {/* 🧾 QUIZ DEBUG & QUESTION COUNTER */}
+            {quiz && (
+              <div className="mb-8 text-sm text-gray-500 bg-white/5 dark:bg-black/20 p-4 rounded-xl border border-white/10">
+                <p>
+                  <strong>📘 QUIZ DEBUG INFO</strong>
+                </p>
 
-                <ul className="space-y-3">
-                  {q.choices.map((c) => (
-                    <li key={c.id}>
-                      <div
-                        onClick={() => handleSelect(q.id, c.id)}
-                        className={`cursor-pointer px-4 py-3 rounded-xl transition-all duration-200 backdrop-blur-md border flex justify-between items-center
-                  ${
-                    answers[q.id] === c.id
-                      ? "bg-[var(--accent)]/20 border-[var(--accent)] text-[var(--accent)] font-semibold scale-[1.02] shadow-md"
-                      : "border-white/20 hover:border-[var(--accent)]/30 hover:bg-[var(--accent)]/10"
-                  }`}
-                      >
-                        <span>{c.text}</span>
-                        <div
-                          className={`w-4 h-4 rounded-full border-2 transition-all duration-200 ${
-                            answers[q.id] === c.id
-                              ? "border-[var(--accent)] bg-[var(--accent)]"
-                              : "border-[var(--accent)]/40"
-                          }`}
-                        ></div>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
+                {(() => {
+                  // Defensive checks
+                  const questions = quiz.questions || [];
+                  const passages = quiz.passages || [];
+                  const datasets = quiz.datasets || [];
+
+                  // Extract all IDs to prevent double counting
+                  const passageQuestionIds = new Set(
+                    passages.flatMap((p) => p.questions?.map((q) => q.id) || [])
+                  );
+                  const datasetQuestionIds = new Set(
+                    datasets.flatMap((d) => d.questions?.map((q) => q.id) || [])
+                  );
+
+                  // ✅ Standalone (no passage/dataset)
+                  const standaloneQs = questions.filter(
+                    (q) =>
+                      !passageQuestionIds.has(q.id) &&
+                      !datasetQuestionIds.has(q.id)
+                  );
+
+                  // ✅ Passage-based and dataset-based counts
+                  const passageQs = passages.flatMap((p) => p.questions || []);
+                  const datasetQs = datasets.flatMap((d) => d.questions || []);
+
+                  // ✅ Combine all visible questions (deduped)
+                  const allVisibleIds = new Set([
+                    ...standaloneQs.map((q) => q.id),
+                    ...passageQs.map((q) => q.id),
+                    ...datasetQs.map((q) => q.id),
+                  ]);
+
+                  const totalVisible = allVisibleIds.size;
+                  const answeredCount = Object.keys(answers).length;
+
+                  // ✅ Debug-safe DB count (unique across everything)
+                  const totalDbIds = new Set([
+                    ...questions.map((q) => q.id),
+                    ...passages.flatMap((p) => p.questions.map((q) => q.id)),
+                    ...datasets.flatMap((d) => d.questions.map((q) => q.id)),
+                  ]);
+
+                  return (
+                    <>
+                      <p>
+                        <strong>Quiz:</strong> {quiz.title}
+                      </p>
+                      <p>
+                        <strong>Standalone Questions:</strong>{" "}
+                        {standaloneQs.length}
+                      </p>
+                      <p>
+                        <strong>Passage-based Questions:</strong>{" "}
+                        {passageQs.length}
+                      </p>
+                      <p>
+                        <strong>Dataset-based Questions:</strong>{" "}
+                        {datasetQs.length}
+                      </p>
+                      <p>
+                        <strong>Displayed (Visible) Questions:</strong>{" "}
+                        {totalVisible}
+                      </p>
+                      <p>
+                        <strong>Total Questions in DB (unique):</strong>{" "}
+                        {totalDbIds.size}
+                      </p>
+                      <p>
+                        <strong>User Answered:</strong> {answeredCount} /{" "}
+                        {totalVisible}
+                      </p>
+                      {totalVisible > 20 && (
+                        <p className="text-yellow-500 font-medium">
+                          ⚠️ Display limited to 20 questions (trimmed before
+                          submit)
+                        </p>
+                      )}
+                    </>
+                  );
+                })()}
               </div>
-            ))}
+            )}
 
+            {quiz.questions
+              ?.filter(
+                (q) =>
+                  !quiz.passages?.some((p) =>
+                    p.questions.some((pq) => pq.id === q.id)
+                  ) &&
+                  !quiz.datasets?.some((d) =>
+                    d.questions.some((dq) => dq.id === q.id)
+                  )
+              )
+              .map((q, index) => (
+                <div
+                  key={q.id}
+                  className="glass-card p-5 rounded-2xl border border-white/20 hover:border-[var(--accent)]/40 transition-all duration-200"
+                >
+                  <h2 className="font-semibold text-lg mb-4 text-[var(--foreground)]">
+                    {index + 1}. {q.text}
+                  </h2>
+
+                  <ul className="space-y-3">
+                    {q.choices.map((c) => (
+                      <li key={c.id}>
+                        <div
+                          onClick={() => handleSelect(q.id, c.id)}
+                          className={`cursor-pointer px-4 py-3 rounded-xl transition-all duration-200 backdrop-blur-md border flex justify-between items-center
+                ${
+                  answers[q.id] === c.id
+                    ? "bg-[var(--accent)]/20 border-[var(--accent)] text-[var(--accent)] font-semibold scale-[1.02] shadow-md"
+                    : "border-white/20 hover:border-[var(--accent)]/30 hover:bg-[var(--accent)]/10"
+                }`}
+                        >
+                          <span>{c.text}</span>
+                          <div
+                            className={`w-4 h-4 rounded-full border-2 transition-all duration-200 ${
+                              answers[q.id] === c.id
+                                ? "border-[var(--accent)] bg-[var(--accent)]"
+                                : "border-[var(--accent)]/40"
+                            }`}
+                          ></div>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             {/* 🧩 Reading Comprehension (Passages + their Questions) */}
             {quiz.passages?.map((p, pIndex) => (
               <div key={p.id} className="mt-10">
                 <div className="glass-card p-6 rounded-2xl border border-white/20">
                   <h2 className="text-2xl font-semibold text-[var(--accent)] mb-3">
-                    Reading Comprehension {pIndex + 1}: {p.title}
+                    Reading Comprehension: {p.title}
                   </h2>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
                     {p.text}
@@ -224,7 +323,6 @@ export default function QuizDetailPage() {
                 </div>
               </div>
             ))}
-
             {/* 📊 Data Interpretation (with images + questions) */}
             {quiz.datasets?.map((d, dIndex) => (
               <div key={d.id} className="mt-10">
@@ -286,7 +384,6 @@ export default function QuizDetailPage() {
                 </div>
               </div>
             ))}
-
             {/* Submit Button */}
             <div className="flex justify-center mt-8">
               <button
@@ -297,7 +394,6 @@ export default function QuizDetailPage() {
                 {submitting ? "Submitting..." : "Submit Quiz"}
               </button>
             </div>
-
             {error && <p className="text-red-500 text-center mt-3">{error}</p>}
           </div>
         )}

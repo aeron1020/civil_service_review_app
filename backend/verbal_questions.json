@@ -70,5 +70,185 @@
       { "text": "historic", "is_correct": false },
       { "text": "antique", "is_correct": false }
     ]
+  },
+  {
+    "text": "Choose the word that best completes the sentence: The committee will ____ the report tomorrow.",
+    "explanation": "The correct word is ‘review’ meaning to examine or evaluate.",
+    "choices": [
+      { "text": "revise", "is_correct": false },
+      { "text": "review", "is_correct": true },
+      { "text": "revoke", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which word is most similar in meaning to ‘meticulous’?",
+    "explanation": "‘Meticulous’ means very careful or precise.",
+    "choices": [
+      { "text": "careful", "is_correct": true },
+      { "text": "lazy", "is_correct": false },
+      { "text": "quick", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Identify the correct spelling.",
+    "explanation": "‘Occurrence’ has a double ‘r’ and double ‘c’.",
+    "choices": [
+      { "text": "occurence", "is_correct": false },
+      { "text": "occurrence", "is_correct": true },
+      { "text": "ocurence", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct sentence.",
+    "explanation": "‘Neither the teacher nor the students were present’ is correct because the plural subject ‘students’ is nearest the verb.",
+    "choices": [
+      {
+        "text": "Neither the teacher nor the students was present.",
+        "is_correct": false
+      },
+      {
+        "text": "Neither the teacher nor the students were present.",
+        "is_correct": true
+      },
+      {
+        "text": "Neither the teachers nor the student were present.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which of the following best completes the analogy: Pen is to write as knife is to ____.",
+    "explanation": "A pen is used to write; a knife is used to cut.",
+    "choices": [
+      { "text": "cut", "is_correct": true },
+      { "text": "sharpen", "is_correct": false },
+      { "text": "slice", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct word: He was too tired to continue, so he decided to ____.",
+    "explanation": "‘Rest’ fits the context; it means to take a break or pause.",
+    "choices": [
+      { "text": "arrest", "is_correct": false },
+      { "text": "rest", "is_correct": true },
+      { "text": "reset", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following sentences uses the correct verb tense?",
+    "explanation": "‘She has finished her project on time’ correctly uses the present perfect tense.",
+    "choices": [
+      { "text": "She has finish her project on time.", "is_correct": false },
+      { "text": "She has finished her project on time.", "is_correct": true },
+      { "text": "She have finished her project on time.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the word opposite in meaning to ‘transparent’.",
+    "explanation": "The opposite of ‘transparent’ (clear) is ‘opaque’ (not clear).",
+    "choices": [
+      { "text": "clear", "is_correct": false },
+      { "text": "opaque", "is_correct": true },
+      { "text": "bright", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct article: He bought ____ umbrella before the storm.",
+    "explanation": "The correct article is ‘an’ because ‘umbrella’ starts with a vowel sound.",
+    "choices": [
+      { "text": "a", "is_correct": false },
+      { "text": "an", "is_correct": true },
+      { "text": "the", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which word is similar in meaning to ‘diligent’?",
+    "explanation": "‘Diligent’ means hardworking and careful.",
+    "choices": [
+      { "text": "industrious", "is_correct": true },
+      { "text": "lazy", "is_correct": false },
+      { "text": "relaxed", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Select the correct preposition: He is responsible ____ the new project.",
+    "explanation": "We use ‘for’ with ‘responsible’.",
+    "choices": [
+      { "text": "to", "is_correct": false },
+      { "text": "for", "is_correct": true },
+      { "text": "of", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence is correctly punctuated?",
+    "explanation": "‘After lunch, we went back to work.’ has the correct comma placement.",
+    "choices": [
+      { "text": "After lunch we went back to work.", "is_correct": false },
+      { "text": "After lunch, we went back to work.", "is_correct": true },
+      { "text": "After, lunch we went back to work.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which pair of words is an example of a synonym?",
+    "explanation": "‘Big’ and ‘large’ have the same meaning.",
+    "choices": [
+      { "text": "big - large", "is_correct": true },
+      { "text": "hot - cold", "is_correct": false },
+      { "text": "happy - sad", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Identify the correct analogy: Book is to reading as fork is to ____.",
+    "explanation": "A book is used for reading; a fork is used for eating.",
+    "choices": [
+      { "text": "eating", "is_correct": true },
+      { "text": "cooking", "is_correct": false },
+      { "text": "washing", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correctly spelled word.",
+    "explanation": "‘Separate’ is the correct spelling.",
+    "choices": [
+      { "text": "seperate", "is_correct": false },
+      { "text": "separate", "is_correct": true },
+      { "text": "separatte", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Select the correct sentence.",
+    "explanation": "‘She and I went to the market’ correctly uses the subject pronouns.",
+    "choices": [
+      { "text": "Her and me went to the market.", "is_correct": false },
+      { "text": "She and I went to the market.", "is_correct": true },
+      { "text": "She and me went to the market.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the word that means the same as ‘brief’.",
+    "explanation": "‘Brief’ means short in duration or length.",
+    "choices": [
+      { "text": "short", "is_correct": true },
+      { "text": "long", "is_correct": false },
+      { "text": "slow", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which word best completes the sentence: Please ____ your seat before the show starts.",
+    "explanation": "‘Occupy’ fits the context, meaning to take or fill a seat.",
+    "choices": [
+      { "text": "occupy", "is_correct": true },
+      { "text": "apply", "is_correct": false },
+      { "text": "obtain", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct form of the verb: The manager and his assistant ____ present at the meeting.",
+    "explanation": "When subjects are joined by ‘and’, the verb should be plural: ‘were’.",
+    "choices": [
+      { "text": "was", "is_correct": false },
+      { "text": "were", "is_correct": true },
+      { "text": "is", "is_correct": false }
+    ]
   }
 ]
