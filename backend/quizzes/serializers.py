@@ -34,42 +34,6 @@ class DataSetSerializer(serializers.ModelSerializer):
         return QuestionSerializer(questions, many=True).data
 
 
-# class QuizSerializer(serializers.ModelSerializer):
-#     passages = PassageSerializer(many=True, read_only=True)
-#     datasets = DataSetSerializer(many=True, read_only=True)
-#     questions = serializers.SerializerMethodField()
-
-
-#     class Meta:
-#         model = Quiz
-#         fields = [
-#             'id', 'title', 'description',
-#             'quiz_type', 'time_limit',
-#             'passages', 'datasets', 'questions'
-#         ]
-
-
-#     def get_questions(self, obj):
-#         sampled_questions = self.context.get('sampled_questions')
-#         if sampled_questions:
-#             return QuestionSerializer(sampled_questions, many=True).data
-#         return QuestionSerializer(obj.questions.all(), many=True).data
-    
-#     def to_representation(self, instance):
-#         data = super().to_representation(instance)
-        
-#         # Replace questions with sampled ones if available
-#         sampled_questions = self.context.get('sampled_questions')
-#         if sampled_questions:
-#             data['questions'] = QuestionSerializer(sampled_questions, many=True).data
-
-#         # Replace passages with randomized ones if available
-#         randomized_passages = self.context.get('randomized_passages')
-#         if randomized_passages:
-#             data['passages'] = PassageSerializer(randomized_passages, many=True).data
-
-#         return data
-    
 class QuizSerializer(serializers.ModelSerializer):
     passages = PassageSerializer(many=True, read_only=True)
     datasets = DataSetSerializer(many=True, read_only=True)

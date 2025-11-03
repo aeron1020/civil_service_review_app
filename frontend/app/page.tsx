@@ -62,13 +62,18 @@ export default function HomePage() {
           <Link
             key={quiz.id}
             href={`/quiz/${quiz.id}`}
-            className="glass-card p-5 hover:scale-[1.02] transition"
+            className="glass-card p-5 rounded-xl border border-gray-200/60 dark:border-gray-700/50 shadow-sm hover:shadow-md hover:scale-[1.02] hover:border-[var(--accent)] hover:shadow-[0_4px_20px_rgba(10,132,255,0.25)] transition-all duration-300"
           >
-            <h2 className="font-semibold text-lg mb-1">{quiz.title}</h2>
-            <p className="text-sm opacity-80">{quiz.description}</p>
+            <h2 className="font-semibold text-lg mb-1 text-gray-900 dark:text-gray-100">
+              {quiz.title}
+            </h2>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              {quiz.description}
+            </p>
           </Link>
         ))}
       </div>
+
       <Footer />
     </div>
   );

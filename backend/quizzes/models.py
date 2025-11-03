@@ -91,4 +91,3 @@ class QuizResult(models.Model):
         return f"{username} - {self.quiz.title} ({self.score}%)"
 
 
-

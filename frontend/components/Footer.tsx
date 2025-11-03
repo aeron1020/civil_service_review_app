@@ -2,88 +2,77 @@
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-900 text-white mt-16">
-      {/* Main Footer Content */}
-      <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <footer className="w-full border-t border-gray-200 dark:border-gray-800 mt-20">
+      <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-sm text-gray-600 dark:text-gray-300">
         {/* About */}
         <div>
-          <h3 className="text-lg font-semibold mb-3">
-            Civil Service Review App
+          <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-3">
+            Civil Service Review
           </h3>
-          <p className="text-sm text-blue-100 leading-relaxed">
-            Your smart companion for passing the Civil Service Exam. Practice
-            with curated quizzes across all subjects — from Numerical to Verbal,
-            General Information, and Clerical Ability.
+          <p className="leading-relaxed text-gray-500 dark:text-gray-400">
+            Your smart companion for Civil Service Exam success. Practice with
+            curated quizzes across all subjects — Numerical, Verbal, General
+            Info, and Clerical Ability.
           </p>
         </div>
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
-          <ul className="space-y-2 text-sm">
-            <li>
-              <a href="/" className="hover:text-blue-300 transition">
-                🏠 Home
-              </a>
-            </li>
-            <li>
-              <a href="/profile" className="hover:text-blue-300 transition">
-                👤 My Profile
-              </a>
-            </li>
-            <li>
-              <a href="/quizzes" className="hover:text-blue-300 transition">
-                🧩 Quizzes
-              </a>
-            </li>
-            <li>
-              <a href="/results" className="hover:text-blue-300 transition">
-                📊 Results
-              </a>
-            </li>
-            <li>
-              <a href="/about" className="hover:text-blue-300 transition">
-                ℹ️ About
-              </a>
-            </li>
+          <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-3">
+            Quick Links
+          </h3>
+          <ul className="space-y-2">
+            {[
+              { href: "/", label: "Home" },
+              { href: "/profile", label: "My Profile" },
+              { href: "/quizzes", label: "Quizzes" },
+              { href: "/results", label: "Results" },
+              { href: "/about", label: "About" },
+            ].map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className="hover:text-[var(--accent)] transition-colors duration-200"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
         {/* Contact */}
         <div>
-          <h3 className="text-lg font-semibold mb-3">Contact & Support</h3>
-          <ul className="space-y-2 text-sm text-blue-100">
+          <h3 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-3">
+            Contact
+          </h3>
+          <ul className="space-y-2 text-gray-500 dark:text-gray-400">
             <li>
-              Email:{" "}
               <a
                 href="mailto:support@civilserviceapp.ph"
-                className="hover:text-blue-300"
+                className="hover:text-[var(--accent)]"
               >
                 support@civilserviceapp.ph
               </a>
             </li>
             <li>
-              Facebook:{" "}
-              <a href="#" className="hover:text-blue-300">
+              <a href="#" className="hover:text-[var(--accent)]">
                 Civil Service Review PH
               </a>
             </li>
-            <li>
-              Developer: <span className="font-medium">Olsen Aeron Paduit</span>
-            </li>
-            <li>
-              Version: <span className="text-blue-300">v1.0.0</span>
+            <li>Developer: Olsen Aeron Paduit</li>
+            <li className="text-xs text-gray-400 dark:text-gray-500">
+              Version v1.0.0
             </li>
           </ul>
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="bg-blue-950 text-center py-3 text-xs text-blue-200 border-t border-blue-800">
-        © {new Date().getFullYear()} Civil Service Review App. All rights
-        reserved.
+      {/* Bottom Line */}
+      <div className="border-t border-gray-100 dark:border-gray-800 text-center py-6 text-xs text-gray-400 dark:text-gray-500">
+        © {new Date().getFullYear()} Civil Service Review. All rights reserved.
         <br />
-        <span className="text-[11px] opacity-80">
+        <span className="text-[11px] opacity-70">
           Built with ❤️ using Django & Next.js
         </span>
       </div>

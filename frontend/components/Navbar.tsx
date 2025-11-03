@@ -50,6 +50,8 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+import ThemeToggle from "./ThemeToggle";
+
 export default function Navbar() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -99,6 +101,7 @@ export default function Navbar() {
             <button onClick={handleLogout} className="btn-primary text-sm">
               Logout
             </button>
+            <ThemeToggle />
           </>
         ) : (
           <>
@@ -114,6 +117,7 @@ export default function Navbar() {
             >
               Sign Up
             </Link>
+            <ThemeToggle />
           </>
         )}
       </div>
