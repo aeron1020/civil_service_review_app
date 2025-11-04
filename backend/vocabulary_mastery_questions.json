@@ -1,0 +1,254 @@
+[
+  {
+    "text": "Choose the word most similar in meaning to 'abundant'.",
+    "explanation": "‘Abundant’ means plentiful or in great quantity.",
+    "choices": [
+      { "text": "scarce", "is_correct": false },
+      { "text": "plentiful", "is_correct": true },
+      { "text": "rare", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which word is the opposite of 'hostile'?",
+    "explanation": "The opposite of ‘hostile’ is ‘friendly’.",
+    "choices": [
+      { "text": "aggressive", "is_correct": false },
+      { "text": "friendly", "is_correct": true },
+      { "text": "rude", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the word that best completes the analogy: Courage is to brave as wisdom is to ____.",
+    "explanation": "Someone who shows wisdom is wise.",
+    "choices": [
+      { "text": "wise", "is_correct": true },
+      { "text": "witty", "is_correct": false },
+      { "text": "wild", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct meaning of the word 'metamorphosis'.",
+    "explanation": "‘Metamorphosis’ means a complete change in form or nature.",
+    "choices": [
+      { "text": "destruction", "is_correct": false },
+      { "text": "transformation", "is_correct": true },
+      { "text": "imitation", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which word is closest in meaning to 'ambiguous'?",
+    "explanation": "‘Ambiguous’ means unclear or having multiple interpretations.",
+    "choices": [
+      { "text": "clear", "is_correct": false },
+      { "text": "uncertain", "is_correct": true },
+      { "text": "definite", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the synonym of 'vanish'.",
+    "explanation": "‘Vanish’ means to disappear.",
+    "choices": [
+      { "text": "appear", "is_correct": false },
+      { "text": "disappear", "is_correct": true },
+      { "text": "create", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the word opposite in meaning to 'prosperity'.",
+    "explanation": "The opposite of ‘prosperity’ (wealth) is ‘poverty’.",
+    "choices": [
+      { "text": "wealth", "is_correct": false },
+      { "text": "poverty", "is_correct": true },
+      { "text": "success", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the synonym of 'infer'?",
+    "explanation": "‘Infer’ means to conclude from evidence.",
+    "choices": [
+      { "text": "assume", "is_correct": false },
+      { "text": "deduce", "is_correct": true },
+      { "text": "ignore", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which word means 'to make something less severe'?",
+    "explanation": "‘Alleviate’ means to reduce or lessen severity.",
+    "choices": [
+      { "text": "alleviate", "is_correct": true },
+      { "text": "aggravate", "is_correct": false },
+      { "text": "irritate", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct synonym of 'candid'.",
+    "explanation": "‘Candid’ means honest or straightforward.",
+    "choices": [
+      { "text": "deceitful", "is_correct": false },
+      { "text": "honest", "is_correct": true },
+      { "text": "silent", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which word is most similar in meaning to 'serene'?",
+    "explanation": "‘Serene’ means calm and peaceful.",
+    "choices": [
+      { "text": "noisy", "is_correct": false },
+      { "text": "peaceful", "is_correct": true },
+      { "text": "disturbed", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the opposite of 'deteriorate'?",
+    "explanation": "‘Deteriorate’ means to worsen; the opposite is ‘improve’.",
+    "choices": [
+      { "text": "improve", "is_correct": true },
+      { "text": "decline", "is_correct": false },
+      { "text": "ruin", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the meaning of the word 'eloquent'.",
+    "explanation": "‘Eloquent’ means fluent or persuasive in speech or writing.",
+    "choices": [
+      { "text": "clumsy in speech", "is_correct": false },
+      { "text": "persuasive", "is_correct": true },
+      { "text": "silent", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the synonym of 'obsolete'.",
+    "explanation": "‘Obsolete’ means out of date or no longer in use.",
+    "choices": [
+      { "text": "modern", "is_correct": false },
+      { "text": "outdated", "is_correct": true },
+      { "text": "fresh", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Select the word that is opposite in meaning to 'fragile'.",
+    "explanation": "The opposite of ‘fragile’ (easily broken) is ‘durable’.",
+    "choices": [
+      { "text": "frail", "is_correct": false },
+      { "text": "delicate", "is_correct": false },
+      { "text": "durable", "is_correct": true }
+    ]
+  },
+  {
+    "text": "Choose the word that best fits: His explanation was so ____ that no one understood.",
+    "explanation": "‘Vague’ means unclear or not specific.",
+    "choices": [
+      { "text": "vague", "is_correct": true },
+      { "text": "precise", "is_correct": false },
+      { "text": "lucid", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the meaning of 'scrutinize'?",
+    "explanation": "‘Scrutinize’ means to examine closely.",
+    "choices": [
+      { "text": "ignore", "is_correct": false },
+      { "text": "examine", "is_correct": true },
+      { "text": "damage", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which word is a synonym of 'tedious'?",
+    "explanation": "‘Tedious’ means boring or repetitive.",
+    "choices": [
+      { "text": "boring", "is_correct": true },
+      { "text": "exciting", "is_correct": false },
+      { "text": "quick", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Select the word that means 'showing great attention to detail'.",
+    "explanation": "‘Meticulous’ means very careful and precise.",
+    "choices": [
+      { "text": "meticulous", "is_correct": true },
+      { "text": "careless", "is_correct": false },
+      { "text": "rushed", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the opposite of 'expand'?",
+    "explanation": "The opposite of expand is contract.",
+    "choices": [
+      { "text": "grow", "is_correct": false },
+      { "text": "extend", "is_correct": false },
+      { "text": "contract", "is_correct": true }
+    ]
+  },
+  {
+    "text": "Choose the word that best completes the sentence: She gave a ____ answer, avoiding the main issue.",
+    "explanation": "‘Evasive’ means avoiding the question directly.",
+    "choices": [
+      { "text": "evasive", "is_correct": true },
+      { "text": "direct", "is_correct": false },
+      { "text": "honest", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the synonym of 'vivid'.",
+    "explanation": "‘Vivid’ means bright, clear, or detailed.",
+    "choices": [
+      { "text": "dull", "is_correct": false },
+      { "text": "clear", "is_correct": true },
+      { "text": "blurred", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which word means 'to support or strengthen'?",
+    "explanation": "‘Reinforce’ means to support or make stronger.",
+    "choices": [
+      { "text": "reinforce", "is_correct": true },
+      { "text": "weaken", "is_correct": false },
+      { "text": "deny", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the word most similar in meaning to 'lenient'.",
+    "explanation": "‘Lenient’ means permissive or tolerant.",
+    "choices": [
+      { "text": "strict", "is_correct": false },
+      { "text": "merciful", "is_correct": true },
+      { "text": "harsh", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the antonym of 'conceal'?",
+    "explanation": "The opposite of ‘conceal’ (hide) is ‘reveal’ (show).",
+    "choices": [
+      { "text": "reveal", "is_correct": true },
+      { "text": "cover", "is_correct": false },
+      { "text": "disguise", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which word best completes the sentence: The witness gave a ____ account of the incident.",
+    "explanation": "‘Credible’ means believable or trustworthy.",
+    "choices": [
+      { "text": "credible", "is_correct": true },
+      { "text": "false", "is_correct": false },
+      { "text": "vague", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the synonym of 'impartial'.",
+    "explanation": "‘Impartial’ means fair and not biased.",
+    "choices": [
+      { "text": "unfair", "is_correct": false },
+      { "text": "neutral", "is_correct": true },
+      { "text": "partial", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the word most opposite in meaning to 'diminish'.",
+    "explanation": "‘Diminish’ means reduce; the opposite is ‘increase’.",
+    "choices": [
+      { "text": "increase", "is_correct": true },
+      { "text": "reduce", "is_correct": false },
+      { "text": "lessen", "is_correct": false }
+    ]
+  }
+]

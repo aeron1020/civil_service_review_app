@@ -4,7 +4,7 @@ from .models import Quiz, Passage, Question, Choice, QuizResult, DataSet
 class ChoiceSerializer(serializers.ModelSerializer):
     class Meta:
         model = Choice
-        fields = ['id', 'text', 'is_correct']
+        fields = ['id', 'text',] #i hide is_correct
 
 
 class QuestionSerializer(serializers.ModelSerializer):
@@ -53,6 +53,7 @@ class QuizSerializer(serializers.ModelSerializer):
             'questions',
             'total_questions',
         ]
+    
 
     def get_questions(self, obj):
         """Return only the sampled/randomized questions if present in context."""

@@ -1,0 +1,261 @@
+[
+  {
+    "passage": "Maria stood at the edge of the pier, watching the sun slowly dip below the horizon. The sky turned shades of orange and violet, and a gentle breeze brushed against her face. She thought of her childhood summers spent in this very place, catching fish and laughing with her cousins. Now, years later, she felt a sense of peace return as the waves lapped quietly against the wooden posts.",
+    "questions": [
+      {
+        "text": "What is the main feeling Maria experiences at the pier?",
+        "explanation": "Maria feels a sense of peace and nostalgia as she recalls her childhood memories.",
+        "choices": [
+          { "text": "Peaceful reflection", "is_correct": true },
+          { "text": "Anxiety and fear", "is_correct": false },
+          { "text": "Excitement and joy", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What memory does Maria recall?",
+        "explanation": "She remembers childhood summers spent catching fish and laughing with her cousins.",
+        "choices": [
+          {
+            "text": "Fishing and spending time with cousins",
+            "is_correct": true
+          },
+          { "text": "Learning how to swim", "is_correct": false },
+          { "text": "Traveling to another country", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What natural phenomenon is described in the passage?",
+        "explanation": "The passage describes the sunset with colors of orange and violet.",
+        "choices": [
+          { "text": "The sunset", "is_correct": true },
+          { "text": "The sunrise", "is_correct": false },
+          { "text": "A thunderstorm", "is_correct": false }
+        ]
+      },
+      {
+        "text": "Which sensory detail is included in the passage?",
+        "explanation": "The passage mentions a gentle breeze brushing against her face, appealing to the sense of touch.",
+        "choices": [
+          { "text": "The breeze against her face", "is_correct": true },
+          { "text": "The sound of children singing", "is_correct": false },
+          { "text": "The taste of seawater", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What do the waves symbolize in the passage?",
+        "explanation": "The quiet waves represent calmness and the steady passage of time.",
+        "choices": [
+          { "text": "Calmness and time passing", "is_correct": true },
+          { "text": "Anger and destruction", "is_correct": false },
+          { "text": "Excitement and adventure", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "passage": "In a small village nestled between rolling hills, a wise old man named Lito was known for his knowledge of herbs and healing. People traveled from faraway places to seek his remedies for illnesses. One day, a young girl arrived, carrying her sick brother on her back. She pleaded with Lito for help. Without hesitation, Lito prepared a remedy using rare leaves and roots he had gathered from the forest at dawn.",
+    "questions": [
+      {
+        "text": "What was Lito known for in the village?",
+        "explanation": "Lito was known for his knowledge of herbs and healing.",
+        "choices": [
+          { "text": "Herbal healing knowledge", "is_correct": true },
+          { "text": "Weaving baskets", "is_correct": false },
+          { "text": "Training animals", "is_correct": false }
+        ]
+      },
+      {
+        "text": "Why did people travel from faraway places?",
+        "explanation": "They sought his remedies for various illnesses.",
+        "choices": [
+          { "text": "To seek healing remedies", "is_correct": true },
+          { "text": "To buy food", "is_correct": false },
+          { "text": "To attend festivals", "is_correct": false }
+        ]
+      },
+      {
+        "text": "Who came to Lito for help in the passage?",
+        "explanation": "A young girl arrived carrying her sick brother.",
+        "choices": [
+          { "text": "A young girl with her sick brother", "is_correct": true },
+          { "text": "An elderly couple", "is_correct": false },
+          { "text": "A traveling merchant", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What did Lito use to make the remedy?",
+        "explanation": "He used rare leaves and roots gathered from the forest at dawn.",
+        "choices": [
+          { "text": "Rare leaves and roots", "is_correct": true },
+          { "text": "Water from the river", "is_correct": false },
+          { "text": "Store-bought medicine", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What trait best describes Lito?",
+        "explanation": "He is compassionate, as he helps without hesitation.",
+        "choices": [
+          { "text": "Compassionate", "is_correct": true },
+          { "text": "Selfish", "is_correct": false },
+          { "text": "Lazy", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "passage": "Every morning, Rafael rides his bicycle to the market to sell freshly baked bread made by his mother. The streets are still quiet, with only a few vendors setting up their stalls. Rafael enjoys the cool air and the soft golden light of dawn. Though the work is tiring, he feels proud to help his family and greet the familiar faces of loyal customers.",
+    "questions": [
+      {
+        "text": "Why does Rafael go to the market every morning?",
+        "explanation": "He goes to the market to sell freshly baked bread made by his mother.",
+        "choices": [
+          { "text": "To sell bread baked by his mother", "is_correct": true },
+          { "text": "To buy vegetables", "is_correct": false },
+          { "text": "To attend school", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What time of day does Rafael travel?",
+        "explanation": "He travels at dawn, when the light is soft and golden.",
+        "choices": [
+          { "text": "At dawn", "is_correct": true },
+          { "text": "Late afternoon", "is_correct": false },
+          { "text": "Midnight", "is_correct": false }
+        ]
+      },
+      {
+        "text": "How does Rafael feel about his work?",
+        "explanation": "He feels proud to help his family despite the tiring work.",
+        "choices": [
+          { "text": "Proud", "is_correct": true },
+          { "text": "Embarrassed", "is_correct": false },
+          { "text": "Angry", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What is the atmosphere of the market when Rafael arrives?",
+        "explanation": "The streets are quiet, and only a few vendors are setting up.",
+        "choices": [
+          { "text": "Quiet and calm", "is_correct": true },
+          { "text": "Crowded and noisy", "is_correct": false },
+          { "text": "Dark and empty", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What does Rafael enjoy during his ride?",
+        "explanation": "He enjoys the cool air and golden light of dawn.",
+        "choices": [
+          { "text": "The cool air and morning light", "is_correct": true },
+          { "text": "The noise of traffic", "is_correct": false },
+          { "text": "Listening to music", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "passage": "A severe drought struck the farming town of San Isidro. Rivers dried up, crops withered in the fields, and animals grew weak from thirst. The townspeople gathered in the plaza, worried about their future. Then, a group of students suggested collecting rainwater using large barrels and planting drought-resistant crops. Inspired by the idea, the town worked together and slowly brought life back to their land.",
+    "questions": [
+      {
+        "text": "What natural disaster affected San Isidro?",
+        "explanation": "The town was affected by a severe drought.",
+        "choices": [
+          { "text": "A severe drought", "is_correct": true },
+          { "text": "A typhoon", "is_correct": false },
+          { "text": "An earthquake", "is_correct": false }
+        ]
+      },
+      {
+        "text": "How did the drought affect the town?",
+        "explanation": "Rivers dried, crops withered, and animals became weak from thirst.",
+        "choices": [
+          { "text": "Rivers dried and crops withered", "is_correct": true },
+          { "text": "Houses were destroyed", "is_correct": false },
+          { "text": "Fires spread through the town", "is_correct": false }
+        ]
+      },
+      {
+        "text": "Who suggested a solution to the drought problem?",
+        "explanation": "A group of students suggested collecting rainwater and planting drought-resistant crops.",
+        "choices": [
+          { "text": "A group of students", "is_correct": true },
+          { "text": "Local farmers", "is_correct": false },
+          { "text": "Government officials", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What solution was proposed?",
+        "explanation": "Collecting rainwater and planting drought-resistant crops.",
+        "choices": [
+          {
+            "text": "Rainwater collection and drought-resistant crops",
+            "is_correct": true
+          },
+          { "text": "Importing food from other towns", "is_correct": false },
+          { "text": "Building more houses", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What theme does this passage show?",
+        "explanation": "The passage emphasizes cooperation and resilience in times of hardship.",
+        "choices": [
+          { "text": "Cooperation and resilience", "is_correct": true },
+          { "text": "Greed and competition", "is_correct": false },
+          { "text": "Isolation and fear", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "passage": "In the year 2125, cities floated above the clouds to escape pollution on Earth. Elena, a young engineer, worked on machines that purified air and water. One day, she noticed a malfunction that could endanger the entire city. With only hours left, Elena rushed to repair the system, staying calm despite the pressure. Her quick actions saved the city, and she became a symbol of hope for future generations.",
+    "questions": [
+      {
+        "text": "Where did people live in the year 2125?",
+        "explanation": "They lived in floating cities above the clouds.",
+        "choices": [
+          { "text": "In floating cities", "is_correct": true },
+          { "text": "Underground caves", "is_correct": false },
+          { "text": "Deep in forests", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What was Elena’s job?",
+        "explanation": "She was an engineer who maintained machines that purified air and water.",
+        "choices": [
+          {
+            "text": "Engineer maintaining purification systems",
+            "is_correct": true
+          },
+          { "text": "Teacher in a floating school", "is_correct": false },
+          { "text": "Pilot of airships", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What problem did Elena discover?",
+        "explanation": "She noticed a malfunction in the purification system.",
+        "choices": [
+          { "text": "A malfunction in the city's system", "is_correct": true },
+          { "text": "A food shortage", "is_correct": false },
+          { "text": "An invasion from Earth", "is_correct": false }
+        ]
+      },
+      {
+        "text": "How did Elena respond to the crisis?",
+        "explanation": "She stayed calm and quickly repaired the system.",
+        "choices": [
+          { "text": "She repaired it calmly and quickly", "is_correct": true },
+          { "text": "She panicked and gave up", "is_correct": false },
+          { "text": "She left the city", "is_correct": false }
+        ]
+      },
+      {
+        "text": "How was Elena regarded afterward?",
+        "explanation": "She became a symbol of hope for future generations.",
+        "choices": [
+          { "text": "A symbol of hope", "is_correct": true },
+          { "text": "A failed engineer", "is_correct": false },
+          { "text": "An unknown worker", "is_correct": false }
+        ]
+      }
+    ]
+  }
+]

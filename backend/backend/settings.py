@@ -170,11 +170,11 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),   # Access token expires in 30 mins
-    "REFRESH_TOKEN_LIFETIME": timedelta(days=7),      # Refresh token expires in 7 days
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=15),
+    "REFRESH_TOKEN_LIFETIME": timedelta(weeks=1),
     "ROTATE_REFRESH_TOKENS": True,
     "BLACKLIST_AFTER_ROTATION": True,
-    "AUTH_HEADER_TYPES": ("Bearer",),
+     "AUTH_HEADER_TYPES": ("Bearer",),
 }
 
 MEDIA_URL = '/media/'
