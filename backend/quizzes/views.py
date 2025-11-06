@@ -1,12 +1,18 @@
 from rest_framework import generics
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .serializers import QuizSerializer, QuizResultSerializer
+from .serializers import QuizSerializer, QuizResultSerializer, Passage
 import random
 from rest_framework import status
 from .models import Quiz, Question, Choice, QuizResult
 from rest_framework.permissions import IsAuthenticated, AllowAny 
-
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework.permissions import AllowAny
+from .models import Quiz, Question, Passage
+from .serializers import QuestionSerializer, PassageSerializer
+import random
+import math
 
 class QuizListAPIView(generics.ListAPIView):
     serializer_class = QuizSerializer
@@ -26,84 +32,6 @@ class QuizListAPIView(generics.ListAPIView):
 
         return queryset
 
-# class QuizDetailAPIView(generics.RetrieveAPIView):
-#     queryset = Quiz.objects.all()
-#     serializer_class = QuizSerializer
-#     permission_classes = [AllowAny]
-
-#     # Custom limits per quiz type
-#     QUESTION_LIMITS = {
-#         'NUM': 20,
-#         'CLE': 20,
-#         'GEN': 20,
-#         'VER': 20,  # standalone + passage questions
-#         'ANA': 20,  # standalone + dataset questions
-#     }
-
-#     def get_object(self):
-#         """Retrieve and prepare randomized quiz questions."""
-#         if hasattr(self, "_cached_quiz"):
-#             return self._cached_quiz
-
-#         quiz = super().get_object()
-#         quiz_type = quiz.quiz_type
-#         limit = self.QUESTION_LIMITS.get(quiz_type, 20)
-
-#         # 🔹 Randomize standalone (non-passage, non-dataset) questions
-#         standalone_qs = list(
-#             quiz.questions.filter(passage__isnull=True, dataset__isnull=True).distinct()
-#         )
-#         random.shuffle(standalone_qs)
-#         quiz.sampled_questions = standalone_qs[:limit]
-
-#         # Initialize
-#         quiz.randomized_passages = []
-#         quiz.randomized_datasets = []
-
-#         # 🔹 VERBAL ABILITY: add one random passage + its questions
-#         if quiz_type == "VER":
-#             passages = list(quiz.passages.all())
-#             if passages:
-#                 chosen_passage = random.choice(passages)
-#                 quiz.randomized_passages = [chosen_passage]
-#                 passage_questions = list(chosen_passage.questions.all())
-#                 quiz.sampled_questions += passage_questions
-
-#         # 🔹 ANALYTICAL ABILITY: add one random dataset + its questions
-#         elif quiz_type == "ANA":
-#             if hasattr(quiz, "datasets"):
-#                 datasets = list(quiz.datasets.all())
-#                 if datasets:
-#                     chosen_dataset = random.choice(datasets)
-#                     quiz.randomized_datasets = [chosen_dataset]
-#                     dataset_questions = list(chosen_dataset.questions.all())
-#                     quiz.sampled_questions += dataset_questions
-
-#         # ✅ Final failsafe — enforce absolute max of 20 questions
-#         MAX_QUESTIONS = 20
-#         quiz.sampled_questions = quiz.sampled_questions[:MAX_QUESTIONS]
-
-#         # 🧠 Debug info (for backend console)
-#         print("📘 QUIZ DEBUG INFO ------------------------------")
-#         print(f"Quiz: {quiz.title}")
-#         print(f"Displayed questions (shown to user): {len(quiz.sampled_questions)}")
-#         print(f"Total questions in database: {quiz.questions.count()}")
-#         print("--------------------------------------------------")
-
-#         # Cache
-#         self._cached_quiz = quiz
-#         return quiz
-
-#     def get_serializer_context(self):
-#         """Include randomized data in serializer context."""
-#         context = super().get_serializer_context()
-#         quiz = self.get_object()
-#         context.update({
-#             "sampled_questions": getattr(quiz, "sampled_questions", []),
-#             "randomized_passages": getattr(quiz, "randomized_passages", []),
-#             "randomized_datasets": getattr(quiz, "randomized_datasets", []),
-#         })
-#         return context
 
 class QuizDetailAPIView(generics.RetrieveAPIView):
     queryset = Quiz.objects.all()
@@ -242,164 +170,6 @@ class QuizGroupedAPIView(APIView):
             "total": Quiz.objects.count()
         })
 
-
-# class QuizSubmissionAPIView(APIView):
-#     permission_classes = [AllowAny]
-
-#     def post(self, request, pk):
-#         try:
-#             quiz = Quiz.objects.get(pk=pk)
-#         except Quiz.DoesNotExist:
-#             return Response({"error": "Quiz not found."}, status=status.HTTP_404_NOT_FOUND)
-
-#         # 🧠 Step 1: Parse submitted answers
-#         answers = request.data.get('answers', [])
-#         user_answers = {
-#             a.get('question'): a.get('choice')
-#             for a in answers if a.get('question') and a.get('choice')
-#         }
-
-#         QUESTION_LIMIT = 20
-
-#         # 🧠 Step 2: Collect all questions that were actually shown to user
-#         standalone_questions = list(
-#             quiz.questions.filter(passage__isnull=True, dataset__isnull=True)
-#         )
-
-#         passage_questions = []
-#         for passage in quiz.passages.all():
-#             passage_questions.extend(list(passage.questions.all()))
-
-#         dataset_questions = []
-#         if hasattr(quiz, "datasets"):
-#             for dataset in quiz.datasets.all():
-#                 dataset_questions.extend(list(dataset.questions.all()))
-
-#         visible_question_ids = request.data.get("visible_questions", [])
-#         if visible_question_ids:
-#             # Use only the questions the frontend said were visible
-#             all_questions = list(Question.objects.filter(id__in=visible_question_ids))
-#         else:
-#             # fallback (old logic)
-#             all_questions = list({
-#                 q.id: q for q in (
-#                     quiz.questions.filter(passage__isnull=True, dataset__isnull=True) |
-#                     Question.objects.filter(passage__quiz=quiz) |
-#                     Question.objects.filter(dataset__quiz=quiz)
-#                 )
-#             }.values())
-#             all_questions = all_questions[:QUESTION_LIMIT]
-
-#         print(f"User answered IDs: {list(user_answers.keys())}")
-#         print(f"Visible question IDs: {visible_question_ids}")
-#         print(f"Backend checking IDs: {[q.id for q in all_questions]}")
-
-
-
-#         total_questions = len(all_questions)
-#         correct_answers = 0
-#         details = []
-
-#         # 🧮 Step 3: Check answers
-#         for question in all_questions:
-#             choice_id = user_answers.get(question.id)
-#             if choice_id:
-#                 try:
-#                     choice = Choice.objects.get(pk=choice_id, question=question)
-#                     is_correct = choice.is_correct
-#                     result = "correct" if is_correct else "wrong"
-#                     if is_correct:
-#                         correct_answers += 1
-#                     your_answer = choice.text
-#                 except Choice.DoesNotExist:
-#                     result = "invalid_choice"
-#                     your_answer = "Invalid choice (not found)"
-#             else:
-#                 result = "unanswered"
-#                 your_answer = "No answer selected"
-
-#             details.append({
-#                 "question": question.text,
-#                 "your_answer": your_answer,
-#                 "result": result,
-#                 "explanation": question.explanation,
-#             })
-
-#         answered_count = len(user_answers)
-
-#         # 🚨 Step 4: Validation
-#         if answered_count < total_questions:
-#             print("\n⚠️ QUIZ VALIDATION FAILED ------------------------------")
-#             print(f"Quiz: {quiz.title}")
-#             print(f"Displayed questions (shown to user): {total_questions}")
-#             print(f"Total questions in DB: {quiz.questions.count()}")
-#             print(f"Standalone questions: {len(standalone_questions)}")
-#             print(f"Passage-based questions: {len(passage_questions)}")
-#             print(f"Dataset-based questions: {len(dataset_questions)}")
-#             print(f"User answered: {answered_count} questions")
-#             print(f"Unanswered IDs: {[q.id for q in all_questions if q.id not in user_answers]}")
-#             print("--------------------------------------------------\n")
-
-#             return Response(
-#                 {"error": f"Please answer all questions before submitting. ({answered_count}/{total_questions} answered)"},
-#                 status=status.HTTP_400_BAD_REQUEST
-#             )
-
-#         # 🧾 Step 5: Compute score
-#         score = round((correct_answers / total_questions) * 100, 2)
-
-#         # 🗂️ Step 6: Save result for logged-in user
-#         if request.user.is_authenticated:
-#             QuizResult.objects.create(
-#                 quiz=quiz,
-#                 user=request.user,
-#                 score=score,
-#                 correct=correct_answers,
-#                 total=total_questions,
-#             )
-
-#         # 🧩 Step 7: Debug log (for your terminal)
-#         print("📘 QUIZ DEBUG INFO ------------------------------")
-#         print(f"Quiz: {quiz.title}")
-#         print(f"Displayed (visible) questions sent to user: {total_questions}")
-#         print(f"Total questions stored in database: {quiz.questions.count()}")
-#         print(f"Standalone questions: {len(standalone_questions)}")
-#         print(f"Passage-based questions: {len(passage_questions)}")
-#         print(f"Dataset-based questions: {len(dataset_questions)}")
-#         print(f"User answered: {answered_count} / {total_questions}")
-#         print(f"Correct answers so far: {correct_answers}")
-#         print("--------------------------------------------------")
-
-#         # 🧠 Step 8: Return the API response
-
-#         debug_info = {
-#         "user_answers": user_answers,  # question_id → choice_id
-#         "checked_questions": [q.id for q in all_questions],
-#         "checked_question_texts": [q.text for q in all_questions],
-#         "standalone_count": len(standalone_questions),
-#         "passage_count": len(passage_questions),
-#         "dataset_count": len(dataset_questions),
-#         "quiz_type": quiz.quiz_type,
-
-        
-# }
-#         print("\n🧩 QUIZ DEBUG FRONTEND TRACE ------------------------------")
-#         print(f"Quiz ID: {quiz.id} | {quiz.title}")
-#         print(f"Quiz type: {quiz.quiz_type}")
-#         print(f"User answered IDs: {list(user_answers.keys())}")
-#         print(f"Backend checked IDs: {[q.id for q in all_questions]}")
-#         print(f"Answered count: {answered_count} / {total_questions}")
-#         print(f"Score: {score}")
-#         print("-----------------------------------------------------------\n")
-
-#         return Response({
-#             "quiz": quiz.title,
-#             "score": score,
-#             "correct": correct_answers,
-#             "total": total_questions,
-#             "details": details,
-#             "debug": debug_info,
-#         }, status=status.HTTP_200_OK)
 
 
 class QuizSubmissionAPIView(APIView):
@@ -548,3 +318,184 @@ class QuizByTypeView(APIView):
             grouped[qtype].append(QuizSerializer(quiz).data)
 
         return Response(grouped)
+    
+
+class RandomizedByTypeAPIView(APIView):
+    permission_classes = [AllowAny]
+
+    def get(self, request):
+        quiz_type = request.query_params.get("type")
+        if not quiz_type:
+            return Response({"error": "Missing ?type= parameter."}, status=400)
+
+        quizzes = Quiz.objects.filter(quiz_type=quiz_type)
+        if not quizzes.exists():
+            return Response({"error": f"No quizzes found for type '{quiz_type}'."}, status=404)
+
+        total_quizzes = quizzes.count()
+        final_questions = []
+        passage_source = None
+        passage_qs = []
+
+        # --- 🧠 For VER/ANA: 15 standalone + 1 passage (5 Qs) ---
+        if quiz_type in ["VER", "ANA"]:
+            # Pick one random passage
+            passage_source = Passage.objects.filter(quiz__in=quizzes).order_by("?").first()
+            passage_question_ids = set()
+            passage_id = None
+
+            if passage_source:
+                passage_qs = list(passage_source.questions.all()[:5])
+                passage_question_ids = {q.id for q in passage_qs}
+                passage_id = passage_source.id
+
+            # Fetch standalone questions EXCLUDING any from that passage
+            standalone_questions = []
+            per_quiz = max(1, 15 // total_quizzes)
+
+            for quiz in quizzes:
+                qs = (
+                    Question.objects.filter(
+                        quiz=quiz,
+                        passage__isnull=True  # standalone only
+                    )
+                    .exclude(passage_id=passage_id)  # exclude entire passage group
+                    .exclude(id__in=passage_question_ids)  # safety double-check
+                    .order_by("?")[:per_quiz]
+                )
+                standalone_questions.extend(qs)
+
+            # Flatten and trim
+            final_questions = list(standalone_questions)[:15] + passage_qs
+
+        else:
+            # --- For other quiz types: 20 evenly distributed ---
+            per_quiz = max(1, 20 // total_quizzes)
+            all_questions = []
+
+            for quiz in quizzes:
+                qs = Question.objects.filter(
+                    quiz=quiz,
+                    passage__isnull=True
+                ).order_by("?")[:per_quiz]
+                all_questions.extend(qs)
+
+            final_questions = list(all_questions)[:20]
+
+        # ✅ Shuffle standalone + passage separately to preserve passage order
+        standalone_only = final_questions[:-len(passage_qs)] if passage_qs else final_questions
+        random.shuffle(standalone_only)
+        if passage_qs:
+            final_questions = standalone_only + passage_qs
+
+        # ✅ Serialize
+        serialized_questions = QuestionSerializer(standalone_only, many=True).data
+        passage_data = PassageSerializer(passage_source).data if passage_source else None
+
+        return Response({
+            "mode": "random_by_type",
+            "quiz_type": quiz_type,
+            "delivered": len(final_questions),
+            "has_passage": bool(passage_data),
+            "passage": passage_data,
+            "questions": serialized_questions,  # only standalone questions
+        })
+    
+
+# views.py
+class RandomizedQuizSubmitAPIView(APIView):
+    """
+    Handles submission of randomized quizzes (mode 2).
+    """
+
+    def post(self, request):
+        answers = request.data.get("answers", [])
+        quiz_type = request.data.get("quiz_type")
+        visible_ids = request.data.get("visible_questions", [])
+
+        if not answers or not quiz_type:
+            return Response({"error": "Missing required data."}, status=status.HTTP_400_BAD_REQUEST)
+
+        total = len(visible_ids)
+        correct = 0
+        details = []
+
+        # Build a mapping for submitted answers
+        answer_map = {a["question"]: a["choice"] for a in answers}
+
+        # Get only visible questions (for fairness)
+        questions = Question.objects.filter(id__in=visible_ids).prefetch_related("choices")
+
+        for q in questions:
+            selected_choice_id = answer_map.get(q.id)
+            correct_choice = next((c for c in q.choices.all() if c.is_correct), None)
+
+            if not correct_choice:
+                continue
+
+            is_correct = selected_choice_id == correct_choice.id
+            if is_correct:
+                correct += 1
+
+            your_answer = None
+            if selected_choice_id:
+                your_choice = next((c for c in q.choices.all() if c.id == selected_choice_id), None)
+                your_answer = your_choice.text if your_choice else "N/A"
+            else:
+                your_answer = "No answer"
+
+            details.append({
+                "id": q.id,
+                "question": q.text,
+                "your_answer": your_answer,
+                "correct_answer": correct_choice.text,
+                "result": "Correct" if is_correct else "Wrong",
+                "explanation": q.explanation or "No explanation provided.",
+            })
+
+        score = round((correct / total) * 100, 2) if total > 0 else 0
+
+        # Optionally save result
+        if request.user.is_authenticated:
+            QuizResult.objects.create(
+                quiz=None,
+                user=request.user,
+                score=score,
+                correct=correct,
+                total=total,
+            )
+
+        return Response({
+            "quiz_type": quiz_type,
+            "score": score,
+            "correct": correct,
+            "total": total,
+            "details": details
+        }, status=status.HTTP_200_OK)
+
+
+# views.py
+class RandomizedQuizResultAPIView(APIView):
+    """
+    Fetch all past randomized quiz results by type for the authenticated user.
+    Example: GET /api/quizzes/random/results/?type=VER
+    """
+
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        quiz_type = request.query_params.get("type")
+        if not quiz_type:
+            return Response({"error": "Missing ?type= parameter."}, status=400)
+
+        results = QuizResult.objects.filter(
+            user=request.user,
+            quiz__quiz_type=quiz_type
+        ).order_by('-submitted_at')
+
+        serialized = QuizResultSerializer(results, many=True).data
+        return Response({
+            "quiz_type": quiz_type,
+            "count": len(serialized),
+            "results": serialized
+        })

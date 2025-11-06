@@ -114,6 +114,7 @@ export default function QuizDetailPage() {
   };
 
   // ✅ Submit answers
+  // ✅ Submit answers
   const handleSubmit = async () => {
     if (!quiz) return;
     setSubmitting(true);
@@ -146,17 +147,28 @@ export default function QuizDetailPage() {
       const data = await res.json();
 
       if (res.ok) {
-        // 🔧 Get original question order
-        const allQuestions = [
-          ...(quiz.questions || []),
-          ...(quiz.passages?.flatMap((p) => p.questions) || []),
-          ...(quiz.datasets?.flatMap((d) => d.questions) || []),
-        ];
+        // 🧩 Detect quiz type
+        const isReadingType =
+          (quiz.passages && quiz.passages.length > 0) ||
+          (quiz.datasets && quiz.datasets.length > 0);
 
-        // 🔧 Reorder result.details based on original quiz order
+        let allQuestions: Question[] = [];
+
+        if (isReadingType) {
+          // For verbal/analytical: only passage or dataset questions
+          allQuestions = [
+            ...(quiz.passages?.flatMap((p) => p.questions) || []),
+            ...(quiz.datasets?.flatMap((d) => d.questions) || []),
+          ];
+        } else {
+          // For standalone quizzes: only independent questions
+          allQuestions = quiz.questions || [];
+        }
+
+        // 🔧 Reorder result.details based on the actual displayed question order
         const orderedDetails = allQuestions
           .map((q) => data.details.find((d: any) => d.question === q.text))
-          .filter(Boolean); // remove any undefined ones
+          .filter(Boolean); // remove undefined
 
         setResult({
           ...data,

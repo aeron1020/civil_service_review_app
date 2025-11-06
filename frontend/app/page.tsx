@@ -381,6 +381,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import RandomQuizCard from "@/components/RandomQuizCard";
 
 const API_BASE_URL = "http://127.0.0.1:8000/api"; // change this in production
 
@@ -589,6 +590,9 @@ export default function HomePage() {
           </div>
         </motion.div>
       </AnimatePresence>
+      <div className="mt-24">
+        <RandomQuizCard />
+      </div>
     </div>
   );
 }

@@ -7,12 +7,31 @@ class ChoiceSerializer(serializers.ModelSerializer):
         fields = ['id', 'text',] #i hide is_correct
 
 
+# class QuestionSerializer(serializers.ModelSerializer):
+#     choices = ChoiceSerializer(many=True, read_only=True)
+
+#     class Meta:
+#         model = Question
+#         fields = ['id', 'text', 'explanation', 'question_type', 'choices']
+
 class QuestionSerializer(serializers.ModelSerializer):
     choices = ChoiceSerializer(many=True, read_only=True)
+    quiz_name = serializers.SerializerMethodField()
 
     class Meta:
         model = Question
-        fields = ['id', 'text', 'explanation', 'question_type', 'choices']
+        fields = ['id', 'text', 'explanation', 'question_type', 'quiz_name', 'choices']
+
+    def get_quiz_name(self, obj):
+        # Get the parent quiz title whether from quiz, passage, or dataset
+        if obj.quiz:
+            return obj.quiz.title
+        elif obj.passage:
+            return obj.passage.quiz.title
+        elif obj.dataset:
+            return obj.dataset.quiz.title
+        return "Unknown Quiz"
+
 
 
 class PassageSerializer(serializers.ModelSerializer):

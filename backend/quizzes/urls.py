@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-from .views import QuizByTypeView, QuizGroupedAPIView
+from .views import QuizByTypeView, QuizGroupedAPIView, RandomizedByTypeAPIView, RandomizedQuizSubmitAPIView, RandomizedQuizResultAPIView
 
 urlpatterns = [
     path('', views.QuizListAPIView.as_view(), name='quiz-list'),
@@ -11,5 +11,9 @@ urlpatterns = [
     
     path('by-type/', QuizByTypeView.as_view(), name='quiz-by-type'),
     path('quizzes/grouped/', QuizGroupedAPIView.as_view(), name='quiz-grouped'),
+    path("random/", RandomizedByTypeAPIView.as_view(), name="random-quiz-by-type"),
+    path("random/submit/", RandomizedQuizSubmitAPIView.as_view(), name="random-quiz-submit"),
+    path("/random/results/", RandomizedQuizResultAPIView.as_view(), name="randomized_quiz_results"),
+
 ]
 
