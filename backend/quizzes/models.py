@@ -79,8 +79,9 @@ class Choice(models.Model):
     
 
 class QuizResult(models.Model):
-    quiz = models.ForeignKey('Quiz', on_delete=models.CASCADE, related_name='results')
+    quiz = models.ForeignKey('Quiz', on_delete=models.CASCADE, related_name='results', null=True, blank=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='quiz_results', null=True, blank=True)
+    quiz_type = models.CharField(max_length=3, blank=True, null=True)  
     score = models.FloatField(default=0)
     correct = models.IntegerField(default=0)
     total = models.IntegerField(default=0)
@@ -88,6 +89,22 @@ class QuizResult(models.Model):
 
     def __str__(self):
         username = self.user.username if self.user else "Anonymous"
-        return f"{username} - {self.quiz.title} ({self.score}%)"
+
+        if self.quiz:
+            # Normal quiz submissions
+            return f"{username} - {self.quiz.get_quiz_type_display()} - {self.quiz.title} ({self.score}%)"
+        
+        elif self.quiz_type:
+            # Random quiz submissions (no specific quiz)
+            quiz_type_code = self.quiz_type.upper().strip()
+            type_display = dict(Quiz.QUIZ_TYPES).get(quiz_type_code, quiz_type_code)
+            return f"{username} - {type_display} - Random Quiz ({self.score}%)"
+        
+        # Fallback
+        return f"{username} - Random Quiz ({self.score}%)"
+
+
+
+
 
 

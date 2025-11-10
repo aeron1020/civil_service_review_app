@@ -110,8 +110,8 @@ class QuizSerializer(serializers.ModelSerializer):
     
 
 class QuizResultSerializer(serializers.ModelSerializer):
-    quiz_title = serializers.CharField(source='quiz.title', read_only=True)
-    quiz_type = serializers.CharField(source='quiz.get_quiz_type_display', read_only=True)
+    quiz_title = serializers.SerializerMethodField()
+    quiz_type = serializers.SerializerMethodField()
 
     class Meta:
         model = QuizResult
@@ -125,3 +125,23 @@ class QuizResultSerializer(serializers.ModelSerializer):
             'submitted_at',
         ]
 
+    def get_quiz_title(self, obj):
+        # Case 1: Linked to an existing quiz
+        if obj.quiz:
+            return obj.quiz.title
+        # Case 2: Random quiz (quiz=None but quiz_type exists)
+        elif obj.quiz_type:
+            type_display = dict(Quiz.QUIZ_TYPES).get(obj.quiz_type, "Unknown Type")
+            return f"{type_display} - Random Quiz"
+        # Case 3: No info at all
+        return "Random Quiz"
+
+    def get_quiz_type(self, obj):
+        # Case 1: Linked quiz has a type
+        if obj.quiz:
+            return obj.quiz.get_quiz_type_display()
+        # Case 2: Random quiz uses quiz_type field
+        elif obj.quiz_type:
+            return dict(Quiz.QUIZ_TYPES).get(obj.quiz_type, "Unknown Type")
+        # Case 3: Fallback
+        return "Unknown Type"

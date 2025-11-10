@@ -43,8 +43,8 @@ class QuizDetailAPIView(generics.RetrieveAPIView):
         'NUM': 20,
         'GEN': 20,
         'CLE': 20,
-        'VER': 20,  # fallback limit if not passage-based
-        'ANA': 20,  # fallback limit if not dataset-based
+        'VER': 20, 
+        'ANA': 20,  
     }
 
     def get_object(self):
@@ -402,7 +402,6 @@ class RandomizedByTypeAPIView(APIView):
         })
     
 
-# views.py
 class RandomizedQuizSubmitAPIView(APIView):
     """
     Handles submission of randomized quizzes (mode 2).
@@ -423,13 +422,12 @@ class RandomizedQuizSubmitAPIView(APIView):
         # Build a mapping for submitted answers
         answer_map = {a["question"]: a["choice"] for a in answers}
 
-        # Get only visible questions (for fairness)
+        # Get only visible questions
         questions = Question.objects.filter(id__in=visible_ids).prefetch_related("choices")
 
         for q in questions:
             selected_choice_id = answer_map.get(q.id)
             correct_choice = next((c for c in q.choices.all() if c.is_correct), None)
-
             if not correct_choice:
                 continue
 
@@ -455,11 +453,28 @@ class RandomizedQuizSubmitAPIView(APIView):
 
         score = round((correct / total) * 100, 2) if total > 0 else 0
 
-        # Optionally save result
+        # ✅ Create or link a pseudo "Random Quiz" instance
         if request.user.is_authenticated:
+            type_map = {
+                "VER": "Verbal Ability",
+                "ANA": "Analytical Ability",
+                "NUM": "Numerical Ability",
+                "GEN": "General Information",
+                "CLE": "Clerical Ability",
+            }
+            quiz_title = f"Random Quiz"
+
+            # Create or reuse a "Random Quiz" entry for this type
+            quiz_obj, _ = Quiz.objects.get_or_create(
+                title=quiz_title,
+                quiz_type=quiz_type,
+                defaults={"description": "Auto-generated random quiz set."}
+            )
+
             QuizResult.objects.create(
-                quiz=None,
+                quiz=quiz_obj,  # ✅ now linked
                 user=request.user,
+                quiz_type=quiz_type,
                 score=score,
                 correct=correct,
                 total=total,
@@ -474,7 +489,8 @@ class RandomizedQuizSubmitAPIView(APIView):
         }, status=status.HTTP_200_OK)
 
 
-# views.py
+
+
 class RandomizedQuizResultAPIView(APIView):
     """
     Fetch all past randomized quiz results by type for the authenticated user.
