@@ -7,13 +7,6 @@ class ChoiceSerializer(serializers.ModelSerializer):
         fields = ['id', 'text',] #i hide is_correct
 
 
-# class QuestionSerializer(serializers.ModelSerializer):
-#     choices = ChoiceSerializer(many=True, read_only=True)
-
-#     class Meta:
-#         model = Question
-#         fields = ['id', 'text', 'explanation', 'question_type', 'choices']
-
 class QuestionSerializer(serializers.ModelSerializer):
     choices = ChoiceSerializer(many=True, read_only=True)
     quiz_name = serializers.SerializerMethodField()
@@ -69,6 +62,7 @@ class QuizSerializer(serializers.ModelSerializer):
             'time_limit',
             'passages',
             'datasets',
+            'is_random',
             'questions',
             'total_questions',
         ]

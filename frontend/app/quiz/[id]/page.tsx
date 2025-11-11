@@ -105,6 +105,15 @@ export default function QuizDetailPage() {
     fetchQuiz();
   }, [id]);
 
+  // ✅ Separate effect for scrolling up after result
+  useEffect(() => {
+    if (result) {
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 300);
+    }
+  }, [result]);
+
   // ✅ Handle answer selection
   const handleSelect = (questionId: number, choiceId: number) => {
     setAnswers((prev) => ({
@@ -113,7 +122,6 @@ export default function QuizDetailPage() {
     }));
   };
 
-  // ✅ Submit answers
   // ✅ Submit answers
   const handleSubmit = async () => {
     if (!quiz) return;
@@ -147,28 +155,17 @@ export default function QuizDetailPage() {
       const data = await res.json();
 
       if (res.ok) {
-        // 🧩 Detect quiz type
-        const isReadingType =
-          (quiz.passages && quiz.passages.length > 0) ||
-          (quiz.datasets && quiz.datasets.length > 0);
+        // 🔧 Get original question order
+        const allQuestions = [
+          ...(quiz.questions || []),
+          ...(quiz.passages?.flatMap((p) => p.questions) || []),
+          ...(quiz.datasets?.flatMap((d) => d.questions) || []),
+        ];
 
-        let allQuestions: Question[] = [];
-
-        if (isReadingType) {
-          // For verbal/analytical: only passage or dataset questions
-          allQuestions = [
-            ...(quiz.passages?.flatMap((p) => p.questions) || []),
-            ...(quiz.datasets?.flatMap((d) => d.questions) || []),
-          ];
-        } else {
-          // For standalone quizzes: only independent questions
-          allQuestions = quiz.questions || [];
-        }
-
-        // 🔧 Reorder result.details based on the actual displayed question order
+        // 🔧 Reorder result.details based on original quiz order
         const orderedDetails = allQuestions
           .map((q) => data.details.find((d: any) => d.question === q.text))
-          .filter(Boolean); // remove undefined
+          .filter(Boolean); // remove any undefined ones
 
         setResult({
           ...data,

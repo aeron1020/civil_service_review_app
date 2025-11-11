@@ -15,6 +15,7 @@ import random
 import math
 
 class QuizListAPIView(generics.ListAPIView):
+    queryset = Quiz.objects.filter(is_random=False)
     serializer_class = QuizSerializer
 
     def get_queryset(self):
@@ -468,7 +469,9 @@ class RandomizedQuizSubmitAPIView(APIView):
             quiz_obj, _ = Quiz.objects.get_or_create(
                 title=quiz_title,
                 quiz_type=quiz_type,
-                defaults={"description": "Auto-generated random quiz set."}
+                defaults={"description": "Auto-generated random quiz set.",
+                          "is_random": True,},
+                
             )
 
             QuizResult.objects.create(

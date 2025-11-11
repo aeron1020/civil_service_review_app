@@ -22,8 +22,8 @@ class PassageInline(admin.TabularInline):
 
 @admin.register(Quiz)
 class QuizAdmin(admin.ModelAdmin):
-    list_display = ('title', 'quiz_type', 'time_limit', 'description')
-    list_filter = ('quiz_type',)
+    list_display = ('title', 'quiz_type', 'time_limit', 'description', "is_random")
+    list_filter = ('quiz_type', 'is_random')
     search_fields = ('title', 'description')
     inlines = [PassageInline]
 

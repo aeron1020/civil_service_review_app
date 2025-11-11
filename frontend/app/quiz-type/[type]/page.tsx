@@ -103,6 +103,15 @@ export default function RandomQuizTypePage() {
     fetchRandomQuiz();
   }, [type]);
 
+  // ✅ Separate effect for scrolling up after result
+  useEffect(() => {
+    if (result) {
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 300);
+    }
+  }, [result]);
+
   const handleSelect = (questionId: number, choiceId: number) => {
     setAnswers((prev) => ({ ...prev, [questionId]: choiceId }));
   };
