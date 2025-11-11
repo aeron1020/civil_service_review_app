@@ -13,7 +13,7 @@ urlpatterns = [
     path('quizzes/grouped/', QuizGroupedAPIView.as_view(), name='quiz-grouped'),
     path("random/", RandomizedByTypeAPIView.as_view(), name="random-quiz-by-type"),
     path("random/submit/", RandomizedQuizSubmitAPIView.as_view(), name="random-quiz-submit"),
-    path("/random/results/", RandomizedQuizResultAPIView.as_view(), name="randomized_quiz_results"),
+    path("random/results/", RandomizedQuizResultAPIView.as_view(), name="randomized_quiz_results"),
 
 ]
 
