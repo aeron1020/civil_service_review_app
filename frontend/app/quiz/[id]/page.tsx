@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { getToken } from "@/app/lib/auth";
 import QuizProgressBar from "@/components/QuizProgressBar";
+import QuizTimer from "@/components/QuizTimer";
 
 const API_BASE_URL = "http://127.0.0.1:8000/api";
 
@@ -46,6 +47,7 @@ interface Quiz {
   questions: Question[];
   passages: Passage[];
   datasets: DataSet[];
+  time_limit?: number;
   debug_info?: QuizDebugInfo;
 }
 
@@ -205,6 +207,14 @@ export default function QuizDetailPage() {
         {/* 👇 Hide questions once result appears */}
         {!result && (
           <div className="space-y-8">
+            {/* ✅ Timer */}
+            {quiz && quiz.time_limit && (
+              <QuizTimer
+                durationMinutes={quiz.time_limit} // directly from serializer
+                onExpire={() => handleSubmit()} // auto-submit when time runs out
+              />
+            )}
+
             {/* 🧠 QUIZ DEBUG INFO */}
             {quiz && (
               <div className="mb-8 text-sm text-gray-500 bg-white/5 dark:bg-black/20 p-4 rounded-xl border border-white/10">

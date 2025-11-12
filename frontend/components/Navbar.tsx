@@ -1,13 +1,26 @@
 // "use client";
+
 // import Link from "next/link";
 // import { useEffect, useState } from "react";
+
+// import ThemeToggle from "./ThemeToggle";
 
 // export default function Navbar() {
 //   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+//   // Check login status on load and when storage changes
 //   useEffect(() => {
 //     const token = localStorage.getItem("access");
 //     setIsLoggedIn(!!token);
+
+//     // Listen for changes in localStorage (e.g., logout in another tab)
+//     const handleStorageChange = () => {
+//       const token = localStorage.getItem("access");
+//       setIsLoggedIn(!!token);
+//     };
+//     window.addEventListener("storage", handleStorageChange);
+
+//     return () => window.removeEventListener("storage", handleStorageChange);
 //   }, []);
 
 //   const handleLogout = () => {
@@ -18,27 +31,47 @@
 //   };
 
 //   return (
-//     <nav className="glass-card fixed top-0 left-0 right-0 z-50 mx-auto mt-2 w-[95%] px-6 py-3 flex justify-between items-center">
-//       <Link href="/" className="text-xl font-semibold">
+//     <nav className="glass-card fixed top-0 left-0 right-0 z-50 mx-auto mt-2 w-[95%] px-6 py-3 flex justify-between items-center animate-fadeIn bg-white/70 backdrop-blur-md shadow-md z-50">
+//       <Link href="/" className="text-xl font-semibold tracking-tight">
 //         Civil Service Review
 //       </Link>
 
 //       <div className="space-x-4 flex items-center">
-//         <Link href="/" className="hover:text-[var(--accent)] transition">
-//           Home
-//         </Link>
-//         <Link href="/about" className="hover:text-[var(--accent)] transition">
-//           About
-//         </Link>
-
 //         {isLoggedIn ? (
-//           <button onClick={handleLogout} className="btn-primary text-sm">
-//             Logout
-//           </button>
+//           <>
+//             <Link
+//               href="/"
+//               className="hover:text-[var(--accent)] transition font-medium"
+//             >
+//               Home
+//             </Link>
+//             <Link
+//               href="/about"
+//               className="hover:text-[var(--accent)] transition font-medium"
+//             >
+//               About
+//             </Link>
+//             <button onClick={handleLogout} className="btn-primary text-sm">
+//               Logout
+//             </button>
+//             <ThemeToggle />
+//           </>
 //         ) : (
-//           <Link href="/login" className="btn-primary text-sm">
-//             Login
-//           </Link>
+//           <>
+//             <Link
+//               href="/login"
+//               className="btn-primary text-sm shadow-sm hover:shadow-md"
+//             >
+//               Login
+//             </Link>
+//             <Link
+//               href="/register"
+//               className="btn-primary text-sm shadow-sm hover:shadow-md"
+//             >
+//               Sign Up
+//             </Link>
+//             <ThemeToggle />
+//           </>
 //         )}
 //       </div>
 //     </nav>
@@ -49,36 +82,38 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-
+import { useRouter } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
+import { tokenService } from "app/lib/auth";
 
 export default function Navbar() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const router = useRouter();
 
-  // Check login status on load and when storage changes
   useEffect(() => {
-    const token = localStorage.getItem("access");
-    setIsLoggedIn(!!token);
-
-    // Listen for changes in localStorage (e.g., logout in another tab)
-    const handleStorageChange = () => {
-      const token = localStorage.getItem("access");
-      setIsLoggedIn(!!token);
+    // ✅ Check token validity on mount
+    const checkLoginStatus = () => {
+      const token = tokenService.get();
+      setIsLoggedIn(!!token && !tokenService.expired());
     };
+
+    checkLoginStatus();
+
+    // ✅ Listen for token changes in other tabs or windows
+    const handleStorageChange = () => checkLoginStatus();
     window.addEventListener("storage", handleStorageChange);
 
     return () => window.removeEventListener("storage", handleStorageChange);
   }, []);
 
   const handleLogout = () => {
-    localStorage.removeItem("access");
-    localStorage.removeItem("refresh");
+    tokenService.clear(); // centralized logout
     setIsLoggedIn(false);
-    window.location.href = "/";
+    router.push("/login");
   };
 
   return (
-    <nav className="glass-card fixed top-0 left-0 right-0 z-50 mx-auto mt-2 w-[95%] px-6 py-3 flex justify-between items-center animate-fadeIn bg-white/70 backdrop-blur-md shadow-md z-50">
+    <nav className="glass-card fixed top-0 left-0 right-0 z-50 mx-auto mt-2 w-[95%] px-6 py-3 flex justify-between items-center bg-white/70 backdrop-blur-md shadow-md animate-fadeIn">
       <Link href="/" className="text-xl font-semibold tracking-tight">
         Civil Service Review
       </Link>
@@ -93,12 +128,15 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              href="/about"
+              href="/profile"
               className="hover:text-[var(--accent)] transition font-medium"
             >
-              About
+              Profile
             </Link>
-            <button onClick={handleLogout} className="btn-primary text-sm">
+            <button
+              onClick={handleLogout}
+              className="btn-primary text-sm bg-red-500 hover:bg-red-600"
+            >
               Logout
             </button>
             <ThemeToggle />

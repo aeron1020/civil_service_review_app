@@ -32,3 +32,16 @@ export async function submitQuiz(id: number, answers: any[]) {
   const res = await api.post(`/quizzes/${id}/submit/`, { answers });
   return res.data;
 }
+
+//  * ✅ users profile
+
+export async function getUserProfile() {
+  const res = await api.get("/users/profile/");
+  return res.data;
+}
+
+//  * ✅ users summary
+export async function getUserSummary() {
+  const res = await api.get("/users/summary/");
+  return res.data;
+}

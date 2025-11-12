@@ -518,3 +518,33 @@ class RandomizedQuizResultAPIView(APIView):
             "count": len(serialized),
             "results": serialized
         })
+
+
+class UserSummaryAPIView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        user = request.user
+        summary = []
+        quiz_types = dict(Quiz.QUIZ_TYPES)
+
+        for code, name in quiz_types.items():
+            results = QuizResult.objects.filter(user=user, quiz_type=code)
+            if results.exists():
+                avg_score = round(sum(r.score for r in results) / len(results), 2)
+                best_score = max(r.score for r in results)
+                total_quizzes = results.count()
+            else:
+                avg_score = 0
+                best_score = 0
+                total_quizzes = 0
+
+            summary.append({
+                "code": code,
+                "name": name,
+                "average_score": avg_score,
+                "best_score": best_score,
+                "total_quizzes": total_quizzes,
+            })
+
+        return Response(summary)

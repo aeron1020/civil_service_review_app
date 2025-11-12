@@ -71,7 +71,8 @@ h1,
 h2,
 h3 {
   background: linear-gradient(90deg, var(--foreground), var(--accent));
-  -webkit-background-clip: text;
+  background-clip: text; /* Standard */
+  -webkit-background-clip: text; /* WebKit */
   -webkit-text-fill-color: transparent;
 }
 

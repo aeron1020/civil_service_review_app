@@ -60,7 +60,7 @@ export default function Footer() {
                 Civil Service Review PH
               </a>
             </li>
-            <li>Developer: Olsen Aeron Paduit</li>
+            <li>Developer: OASP</li>
             <li className="text-xs text-gray-400 dark:text-gray-500">
               Version v1.0.0
             </li>
@@ -72,9 +72,6 @@ export default function Footer() {
       <div className="border-t border-gray-100 dark:border-gray-800 text-center py-6 text-xs text-gray-400 dark:text-gray-500">
         © {new Date().getFullYear()} Civil Service Review. All rights reserved.
         <br />
-        <span className="text-[11px] opacity-70">
-          Built with ❤️ using Django & Next.js
-        </span>
       </div>
     </footer>
   );
