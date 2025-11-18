@@ -35,6 +35,15 @@ interface QuizResponse {
   has_passage: boolean;
   passage?: Passage | null;
   questions: Question[];
+  datasets?: DataSet[];
+}
+
+interface DataSet {
+  id: number;
+  title: string;
+  description?: string;
+  image?: string;
+  questions: Question[];
 }
 
 interface ResultDetail {
@@ -61,11 +70,54 @@ export default function RandomQuizTypePage() {
   const [result, setResult] = useState<QuizResult | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  // 🧩 Fetch random quiz by type (VER, ANA, etc.)
+  // // 🧩 Fetch random quiz by type (VER, ANA, etc.)
+  // useEffect(() => {
+  //   async function fetchRandomQuiz() {
+  //     try {
+  //       setLoading(true);
+  //       const res = await fetch(`${API_BASE_URL}/quizzes/random/?type=${type}`);
+  //       const data = await res.json();
+
+  //       if (!res.ok) {
+  //         setError(data.error || "Failed to load random quiz");
+  //         return;
+  //       }
+
+  //       // ✅ Format to match consistent structure
+  //       const formatted = {
+  //         ...data,
+  //         passages: data.passage ? [data.passage] : [],
+  //         datasets: [],
+  //       };
+
+  //       setQuiz(formatted);
+
+  //       // Store question IDs for submission later
+  //       const visibleIds = [
+  //         ...(data.questions?.map((q: any) => q.id) || []),
+  //         ...(data.passage?.questions?.map((q: any) => q.id) || []),
+  //       ];
+  //       sessionStorage.setItem(
+  //         "visible_question_ids",
+  //         JSON.stringify(visibleIds)
+  //       );
+  //     } catch (err) {
+  //       console.error("Error fetching random quiz:", err);
+  //       setError("Unexpected error occurred while loading quiz.");
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   }
+
+  //   fetchRandomQuiz();
+  // }, [type]);
+
   useEffect(() => {
     async function fetchRandomQuiz() {
       try {
         setLoading(true);
+        setError(null);
+
         const res = await fetch(`${API_BASE_URL}/quizzes/random/?type=${type}`);
         const data = await res.json();
 
@@ -74,20 +126,24 @@ export default function RandomQuizTypePage() {
           return;
         }
 
-        // ✅ Format to match consistent structure
+        // Format quiz data to include passages and datasets
         const formatted = {
           ...data,
           passages: data.passage ? [data.passage] : [],
-          datasets: [],
+          datasets: data.datasets || [],
         };
 
         setQuiz(formatted);
 
-        // Store question IDs for submission later
-        const visibleIds = [
+        // Collect visible question IDs (standalone + passages + datasets)
+        const visibleIds: number[] = [
           ...(data.questions?.map((q: any) => q.id) || []),
           ...(data.passage?.questions?.map((q: any) => q.id) || []),
+          ...(data.datasets?.flatMap((ds: any) =>
+            ds.questions.map((q: any) => q.id)
+          ) || []),
         ];
+
         sessionStorage.setItem(
           "visible_question_ids",
           JSON.stringify(visibleIds)
@@ -287,6 +343,51 @@ export default function RandomQuizTypePage() {
                 </div>
               </div>
             )}
+            {/* Dataset Section */}
+            {quiz.datasets?.map((dataset, dIndex) => (
+              <div key={dataset.id} className="mt-10">
+                <div className="glass-card p-6 rounded-2xl border border-white/20">
+                  <h2 className="text-2xl font-semibold text-[var(--accent)] mb-3">
+                    Dataset: {dataset.title}
+                  </h2>
+                  {dataset.image && (
+                    <img
+                      src={dataset.image}
+                      alt={dataset.title}
+                      className="mb-4 max-w-full rounded-lg"
+                    />
+                  )}
+                  {dataset.questions.map((q, i) => (
+                    <div key={q.id} className="mt-6">
+                      <div className="flex justify-end">
+                        <span className="px-3 py-1 text-xs font-medium bg-indigo-100 text-indigo-700 rounded-full">
+                          {q.quiz_name}
+                        </span>
+                      </div>
+                      <h3 className="font-semibold mb-2">
+                        {i + 1}. {q.text}
+                      </h3>
+                      <ul className="space-y-3">
+                        {q.choices.map((c) => (
+                          <li key={c.id}>
+                            <div
+                              onClick={() => handleSelect(q.id, c.id)}
+                              className={`cursor-pointer px-4 py-3 rounded-xl transition-all duration-200 border flex justify-between items-center ${
+                                answers[q.id] === c.id
+                                  ? "bg-[var(--accent)]/20 border-[var(--accent)] text-[var(--accent)] font-semibold scale-[1.02] shadow-md"
+                                  : "border-white/20 hover:border-[var(--accent)]/30 hover:bg-[var(--accent)]/10"
+                              }`}
+                            >
+                              <span>{c.text}</span>
+                            </div>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
 
             {/* Submit */}
             <div className="flex justify-center mt-8">

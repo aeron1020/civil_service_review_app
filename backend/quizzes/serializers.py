@@ -34,21 +34,91 @@ class PassageSerializer(serializers.ModelSerializer):
         model = Passage
         fields = ['id', 'title', 'text', 'questions']
 
+# class DataSetSerializer(serializers.ModelSerializer):
+#     questions = QuestionSerializer(many=True, read_only=True)
+
+#     class Meta:
+#         model = DataSet
+#         fields = ['id', 'title', 'description', 'image', 'questions']
+
+#     def get_questions(self, obj):
+#         questions = obj.questions.all()  # related_name='questions' in Question model (we’ll add next)
+#         return QuestionSerializer(questions, many=True).data
+
 class DataSetSerializer(serializers.ModelSerializer):
     questions = QuestionSerializer(many=True, read_only=True)
+    image = serializers.SerializerMethodField()  # use a method to ensure full URL
 
     class Meta:
         model = DataSet
         fields = ['id', 'title', 'description', 'image', 'questions']
 
-    def get_questions(self, obj):
-        questions = obj.questions.all()  # related_name='questions' in Question model (we’ll add next)
-        return QuestionSerializer(questions, many=True).data
+    def get_image(self, obj):
+        """Return full absolute URL for the image, or None if no image."""
+        request = self.context.get('request')
+        if obj.image:
+            return request.build_absolute_uri(obj.image.url) if request else obj.image.url
+        return None
 
+
+# class QuizSerializer(serializers.ModelSerializer):
+#     passages = PassageSerializer(many=True, read_only=True)
+#     datasets = DataSetSerializer(many=True, read_only=True)
+#     questions = serializers.SerializerMethodField()
+#     total_questions = serializers.SerializerMethodField()
+
+#     class Meta:
+#         model = Quiz
+#         fields = [
+#             'id',
+#             'title',
+#             'description',
+#             'quiz_type',
+#             'time_limit',
+#             'passages',
+#             'datasets',
+#             'is_random',
+#             'questions',
+#             'total_questions',
+#         ]
+    
+
+#     def get_questions(self, obj):
+#         """Return only the sampled/randomized questions if present in context."""
+#         sampled_questions = self.context.get('sampled_questions')
+#         if sampled_questions:
+#             return QuestionSerializer(sampled_questions, many=True).data
+#         return QuestionSerializer(obj.questions.all(), many=True).data
+
+#     def get_total_questions(self, obj):
+#         """Return the count of randomized questions actually included."""
+#         sampled_questions = self.context.get('sampled_questions', [])
+#         return len(sampled_questions)
+
+#     def to_representation(self, instance):
+#         """Ensure the serializer uses randomized versions for questions and passages."""
+#         data = super().to_representation(instance)
+
+#         # Use randomized questions if provided in context
+#         sampled_questions = self.context.get('sampled_questions')
+#         if sampled_questions:
+#             data['questions'] = QuestionSerializer(sampled_questions, many=True).data
+
+#         # Use randomized passages if available in context
+#         randomized_passages = self.context.get('randomized_passages')
+#         if randomized_passages:
+#             data['passages'] = PassageSerializer(randomized_passages, many=True).data
+
+#         # Use randomized datasets if available in context (for Analytical)
+#         randomized_datasets = self.context.get('randomized_datasets')
+#         if randomized_datasets:
+#             data['datasets'] = DataSetSerializer(randomized_datasets, many=True).data
+
+#         return data
 
 class QuizSerializer(serializers.ModelSerializer):
     passages = PassageSerializer(many=True, read_only=True)
-    datasets = DataSetSerializer(many=True, read_only=True)
+    datasets = serializers.SerializerMethodField()  # <-- changed to method field
     questions = serializers.SerializerMethodField()
     total_questions = serializers.SerializerMethodField()
 
@@ -66,7 +136,15 @@ class QuizSerializer(serializers.ModelSerializer):
             'questions',
             'total_questions',
         ]
-    
+
+    def get_datasets(self, obj):
+        """Return datasets with context to properly generate image URLs."""
+        # Pass the request context to DataSetSerializer so image URLs are absolute
+        return DataSetSerializer(
+            obj.datasets.all(),
+            many=True,
+            context=self.context
+        ).data
 
     def get_questions(self, obj):
         """Return only the sampled/randomized questions if present in context."""
@@ -81,7 +159,7 @@ class QuizSerializer(serializers.ModelSerializer):
         return len(sampled_questions)
 
     def to_representation(self, instance):
-        """Ensure the serializer uses randomized versions for questions and passages."""
+        """Ensure the serializer uses randomized versions for questions, passages, datasets."""
         data = super().to_representation(instance)
 
         # Use randomized questions if provided in context
@@ -92,14 +170,15 @@ class QuizSerializer(serializers.ModelSerializer):
         # Use randomized passages if available in context
         randomized_passages = self.context.get('randomized_passages')
         if randomized_passages:
-            data['passages'] = PassageSerializer(randomized_passages, many=True).data
+            data['passages'] = PassageSerializer(randomized_passages, many=True, context=self.context).data
 
-        # Use randomized datasets if available in context (for Analytical)
+        # Use randomized datasets if available in context
         randomized_datasets = self.context.get('randomized_datasets')
         if randomized_datasets:
-            data['datasets'] = DataSetSerializer(randomized_datasets, many=True).data
+            data['datasets'] = DataSetSerializer(randomized_datasets, many=True, context=self.context).data
 
         return data
+
 
     
 

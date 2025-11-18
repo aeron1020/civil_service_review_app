@@ -1,0 +1,252 @@
+[
+  {
+    "text": "What number should come next in the series: 2, 5, 11, 23, 47, ?",
+    "explanation": "Each term is created by doubling the previous number and subtracting 1. 2×2−1=3 (but the series uses +3 instead). Checking again:\n5 = 2×2 +1\n11 = 5×2 +1\n23 = 11×2 +1\n47 = 23×2 +1\nSo rule: multiply by 2 then add 1. Next = 47×2 + 1 = 95.",
+    "choices": [
+      { "text": "93", "is_correct": false },
+      { "text": "95", "is_correct": true },
+      { "text": "97", "is_correct": false },
+      { "text": "99", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next term: 7, 14, 28, 56, ?",
+    "explanation": "Each number is doubled. 7×2=14, 14×2=28, 28×2=56. Next = 56×2 = 112.",
+    "choices": [
+      { "text": "98", "is_correct": false },
+      { "text": "112", "is_correct": true },
+      { "text": "128", "is_correct": false },
+      { "text": "156", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the next number in the sequence: 3, 6, 12, 24, 48, ?",
+    "explanation": "This is a doubling pattern: n×2. Next = 48×2 = 96.",
+    "choices": [
+      { "text": "72", "is_correct": false },
+      { "text": "90", "is_correct": false },
+      { "text": "96", "is_correct": true },
+      { "text": "108", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the missing term: 4, 9, 19, 39, 79, ?",
+    "explanation": "Pattern: multiply by 2 then add 1. 4×2+1=9; 9×2+1=19; 19×2+1=39; 39×2+1=79. Next = 79×2+1 = 159.",
+    "choices": [
+      { "text": "157", "is_correct": false },
+      { "text": "159", "is_correct": true },
+      { "text": "161", "is_correct": false },
+      { "text": "163", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What number comes next: 1, 4, 9, 16, 25, ?",
+    "explanation": "Perfect squares: 1², 2², 3², 4², 5². Next = 6² = 36.",
+    "choices": [
+      { "text": "30", "is_correct": false },
+      { "text": "32", "is_correct": false },
+      { "text": "36", "is_correct": true },
+      { "text": "40", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next term: 2, 6, 12, 20, 30, ?",
+    "explanation": "Differences: +4, +6, +8, +10. Pattern: even numbers increasing by 2. Next difference = +12. So next = 30 + 12 = 42.",
+    "choices": [
+      { "text": "40", "is_correct": false },
+      { "text": "42", "is_correct": true },
+      { "text": "44", "is_correct": false },
+      { "text": "46", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the next number: 5, 10, 20, 40, ?",
+    "explanation": "Each term doubles the previous one. Next = 40 × 2 = 80.",
+    "choices": [
+      { "text": "60", "is_correct": false },
+      { "text": "70", "is_correct": false },
+      { "text": "80", "is_correct": true },
+      { "text": "90", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Complete the series: 11, 13, 17, 19, 23, ?",
+    "explanation": "This is a sequence of prime numbers. After 23, the next prime is 29.",
+    "choices": [
+      { "text": "25", "is_correct": false },
+      { "text": "27", "is_correct": false },
+      { "text": "29", "is_correct": true },
+      { "text": "31", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next term: 8, 16, 32, 64, ?",
+    "explanation": "Each number doubles. Next = 64 × 2 = 128.",
+    "choices": [
+      { "text": "96", "is_correct": false },
+      { "text": "112", "is_correct": false },
+      { "text": "128", "is_correct": true },
+      { "text": "144", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Complete the pattern: 9, 18, 36, 72, 144, ?",
+    "explanation": "Multiplying by 2. Next = 144 × 2 = 288.",
+    "choices": [
+      { "text": "240", "is_correct": false },
+      { "text": "260", "is_correct": false },
+      { "text": "288", "is_correct": true },
+      { "text": "300", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next number: 3, 9, 27, 81, ?",
+    "explanation": "A ×3 pattern. Next = 81×3 = 243.",
+    "choices": [
+      { "text": "162", "is_correct": false },
+      { "text": "200", "is_correct": false },
+      { "text": "243", "is_correct": true },
+      { "text": "260", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Next number in sequence: 14, 28, 56, 112, ?",
+    "explanation": "Doubling sequence. Next = 112×2 = 224.",
+    "choices": [
+      { "text": "210", "is_correct": false },
+      { "text": "224", "is_correct": true },
+      { "text": "240", "is_correct": false },
+      { "text": "250", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Complete the series: 1, 3, 7, 15, 31, ?",
+    "explanation": "Pattern: (previous ×2) +1. Next = 31×2 +1 = 63.",
+    "choices": [
+      { "text": "61", "is_correct": false },
+      { "text": "63", "is_correct": true },
+      { "text": "65", "is_correct": false },
+      { "text": "67", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the missing term: 10, 20, 40, 80, ?",
+    "explanation": "Each term doubles. Next = 80×2 = 160.",
+    "choices": [
+      { "text": "140", "is_correct": false },
+      { "text": "150", "is_correct": false },
+      { "text": "160", "is_correct": true },
+      { "text": "170", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Next number: 13, 18, 23, 28, 33, ?",
+    "explanation": "Constant difference of +5. Next = 33 + 5 = 38.",
+    "choices": [
+      { "text": "35", "is_correct": false },
+      { "text": "36", "is_correct": false },
+      { "text": "38", "is_correct": true },
+      { "text": "40", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What comes next: 4, 12, 36, 108, ?",
+    "explanation": "Multiply by 3. Next = 108 × 3 = 324.",
+    "choices": [
+      { "text": "300", "is_correct": false },
+      { "text": "320", "is_correct": false },
+      { "text": "324", "is_correct": true },
+      { "text": "330", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Next term in pattern: 6, 12, 24, 48, 96, ?",
+    "explanation": "A doubling pattern. Next = 96×2 = 192.",
+    "choices": [
+      { "text": "180", "is_correct": false },
+      { "text": "192", "is_correct": true },
+      { "text": "200", "is_correct": false },
+      { "text": "210", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next number: 21, 23, 27, 35, 51, ?",
+    "explanation": "Differences: +2, +4, +8, +16 → doubling differences. Next difference = 32. So 51 + 32 = 83.",
+    "choices": [
+      { "text": "79", "is_correct": false },
+      { "text": "83", "is_correct": true },
+      { "text": "85", "is_correct": false },
+      { "text": "87", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Complete the sequence: 2, 3, 5, 8, 12, ?",
+    "explanation": "Increasing increments: +1, +2, +3, +4. Next = +5 → 12 + 5 = 17.",
+    "choices": [
+      { "text": "16", "is_correct": false },
+      { "text": "17", "is_correct": true },
+      { "text": "18", "is_correct": false },
+      { "text": "19", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Next term: 50, 45, 40, 35, ?",
+    "explanation": "Subtracting 5 each time. Next = 35 − 5 = 30.",
+    "choices": [
+      { "text": "25", "is_correct": false },
+      { "text": "28", "is_correct": false },
+      { "text": "30", "is_correct": true },
+      { "text": "32", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next number: 3, 5, 9, 17, 33, ?",
+    "explanation": "Pattern: multiply by 2 then subtract 1. Next = 33×2 −1 = 65.",
+    "choices": [
+      { "text": "63", "is_correct": false },
+      { "text": "65", "is_correct": true },
+      { "text": "67", "is_correct": false },
+      { "text": "69", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What number comes next: 1, 2, 6, 24, 120, ?",
+    "explanation": "Factorial sequence: 1!, 2!, 3!, 4!, 5!. Next = 6! = 720.",
+    "choices": [
+      { "text": "240", "is_correct": false },
+      { "text": "480", "is_correct": false },
+      { "text": "720", "is_correct": true },
+      { "text": "840", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Complete the series: 100, 90, 81, 73, ?",
+    "explanation": "Differences: −10, −9, −8. Following the pattern subtracting one less each time: next difference = −7. So 73 − 7 = 66.",
+    "choices": [
+      { "text": "65", "is_correct": false },
+      { "text": "66", "is_correct": true },
+      { "text": "67", "is_correct": false },
+      { "text": "68", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next number: 12, 15, 21, 30, 42, ?",
+    "explanation": "Differences: +3, +6, +9, +12. Pattern: +3n. Next difference = +15. So next = 42 + 15 = 57.",
+    "choices": [
+      { "text": "54", "is_correct": false },
+      { "text": "57", "is_correct": true },
+      { "text": "60", "is_correct": false },
+      { "text": "63", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What comes next: 17, 20, 24, 29, 35, ?",
+    "explanation": "Differences: +3, +4, +5, +6 → increasing by 1. Next increment = +7. So 35 + 7 = 42.",
+    "choices": [
+      { "text": "40", "is_correct": false },
+      { "text": "41", "is_correct": false },
+      { "text": "42", "is_correct": true },
+      { "text": "44", "is_correct": false }
+    ]
+  }
+]

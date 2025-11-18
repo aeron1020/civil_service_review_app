@@ -1,0 +1,280 @@
+[
+  {
+    "text": "Which sentence is grammatically correct?",
+    "explanation": "‘Neither of the solutions is effective’ uses the correct singular verb with ‘neither’.",
+    "choices": [
+      {
+        "text": "Neither of the solutions are effective.",
+        "is_correct": false
+      },
+      { "text": "Neither of the solutions is effective.", "is_correct": true },
+      { "text": "Neither of the solution is effective.", "is_correct": false },
+      { "text": "Neither solutions is effective.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct form to complete the sentence: She ____ to the meeting every Monday.",
+    "explanation": "‘Goes’ is the correct simple present form.",
+    "choices": [
+      { "text": "go", "is_correct": false },
+      { "text": "goes", "is_correct": true },
+      { "text": "going", "is_correct": false },
+      { "text": "gone", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct sentence.",
+    "explanation": "‘Each participant must submit his or her form’ uses correct agreement.",
+    "choices": [
+      {
+        "text": "Each participant must submit their form.",
+        "is_correct": false
+      },
+      {
+        "text": "Each participant must submit his or her form.",
+        "is_correct": true
+      },
+      {
+        "text": "Each participants must submit their form.",
+        "is_correct": false
+      },
+      {
+        "text": "Each of the participant must submit their form.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Complete the sentence: The committee ____ meeting today.",
+    "explanation": "‘Is’ is used for groups acting as a unit.",
+    "choices": [
+      { "text": "are", "is_correct": false },
+      { "text": "is", "is_correct": true },
+      { "text": "were", "is_correct": false },
+      { "text": "be", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following is correctly punctuated?",
+    "explanation": "Comma after introductory phrase is correct.",
+    "choices": [
+      { "text": "After the meeting we went home.", "is_correct": false },
+      { "text": "After the meeting, we went home.", "is_correct": true },
+      { "text": "After, the meeting we went home.", "is_correct": false },
+      { "text": "After the meeting we, went home.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct word: The manager gave ____ employees a bonus.",
+    "explanation": "‘Their’ is the correct plural possessive.",
+    "choices": [
+      { "text": "there", "is_correct": false },
+      { "text": "their", "is_correct": true },
+      { "text": "they're", "is_correct": false },
+      { "text": "theirs", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which word best completes the sentence: She sings ____ than her sister.",
+    "explanation": "Comparative form is ‘better’.",
+    "choices": [
+      { "text": "good", "is_correct": false },
+      { "text": "better", "is_correct": true },
+      { "text": "best", "is_correct": false },
+      { "text": "more good", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct tag question: He is your teacher, ____?",
+    "explanation": "Positive statement → negative tag.",
+    "choices": [
+      { "text": "is he", "is_correct": false },
+      { "text": "isn't he", "is_correct": true },
+      { "text": "aren't he", "is_correct": false },
+      { "text": "doesn't he", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Complete the sentence: She arrived early ____ finish her report.",
+    "explanation": "Purpose = ‘to’.",
+    "choices": [
+      { "text": "to", "is_correct": true },
+      { "text": "for", "is_correct": false },
+      { "text": "so", "is_correct": false },
+      { "text": "and", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence is correct?",
+    "explanation": "Parallel structure needed: cleaned, cooked, and washed.",
+    "choices": [
+      {
+        "text": "She cleaned the room, cooked dinner, and was washing the dishes.",
+        "is_correct": false
+      },
+      {
+        "text": "She cleaned the room, cooked dinner, and washed the dishes.",
+        "is_correct": true
+      },
+      {
+        "text": "She cleaned the room, cooking dinner, and washed the dishes.",
+        "is_correct": false
+      },
+      {
+        "text": "She cleaning the room, cooked dinner, and washed dishes.",
+        "is_correct": false
+      }
+    ]
+  },
+
+  {
+    "text": "Choose the correct verb: Either Anna or her sisters ____ going.",
+    "explanation": "Verb agrees with the nearer subject: sisters → are.",
+    "choices": [
+      { "text": "is", "is_correct": false },
+      { "text": "are", "is_correct": true },
+      { "text": "was", "is_correct": false },
+      { "text": "be", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct sentence.",
+    "explanation": "‘Whom’ is the object.",
+    "choices": [
+      { "text": "Whom did you speak to?", "is_correct": true },
+      { "text": "Who did you speak to?", "is_correct": false },
+      { "text": "Whom did you spoke to?", "is_correct": false },
+      { "text": "Who you speak to?", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Complete the sentence: The results of the study ____ surprising.",
+    "explanation": "‘Were’ agrees with plural ‘results’.",
+    "choices": [
+      { "text": "was", "is_correct": false },
+      { "text": "were", "is_correct": true },
+      { "text": "is", "is_correct": false },
+      { "text": "be", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which is correct?",
+    "explanation": "Uses correct subject–verb agreement.",
+    "choices": [
+      { "text": "Ten pesos are enough.", "is_correct": false },
+      { "text": "Ten pesos is enough.", "is_correct": true },
+      { "text": "Ten peso is enough.", "is_correct": false },
+      { "text": "Ten pesos be enough.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct past form: She ____ the letter yesterday.",
+    "explanation": "Simple past: wrote.",
+    "choices": [
+      { "text": "write", "is_correct": false },
+      { "text": "wrote", "is_correct": true },
+      { "text": "written", "is_correct": false },
+      { "text": "writing", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence is correctly written?",
+    "explanation": "Apostrophe correctly shows possession.",
+    "choices": [
+      { "text": "The childrens' playground is closed.", "is_correct": false },
+      { "text": "The children's playground is closed.", "is_correct": true },
+      { "text": "The childrens playground is closed.", "is_correct": false },
+      { "text": "The childrens's playground is closed.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct connector: She studied hard; ____ she passed the exam.",
+    "explanation": "‘Therefore’ shows logical result.",
+    "choices": [
+      { "text": "however", "is_correct": false },
+      { "text": "therefore", "is_correct": true },
+      { "text": "although", "is_correct": false },
+      { "text": "meanwhile", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence uses the correct verb tense?",
+    "explanation": "Present perfect for an experience up to now.",
+    "choices": [
+      { "text": "I have saw that movie.", "is_correct": false },
+      { "text": "I have seen that movie.", "is_correct": true },
+      { "text": "I seen that movie.", "is_correct": false },
+      { "text": "I have see that movie.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct article: She adopted ____ unique idea.",
+    "explanation": "‘A’ is used before consonant sound ‘yoo’.",
+    "choices": [
+      { "text": "an", "is_correct": false },
+      { "text": "a", "is_correct": true },
+      { "text": "the", "is_correct": false },
+      { "text": "none", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Complete the sentence: He is the person ____ helped me.",
+    "explanation": "‘Who’ is the subject of the clause.",
+    "choices": [
+      { "text": "whom", "is_correct": false },
+      { "text": "who", "is_correct": true },
+      { "text": "whose", "is_correct": false },
+      { "text": "that whom", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence is correct?",
+    "explanation": "Correct placement of adverb.",
+    "choices": [
+      { "text": "She quickly finished the work.", "is_correct": true },
+      { "text": "She finished quickly the work.", "is_correct": false },
+      { "text": "Quickly she finished the work the.", "is_correct": false },
+      { "text": "She the work quickly finished.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct pronoun: Everyone must bring ____ own lunch.",
+    "explanation": "‘His or her’ agrees with singular ‘everyone’.",
+    "choices": [
+      { "text": "their", "is_correct": false },
+      { "text": "his or her", "is_correct": true },
+      { "text": "they", "is_correct": false },
+      { "text": "them", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct form: The workers ____ already completed the project.",
+    "explanation": "Present perfect plural: have completed.",
+    "choices": [
+      { "text": "has", "is_correct": false },
+      { "text": "have", "is_correct": true },
+      { "text": "having", "is_correct": false },
+      { "text": "had been", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the grammatically correct sentence.",
+    "explanation": "Uses correct word order.",
+    "choices": [
+      { "text": "Rarely I go to the cinema.", "is_correct": false },
+      { "text": "I rarely go to the cinema.", "is_correct": true },
+      { "text": "I go rarely to the cinema.", "is_correct": false },
+      { "text": "To the cinema rarely I go.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Complete the sentence: Neither the students nor the teacher ____ present.",
+    "explanation": "Verb agrees with the nearest subject: teacher → is.",
+    "choices": [
+      { "text": "are", "is_correct": false },
+      { "text": "is", "is_correct": true },
+      { "text": "were", "is_correct": false },
+      { "text": "be", "is_correct": false }
+    ]
+  }
+]

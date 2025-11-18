@@ -3,17 +3,20 @@ from django.core.management.base import BaseCommand
 from quizzes.models import Quiz, Question, Choice
 
 class Command(BaseCommand):
-    help = "Load Numerical Ability questions with choices"
+    help = "Load Basic Arithmetic questions with choices"
 
     def handle(self, *args, **kwargs):
-        quiz = Quiz.objects.filter(title="Numerical Ability").first()
+        # Step 1 — Fetch the quiz
+        quiz = Quiz.objects.filter(title="Basic Arithmetic").first()
         if not quiz:
-            self.stdout.write(self.style.ERROR("❌ Quiz 'Numerical Ability' not found!"))
+            self.stdout.write(self.style.ERROR("❌ Quiz 'Basic Arithmetic' not found!"))
             return
 
-        with open("numerical_questions.json", "r", encoding="utf-8") as f:
+        # Step 2 — Load JSON
+        with open("basic_arithmetic.json", "r", encoding="utf-8") as f:
             questions = json.load(f)
 
+        # Step 3 — Loop through questions and create them
         for q in questions:
             question, created = Question.objects.get_or_create(
                 quiz=quiz,
@@ -24,6 +27,7 @@ class Command(BaseCommand):
                 },
             )
 
+            # Step 4 — Add choices
             for choice in q["choices"]:
                 Choice.objects.get_or_create(
                     question=question,
@@ -31,4 +35,4 @@ class Command(BaseCommand):
                     defaults={"is_correct": choice["is_correct"]},
                 )
 
-        self.stdout.write(self.style.SUCCESS("✅ Numerical Ability questions loaded successfully!"))
+        self.stdout.write(self.style.SUCCESS("✅ Basic Arithmetic questions loaded successfully!"))

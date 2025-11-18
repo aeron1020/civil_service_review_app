@@ -2,22 +2,27 @@ import json
 from django.core.management.base import BaseCommand
 from quizzes.models import Quiz, Question, Choice
 
+
 class Command(BaseCommand):
-    help = "Load Verbal Ability questions with choices"
+    help = "Load Word Problems questions with choices into the Quiz model"
 
     def handle(self, *args, **kwargs):
-        quiz = Quiz.objects.filter(title="Verbal Ability").first()
+        # Find the correct quiz
+        quiz = Quiz.objects.filter(title="Word Problems").first()
+
         if not quiz:
-            self.stdout.write(self.style.ERROR("❌ Quiz 'Verbal Ability' not found!"))
+            self.stdout.write(self.style.ERROR("❌ Quiz 'Word Problems' not found!"))
             return
 
+        # Load JSON file
         try:
-            with open("verbal_questions.json", "r", encoding="utf-8") as f:
+            with open("word_problems.json", "r", encoding="utf-8") as f:
                 questions = json.load(f)
         except FileNotFoundError:
-            self.stdout.write(self.style.ERROR("❌ File 'verbal_questions.json' not found in project root!"))
+            self.stdout.write(self.style.ERROR("❌ File 'word_problems.json' not found!"))
             return
 
+        # Save questions
         for q in questions:
             question, created = Question.objects.get_or_create(
                 quiz=quiz,
@@ -28,6 +33,7 @@ class Command(BaseCommand):
                 },
             )
 
+            # Create choices
             for choice in q["choices"]:
                 Choice.objects.get_or_create(
                     question=question,
@@ -35,4 +41,7 @@ class Command(BaseCommand):
                     defaults={"is_correct": choice["is_correct"]},
                 )
 
-        self.stdout.write(self.style.SUCCESS("✅ Verbal Ability questions loaded successfully!"))
+            status = "Created" if created else "Already exists"
+            self.stdout.write(self.style.SUCCESS(f"✔ {status}: {q['text'][:50]}..."))
+
+        self.stdout.write(self.style.SUCCESS("✅ Word Problems loaded successfully!"))

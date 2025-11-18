@@ -1,42 +1,88 @@
 from django.core.management.base import BaseCommand
-from quizzes.models import Quiz, Question, Choice
-import random
+from quizzes.models import Quiz
 
 class Command(BaseCommand):
-    help = "Seeds the database with sample Civil Service quizzes and questions."
+    """
+    Seeds default Civil Service Exam (CSE) quiz categories and quizzes.
 
-    def handle(self, *args, **options):
-        Quiz.objects.all().delete()
-        self.stdout.write(self.style.WARNING("🧹 Cleared existing quizzes..."))
+    This script populates the database with:
+    - Quiz types (Numerical, Verbal, Analytical, Clerical, General Information)
+    - Predefined quizzes under each quiz type
 
-        quiz_data = [
-            ("Numerical Ability", "Basic math operations and problem solving", "NUM"),
-            ("Verbal Ability", "Grammar, vocabulary, and comprehension", "VER"),
-            ("Analytical Ability", "Logic, reasoning, and pattern recognition", "ANA"),
-            ("General Information", "Philippine laws, history, and current events", "GEN"),
-            ("Clerical Ability", "Office routines and document organization", "CLE"),
-        ]
+    Run:
+        python manage.py seed_quizzes
+    """
 
-        for title, desc, qtype in quiz_data:
-            quiz = Quiz.objects.create(
-                title=title,
-                description=desc,
-                quiz_type=qtype,
-                time_limit=random.choice([30, 45, 60]),
-            )
+    help = "Seed Civil Service Exam quizzes into the database."
 
-            for i in range(1, 6):  # create 5 sample questions
-                q = Question.objects.create(
-                    quiz=quiz,
-                    text=f"Sample Question {i} for {title}?",
-                    explanation="Explanation: This is just a sample.",
-                )
+    # Structured quiz data grouped by Quiz Type Code
+    QUIZ_STRUCTURE = {
+        "NUM": {
+            "Numerical Ability": [
+                ("Number Series", "Solve missing numbers based on patterns."),
+                ("Word Problems", "Apply arithmetic reasoning to real-life problems."),
+                ("Basic Arithmetic", "CSE-level operations and equations."),
+                ("Data Interpretation", "Interpret data from tables, charts, and graphs."),
+            ]
+        },
+        "VER": {
+            "Verbal Ability": [
+                ("Reading Comprehension", "Understand passages and answer related questions."),
+                ("Vocabulary Mastery", "Identify synonyms, antonyms, and word meanings."),
+                ("Grammar and Correct Usage", "Spot grammatical errors and improve sentences."),
+                ("Paragraph Organization", "Determine logical flow and correct sequence."),
+            ]
+        },
+        "ANA": {
+            "Analytical Ability": [
+                ("Logical Reasoning", "Solve logic-based scenarios and arguments."),
+                ("Pattern Analysis", "Analyze number, letter, and figure patterns."),
+                ("Critical Thinking", "Evaluate information and draw valid conclusions."),
+            ]
+        },
+        "CLE": {
+            "Clerical Ability": [
+                ("Filing and Coding", "Arrange information alphabetically and numerically."),
+                ("Clerical Operations", "Basic office operations and record handling."),
+                ("Attention to Detail", "Spot inaccuracies and inconsistencies."),
+            ]
+        },
+        "GEN": {
+            "General Information": [
+                ("Philippine Constitution", "Study key articles and citizen rights."),
+                ("Current Events", "National and international socio-political updates."),
+                ("History", "Important historical events and national heroes."),
+                ("Geography", "Philippine and world geographic facts."),
+            ]
+        },
+    }
 
-                for j in range(1, 4):  # create 3 choices per question
-                    Choice.objects.create(
-                        question=q,
-                        text=f"Choice {j} for Q{i}",
-                        is_correct=(j == 1),
+    def handle(self, *args, **kwargs):
+        """
+        Main execution method for seeding quizzes.
+        """
+        self.stdout.write(self.style.WARNING("Starting CSE Quiz Seeding..."))
+
+        for quiz_type_code, type_data in self.QUIZ_STRUCTURE.items():
+            for type_name, quizzes in type_data.items():
+
+                self.stdout.write(self.style.NOTICE(f"\nSeeding Quiz Type: {type_name} ({quiz_type_code})"))
+
+                for title, description in quizzes:
+
+                    quiz, created = Quiz.objects.get_or_create(
+                        title=title,
+                        quiz_type=quiz_type_code,
+                        defaults={
+                            "description": description,
+                            "time_limit": 20,
+                            "is_random": False,
+                        }
                     )
 
-        self.stdout.write(self.style.SUCCESS("✅ Successfully seeded sample quizzes!"))
+                    if created:
+                        self.stdout.write(self.style.SUCCESS(f"  ✓ Created: {title}"))
+                    else:
+                        self.stdout.write(self.style.WARNING(f"  • Already exists: {title}"))
+
+        self.stdout.write(self.style.SUCCESS("\nCSE quiz seeding complete! 🎉"))

@@ -1,0 +1,418 @@
+[
+  {
+    "text": "Arrange the sentences to form a coherent paragraph.\nA. The barangay began organizing volunteers for nightly patrols.\nB. Recently, reports of petty theft have increased in the community.\nC. These efforts aim to create a safer neighborhood for residents.\nD. In response, officials implemented additional safety measures.",
+    "explanation": "Correct order: B → D → A → C.",
+    "choices": [
+      { "text": "BDAC", "is_correct": true },
+      { "text": "DACB", "is_correct": false },
+      { "text": "ABDC", "is_correct": false },
+      { "text": "CBAD", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence is the best topic sentence for a paragraph about conserving water at home?",
+    "explanation": "The topic sentence should introduce the importance of water conservation.",
+    "choices": [
+      {
+        "text": "Conserving water at home is essential to reducing overall consumption.",
+        "is_correct": true
+      },
+      {
+        "text": "Some households wash their cars every weekend.",
+        "is_correct": false
+      },
+      { "text": "Water bills vary depending on usage.", "is_correct": false },
+      {
+        "text": "Many areas experience heavy rainfall during the rainy season.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence should logically come LAST in a paragraph explaining how to make hot chocolate?",
+    "explanation": "The final step is serving the drink.",
+    "choices": [
+      {
+        "text": "Heat the mixture while stirring continuously.",
+        "is_correct": false
+      },
+      {
+        "text": "Add cocoa powder and sugar into a pot of milk.",
+        "is_correct": false
+      },
+      {
+        "text": "Pour the hot chocolate into a mug and enjoy.",
+        "is_correct": true
+      },
+      { "text": "Gather all the necessary ingredients.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence does NOT belong in a paragraph about the benefits of volunteering?",
+    "explanation": "A statement about movie tickets is irrelevant to volunteering.",
+    "choices": [
+      {
+        "text": "Volunteering helps individuals develop new skills.",
+        "is_correct": false
+      },
+      {
+        "text": "It provides opportunities to meet new people.",
+        "is_correct": false
+      },
+      {
+        "text": "Some movie theaters offer discounted tickets on weekdays.",
+        "is_correct": true
+      },
+      {
+        "text": "Helping others can increase a person’s sense of purpose.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Arrange the sentences to create a well-organized paragraph.\nA. First, stretch your muscles before starting any activity.\nB. Staying physically active is important for maintaining good health.\nC. Finally, cool down with light movements once finished.\nD. After warming up, proceed with your main workout routine.",
+    "explanation": "Correct order: B → A → D → C.",
+    "choices": [
+      { "text": "BADC", "is_correct": true },
+      { "text": "ADBC", "is_correct": false },
+      { "text": "BDAC", "is_correct": false },
+      { "text": "CABD", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence is the best concluding sentence for a paragraph about proper waste segregation?",
+    "explanation": "The conclusion should emphasize the overall benefit.",
+    "choices": [
+      {
+        "text": "Proper waste segregation helps protect the environment and public health.",
+        "is_correct": true
+      },
+      {
+        "text": "Some households use different colored trash bins.",
+        "is_correct": false
+      },
+      {
+        "text": "Many people generate large amounts of garbage daily.",
+        "is_correct": false
+      },
+      { "text": "Not all waste is biodegradable.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Arrange the sentences in the most logical order.\nA. These devices have made communication faster and more convenient.\nB. Mobile phones have become essential tools in everyday life.\nC. Many people use them for messaging, calling, and online activities.\nD. As a result, society has become more digitally connected.",
+    "explanation": "Correct order: B → C → A → D.",
+    "choices": [
+      { "text": "BCAD", "is_correct": true },
+      { "text": "CBAD", "is_correct": false },
+      { "text": "ACBD", "is_correct": false },
+      { "text": "BDAC", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence does NOT belong in a paragraph describing the steps to renew an ID?",
+    "explanation": "Going to the grocery store is unrelated to renewing an ID.",
+    "choices": [
+      {
+        "text": "Bring all necessary documents to the renewal center.",
+        "is_correct": false
+      },
+      { "text": "Fill out the renewal form completely.", "is_correct": false },
+      {
+        "text": "Go to the grocery store to buy supplies.",
+        "is_correct": true
+      },
+      { "text": "Pay the required renewal fee.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence is the best topic sentence for a paragraph about healthy eating habits?",
+    "explanation": "A topic sentence should introduce healthy eating generally.",
+    "choices": [
+      {
+        "text": "Healthy eating habits play a vital role in maintaining overall wellness.",
+        "is_correct": true
+      },
+      { "text": "Many people enjoy eating fast food.", "is_correct": false },
+      {
+        "text": "Some restaurants offer vegetarian meals.",
+        "is_correct": false
+      },
+      { "text": "Food prices vary per location.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Arrange the sentences to form a logical paragraph.\nA. Many students struggle to balance schoolwork and leisure activities.\nB. Others use planners and calendars to organize their schedule.\nC. To manage their time better, some students create daily task lists.\nD. Developing these habits helps them achieve academic success.",
+    "explanation": "Correct order: A → C → B → D.",
+    "choices": [
+      { "text": "ACBD", "is_correct": true },
+      { "text": "BCAD", "is_correct": false },
+      { "text": "CABD", "is_correct": false },
+      { "text": "ABDC", "is_correct": false }
+    ]
+  },
+
+  {
+    "text": "Which sentence should come FIRST in a paragraph explaining how to submit an online form?",
+    "explanation": "First step is accessing the correct website.",
+    "choices": [
+      {
+        "text": "Click the submit button and wait for confirmation.",
+        "is_correct": false
+      },
+      {
+        "text": "Fill in all the required fields in the form.",
+        "is_correct": false
+      },
+      {
+        "text": "Visit the website where the form is located.",
+        "is_correct": true
+      },
+      { "text": "Upload the necessary documents.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence should logically come LAST in a paragraph about cleaning a room?",
+    "explanation": "The final step is disposing of the collected trash.",
+    "choices": [
+      {
+        "text": "Organize items and return them to their proper places.",
+        "is_correct": false
+      },
+      { "text": "Sweep and mop the floor thoroughly.", "is_correct": false },
+      {
+        "text": "Throw away all the trash you've collected.",
+        "is_correct": true
+      },
+      {
+        "text": "Gather all the materials needed for cleaning.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence does NOT belong in a paragraph about the history of transportation?",
+    "explanation": "A sentence about baking bread is irrelevant.",
+    "choices": [
+      {
+        "text": "Early vehicles were pulled by animals such as horses.",
+        "is_correct": false
+      },
+      {
+        "text": "The invention of the steam engine revolutionized travel.",
+        "is_correct": false
+      },
+      {
+        "text": "Bread is usually baked in an oven at high temperatures.",
+        "is_correct": true
+      },
+      {
+        "text": "Modern transportation includes cars, trains, and airplanes.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Arrange the sentences into a coherent paragraph.\nA. These plants help regulate the temperature inside the building.\nB. Green roofs are becoming popular in urban areas.\nC. They also absorb rainwater, reducing flood risks.\nD. As a result, cities benefit from improved environmental resilience.",
+    "explanation": "Correct order: B → A → C → D.",
+    "choices": [
+      { "text": "BACD", "is_correct": true },
+      { "text": "ABCD", "is_correct": false },
+      { "text": "BCDA", "is_correct": false },
+      { "text": "CBAD", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence is the best concluding sentence for a paragraph about maintaining online privacy?",
+    "explanation": "A concluding sentence should summarize the importance of protecting information.",
+    "choices": [
+      {
+        "text": "Therefore, practicing online privacy ensures personal information remains secure.",
+        "is_correct": true
+      },
+      {
+        "text": "Many websites require users to create accounts.",
+        "is_correct": false
+      },
+      {
+        "text": "Some users forget their passwords easily.",
+        "is_correct": false
+      },
+      {
+        "text": "Computers today run much faster than before.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence should come FIRST in a paragraph about preparing a travel itinerary?",
+    "explanation": "Planning starts with deciding your destination.",
+    "choices": [
+      {
+        "text": "Reserve accommodations and transportation.",
+        "is_correct": false
+      },
+      { "text": "Identify the places you want to visit.", "is_correct": false },
+      { "text": "Choose your travel destination.", "is_correct": true },
+      { "text": "List the activities you want to do.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence best serves as the topic sentence for a paragraph about digital literacy?",
+    "explanation": "Topic sentence must introduce understanding technology as the core idea.",
+    "choices": [
+      {
+        "text": "Digital literacy is essential for navigating modern technology effectively.",
+        "is_correct": true
+      },
+      {
+        "text": "Some people enjoy using social media daily.",
+        "is_correct": false
+      },
+      {
+        "text": "Many users forget to update their applications.",
+        "is_correct": false
+      },
+      {
+        "text": "Phones today are faster than older models.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Arrange the sentences to build a logical paragraph.\nA. This allows customers to buy products without leaving their homes.\nB. Online shopping has become increasingly popular.\nC. Delivery services then bring the purchased items to their doorsteps.\nD. Customers can browse items and place orders through websites.",
+    "explanation": "Correct order: B → D → A → C.",
+    "choices": [
+      { "text": "BDAC", "is_correct": true },
+      { "text": "DACB", "is_correct": false },
+      { "text": "ABCD", "is_correct": false },
+      { "text": "CBAD", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence does NOT belong in a paragraph about earthquake preparedness?",
+    "explanation": "A sentence about cooking rice is irrelevant.",
+    "choices": [
+      {
+        "text": "Prepare an emergency kit with essential supplies.",
+        "is_correct": false
+      },
+      {
+        "text": "Know the safe spots in your home where you can take cover.",
+        "is_correct": false
+      },
+      {
+        "text": "Rice cooks faster when soaked before boiling.",
+        "is_correct": true
+      },
+      {
+        "text": "Create a family emergency communication plan.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence should logically come LAST in a paragraph describing how to mail a letter?",
+    "explanation": "The final step is dropping the mail at the post office.",
+    "choices": [
+      {
+        "text": "Place the letter inside an envelope and seal it.",
+        "is_correct": false
+      },
+      {
+        "text": "Write the complete address of the recipient.",
+        "is_correct": false
+      },
+      {
+        "text": "Bring the letter to the post office and send it.",
+        "is_correct": true
+      },
+      { "text": "Attach the correct amount of postage.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Arrange the sentences into a clear and organized paragraph.\nA. Many communities rely on these crops for livelihood.\nB. Agriculture remains a major sector in the Philippine economy.\nC. Farmers grow rice, corn, coconuts, and other products.\nD. These crops are then distributed to different markets across the country.",
+    "explanation": "Correct order: B → C → A → D.",
+    "choices": [
+      { "text": "BCAD", "is_correct": true },
+      { "text": "CABD", "is_correct": false },
+      { "text": "ABCD", "is_correct": false },
+      { "text": "DCAB", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence is the best concluding sentence for a paragraph on studying regularly?",
+    "explanation": "Conclusion must summarize the value of consistency.",
+    "choices": [
+      {
+        "text": "Thus, consistent study habits lead to better learning and retention.",
+        "is_correct": true
+      },
+      {
+        "text": "Some students prefer studying at night.",
+        "is_correct": false
+      },
+      {
+        "text": "Exams are usually given at the end of the semester.",
+        "is_correct": false
+      },
+      {
+        "text": "Libraries provide a quiet place to read.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence should come FIRST in a paragraph about preparing for a typhoon?",
+    "explanation": "Preparation begins with monitoring weather updates.",
+    "choices": [
+      {
+        "text": "Stock up on food and emergency supplies.",
+        "is_correct": false
+      },
+      {
+        "text": "Charge flashlights, power banks, and radios.",
+        "is_correct": false
+      },
+      {
+        "text": "Stay updated with weather forecasts and advisories.",
+        "is_correct": true
+      },
+      {
+        "text": "Secure outdoor items that may be blown away.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence does NOT belong in a paragraph about road safety?",
+    "explanation": "A sentence about gardening is unrelated.",
+    "choices": [
+      {
+        "text": "Pedestrians must use designated crosswalks.",
+        "is_correct": false
+      },
+      {
+        "text": "Drivers should always follow traffic signs.",
+        "is_correct": false
+      },
+      {
+        "text": "Plants should be watered regularly to stay healthy.",
+        "is_correct": true
+      },
+      {
+        "text": "Wearing seatbelts reduces injury during accidents.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Arrange the sentences in the most coherent order.\nA. They use advanced tools to verify the accuracy of information.\nB. Researchers play a crucial role in generating reliable knowledge.\nC. They then share their findings through reports and publications.\nD. Their work helps society make informed decisions.",
+    "explanation": "Correct order: B → A → C → D.",
+    "choices": [
+      { "text": "BACD", "is_correct": true },
+      { "text": "ACBD", "is_correct": false },
+      { "text": "CBAD", "is_correct": false },
+      { "text": "BDAC", "is_correct": false }
+    ]
+  }
+]

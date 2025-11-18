@@ -1,0 +1,252 @@
+[
+  {
+    "text": "A store sold 240 notebooks in one day. If this is 40% of their total stock, how many notebooks did they originally have?",
+    "explanation": "If 240 represents 40%, then to find 100%, divide by 40% and multiply by 100. 240 ÷ 0.40 = 600. The key idea: a part divided by its percentage (in decimal form) gives the whole.",
+    "choices": [
+      { "text": "480", "is_correct": false },
+      { "text": "560", "is_correct": false },
+      { "text": "600", "is_correct": true },
+      { "text": "640", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A worker earns ₱850 per day. If he works 26 days a month, how much will he earn in 8 months?",
+    "explanation": "First find monthly earnings: 850 × 26 = 22,100. Multiply by 8 months: 22,100 × 8 = 176,800.",
+    "choices": [
+      { "text": "166,800", "is_correct": false },
+      { "text": "176,800", "is_correct": true },
+      { "text": "186,800", "is_correct": false },
+      { "text": "196,800", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A tank can hold 1,200 liters of water. If it is currently 35% full, how many liters of water are inside?",
+    "explanation": "Find 35% of 1200: 1200 × 0.35 = 420 liters. Multiply capacity by percentage in decimal.",
+    "choices": [
+      { "text": "350", "is_correct": false },
+      { "text": "420", "is_correct": true },
+      { "text": "450", "is_correct": false },
+      { "text": "480", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A shirt originally costs ₱750 but is sold with a 20% discount. What is the sale price?",
+    "explanation": "Compute discount: 750 × 0.20 = 150. Subtract from original price: 750 − 150 = 600.",
+    "choices": [
+      { "text": "580", "is_correct": false },
+      { "text": "600", "is_correct": true },
+      { "text": "620", "is_correct": false },
+      { "text": "650", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A jeepney can carry 18 passengers. If there are 254 people waiting, how many full trips are needed?",
+    "explanation": "Divide total passengers by capacity: 254 ÷ 18 = 14.11. Since the jeepney cannot make partial trips, round up to the next whole number: 15 trips.",
+    "choices": [
+      { "text": "13", "is_correct": false },
+      { "text": "14", "is_correct": false },
+      { "text": "15", "is_correct": true },
+      { "text": "16", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A recipe needs 3.5 cups of flour to make 14 cookies. How much flour is needed for 28 cookies?",
+    "explanation": "Double the cookies, double the ingredients. 3.5 × 2 = 7 cups. Or use proportion: (3.5 / 14) × 28 = 7.",
+    "choices": [
+      { "text": "6.5 cups", "is_correct": false },
+      { "text": "7 cups", "is_correct": true },
+      { "text": "7.5 cups", "is_correct": false },
+      { "text": "8 cups", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A bus travels 360 km in 6 hours. What is its average speed?",
+    "explanation": "Speed = Distance ÷ Time = 360 ÷ 6 = 60 km/h. Average speed means total distance over total time.",
+    "choices": [
+      { "text": "50 km/h", "is_correct": false },
+      { "text": "55 km/h", "is_correct": false },
+      { "text": "60 km/h", "is_correct": true },
+      { "text": "65 km/h", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A fruit vendor mixes 12 kg of mangoes at ₱80/kg with 8 kg at ₱100/kg. What is the average price per kilogram?",
+    "explanation": "Find total cost: (12×80)=960 and (8×100)=800. Total = 1760. Total weight = 20 kg. Average = 1760 ÷ 20 = 88.",
+    "choices": [
+      { "text": "₱84", "is_correct": false },
+      { "text": "₱86", "is_correct": false },
+      { "text": "₱88", "is_correct": true },
+      { "text": "₱90", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A man saves ₱1,500 every month. How much will he save in 2 years?",
+    "explanation": "2 years = 24 months. Multiply savings per month: 1500 × 24 = 36,000.",
+    "choices": [
+      { "text": "32,000", "is_correct": false },
+      { "text": "34,000", "is_correct": false },
+      { "text": "36,000", "is_correct": true },
+      { "text": "38,000", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A store buys a bicycle for ₱4,500 and sells it for ₱5,850. What is the percent profit?",
+    "explanation": "Profit = 5850 − 4500 = 1350. Percent profit = (1350 ÷ 4500) × 100 = 30%.",
+    "choices": [
+      { "text": "25%", "is_correct": false },
+      { "text": "28%", "is_correct": false },
+      { "text": "30%", "is_correct": true },
+      { "text": "32%", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A class has 48 students. If 3/4 of them passed, how many did not pass?",
+    "explanation": "3/4 passed → (3/4) × 48 = 36. Not passed = 48 − 36 = 12.",
+    "choices": [
+      { "text": "10", "is_correct": false },
+      { "text": "11", "is_correct": false },
+      { "text": "12", "is_correct": true },
+      { "text": "13", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Ana reads 18 pages per day. How many days will she need to finish a 270-page book?",
+    "explanation": "Divide total pages by pages per day: 270 ÷ 18 = 15 days.",
+    "choices": [
+      { "text": "12", "is_correct": false },
+      { "text": "14", "is_correct": false },
+      { "text": "15", "is_correct": true },
+      { "text": "16", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A bag contains 120 candies. If they are shared equally among 8 children, how many candies does each child get?",
+    "explanation": "Equal sharing means division. 120 ÷ 8 = 15 candies per child.",
+    "choices": [
+      { "text": "12", "is_correct": false },
+      { "text": "14", "is_correct": false },
+      { "text": "15", "is_correct": true },
+      { "text": "16", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A laptop originally priced at ₱30,000 is now selling for ₱27,000. What percent discount was given?",
+    "explanation": "Discount = 30000 − 27000 = 3000. Percentage = (3000 ÷ 30000) × 100 = 10%.",
+    "choices": [
+      { "text": "8%", "is_correct": false },
+      { "text": "9%", "is_correct": false },
+      { "text": "10%", "is_correct": true },
+      { "text": "12%", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A car uses 50 liters of fuel to travel 350 km. How many kilometers can it travel per liter?",
+    "explanation": "Compute km per liter: 350 ÷ 50 = 7 km per liter.",
+    "choices": [
+      { "text": "5 km/L", "is_correct": false },
+      { "text": "6 km/L", "is_correct": false },
+      { "text": "7 km/L", "is_correct": true },
+      { "text": "8 km/L", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A man bought 15 packs of rice at ₱42 each. If he paid with ₱1,000, how much change did he receive?",
+    "explanation": "Total cost: 15 × 42 = 630. Change: 1000 − 630 = 370.",
+    "choices": [
+      { "text": "350", "is_correct": false },
+      { "text": "360", "is_correct": false },
+      { "text": "370", "is_correct": true },
+      { "text": "380", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A man walks at 5 km/h. How long will it take him to walk 12.5 km?",
+    "explanation": "Time = Distance ÷ Speed = 12.5 ÷ 5 = 2.5 hours.",
+    "choices": [
+      { "text": "2 hours", "is_correct": false },
+      { "text": "2.5 hours", "is_correct": true },
+      { "text": "3 hours", "is_correct": false },
+      { "text": "3.5 hours", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A shirt that cost ₱520 is increased by 15% due to inflation. What is the new price?",
+    "explanation": "Increase amount = 520 × 0.15 = 78. New price = 520 + 78 = 598.",
+    "choices": [
+      { "text": "590", "is_correct": false },
+      { "text": "598", "is_correct": true },
+      { "text": "600", "is_correct": false },
+      { "text": "605", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A bookstore sold 180 books in the morning and 220 in the afternoon. If their target was 500 books for the day, how many short were they?",
+    "explanation": "Total sold: 180 + 220 = 400. Short by: 500 − 400 = 100 books.",
+    "choices": [
+      { "text": "80", "is_correct": false },
+      { "text": "90", "is_correct": false },
+      { "text": "100", "is_correct": true },
+      { "text": "120", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A man consumed 2/5 of a 750-mL juice bottle. How much juice did he drink?",
+    "explanation": "Multiply the whole by the fraction: (2/5) × 750 = 300 mL.",
+    "choices": [
+      { "text": "250 mL", "is_correct": false },
+      { "text": "300 mL", "is_correct": true },
+      { "text": "320 mL", "is_correct": false },
+      { "text": "350 mL", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A factory produces 3,600 boxes in 8 hours. How many boxes does it produce per hour?",
+    "explanation": "Divide total output by time: 3600 ÷ 8 = 450 boxes per hour.",
+    "choices": [
+      { "text": "400", "is_correct": false },
+      { "text": "420", "is_correct": false },
+      { "text": "450", "is_correct": true },
+      { "text": "480", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A man invested ₱12,000 and earned ₱1,800 profit. What is the profit rate?",
+    "explanation": "Profit rate = (1800 ÷ 12000) × 100 = 15%.",
+    "choices": [
+      { "text": "12%", "is_correct": false },
+      { "text": "14%", "is_correct": false },
+      { "text": "15%", "is_correct": true },
+      { "text": "18%", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A farmer harvested 825 mangoes. If he packs them in crates of 25 each, how many full crates can he make?",
+    "explanation": "Divide: 825 ÷ 25 = 33 crates exactly.",
+    "choices": [
+      { "text": "30", "is_correct": false },
+      { "text": "31", "is_correct": false },
+      { "text": "33", "is_correct": true },
+      { "text": "35", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A teacher distributed ₱1,200 equally among 24 students. How much did each student receive?",
+    "explanation": "1200 ÷ 24 = 50 pesos each.",
+    "choices": [
+      { "text": "45", "is_correct": false },
+      { "text": "48", "is_correct": false },
+      { "text": "50", "is_correct": true },
+      { "text": "55", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A cellphone battery is at 30% and its full capacity is 6000 mAh. How much battery is left?",
+    "explanation": "Find 30% of 6000: 6000 × 0.30 = 1800 mAh.",
+    "choices": [
+      { "text": "1600 mAh", "is_correct": false },
+      { "text": "1700 mAh", "is_correct": false },
+      { "text": "1800 mAh", "is_correct": true },
+      { "text": "1900 mAh", "is_correct": false }
+    ]
+  }
+]

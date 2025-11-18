@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'corsheaders',
 
     # Local apps
-    'users',
+    'users.apps.UsersConfig',
     'quizzes',
     'results',
 ]

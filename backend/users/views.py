@@ -55,3 +55,29 @@ class UserProfileView(APIView):
             "user": user_data,
             "quiz_results": quiz_data
         })
+    
+
+from .models import Profile
+
+class PremiumStatusView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        profile = Profile.objects.get(user=request.user)
+        return Response({
+            "is_premium": profile.check_premium_status(),
+            "premium_until": profile.premium_until
+        })
+
+
+class ActivatePremiumView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        profile = Profile.objects.get(user=request.user)
+        profile.activate_premium(days=30)  # 30-day subscription
+        return Response({
+            "message": "Premium activated!",
+            "is_premium": True,
+            "premium_until": profile.premium_until
+        })

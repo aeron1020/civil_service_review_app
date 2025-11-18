@@ -2,6 +2,7 @@ from rest_framework import serializers
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError as DjangoValidationError
 from django.contrib.auth.password_validation import validate_password
+from .models import Profile
 
 
 class RegisterSerializer(serializers.ModelSerializer):
@@ -53,6 +54,12 @@ class RegisterSerializer(serializers.ModelSerializer):
         return user
 
 class UserSerializer(serializers.ModelSerializer):
+    is_premium = serializers.SerializerMethodField()
+
     class Meta:
         model = User
-        fields = ['id', 'username', 'email']
+        fields = ['id', 'username', 'email', 'is_premium']
+
+    def get_is_premium(self, obj):
+        profile = Profile.objects.get(user=obj)
+        return profile.check_premium_status()

@@ -10,20 +10,17 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('quizzes', '0001_initial'),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Result',
+            name='Profile',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('score', models.FloatField(default=0)),
-                ('total_questions', models.IntegerField(default=0)),
-                ('date_taken', models.DateTimeField(auto_now_add=True)),
-                ('quiz', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, to='quizzes.quiz')),
-                ('user', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+                ('is_premium', models.BooleanField(default=False)),
+                ('premium_until', models.DateTimeField(blank=True, null=True)),
+                ('user', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
         ),
     ]

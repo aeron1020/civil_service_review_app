@@ -1,0 +1,242 @@
+[
+  {
+    "text": "What is 125 + 378?",
+    "explanation": "Add the numbers column by column: 5+8=13, write 3 carry 1; 2+7=9, plus 1=10, write 0 carry 1; 1+3=4 plus 1=5. Total = 503.",
+    "choices": [
+      { "text": "503", "is_correct": true },
+      { "text": "513", "is_correct": false },
+      { "text": "500", "is_correct": false },
+      { "text": "508", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is 840 − 275?",
+    "explanation": "Subtract digit by digit: 0−5 cannot, borrow 1 from 4 → 10−5=5, 3−7 cannot, borrow 1 from 8 → 13−7=6, 7−2=5. Total = 565.",
+    "choices": [
+      { "text": "565", "is_correct": true },
+      { "text": "575", "is_correct": false },
+      { "text": "585", "is_correct": false },
+      { "text": "595", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is 56 × 23?",
+    "explanation": "Use long multiplication: 56×3=168, 56×20=1120, add them: 1120+168=1288.",
+    "choices": [
+      { "text": "1288", "is_correct": true },
+      { "text": "1268", "is_correct": false },
+      { "text": "1308", "is_correct": false },
+      { "text": "1258", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is 945 ÷ 9?",
+    "explanation": "Divide step by step: 9 into 9=1, bring down 4 → 4 cannot divide 9, bring down 5 → 45 ÷ 9=5, answer=105.",
+    "choices": [
+      { "text": "105", "is_correct": true },
+      { "text": "115", "is_correct": false },
+      { "text": "95", "is_correct": false },
+      { "text": "110", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Simplify: 24 + 36 − 18",
+    "explanation": "Add first: 24+36=60, then subtract 18: 60−18=42.",
+    "choices": [
+      { "text": "42", "is_correct": true },
+      { "text": "46", "is_correct": false },
+      { "text": "48", "is_correct": false },
+      { "text": "44", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is 15 × 12?",
+    "explanation": "Multiply: 15×12 = 15×10 + 15×2 = 150 + 30 = 180.",
+    "choices": [
+      { "text": "180", "is_correct": true },
+      { "text": "175", "is_correct": false },
+      { "text": "185", "is_correct": false },
+      { "text": "190", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Divide 672 by 8",
+    "explanation": "8 into 6 cannot → 0, 8 into 67=8×8=64, remainder 3, bring down 2 → 32 ÷ 8=4, answer=84.",
+    "choices": [
+      { "text": "84", "is_correct": true },
+      { "text": "86", "is_correct": false },
+      { "text": "88", "is_correct": false },
+      { "text": "82", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the sum: 123 + 456 + 321",
+    "explanation": "Add step by step: 123+456=579, then 579+321=900.",
+    "choices": [
+      { "text": "900", "is_correct": true },
+      { "text": "890", "is_correct": false },
+      { "text": "910", "is_correct": false },
+      { "text": "905", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Simplify: 500 − 275 + 125",
+    "explanation": "Subtract first: 500−275=225, then add 125: 225+125=350.",
+    "choices": [
+      { "text": "350", "is_correct": true },
+      { "text": "360", "is_correct": false },
+      { "text": "340", "is_correct": false },
+      { "text": "355", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is 48 × 15?",
+    "explanation": "Multiply: 48×15 = 48×10 + 48×5 = 480 + 240 = 720.",
+    "choices": [
+      { "text": "720", "is_correct": true },
+      { "text": "730", "is_correct": false },
+      { "text": "710", "is_correct": false },
+      { "text": "700", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Divide 144 by 12",
+    "explanation": "12 × 12 = 144, so 144 ÷ 12 = 12.",
+    "choices": [
+      { "text": "12", "is_correct": true },
+      { "text": "11", "is_correct": false },
+      { "text": "13", "is_correct": false },
+      { "text": "14", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Simplify: 72 ÷ 8 + 15",
+    "explanation": "First divide: 72 ÷ 8 = 9, then add 15: 9 + 15 = 24.",
+    "choices": [
+      { "text": "24", "is_correct": true },
+      { "text": "23", "is_correct": false },
+      { "text": "25", "is_correct": false },
+      { "text": "26", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is 36 × 7?",
+    "explanation": "Multiply: 36×7 = 210 + 42 = 252. (Break 36 as 30+6: 30×7=210, 6×7=42, sum=252)",
+    "choices": [
+      { "text": "252", "is_correct": true },
+      { "text": "242", "is_correct": false },
+      { "text": "262", "is_correct": false },
+      { "text": "250", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Simplify: 600 − 245",
+    "explanation": "Subtract: 600−245. Units: 0−5 → borrow 1 from tens → 10−5=5. Tens: 9−4=5. Hundreds: 5−2=3. Total=355.",
+    "choices": [
+      { "text": "355", "is_correct": true },
+      { "text": "345", "is_correct": false },
+      { "text": "365", "is_correct": false },
+      { "text": "350", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is 81 ÷ 9?",
+    "explanation": "9 × 9 = 81, so 81 ÷ 9 = 9.",
+    "choices": [
+      { "text": "9", "is_correct": true },
+      { "text": "8", "is_correct": false },
+      { "text": "10", "is_correct": false },
+      { "text": "11", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the sum: 234 + 321",
+    "explanation": "Add step by step: 4+1=5, 3+2=5, 2+3=5, so total=555.",
+    "choices": [
+      { "text": "555", "is_correct": true },
+      { "text": "565", "is_correct": false },
+      { "text": "545", "is_correct": false },
+      { "text": "550", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is 64 × 6?",
+    "explanation": "Multiply: 64×6 = 60×6 + 4×6 = 360 + 24 = 384.",
+    "choices": [
+      { "text": "384", "is_correct": true },
+      { "text": "386", "is_correct": false },
+      { "text": "394", "is_correct": false },
+      { "text": "380", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Simplify: 480 ÷ 8",
+    "explanation": "Divide step by step: 480 ÷ 8 = 60.",
+    "choices": [
+      { "text": "60", "is_correct": true },
+      { "text": "58", "is_correct": false },
+      { "text": "62", "is_correct": false },
+      { "text": "64", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Simplify: 150 + 275 − 125",
+    "explanation": "Add first: 150+275=425, subtract 125: 425−125=300.",
+    "choices": [
+      { "text": "300", "is_correct": true },
+      { "text": "310", "is_correct": false },
+      { "text": "290", "is_correct": false },
+      { "text": "320", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is 45 × 9?",
+    "explanation": "Multiply: 45×9=40×9 + 5×9=360 + 45=405.",
+    "choices": [
+      { "text": "405", "is_correct": true },
+      { "text": "400", "is_correct": false },
+      { "text": "410", "is_correct": false },
+      { "text": "415", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Divide 540 by 12",
+    "explanation": "12 × 45 = 540, so 540 ÷ 12 = 45.",
+    "choices": [
+      { "text": "45", "is_correct": true },
+      { "text": "44", "is_correct": false },
+      { "text": "46", "is_correct": false },
+      { "text": "48", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Simplify: 35 + 48 − 27",
+    "explanation": "Add first: 35+48=83, then subtract 27: 83−27=56.",
+    "choices": [
+      { "text": "56", "is_correct": true },
+      { "text": "57", "is_correct": false },
+      { "text": "55", "is_correct": false },
+      { "text": "58", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is 72 × 5?",
+    "explanation": "Multiply: 72×5 = 70×5 + 2×5 = 350 + 10 = 360.",
+    "choices": [
+      { "text": "360", "is_correct": true },
+      { "text": "350", "is_correct": false },
+      { "text": "370", "is_correct": false },
+      { "text": "365", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Divide 900 by 25",
+    "explanation": "Divide step by step: 25 × 36 = 900, so 900 ÷ 25 = 36.",
+    "choices": [
+      { "text": "36", "is_correct": true },
+      { "text": "35", "is_correct": false },
+      { "text": "37", "is_correct": false },
+      { "text": "38", "is_correct": false }
+    ]
+  }
+]
