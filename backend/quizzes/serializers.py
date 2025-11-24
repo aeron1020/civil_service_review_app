@@ -16,13 +16,13 @@ class QuestionSerializer(serializers.ModelSerializer):
         fields = ['id', 'text', 'explanation', 'question_type', 'quiz_name', 'choices']
 
     def get_quiz_name(self, obj):
-        # Get the parent quiz title whether from quiz, passage, or dataset
-        if obj.quiz:
-            return obj.quiz.title
-        elif obj.passage:
-            return obj.passage.quiz.title
-        elif obj.dataset:
-            return obj.dataset.quiz.title
+        # Prefer direct attributes if present (select_related in view makes these cheap)
+        if getattr(obj, "quiz_id", None):
+            return getattr(obj.quiz, "title", "Unknown Quiz")
+        if getattr(obj, "passage_id", None) and getattr(obj, "passage", None):
+            return getattr(obj.passage.quiz, "title", "Unknown Quiz")
+        if getattr(obj, "dataset_id", None) and getattr(obj, "dataset", None):
+            return getattr(obj.dataset.quiz, "title", "Unknown Quiz")
         return "Unknown Quiz"
 
 

@@ -1,11 +1,15 @@
-import api from "./apiClient";
+import api, { extractError } from "./apiClient";
 
 /**
  * ✅ Login
  */
 export async function login(username: string, password: string) {
-  const res = await api.post("/token/", { username, password });
-  return res.data;
+  try {
+    const res = await api.post("/users/login/", { username, password });
+    return res.data;
+  } catch (err) {
+    throw new Error(extractError(err));
+  }
 }
 
 /**
@@ -16,11 +20,10 @@ export async function signup(username: string, password: string) {
     const res = await api.post("/users/register/", { username, password });
     return res.data;
   } catch (error: any) {
-    const data = error.response?.data || {};
+    const message = extractError(error);
     return {
-      error:
-        data?.username?.[0] || data?.password?.[0] || "Registration failed.",
-      errors: data,
+      error: message,
+      errors: error.response?.data || {},
     };
   }
 }
@@ -29,19 +32,34 @@ export async function signup(username: string, password: string) {
  * ✅ Submit Quiz
  */
 export async function submitQuiz(id: number, answers: any[]) {
-  const res = await api.post(`/quizzes/${id}/submit/`, { answers });
-  return res.data;
+  try {
+    const res = await api.post(`/quizzes/${id}/submit/`, { answers });
+    return res.data;
+  } catch (err) {
+    throw new Error(extractError(err));
+  }
 }
 
-//  * ✅ users profile
-
+/**
+ * ✅ users profile
+ */
 export async function getUserProfile() {
-  const res = await api.get("/users/profile/");
-  return res.data;
+  try {
+    const res = await api.get("/users/profile/");
+    return res.data;
+  } catch (err) {
+    throw new Error(extractError(err));
+  }
 }
 
-//  * ✅ users summary
+/**
+ * ✅ users summary
+ */
 export async function getUserSummary() {
-  const res = await api.get("/users/summary/");
-  return res.data;
+  try {
+    const res = await api.get("/users/summary/");
+    return res.data;
+  } catch (err) {
+    throw new Error(extractError(err));
+  }
 }

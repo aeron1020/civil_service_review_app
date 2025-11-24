@@ -478,7 +478,7 @@ class RandomizedQuizSubmitAPIView(APIView):
                 continue
 
         # Get only visible questions
-        questions = Question.objects.filter(id__in=visible_ids).prefetch_related("choices")
+        questions = Question.objects.filter(id__in=visible_ids).select_related('quiz', 'passage__quiz', 'dataset__quiz').prefetch_related('choices')
 
         for q in questions:
             selected_choice_id = answer_map.get(int(q.id))
