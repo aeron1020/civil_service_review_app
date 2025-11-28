@@ -57,7 +57,7 @@ export default function GoogleLoginButton() {
     <>
       <Script
         src="https://accounts.google.com/gsi/client"
-        strategy="afterInteractive"
+        strategy="beforeInteractive"
       />
       <div id="googleBtn"></div>
     </>

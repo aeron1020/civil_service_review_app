@@ -206,20 +206,91 @@ class QuizSubmissionAPIView(APIView):
                 # skip malformed entries
                 continue
 
+        # # 🧩 Step 3 — Identify which questions were shown to the user
+        # visible_question_ids = request.data.get("visible_questions", [])
+        # if visible_question_ids:
+        #     # ✅ Use IDs provided by frontend (most accurate)
+        #     # all_questions = list(Question.objects.filter(id__in=visible_question_ids))
+        #     # Fetch exactly the same order as the frontend and remove duplicates
+        #     question_map = {}
+        #     for qid in visible_question_ids:
+        #         try:
+        #             q = Question.objects.get(id=qid)
+        #             question_map[qid] = q
+        #         except Question.DoesNotExist:
+        #             continue
+
+        #     all_questions = list(question_map.values())
+
+        # else:
+        #     # ⚠️ Fallback to DB sampling (less accurate)
+        #     standalone_qs = quiz.questions.filter(passage__isnull=True, dataset__isnull=True).values_list("id", flat=True)
+        #     passage_qs = Question.objects.filter(passage__quiz=quiz).values_list("id", flat=True)
+        #     dataset_qs = Question.objects.filter(dataset__quiz=quiz).values_list("id", flat=True)
+        #     combined_ids = list(standalone_qs) + list(passage_qs) + list(dataset_qs)
+        #     # remove duplicates while preserving order
+        #     unique_ids = list(dict.fromkeys(combined_ids))
+        #     all_questions = list(Question.objects.filter(id__in=unique_ids)[:20])
+
+        # visible_question_ids = request.data.get("visible_questions", [])
+        # all_questions = []
+
+        # if visible_question_ids:
+        #     # Preserve order and remove duplicates
+        #     seen_ids = set()
+        #     questions_qs = Question.objects.filter(id__in=visible_question_ids).prefetch_related('choices')
+        #     question_map = {q.id: q for q in questions_qs}
+
+        #     for qid in visible_question_ids:
+        #         if qid in seen_ids:
+        #             continue
+        #         if qid in question_map:
+        #             all_questions.append(question_map[qid])
+        #             seen_ids.add(qid)
+        # else:
+        #     # Fallback for standalone / non-visible questions
+        #     standalone_qs = quiz.questions.filter(passage__isnull=True, dataset__isnull=True).values_list("id", flat=True)
+        #     passage_qs = Question.objects.filter(passage__quiz=quiz).values_list("id", flat=True)
+        #     dataset_qs = Question.objects.filter(dataset__quiz=quiz).values_list("id", flat=True)
+        #     combined_ids = list(standalone_qs) + list(passage_qs) + list(dataset_qs)
+        #     unique_ids = list(dict.fromkeys(combined_ids))
+        #     all_questions = list(Question.objects.filter(id__in=unique_ids)[:20])
+
         # 🧩 Step 3 — Identify which questions were shown to the user
         visible_question_ids = request.data.get("visible_questions", [])
         if visible_question_ids:
             # ✅ Use IDs provided by frontend (most accurate)
-            all_questions = list(Question.objects.filter(id__in=visible_question_ids))
+            # Convert to int and remove duplicates while preserving order
+            unique_visible_ids = list(dict.fromkeys(map(int, visible_question_ids)))
+            all_questions = list(Question.objects.filter(id__in=unique_visible_ids))
         else:
             # ⚠️ Fallback to DB sampling (less accurate)
             standalone_qs = quiz.questions.filter(passage__isnull=True, dataset__isnull=True).values_list("id", flat=True)
             passage_qs = Question.objects.filter(passage__quiz=quiz).values_list("id", flat=True)
             dataset_qs = Question.objects.filter(dataset__quiz=quiz).values_list("id", flat=True)
+
+            # Combine all question IDs and remove duplicates
             combined_ids = list(standalone_qs) + list(passage_qs) + list(dataset_qs)
-            # remove duplicates while preserving order
             unique_ids = list(dict.fromkeys(combined_ids))
+            
+            # Apply hard limit for safety (20 questions max)
             all_questions = list(Question.objects.filter(id__in=unique_ids)[:20])
+
+
+        # 🔹 DEBUGGING PRINTS 🔹
+        print("\n🛠️ DEBUG: Quiz Questions Before Evaluation ----------------")
+        print(f"Quiz ID: {quiz.id} - Type: {quiz.quiz_type}")
+        print(f"Number of visible_question_ids: {len(visible_question_ids)}")
+        print(f"visible_question_ids: {visible_question_ids}")
+        # print(f"Number of standalone questions: {len(standalone_qs)}")
+        # print(f"Number of passage questions: {len(passage_qs)}")
+        # print(f"Number of dataset questions: {len(dataset_qs)}")
+        # print(f"Combined IDs (before dedup): {combined_ids}")
+        # print(f"Unique IDs (after dedup): {unique_ids}")
+        print(f"Final all_questions count: {len(all_questions)}")
+        print(f"Question IDs in all_questions: {[q.id for q in all_questions]}")
+        print("------------------------------------------------------------\n")
+
 
         total_questions = len(all_questions)
         correct_answers = 0
@@ -227,7 +298,7 @@ class QuizSubmissionAPIView(APIView):
 
         # 🧮 Step 4 — Evaluate Answers
         for question in all_questions:
-            qid = str(question.id)
+            qid = int(question.id)
             choice_id = user_answers.get(qid)
             if choice_id:
                 try:
@@ -273,12 +344,15 @@ class QuizSubmissionAPIView(APIView):
 
         # 🗂️ Step 7 — Save Result (if authenticated)
         if request.user.is_authenticated:
+            time_spent = request.data.get("time_spent", 0)
+
             QuizResult.objects.create(
                 quiz=quiz,
                 user=request.user,
                 score=score,
                 correct=correct_answers,
                 total=total_questions,
+                time_spent=time_spent,
             )
 
         # 🧩 Step 8 — Debug + Response
@@ -528,6 +602,8 @@ class RandomizedQuizSubmitAPIView(APIView):
                 
             )
 
+            time_spent = request.data.get("time_spent", 0)
+
             QuizResult.objects.create(
                 quiz=quiz_obj,  # ✅ now linked
                 user=request.user,
@@ -535,6 +611,7 @@ class RandomizedQuizSubmitAPIView(APIView):
                 score=score,
                 correct=correct,
                 total=total,
+                time_spent=time_spent,
             )
 
         return Response({

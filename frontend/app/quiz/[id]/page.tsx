@@ -52,6 +52,7 @@ interface Quiz {
 }
 
 interface ResultDetail {
+  id: number;
   question: string;
   your_answer: string;
   result: string;
@@ -491,9 +492,11 @@ export default function QuizDetailPage() {
             </h3>
 
             <ul className="text-left space-y-4">
-              {result.details.map((d, i) => (
+              {Array.from(
+                new Map(result.details.map((item) => [item.id, item])).values()
+              ).map((d, i) => (
                 <li
-                  key={i}
+                  key={d.id}
                   className={`glass-card relative p-5 rounded-xl border-l-4 flex flex-col sm:flex-row sm:items-start sm:gap-4 transition-all duration-300 ${
                     d.result === "correct"
                       ? "border-green-500/80 bg-green-50/10"

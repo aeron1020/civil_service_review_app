@@ -5,7 +5,7 @@ from .models import Quiz, Passage, Question, Choice, QuizResult, DataSet
 
 class ChoiceInline(admin.TabularInline):
     model = Choice
-    extra = 4
+    extra = 0
 
 
 class QuestionInline(admin.TabularInline):

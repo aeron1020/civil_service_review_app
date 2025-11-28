@@ -141,6 +141,8 @@ class QuizResult(models.Model):
     correct = models.IntegerField(default=0)
     total = models.IntegerField(default=0)
     submitted_at = models.DateTimeField(auto_now_add=True)
+    time_spent = models.IntegerField(default=0, help_text="Time spent in seconds")
+
 
     def __str__(self):
         username = self.user.username if self.user else "Anonymous"
