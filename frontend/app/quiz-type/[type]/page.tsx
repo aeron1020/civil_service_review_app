@@ -208,6 +208,7 @@ export default function RandomQuizTypePage() {
         const allQuestions = [
           ...(quiz.questions || []),
           ...(quiz.passage?.questions || []),
+          ...(quiz.datasets?.flatMap((ds) => ds.questions) || []),
         ];
 
         const orderedDetails = allQuestions

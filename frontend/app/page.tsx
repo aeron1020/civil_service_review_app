@@ -157,7 +157,7 @@ export default function HomePage() {
     typeTitles[selectedType?.toLowerCase()] || selectedType.toLowerCase();
 
   return (
-    <div className="pt-24 px-6 animate-fadeIn min-h-screen">
+    <div className="pt-6 px-6 animate-fadeIn min-h-screen">
       <h1 className="text-3xl font-bold mb-6 text-center text-gray-900 dark:text-gray-100">
         Civil Service Review Quizzes
       </h1>
