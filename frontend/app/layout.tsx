@@ -6,6 +6,7 @@ import ThemeProviderWrapper from "../components/ThemeProviderWrapper"; // ✅ us
 import Footer from "@/components/Footer";
 import Providers from "components/Providers";
 import GoogleProvider from "@/components/GoogleProvider";
+import AuthInit from "./AuthInit";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Civil Service Review",
+  title: "CSE Review App",
   description: "Take quizzes and practice for the Civil Service Exam",
 };
 
@@ -41,6 +42,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300`}
       >
+        <AuthInit />
         <Providers>
           {" "}
           <ThemeProviderWrapper>

@@ -2,9 +2,12 @@
 import axios, { AxiosError, AxiosRequestConfig } from "axios";
 import { tokenService } from "./auth";
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL
-  ? `${process.env.NEXT_PUBLIC_API_BASE_URL.replace(/\/+$/, "")}/api`
-  : "http://127.0.0.1:8000/api";
+/* ===============================
+   BASE URL
+================================= */
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+
+console.log("[API] BASE_URL:", BASE_URL);
 
 const api = axios.create({
   baseURL: BASE_URL,
@@ -12,119 +15,114 @@ const api = axios.create({
   headers: { "Content-Type": "application/json" },
 });
 
-/** ======================================
- * 🔁 TOKEN REFRESH QUEUE HANDLER
- * ====================================== */
-let isRefreshing = false;
-type QueueItem = {
-  resolve: (config?: AxiosRequestConfig) => void;
-  reject: (error?: any) => void;
-};
-let failedQueue: QueueItem[] = [];
+/* ===============================
+   REQUEST INTERCEPTOR
+================================= */
+api.interceptors.request.use(
+  (config) => {
+    const token = tokenService.get();
 
-const processQueue = (error: any, token: string | null = null) => {
-  failedQueue.forEach((prom) => {
-    if (error) prom.reject(error);
-    else prom.resolve();
-  });
-  failedQueue = [];
-};
+    console.log("%c[API REQUEST]", "color: green; font-weight:bold;", {
+      url: config.url,
+      method: config.method,
+      access_token: token?.slice(0, 20) + "...",
+    });
 
-/** ======================================
- * 🧠 REQUEST INTERCEPTOR
- * ====================================== */
-api.interceptors.request.use(async (config) => {
-  const publicEndpoints = ["/token/", "/users/register/"];
-
-  if (publicEndpoints.some((url) => config.url?.includes(url))) {
+    if (token && config.headers) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
     return config;
-  }
+  },
+  (err) => Promise.reject(err)
+);
 
-  let token = tokenService.get();
-
-  // Token expired or missing? Attempt refresh.
-  if (!token || tokenService.expired()) {
-    if (!isRefreshing) {
-      isRefreshing = true;
-
-      try {
-        const newToken = await tokenService.refresh();
-        token = newToken;
-        processQueue(null, newToken);
-      } catch (err) {
-        processQueue(err, null);
-        tokenService.logout();
-        throw err;
-      } finally {
-        isRefreshing = false;
-      }
-    } else {
-      // Queue requests until refresh completes
-      return new Promise((resolve, reject) => {
-        failedQueue.push({
-          resolve: () => {
-            const latestToken = tokenService.get();
-            if (latestToken && config.headers) {
-              config.headers.Authorization = `Bearer ${latestToken}`;
-            }
-            resolve(config);
-          },
-          reject: (err) => reject(err),
-        });
-      });
-    }
-  }
-
-  if (token && config.headers) {
-    config.headers.Authorization = `Bearer ${token}`;
-  }
-
-  return config;
-});
-
-/** ======================================
- * ⚠️ RESPONSE INTERCEPTOR
- * ====================================== */
+/* ===============================
+   RESPONSE INTERCEPTOR
+================================= */
 api.interceptors.response.use(
-  (response) => response,
-  (error: AxiosError) => {
-    if (error.response?.status === 401) {
+  (response) => {
+    console.log("%c[API RESPONSE OK]", "color: blue;", response.config.url);
+    return response;
+  },
+  async (error: AxiosError) => {
+    const originalRequest = error.config as AxiosRequestConfig & {
+      _retry?: boolean;
+    };
+    const status = error.response?.status;
+
+    console.log("%c[API ERROR]", "color:red; font-weight:bold;", {
+      url: originalRequest?.url,
+      status: error.response?.status,
+      data: error.response?.data,
+    });
+
+    if (originalRequest?.url?.includes("token/refresh")) {
+      console.warn("[REFRESH] Refresh endpoint failed. Logging out.");
       tokenService.logout();
+      return Promise.reject(error);
     }
+
+    if (status === 401 && !originalRequest._retry) {
+      originalRequest._retry = true;
+
+      console.warn("[AUTH] Access token expired. Attempting refresh…");
+
+      if (tokenService.isRefreshing()) {
+        console.log("[AUTH] Refresh in progress → queuing request");
+
+        return new Promise((resolve, reject) => {
+          tokenService.subscribe((newToken) => {
+            if (!newToken) return reject(error);
+
+            console.log("[AUTH] Queued request using new token");
+
+            if (originalRequest.headers)
+              originalRequest.headers.Authorization = `Bearer ${newToken}`;
+            resolve(api(originalRequest));
+          });
+        });
+      }
+
+      const newToken = await tokenService.refresh();
+
+      console.log("[AUTH] Refresh Result:", newToken);
+
+      if (!newToken) {
+        console.warn("[AUTH] Refresh failed → Logging out");
+        tokenService.logout();
+        return Promise.reject(error);
+      }
+
+      if (originalRequest.headers)
+        originalRequest.headers.Authorization = `Bearer ${newToken}`;
+
+      console.log("[AUTH] Retrying original request:", originalRequest.url);
+
+      return api(originalRequest);
+    }
+
     return Promise.reject(error);
   }
 );
 
-/** ======================================
- * 🧾 Helper to normalize errors (exported)
- * ====================================== */
+/* ===============================
+   ERROR HELPER
+================================= */
 export function extractError(err: unknown): string {
   const e = err as AxiosError | any;
   const data = e?.response?.data;
 
   if (!data) return e?.message ?? "Request failed";
-  if (typeof data === "string") return data;
-  if (data?.detail && typeof data.detail === "string") return data.detail;
-  if (Array.isArray(data?.non_field_errors) && data.non_field_errors.length) {
-    return String(data.non_field_errors[0]);
-  }
 
-  // Safely inspect first meaningful value from object (avoid direct numeric indexing)
-  const vals = Object.values(data).filter((v) => v !== null && v !== undefined);
-  if (vals.length) {
-    const first = vals[0];
-    if (Array.isArray(first) && first.length && typeof first[0] === "string") {
-      return first[0];
-    }
-    if (typeof first === "string") {
-      return first;
-    }
-    try {
-      return String(first);
-    } catch {
-      /* fallthrough */
-    }
-  }
+  if (typeof data === "string") return data;
+  if (typeof data.detail === "string") return data.detail;
+
+  if (Array.isArray(data?.non_field_errors)) return data.non_field_errors[0];
+
+  const first = Object.values(data)[0];
+
+  if (Array.isArray(first)) return first[0];
+  if (typeof first === "string") return first;
 
   return "Request failed";
 }

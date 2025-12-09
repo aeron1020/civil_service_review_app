@@ -573,8 +573,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { useParams } from "next/navigation";
 import { getToken } from "@/app/lib/auth";
-import QuizProgressBar from "@/components/QuizProgressBar";
-import QuizTimer from "@/components/QuizTimer";
+// import QuizProgressBar from "@/components/QuizProgressBar";
+// import QuizTimer from "@/components/QuizTimer";
 
 const API_BASE_URL = "http://127.0.0.1:8000/api";
 
@@ -806,11 +806,11 @@ export default function QuizDetailPage() {
   const totalCount = steps.length;
 
   return (
-    <div className="pt-24 p-6 max-w-3xl mx-auto animate-fadeIn">
-      <QuizProgressBar answeredCount={answeredCount} totalCount={totalCount} />
+    <div className="pt-6 max-w-3xl mx-auto animate-fadeIn">
+      {/* <QuizProgressBar answeredCount={answeredCount} totalCount={totalCount} /> */}
 
       {/* timer */}
-      {quiz.time_limit ? (
+      {/* {quiz.time_limit ? (
         <div className="mb-4">
           <QuizTimer
             durationMinutes={quiz.time_limit}
@@ -823,9 +823,9 @@ export default function QuizDetailPage() {
             }}
           />
         </div>
-      ) : null}
+      ) : null} */}
 
-      <div className="glass-card p-8 rounded-2xl">
+      <div className="glass-card p-4 rounded-2xl">
         {/* 🧪 SHOW QUIZ ONLY WHEN NO RESULT YET */}
         {!result && (
           <>
@@ -837,7 +837,7 @@ export default function QuizDetailPage() {
             </p>
 
             {/* DEBUG INFO */}
-            <div className="mb-4 text-sm text-gray-500 bg-white/5 dark:bg-black/20 p-3 rounded-xl border border-white/10">
+            {/* <div className="mb-4 text-sm text-gray-500 bg-white/5 dark:bg-black/20 p-3 rounded-xl border border-white/10">
               <strong>DEBUG</strong>
               <div>
                 Step: {currentStep + 1} / {totalCount}
@@ -846,7 +846,7 @@ export default function QuizDetailPage() {
                 Visible questions (stored):{" "}
                 {steps.map((s) => s.question.id).join(", ")}
               </div>
-            </div>
+            </div> */}
 
             {/* --- MAIN ONE-STEP DISPLAY --- */}
             <div className="space-y-6">

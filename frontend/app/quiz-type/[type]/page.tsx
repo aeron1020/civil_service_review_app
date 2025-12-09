@@ -503,7 +503,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useParams } from "next/navigation";
 import { getToken } from "@/app/lib/auth";
-import QuizProgressBar from "@/components/QuizProgressBar";
+// import QuizProgressBar from "@/components/QuizProgressBar";
 
 const API_BASE_URL = "http://127.0.0.1:8000/api";
 
@@ -821,16 +821,15 @@ export default function RandomQuizPage() {
     return <p className="text-center mt-10">No questions available.</p>;
 
   return (
-    <div className="pt-24 p-6 max-w-3xl mx-auto animate-fadeIn">
-      <QuizProgressBar answeredCount={answeredCount} totalCount={totalCount} />
+    <div className="pt-6 p-0 max-w-3xl mx-auto animate-fadeIn">
+      {/* <QuizProgressBar answeredCount={answeredCount} totalCount={totalCount} /> */}
 
-      <div className="glass-card p-8 rounded-2xl">
+      <div className="glass-card p-4 rounded-2xl">
         <h1 className="text-3xl font-bold mb-2 text-center bg-clip-text text-transparent bg-gradient-to-r from-[var(--accent)] to-blue-500">
-          Randomized {quiz.quiz_type} — One question at a time
+          Randomized {quiz.quiz_type}
         </h1>
         <p className="text-center text-gray-600 dark:text-gray-400 mb-6">
-          Generated across all {quiz.quiz_type} quizzes. Passage/dataset stays
-          visible while you answer its questions.
+          Generated across all {quiz.quiz_type} quizzes.
         </p>
 
         {/* Result view (hides quiz) */}
@@ -1037,7 +1036,7 @@ export default function RandomQuizPage() {
 
             {/* Question Card */}
 
-            <div className="glass-card p-6 rounded-2xl border border-white/20">
+            <div className="glass-card p-3 rounded-2xl border border-white/20">
               <div className="flex justify-end mb-3">
                 <span className="px-3 py-1 text-xs font-medium bg-indigo-100 text-indigo-700 rounded-full">
                   {current.question.quiz_name ?? quiz.quiz_type}
