@@ -1,0 +1,52 @@
+[
+  {
+    "text": "Who is known as the 'Brains of the Katipunan'?",
+    "explanation": "Emilio Jacinto served as the chief adviser and writer for the Katipunan.",
+    "choices": [
+      { "text": "Andres Bonifacio", "is_correct": false },
+      { "text": "Emilio Jacinto", "is_correct": true },
+      { "text": "Apolinario Mabini", "is_correct": false },
+      { "text": "Jose Rizal", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In what year was the Philippine Declaration of Independence proclaimed?",
+    "explanation": "Independence from Spain was declared on June 12, 1898.",
+    "choices": [
+      { "text": "1896", "is_correct": false },
+      { "text": "1898", "is_correct": true },
+      { "text": "1901", "is_correct": false },
+      { "text": "1946", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who authored the novel 'Noli Me Tangere'?",
+    "explanation": "Jose Rizal wrote 'Noli Me Tangere' as a critique of Spanish colonial rule.",
+    "choices": [
+      { "text": "Graciano López Jaena", "is_correct": false },
+      { "text": "Jose Rizal", "is_correct": true },
+      { "text": "Marcelo H. del Pilar", "is_correct": false },
+      { "text": "Pedro Paterno", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which event marked the start of the Philippine Revolution against Spain?",
+    "explanation": "The Cry of Pugad Lawin is traditionally regarded as the symbolic start of the revolution.",
+    "choices": [
+      { "text": "Battle of Mactan", "is_correct": false },
+      { "text": "Gomburza Execution", "is_correct": false },
+      { "text": "Cry of Pugad Lawin", "is_correct": true },
+      { "text": "Declaration of Independence", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who became the first President of the Commonwealth of the Philippines?",
+    "explanation": "Manuel L. Quezon served as the first Commonwealth President in 1935.",
+    "choices": [
+      { "text": "Sergio Osmeña", "is_correct": false },
+      { "text": "Manuel Roxas", "is_correct": false },
+      { "text": "Manuel L. Quezon", "is_correct": true },
+      { "text": "Emilio Aguinaldo", "is_correct": false }
+    ]
+  }
+]

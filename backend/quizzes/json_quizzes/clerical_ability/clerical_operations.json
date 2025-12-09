@@ -1,0 +1,52 @@
+[
+  {
+    "text": "If the photocopier prints 35 pages per minute, how long will it take to print 175 pages?",
+    "explanation": "175 ÷ 35 = 5 minutes.",
+    "choices": [
+      { "text": "4 minutes", "is_correct": false },
+      { "text": "5 minutes", "is_correct": true },
+      { "text": "6 minutes", "is_correct": false },
+      { "text": "7 minutes", "is_correct": false }
+    ]
+  },
+  {
+    "text": "You are asked to route a memo to all department heads. Which action should you do first?",
+    "explanation": "Routing requires identifying recipients before distribution.",
+    "choices": [
+      { "text": "Photocopy the memo", "is_correct": false },
+      { "text": "Identify the list of department heads", "is_correct": true },
+      { "text": "Staple the pages together", "is_correct": false },
+      { "text": "Send it to the HR department only", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which is the correct order of processing incoming mail?",
+    "explanation": "Standard mail procedure: Receive → Open → Stamp → Sort.",
+    "choices": [
+      { "text": "Sort → Receive → Stamp → Open", "is_correct": false },
+      { "text": "Open → Sort → Receive → Stamp", "is_correct": false },
+      { "text": "Receive → Open → Stamp → Sort", "is_correct": true },
+      { "text": "Stamp → Open → Receive → Sort", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which office machine is best used to quickly send a signed document to another office?",
+    "explanation": "Fax machines are primarily used for transmitting signed documents rapidly.",
+    "choices": [
+      { "text": "Shredder", "is_correct": false },
+      { "text": "Fax machine", "is_correct": true },
+      { "text": "Photocopier", "is_correct": false },
+      { "text": "Scanner only", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A supervisor instructs you to 'prepare a summary of attendance.' What will you produce?",
+    "explanation": "A summary condenses information such as absences, tardiness, and attendance patterns.",
+    "choices": [
+      { "text": "Full employee profiles", "is_correct": false },
+      { "text": "Detailed hour-by-hour logs", "is_correct": false },
+      { "text": "A concise list of attendance records", "is_correct": true },
+      { "text": "A copy of all timecards", "is_correct": false }
+    ]
+  }
+]

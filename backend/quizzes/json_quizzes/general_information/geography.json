@@ -1,0 +1,52 @@
+[
+  {
+    "text": "Which is the largest island group in the Philippines?",
+    "explanation": "Luzon is the largest island group in terms of land area and population.",
+    "choices": [
+      { "text": "Luzon", "is_correct": true },
+      { "text": "Visayas", "is_correct": false },
+      { "text": "Mindanao", "is_correct": false },
+      { "text": "Palawan Group", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which active volcano is known as the 'Perfect Cone'?",
+    "explanation": "Mayon Volcano is known for its near-perfect conical shape.",
+    "choices": [
+      { "text": "Taal Volcano", "is_correct": false },
+      { "text": "Kanlaon Volcano", "is_correct": false },
+      { "text": "Mayon Volcano", "is_correct": true },
+      { "text": "Hibok-Hibok Volcano", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which body of water separates the Philippines from China?",
+    "explanation": "The West Philippine Sea is part of the South China Sea that is within the Philippines’ Exclusive Economic Zone.",
+    "choices": [
+      { "text": "Bohol Sea", "is_correct": false },
+      { "text": "Sulu Sea", "is_correct": false },
+      { "text": "West Philippine Sea", "is_correct": true },
+      { "text": "Philippine Rise", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the longest mountain range in the Philippines?",
+    "explanation": "The Sierra Madre mountain range stretches along eastern Luzon and is the country's longest.",
+    "choices": [
+      { "text": "Cordillera Central", "is_correct": false },
+      { "text": "Mount Apo Range", "is_correct": false },
+      { "text": "Sierra Madre", "is_correct": true },
+      { "text": "Zambales Mountains", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine river is considered the longest?",
+    "explanation": "The Cagayan River in Luzon is the longest river in the Philippines.",
+    "choices": [
+      { "text": "Agusan River", "is_correct": false },
+      { "text": "Pampanga River", "is_correct": false },
+      { "text": "Cagayan River", "is_correct": true },
+      { "text": "Pasig River", "is_correct": false }
+    ]
+  }
+]

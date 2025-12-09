@@ -1,3 +1,4 @@
+#quizzes/urls.py
 from django.urls import path
 from . import views
 from .views import QuizByTypeView, QuizGroupedAPIView, RandomizedByTypeAPIView, RandomizedQuizSubmitAPIView, RandomizedQuizResultAPIView, UserSummaryAPIView

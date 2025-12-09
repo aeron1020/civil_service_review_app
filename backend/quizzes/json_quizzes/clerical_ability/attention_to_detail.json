@@ -1,0 +1,52 @@
+[
+  {
+    "text": "Which of the following numbers is different from the rest?",
+    "explanation": "All numbers start with 724 except one.",
+    "choices": [
+      { "text": "724-5891", "is_correct": false },
+      { "text": "724-5831", "is_correct": false },
+      { "text": "742-5891", "is_correct": true },
+      { "text": "724-5893", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which pair of words is NOT identical?",
+    "explanation": "The third pair differs by one letter: 'Concel' vs 'Cancel'.",
+    "choices": [
+      { "text": "Receive – Receive", "is_correct": false },
+      { "text": "Official – Official", "is_correct": false },
+      { "text": "Cancel – Concel", "is_correct": true },
+      { "text": "Thorough – Thorough", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the mismatched entry in the list below:\nA. 15-02-2024\nB. 12-11-2023\nC. 31-09-2024\nD. 04-01-2023",
+    "explanation": "September has only 30 days; '31-09-2024' is invalid.",
+    "choices": [
+      { "text": "A", "is_correct": false },
+      { "text": "B", "is_correct": false },
+      { "text": "C", "is_correct": true },
+      { "text": "D", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which ID number contains an incorrect pattern if all IDs must follow AAA-0000?",
+    "explanation": "Three letters must be followed by four digits; option B breaks the pattern.",
+    "choices": [
+      { "text": "KTR-1298", "is_correct": false },
+      { "text": "KT-12983", "is_correct": true },
+      { "text": "FMP-8872", "is_correct": false },
+      { "text": "LQW-0021", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following names is spelled differently from the rest?",
+    "explanation": "All names are 'Mariane' except for 'Marianne' (two N’s).",
+    "choices": [
+      { "text": "Mariane Lopez", "is_correct": false },
+      { "text": "Mariane Cruz", "is_correct": false },
+      { "text": "Marianne Santos", "is_correct": true },
+      { "text": "Mariane Dizon", "is_correct": false }
+    ]
+  }
+]

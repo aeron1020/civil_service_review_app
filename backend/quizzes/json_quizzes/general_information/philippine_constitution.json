@@ -1,0 +1,52 @@
+[
+  {
+    "text": "Which principle in the 1987 Constitution mandates that public office is a public trust?",
+    "explanation": "Article XI, Section 1 of the 1987 Constitution states that 'Public office is a public trust.'",
+    "choices": [
+      { "text": "Accountability of Public Officers", "is_correct": true },
+      { "text": "Bill of Rights", "is_correct": false },
+      { "text": "Separation of Powers", "is_correct": false },
+      { "text": "Checks and Balances", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who has the sole power to declare the existence of a state of war according to the Constitution?",
+    "explanation": "Article VI grants Congress the exclusive authority to declare the existence of a state of war.",
+    "choices": [
+      { "text": "The President", "is_correct": false },
+      { "text": "The Senate only", "is_correct": false },
+      { "text": "The Congress", "is_correct": true },
+      { "text": "The Supreme Court", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which constitutional body is tasked to investigate cases of graft and corruption involving public officials?",
+    "explanation": "The Ombudsman, as provided in Article XI, is responsible for investigating corruption involving government officials.",
+    "choices": [
+      { "text": "Civil Service Commission", "is_correct": false },
+      { "text": "Office of the Ombudsman", "is_correct": true },
+      { "text": "Commission on Audit", "is_correct": false },
+      { "text": "Sandiganbayan", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Under the Constitution, who appoints the Chief Justice of the Supreme Court?",
+    "explanation": "The President appoints the Chief Justice from a list submitted by the Judicial and Bar Council.",
+    "choices": [
+      { "text": "Congress", "is_correct": false },
+      { "text": "Judicial and Bar Council", "is_correct": false },
+      { "text": "The President", "is_correct": true },
+      { "text": "The Supreme Court en banc", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The right to due process and equal protection of the law is found in which part of the Constitution?",
+    "explanation": "These rights are protected under Article III, the Bill of Rights.",
+    "choices": [
+      { "text": "Article II", "is_correct": false },
+      { "text": "Article III", "is_correct": true },
+      { "text": "Article VI", "is_correct": false },
+      { "text": "Article VII", "is_correct": false }
+    ]
+  }
+]

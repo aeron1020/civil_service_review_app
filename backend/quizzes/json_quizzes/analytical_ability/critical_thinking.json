@@ -1,0 +1,52 @@
+[
+  {
+    "text": "A company schedules interviews for four applicants: Liza, Mark, Nino, and Olga. Only two can be scheduled in the morning. Liza cannot attend in the afternoon. Mark can attend only in the afternoon. Nino can attend at any time. Olga can attend only in the morning. Which pair can be scheduled together in the morning?",
+    "explanation": "Morning-capable: Liza (morning only), Nino (any), Olga (morning only). Mark cannot. The only valid pair is Liza + Olga or Liza + Nino or Olga + Nino. But Olga cannot be paired with Mark. The question asks which pair fits morning only: Liza and Olga both can attend only in the morning.",
+    "choices": [
+      { "text": "Liza and Olga", "is_correct": true },
+      { "text": "Mark and Olga", "is_correct": false },
+      { "text": "Liza and Mark", "is_correct": false },
+      { "text": "Mark and Nino", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A box contains red, blue, and green balls. If 2 red balls are removed, the number of blue balls becomes twice the number of remaining red balls. Before removing the 2 red balls, the blue balls were equal to the red balls. If there are 6 green balls, how many red balls were originally inside the box?",
+    "explanation": "Let R be original red balls. Blue = R. After removing 2 red balls → remaining red = R - 2. Given: blue = 2 × (R - 2). But blue = R. So R = 2(R - 2). Solve: R = 2R - 4 → 4 = R → R = 4.",
+    "choices": [
+      { "text": "4", "is_correct": true },
+      { "text": "6", "is_correct": false },
+      { "text": "8", "is_correct": false },
+      { "text": "10", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If all roses are flowers and some flowers fade quickly, which of the following conclusions is valid?",
+    "explanation": "All roses are flowers, but not all flowers fade quickly—only some. Therefore, we cannot conclude that roses fade quickly. The only valid conclusion is the safe one: roses are flowers.",
+    "choices": [
+      { "text": "All roses are flowers.", "is_correct": true },
+      { "text": "All flowers are roses.", "is_correct": false },
+      { "text": "All roses fade quickly.", "is_correct": false },
+      { "text": "Some roses fade quickly.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A bus leaves City A at 8:00 AM traveling 60 km/h. Another bus leaves the same city at 9:30 AM traveling 90 km/h along the same route. At what time will the second bus catch up with the first?",
+    "explanation": "The first bus travels for 1.5 hours before the second leaves → distance lead = 60 × 1.5 = 90 km. Speed difference = 90 − 60 = 30 km/h. Time to close gap = 90 ÷ 30 = 3 hours. 9:30 + 3 hours = 12:30 PM.",
+    "choices": [
+      { "text": "12:30 PM", "is_correct": true },
+      { "text": "12:00 PM", "is_correct": false },
+      { "text": "1:00 PM", "is_correct": false },
+      { "text": "11:30 AM", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In a meeting, five coworkers—A, B, C, D, and E—must speak in order. A must speak before C. D must speak after C. B cannot speak last. Which of the following is a valid order?",
+    "explanation": "A must be before C; C must be before D. B cannot be last. Try sequence  A–B–C–E–D: A before C ✔, C before D ✔, B is not last ✔. All conditions are satisfied.",
+    "choices": [
+      { "text": "A, B, C, E, D", "is_correct": true },
+      { "text": "C, A, B, D, E", "is_correct": false },
+      { "text": "A, C, D, B, E", "is_correct": false },
+      { "text": "B, D, C, A, E", "is_correct": false }
+    ]
+  }
+]

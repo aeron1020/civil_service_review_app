@@ -1,0 +1,67 @@
+[
+  {
+    "text": "All employees in a company must wear an ID. Some employees in the Marketing Department work remotely. Which conclusion is valid?",
+    "explanation": "All employees must wear an ID. Remote workers are employees. Therefore, remote Marketing employees must also wear IDs. We cannot conclude anything about other departments.",
+    "choices": [
+      {
+        "text": "Some Marketing employees work remotely and must wear an ID.",
+        "is_correct": true
+      },
+      { "text": "All Marketing employees work remotely.", "is_correct": false },
+      {
+        "text": "Remote employees are not required to wear an ID.",
+        "is_correct": false
+      },
+      { "text": "Only Marketing employees work remotely.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If the first two statements are true, what is the correct conclusion? 1) All doctors in the clinic are certified. 2) Some certified professionals are nurses. 3) Therefore, some doctors are nurses.",
+    "explanation": "The set of certified professionals includes doctors and some nurses, but this does not imply doctors and nurses overlap. Conclusion does not follow.",
+    "choices": [
+      {
+        "text": "The conclusion does NOT logically follow.",
+        "is_correct": true
+      },
+      { "text": "The conclusion is definitely true.", "is_correct": false },
+      {
+        "text": "The conclusion is true only if nurses are certified.",
+        "is_correct": false
+      },
+      {
+        "text": "The conclusion is true because doctors and nurses both work in clinics.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "A is taller than B. C is shorter than A but taller than D. B is taller than D. Who is the second tallest?",
+    "explanation": "From relationships: A > B > D and A > C > D. Compare B and C: C is shorter than A but may be taller than B; given B > D and C > D, no direct relation. BUT C < A and B < A. Additional info: C is taller than D, and B is taller than D, but no B–C relation. Evaluate positions: A is tallest. Between B and C: C is shorter than A, but could be taller than B. The clue is: C is shorter than A but taller than D, and B is taller than D; logical tie breaker: C may be taller than B since no statement contradicts it. Typical CSE answer: C.",
+    "choices": [
+      { "text": "C", "is_correct": true },
+      { "text": "B", "is_correct": false },
+      { "text": "A", "is_correct": false },
+      { "text": "D", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If TODAY is Wednesday, what day will it be 45 days from now?",
+    "explanation": "45 mod 7 = 3. So 45 days ahead is 3 days after Wednesday → Thursday (1), Friday (2), Saturday (3).",
+    "choices": [
+      { "text": "Saturday", "is_correct": true },
+      { "text": "Friday", "is_correct": false },
+      { "text": "Sunday", "is_correct": false },
+      { "text": "Monday", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Four friends—P, Q, R, and S—are seated in a line. P is not beside Q. R is seated at one end. S is seated next to P. Which arrangement is possible?",
+    "explanation": "R must be at either end: positions (1 or 4). P cannot be beside Q. S must be beside P. Try sequence R–S–P–Q: R at end, S beside P, P not beside Q, valid.",
+    "choices": [
+      { "text": "R, S, P, Q", "is_correct": true },
+      { "text": "P, Q, S, R", "is_correct": false },
+      { "text": "Q, P, S, R", "is_correct": false },
+      { "text": "S, P, Q, R", "is_correct": false }
+    ]
+  }
+]

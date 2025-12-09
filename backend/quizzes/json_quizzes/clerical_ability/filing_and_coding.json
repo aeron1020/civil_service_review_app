@@ -1,0 +1,52 @@
+[
+  {
+    "text": "If documents are filed alphabetically, which should come first?",
+    "explanation": "'Bautista' comes before the rest alphabetically.",
+    "choices": [
+      { "text": "Bautista, Ramon", "is_correct": true },
+      { "text": "Bayani, Regina", "is_correct": false },
+      { "text": "Bello, Marc", "is_correct": false },
+      { "text": "Belmonte, Kyla", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following is the correct order in alphabetical filing?",
+    "explanation": "Alphabetical order: Cruz → Dela Cruz → Delos Reyes → Dizon.",
+    "choices": [
+      { "text": "Delos Reyes, Cruz, Dela Cruz, Dizon", "is_correct": false },
+      { "text": "Cruz, Dela Cruz, Delos Reyes, Dizon", "is_correct": true },
+      { "text": "Dela Cruz, Cruz, Dizon, Delos Reyes", "is_correct": false },
+      { "text": "Cruz, Delos Reyes, Dela Cruz, Dizon", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In numeric filing, which file number comes last?",
+    "explanation": "Among the numbers, 98452 is the largest.",
+    "choices": [
+      { "text": "98321", "is_correct": false },
+      { "text": "98452", "is_correct": true },
+      { "text": "91234", "is_correct": false },
+      { "text": "90001", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which is the correct filing order for dates?",
+    "explanation": "Chronological: Oldest to newest.",
+    "choices": [
+      { "text": "2024-01-11, 2023-12-20, 2024-02-05", "is_correct": false },
+      { "text": "2023-12-20, 2024-01-11, 2024-02-05", "is_correct": true },
+      { "text": "2024-02-05, 2023-12-20, 2024-01-11", "is_correct": false },
+      { "text": "2024-01-11, 2024-02-05, 2023-12-20", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which filing category does 'Employee Attendance Sheet' belong to?",
+    "explanation": "Attendance records are classified under personnel or employee records.",
+    "choices": [
+      { "text": "Financial files", "is_correct": false },
+      { "text": "Personnel records", "is_correct": true },
+      { "text": "Legal documents", "is_correct": false },
+      { "text": "General correspondence", "is_correct": false }
+    ]
+  }
+]

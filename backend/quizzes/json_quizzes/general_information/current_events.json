@@ -1,0 +1,52 @@
+[
+  {
+    "text": "Which government agency is primarily responsible for responding to natural disasters in the Philippines?",
+    "explanation": "The NDRRMC leads disaster preparedness and response efforts nationwide.",
+    "choices": [
+      { "text": "MMDA", "is_correct": false },
+      { "text": "NDRRMC", "is_correct": true },
+      { "text": "DILG", "is_correct": false },
+      { "text": "DA", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which national program aims to improve internet connectivity through the installation of free Wi-Fi hotspots?",
+    "explanation": "The 'Free Wi-Fi for All' initiative aims to provide public internet access nationwide.",
+    "choices": [
+      { "text": "Digital Bayanihan", "is_correct": false },
+      { "text": "Free Wi-Fi for All", "is_correct": true },
+      { "text": "Online Philippines Program", "is_correct": false },
+      { "text": "CyberNet Initiative", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which department is responsible for managing the Philippines’ vaccination programs?",
+    "explanation": "The DOH oversees immunization and vaccination initiatives.",
+    "choices": [
+      { "text": "DepEd", "is_correct": false },
+      { "text": "DOH", "is_correct": true },
+      { "text": "DOST", "is_correct": false },
+      { "text": "DSWD", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which recurring environmental issue is most associated with improper waste disposal in waterways?",
+    "explanation": "Flooding is commonly caused by clogged drainage systems due to garbage.",
+    "choices": [
+      { "text": "Landslides", "is_correct": false },
+      { "text": "Drought", "is_correct": false },
+      { "text": "Flooding", "is_correct": true },
+      { "text": "Soil liquefaction", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine agency regulates and monitors telecommunications companies?",
+    "explanation": "The NTC is responsible for supervising and regulating telecom services.",
+    "choices": [
+      { "text": "DICT", "is_correct": false },
+      { "text": "NTC", "is_correct": true },
+      { "text": "DOST", "is_correct": false },
+      { "text": "DOF", "is_correct": false }
+    ]
+  }
+]

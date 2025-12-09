@@ -1,259 +1,323 @@
 [
   {
-    "passage": "Maria stood at the edge of the pier, watching the sun slowly dip below the horizon. The sky turned shades of orange and violet, and a gentle breeze brushed against her face. She thought of her childhood summers spent in this very place, catching fish and laughing with her cousins. Now, years later, she felt a sense of peace return as the waves lapped quietly against the wooden posts.",
+    "passage": "When Elena returned to her hometown after nearly ten years in the city, she immediately noticed how much had changed. The once quiet main street now had several new shops, and the plaza where she used to play as a child had been renovated with brighter lamps and wider pathways. Despite these improvements, Elena felt a strange sense of distance—almost as if she was looking at a familiar place through a window rather than standing in it.\n\nAs she walked around, she passed by the old bakery owned by Mrs. Ramos. The smell of freshly baked pan de sal drifted into the air, and for a moment Elena felt the same warmth she did during her childhood mornings. Mrs. Ramos recognized her instantly and welcomed her inside. Their brief conversation reminded Elena that while places may change, some connections remain untouched. Still, as she stepped out of the bakery, she knew that her memories belonged to a version of the town that existed only in her mind.",
     "questions": [
       {
-        "text": "What is the main feeling Maria experiences at the pier?",
-        "explanation": "Maria feels a sense of peace and nostalgia as she recalls her childhood memories.",
+        "text": "What emotion does Elena primarily feel upon returning to her hometown?",
+        "explanation": "Elena feels a sense of emotional distance, as if the place is familiar but not entirely the same.",
         "choices": [
-          { "text": "Peaceful reflection", "is_correct": true },
-          { "text": "Anxiety and fear", "is_correct": false },
-          { "text": "Excitement and joy", "is_correct": false }
+          { "text": "A feeling of unfamiliar distance", "is_correct": true },
+          { "text": "Excitement about the new shops", "is_correct": false },
+          { "text": "Fear of being forgotten", "is_correct": false },
+          { "text": "Joy about moving back permanently", "is_correct": false }
         ]
       },
       {
-        "text": "What memory does Maria recall?",
-        "explanation": "She remembers childhood summers spent catching fish and laughing with her cousins.",
+        "text": "What moment briefly reconnects Elena to her past?",
+        "explanation": "The smell of pan de sal in Mrs. Ramos’s bakery triggers warm childhood memories.",
+        "choices": [
+          { "text": "Smelling freshly baked pan de sal", "is_correct": true },
+          { "text": "Seeing the renovated plaza", "is_correct": false },
+          { "text": "Walking through the new shops", "is_correct": false },
+          { "text": "Meeting old classmates", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What does the town’s renovation symbolize in the passage?",
+        "explanation": "The renovation reflects progress but also the inevitable change that makes Elena feel detached.",
+        "choices": [
+          { "text": "Change and the passage of time", "is_correct": true },
+          { "text": "Decline of local traditions", "is_correct": false },
+          { "text": "Loss of community ties", "is_correct": false },
+          { "text": "A shift toward modernity only", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What can be inferred about Elena’s memories of her childhood?",
+        "explanation": "Her memories remain vivid but belong to a past that no longer exists externally.",
         "choices": [
           {
-            "text": "Fishing and spending time with cousins",
+            "text": "They are cherished but tied to the past",
             "is_correct": true
           },
-          { "text": "Learning how to swim", "is_correct": false },
-          { "text": "Traveling to another country", "is_correct": false }
+          {
+            "text": "She dislikes remembering her childhood",
+            "is_correct": false
+          },
+          {
+            "text": "Her memories are inaccurate and confusing",
+            "is_correct": false
+          },
+          { "text": "She wishes to erase them entirely", "is_correct": false }
         ]
       },
       {
-        "text": "What natural phenomenon is described in the passage?",
-        "explanation": "The passage describes the sunset with colors of orange and violet.",
+        "text": "What overall theme is emphasized in the passage?",
+        "explanation": "The passage highlights how places change over time, even when memories remain the same.",
         "choices": [
-          { "text": "The sunset", "is_correct": true },
-          { "text": "The sunrise", "is_correct": false },
-          { "text": "A thunderstorm", "is_correct": false }
-        ]
-      },
-      {
-        "text": "Which sensory detail is included in the passage?",
-        "explanation": "The passage mentions a gentle breeze brushing against her face, appealing to the sense of touch.",
-        "choices": [
-          { "text": "The breeze against her face", "is_correct": true },
-          { "text": "The sound of children singing", "is_correct": false },
-          { "text": "The taste of seawater", "is_correct": false }
-        ]
-      },
-      {
-        "text": "What do the waves symbolize in the passage?",
-        "explanation": "The quiet waves represent calmness and the steady passage of time.",
-        "choices": [
-          { "text": "Calmness and time passing", "is_correct": true },
-          { "text": "Anger and destruction", "is_correct": false },
-          { "text": "Excitement and adventure", "is_correct": false }
+          { "text": "Change versus memory", "is_correct": true },
+          { "text": "Travel and exploration", "is_correct": false },
+          {
+            "text": "Competition between old and new businesses",
+            "is_correct": false
+          },
+          { "text": "The importance of economic progress", "is_correct": false }
         ]
       }
     ]
   },
   {
-    "passage": "In a small village nestled between rolling hills, a wise old man named Lito was known for his knowledge of herbs and healing. People traveled from faraway places to seek his remedies for illnesses. One day, a young girl arrived, carrying her sick brother on her back. She pleaded with Lito for help. Without hesitation, Lito prepared a remedy using rare leaves and roots he had gathered from the forest at dawn.",
+    "passage": "Every Sunday afternoon, Mateo visited his grandfather, who had recently moved into a small rest house near the foothills. The air there was always cool, and the quiet surroundings were a sharp contrast to the noise of the city where Mateo lived. His grandfather spent most of his time gardening, tending to rows of tomatoes and herbs with the same patience he had shown throughout his life. Mateo admired how the old man seemed content with such a simple routine.\n\nOne afternoon, as they shared a cup of warm ginger tea, his grandfather spoke about the importance of slowing down. He told Mateo that people often rushed through life chasing things that disappeared as quickly as they came. Mateo listened carefully, realizing how rare it was to find someone who understood contentment so deeply. On his way home, he felt lighter, as though his grandfather's words had gently loosened the weight he didn’t know he was carrying.",
     "questions": [
       {
-        "text": "What was Lito known for in the village?",
-        "explanation": "Lito was known for his knowledge of herbs and healing.",
+        "text": "Why did Mateo admire his grandfather?",
+        "explanation": "Mateo admired his grandfather’s patience and contentment in simple living.",
         "choices": [
-          { "text": "Herbal healing knowledge", "is_correct": true },
-          { "text": "Weaving baskets", "is_correct": false },
-          { "text": "Training animals", "is_correct": false }
+          { "text": "He lived a patient and simple life", "is_correct": true },
+          {
+            "text": "He had a large and successful business",
+            "is_correct": false
+          },
+          { "text": "He traveled frequently", "is_correct": false },
+          { "text": "He was a famous gardener", "is_correct": false }
         ]
       },
       {
-        "text": "Why did people travel from faraway places?",
-        "explanation": "They sought his remedies for various illnesses.",
+        "text": "What message did his grandfather emphasize during their conversation?",
+        "explanation": "He stressed the importance of slowing down and not rushing through life.",
         "choices": [
-          { "text": "To seek healing remedies", "is_correct": true },
-          { "text": "To buy food", "is_correct": false },
-          { "text": "To attend festivals", "is_correct": false }
+          { "text": "The value of slowing down", "is_correct": true },
+          { "text": "The need to work harder", "is_correct": false },
+          { "text": "The importance of wealth", "is_correct": false },
+          { "text": "The benefits of city life", "is_correct": false }
         ]
       },
       {
-        "text": "Who came to Lito for help in the passage?",
-        "explanation": "A young girl arrived carrying her sick brother.",
+        "text": "What effect did the conversation have on Mateo?",
+        "explanation": "Mateo felt emotionally lighter and more at ease afterward.",
         "choices": [
-          { "text": "A young girl with her sick brother", "is_correct": true },
-          { "text": "An elderly couple", "is_correct": false },
-          { "text": "A traveling merchant", "is_correct": false }
+          { "text": "He felt lighter and more at ease", "is_correct": true },
+          { "text": "He became worried about his future", "is_correct": false },
+          {
+            "text": "He planned to move to the rest house",
+            "is_correct": false
+          },
+          { "text": "He decided to stop visiting", "is_correct": false }
         ]
       },
       {
-        "text": "What did Lito use to make the remedy?",
-        "explanation": "He used rare leaves and roots gathered from the forest at dawn.",
+        "text": "Where did the grandfather move?",
+        "explanation": "He moved to a rest house near the foothills.",
         "choices": [
-          { "text": "Rare leaves and roots", "is_correct": true },
-          { "text": "Water from the river", "is_correct": false },
-          { "text": "Store-bought medicine", "is_correct": false }
+          { "text": "A rest house near the foothills", "is_correct": true },
+          { "text": "An apartment in the city", "is_correct": false },
+          { "text": "A coastal town", "is_correct": false },
+          { "text": "A farm owned by relatives", "is_correct": false }
         ]
       },
       {
-        "text": "What trait best describes Lito?",
-        "explanation": "He is compassionate, as he helps without hesitation.",
+        "text": "What theme is strongly presented in the passage?",
+        "explanation": "The theme is centered on simplicity, mindfulness, and contentment.",
         "choices": [
-          { "text": "Compassionate", "is_correct": true },
-          { "text": "Selfish", "is_correct": false },
-          { "text": "Lazy", "is_correct": false }
+          { "text": "Contentment in simplicity", "is_correct": true },
+          { "text": "Ambition and competition", "is_correct": false },
+          { "text": "The value of material success", "is_correct": false },
+          { "text": "The importance of technology", "is_correct": false }
         ]
       }
     ]
   },
   {
-    "passage": "Every morning, Rafael rides his bicycle to the market to sell freshly baked bread made by his mother. The streets are still quiet, with only a few vendors setting up their stalls. Rafael enjoys the cool air and the soft golden light of dawn. Though the work is tiring, he feels proud to help his family and greet the familiar faces of loyal customers.",
+    "passage": "Sara had always dreamed of becoming a teacher, but life had taken her down a different path. She now worked long hours at a small accounting office, surrounded by numbers rather than students. One evening, while sorting old documents, she found a letter she had written to herself at age sixteen. In it, she spoke passionately about wanting to help children learn and grow. The words made her pause, as though her younger self were reaching out, reminding her of a promise she had forgotten.\n\nThe next day, she visited the public school near her apartment and inquired about volunteer programs. The principal welcomed her enthusiasm and assigned her to assist in a reading class on weekends. As Sara read stories to the children, she felt a sense of fulfillment she had not experienced in years. She realized that even if life had led her elsewhere, it was never too late to return to the things that made her feel alive.",
     "questions": [
       {
-        "text": "Why does Rafael go to the market every morning?",
-        "explanation": "He goes to the market to sell freshly baked bread made by his mother.",
+        "text": "What triggered Sara’s reflection about her life choices?",
+        "explanation": "Finding the letter from her sixteen-year-old self reminded her of her original dream.",
         "choices": [
-          { "text": "To sell bread baked by his mother", "is_correct": true },
-          { "text": "To buy vegetables", "is_correct": false },
-          { "text": "To attend school", "is_correct": false }
+          { "text": "Finding her old letter", "is_correct": true },
+          { "text": "Seeing a former classmate", "is_correct": false },
+          { "text": "Receiving a job promotion", "is_correct": false },
+          { "text": "Reading a news article", "is_correct": false }
         ]
       },
       {
-        "text": "What time of day does Rafael travel?",
-        "explanation": "He travels at dawn, when the light is soft and golden.",
+        "text": "What action did Sara take after reading the letter?",
+        "explanation": "She visited the local school to ask about volunteer opportunities.",
         "choices": [
-          { "text": "At dawn", "is_correct": true },
-          { "text": "Late afternoon", "is_correct": false },
-          { "text": "Midnight", "is_correct": false }
+          { "text": "She volunteered at a school", "is_correct": true },
+          { "text": "She resigned from her job", "is_correct": false },
+          { "text": "She enrolled in college again", "is_correct": false },
+          { "text": "She traveled to her hometown", "is_correct": false }
         ]
       },
       {
-        "text": "How does Rafael feel about his work?",
-        "explanation": "He feels proud to help his family despite the tiring work.",
+        "text": "How did Sara feel while reading stories to the children?",
+        "explanation": "She felt a deep sense of fulfillment and connection to her dream.",
         "choices": [
-          { "text": "Proud", "is_correct": true },
-          { "text": "Embarrassed", "is_correct": false },
-          { "text": "Angry", "is_correct": false }
+          { "text": "Fulfilled and alive", "is_correct": true },
+          { "text": "Discouraged and doubtful", "is_correct": false },
+          { "text": "Confused about her decisions", "is_correct": false },
+          { "text": "Uninterested in teaching", "is_correct": false }
         ]
       },
       {
-        "text": "What is the atmosphere of the market when Rafael arrives?",
-        "explanation": "The streets are quiet, and only a few vendors are setting up.",
+        "text": "What does the letter symbolize in the story?",
+        "explanation": "The letter symbolizes her forgotten dreams and her true passion.",
         "choices": [
-          { "text": "Quiet and calm", "is_correct": true },
-          { "text": "Crowded and noisy", "is_correct": false },
-          { "text": "Dark and empty", "is_correct": false }
+          { "text": "A reminder of her true passion", "is_correct": true },
+          { "text": "A warning about her career", "is_correct": false },
+          { "text": "A note of regret", "is_correct": false },
+          { "text": "A message from a friend", "is_correct": false }
         ]
       },
       {
-        "text": "What does Rafael enjoy during his ride?",
-        "explanation": "He enjoys the cool air and golden light of dawn.",
-        "choices": [
-          { "text": "The cool air and morning light", "is_correct": true },
-          { "text": "The noise of traffic", "is_correct": false },
-          { "text": "Listening to music", "is_correct": false }
-        ]
-      }
-    ]
-  },
-  {
-    "passage": "A severe drought struck the farming town of San Isidro. Rivers dried up, crops withered in the fields, and animals grew weak from thirst. The townspeople gathered in the plaza, worried about their future. Then, a group of students suggested collecting rainwater using large barrels and planting drought-resistant crops. Inspired by the idea, the town worked together and slowly brought life back to their land.",
-    "questions": [
-      {
-        "text": "What natural disaster affected San Isidro?",
-        "explanation": "The town was affected by a severe drought.",
-        "choices": [
-          { "text": "A severe drought", "is_correct": true },
-          { "text": "A typhoon", "is_correct": false },
-          { "text": "An earthquake", "is_correct": false }
-        ]
-      },
-      {
-        "text": "How did the drought affect the town?",
-        "explanation": "Rivers dried, crops withered, and animals became weak from thirst.",
-        "choices": [
-          { "text": "Rivers dried and crops withered", "is_correct": true },
-          { "text": "Houses were destroyed", "is_correct": false },
-          { "text": "Fires spread through the town", "is_correct": false }
-        ]
-      },
-      {
-        "text": "Who suggested a solution to the drought problem?",
-        "explanation": "A group of students suggested collecting rainwater and planting drought-resistant crops.",
-        "choices": [
-          { "text": "A group of students", "is_correct": true },
-          { "text": "Local farmers", "is_correct": false },
-          { "text": "Government officials", "is_correct": false }
-        ]
-      },
-      {
-        "text": "What solution was proposed?",
-        "explanation": "Collecting rainwater and planting drought-resistant crops.",
+        "text": "What theme does the passage highlight?",
+        "explanation": "It shows that one can return to long-forgotten dreams at any time.",
         "choices": [
           {
-            "text": "Rainwater collection and drought-resistant crops",
+            "text": "It is never too late to chase dreams",
             "is_correct": true
           },
-          { "text": "Importing food from other towns", "is_correct": false },
-          { "text": "Building more houses", "is_correct": false }
-        ]
-      },
-      {
-        "text": "What theme does this passage show?",
-        "explanation": "The passage emphasizes cooperation and resilience in times of hardship.",
-        "choices": [
-          { "text": "Cooperation and resilience", "is_correct": true },
-          { "text": "Greed and competition", "is_correct": false },
-          { "text": "Isolation and fear", "is_correct": false }
+          {
+            "text": "Hard work always guarantees success",
+            "is_correct": false
+          },
+          { "text": "People rarely change career paths", "is_correct": false },
+          { "text": "Dreams are unrealistic", "is_correct": false }
         ]
       }
     ]
   },
   {
-    "passage": "In the year 2125, cities floated above the clouds to escape pollution on Earth. Elena, a young engineer, worked on machines that purified air and water. One day, she noticed a malfunction that could endanger the entire city. With only hours left, Elena rushed to repair the system, staying calm despite the pressure. Her quick actions saved the city, and she became a symbol of hope for future generations.",
+    "passage": "For years, the old train station had been a landmark in Lira's town, even though it no longer operated. Its wooden benches were faded, and vines crawled along the sides of the abandoned ticket booth. As a child, Lira would sit there with her father, listening to stories about the trains that once passed through, carrying farmers, workers, and students to distant provinces. To her, the place had always felt alive, even in its silence.\n\nOne afternoon, while taking her usual walk, she saw construction workers surveying the station grounds. The local government had decided to convert the area into a commercial complex. Although she understood the need for development, Lira felt a pang of sadness. The station was a quiet reminder of her father, who had passed away a few years earlier. As she stood there, she realized that losing the station meant losing a tangible piece of their shared history.",
     "questions": [
       {
-        "text": "Where did people live in the year 2125?",
-        "explanation": "They lived in floating cities above the clouds.",
+        "text": "What childhood memory is associated with the train station for Lira?",
+        "explanation": "She used to sit with her father there while listening to stories.",
         "choices": [
-          { "text": "In floating cities", "is_correct": true },
-          { "text": "Underground caves", "is_correct": false },
-          { "text": "Deep in forests", "is_correct": false }
+          { "text": "Listening to her father’s stories", "is_correct": true },
+          { "text": "Riding trains with her classmates", "is_correct": false },
+          { "text": "Watching movies with friends", "is_correct": false },
+          { "text": "Selling goods to passengers", "is_correct": false }
         ]
       },
       {
-        "text": "What was Elena’s job?",
-        "explanation": "She was an engineer who maintained machines that purified air and water.",
+        "text": "What does the station symbolize for Lira?",
+        "explanation": "It symbolizes her memories and emotional connection with her father.",
+        "choices": [
+          { "text": "Her connection with her father", "is_correct": true },
+          { "text": "Her dream to become an engineer", "is_correct": false },
+          { "text": "Her desire to travel abroad", "is_correct": false },
+          { "text": "The town’s economic progress", "is_correct": false }
+        ]
+      },
+      {
+        "text": "Why were workers surveying the area?",
+        "explanation": "The area was going to be turned into a commercial complex.",
         "choices": [
           {
-            "text": "Engineer maintaining purification systems",
+            "text": "It would be developed into a commercial complex",
             "is_correct": true
           },
-          { "text": "Teacher in a floating school", "is_correct": false },
-          { "text": "Pilot of airships", "is_correct": false }
+          { "text": "The station was being restored", "is_correct": false },
+          {
+            "text": "They were studying the history of the station",
+            "is_correct": false
+          },
+          { "text": "A new railway was being built", "is_correct": false }
         ]
       },
       {
-        "text": "What problem did Elena discover?",
-        "explanation": "She noticed a malfunction in the purification system.",
+        "text": "How does Lira feel about the planned development?",
+        "explanation": "She understands it but feels sad about losing a sentimental landmark.",
         "choices": [
-          { "text": "A malfunction in the city's system", "is_correct": true },
-          { "text": "A food shortage", "is_correct": false },
-          { "text": "An invasion from Earth", "is_correct": false }
+          { "text": "Sad but understanding", "is_correct": true },
+          { "text": "Angry and opposed", "is_correct": false },
+          { "text": "Indifferent and detached", "is_correct": false },
+          { "text": "Excited and supportive", "is_correct": false }
         ]
       },
       {
-        "text": "How did Elena respond to the crisis?",
-        "explanation": "She stayed calm and quickly repaired the system.",
+        "text": "What theme is expressed in the passage?",
+        "explanation": "The passage highlights how progress can lead to the loss of sentimental places.",
         "choices": [
-          { "text": "She repaired it calmly and quickly", "is_correct": true },
-          { "text": "She panicked and gave up", "is_correct": false },
-          { "text": "She left the city", "is_correct": false }
+          {
+            "text": "The loss of cherished memories due to change",
+            "is_correct": true
+          },
+          { "text": "The benefits of modern development", "is_correct": false },
+          { "text": "The dangers of construction", "is_correct": false },
+          {
+            "text": "The importance of government decisions",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "passage": "Tomas never liked waking up early, but the morning market had always been an exception. As a boy, he would accompany his mother before sunrise, helping arrange vegetables on their small stall. He remembered the lively voices of vendors calling out prices, the smell of freshly cooked rice porridge, and the excitement of seeing familiar faces each day. The market felt like a world of its own, full of movement and color.\n\nMany years later, Tomas returned as an adult, now working in an office far from the lively market of his childhood. When he visited the place one early morning, he was surprised to find it quieter and more orderly. Some vendors had retired, and new stalls selling gadgets and clothes were now in their place. Though the market had changed, Tomas felt a warm familiarity deep inside. He understood that while time reshapes places, it also deepens one’s appreciation for the memories that remain.",
+    "questions": [
+      {
+        "text": "What childhood activity does Tomas remember fondly?",
+        "explanation": "He helped his mother arrange vegetables at their market stall.",
+        "choices": [
+          {
+            "text": "Helping his mother at their market stall",
+            "is_correct": true
+          },
+          { "text": "Playing games with vendors", "is_correct": false },
+          { "text": "Selling newspapers", "is_correct": false },
+          { "text": "Fishing near the market", "is_correct": false }
         ]
       },
       {
-        "text": "How was Elena regarded afterward?",
-        "explanation": "She became a symbol of hope for future generations.",
+        "text": "How did the market change over the years?",
+        "explanation": "It became quieter, with new stalls and fewer of the original vendors.",
         "choices": [
-          { "text": "A symbol of hope", "is_correct": true },
-          { "text": "A failed engineer", "is_correct": false },
-          { "text": "An unknown worker", "is_correct": false }
+          {
+            "text": "It became quieter and had newer types of stalls",
+            "is_correct": true
+          },
+          {
+            "text": "It expanded into a large shopping mall",
+            "is_correct": false
+          },
+          { "text": "It was completely abandoned", "is_correct": false },
+          { "text": "It became more crowded than before", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What emotions does Tomas feel when revisiting the market?",
+        "explanation": "He feels nostalgia and appreciation for the memories associated with the place.",
+        "choices": [
+          { "text": "Nostalgic appreciation", "is_correct": true },
+          { "text": "Disappointment and regret", "is_correct": false },
+          { "text": "Anxiety about the changes", "is_correct": false },
+          { "text": "Indifference toward the past", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What does the morning market symbolize for Tomas?",
+        "explanation": "It symbolizes his childhood experiences and the lasting warmth of familiar memories.",
+        "choices": [
+          { "text": "His cherished childhood memories", "is_correct": true },
+          { "text": "A career path he never pursued", "is_correct": false },
+          { "text": "A place he disliked", "is_correct": false },
+          { "text": "A dream of owning a business", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What main theme does the passage highlight?",
+        "explanation": "The passage shows how time changes places but strengthens personal memories.",
+        "choices": [
+          {
+            "text": "Time changes places but not memories",
+            "is_correct": true
+          },
+          { "text": "Markets are no longer useful", "is_correct": false },
+          { "text": "Childhood memories fade quickly", "is_correct": false },
+          { "text": "Modernization improves everything", "is_correct": false }
         ]
       }
     ]

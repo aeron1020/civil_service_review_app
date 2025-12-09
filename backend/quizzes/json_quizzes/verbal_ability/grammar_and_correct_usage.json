@@ -1,6 +1,6 @@
 [
   {
-    "text": "Which sentence is grammatically correct?",
+    "text": "Which sentence is grammatically correct (1)?",
     "explanation": "‘Neither of the solutions is effective’ uses the correct singular verb with ‘neither’.",
     "choices": [
       {
@@ -23,7 +23,7 @@
     ]
   },
   {
-    "text": "Choose the correct sentence.",
+    "text": "Choose the correct sentence (1).",
     "explanation": "‘Each participant must submit his or her form’ uses correct agreement.",
     "choices": [
       {
@@ -105,7 +105,7 @@
     ]
   },
   {
-    "text": "Which sentence is correct?",
+    "text": "Which sentence is correct (2)?",
     "explanation": "Parallel structure needed: cleaned, cooked, and washed.",
     "choices": [
       {
@@ -126,7 +126,6 @@
       }
     ]
   },
-
   {
     "text": "Choose the correct verb: Either Anna or her sisters ____ going.",
     "explanation": "Verb agrees with the nearer subject: sisters → are.",
@@ -138,7 +137,7 @@
     ]
   },
   {
-    "text": "Choose the correct sentence.",
+    "text": "Choose the correct sentence (2).",
     "explanation": "‘Whom’ is the object.",
     "choices": [
       { "text": "Whom did you speak to?", "is_correct": true },
@@ -158,7 +157,7 @@
     ]
   },
   {
-    "text": "Which is correct?",
+    "text": "Which is correct (1)?",
     "explanation": "Uses correct subject–verb agreement.",
     "choices": [
       { "text": "Ten pesos are enough.", "is_correct": false },
@@ -178,7 +177,7 @@
     ]
   },
   {
-    "text": "Which sentence is correctly written?",
+    "text": "Which sentence is correctly written (1)?",
     "explanation": "Apostrophe correctly shows possession.",
     "choices": [
       { "text": "The childrens' playground is closed.", "is_correct": false },
@@ -228,7 +227,7 @@
     ]
   },
   {
-    "text": "Which sentence is correct?",
+    "text": "Which sentence is correct (3)?",
     "explanation": "Correct placement of adverb.",
     "choices": [
       { "text": "She quickly finished the work.", "is_correct": true },
@@ -258,7 +257,7 @@
     ]
   },
   {
-    "text": "Choose the grammatically correct sentence.",
+    "text": "Choose the grammatically correct sentence (2).",
     "explanation": "Uses correct word order.",
     "choices": [
       { "text": "Rarely I go to the cinema.", "is_correct": false },
