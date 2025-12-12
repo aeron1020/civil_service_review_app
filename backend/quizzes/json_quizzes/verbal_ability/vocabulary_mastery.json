@@ -1,5 +1,55 @@
 [
   {
+    "text": "Ever since he won the lottery, John has been living like a maggot in bacon. The phrase 'living like a maggot in bacon' most nearly means:",
+    "explanation": "The idiom means living in extreme comfort or luxury, enjoying abundance.",
+    "choices": [
+      { "text": "living in great comfort or luxury", "is_correct": true },
+      { "text": "living in poverty and hardship", "is_correct": false },
+      { "text": "living in secrecy or hiding", "is_correct": false },
+      { "text": "living a life of adventure", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Despite the storm, the villagers kept their heads above water. The phrase 'kept their heads above water' most nearly means:",
+    "explanation": "The idiom means managing to survive, especially financially or under pressure.",
+    "choices": [
+      { "text": "managing to survive or cope", "is_correct": true },
+      { "text": "literally swimming in water", "is_correct": false },
+      { "text": "ignoring problems completely", "is_correct": false },
+      { "text": "becoming wealthy suddenly", "is_correct": false }
+    ]
+  },
+  {
+    "text": "When she spoke in the meeting, she cut to the chase. The phrase 'cut to the chase' most nearly means:",
+    "explanation": "It means to get to the point without wasting time.",
+    "choices": [
+      { "text": "get straight to the point", "is_correct": true },
+      { "text": "avoid the main topic", "is_correct": false },
+      { "text": "begin a story slowly", "is_correct": false },
+      { "text": "confuse the audience", "is_correct": false }
+    ]
+  },
+  {
+    "text": "After months of hard work, he finally hit the nail on the head with his proposal. The phrase 'hit the nail on the head' most nearly means:",
+    "explanation": "It means to do or say something exactly right or accurate.",
+    "choices": [
+      { "text": "do or say something exactly right", "is_correct": true },
+      { "text": "make a big mistake", "is_correct": false },
+      { "text": "hammer a nail literally", "is_correct": false },
+      { "text": "ignore important details", "is_correct": false }
+    ]
+  },
+  {
+    "text": "She decided to bite the bullet and confront her fears. The phrase 'bite the bullet' most nearly means:",
+    "explanation": "It means to endure a painful or difficult situation with courage.",
+    "choices": [
+      { "text": "face a difficult situation bravely", "is_correct": true },
+      { "text": "avoid facing problems", "is_correct": false },
+      { "text": "literally chew a bullet", "is_correct": false },
+      { "text": "give up easily", "is_correct": false }
+    ]
+  },
+  {
     "text": "Choose the word most similar in meaning to 'abundant'.",
     "explanation": "‘Abundant’ means plentiful or in great quantity.",
     "choices": [
@@ -249,6 +299,106 @@
       { "text": "increase", "is_correct": true },
       { "text": "reduce", "is_correct": false },
       { "text": "lessen", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Sa ilalim ng buwan, narinig ko ang mahina ngunit malamyos niyang tinig, isang tinig na para bang sumasalamin sa kalangitan at kumakanta sa hangin. Ang ibig sabihin ng salitang 'MALAMYOS' ay:",
+    "explanation": "'Malamyos' ay nangangahulugang malambing, mahinahon, at may magandang tunog.",
+    "choices": [
+      { "text": "malambing at mahinahon", "is_correct": true },
+      { "text": "malakas at maingay", "is_correct": false },
+      { "text": "maikli at mabilis", "is_correct": false },
+      { "text": "malamig at mabangis", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Batid kong ang iyong hangarin ay dakila, subalit kailangan mong pagtiisan ang mga pagsubok upang matupad ito. Ang ibig sabihin ng salitang 'BATID' ay:",
+    "explanation": "'Batid' ay nangangahulugang alam o may kaalaman sa isang bagay.",
+    "choices": [
+      { "text": "alam o may kaalaman", "is_correct": true },
+      { "text": "walang alam", "is_correct": false },
+      { "text": "napagtagumpayan", "is_correct": false },
+      { "text": "nakalimutan", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Hindi ko maarok ang buong lalim ng kaniyang damdamin — naglaho siya nang parang bula sa hangin. Ang ibig sabihin ng salitang 'MAAROK' ay:",
+    "explanation": "'Maarok' ay nangangahulugang maunawaan o maintindihan ng lubusan.",
+    "choices": [
+      { "text": "maunawaan o maintindihan", "is_correct": true },
+      { "text": "malimot o kalimutan", "is_correct": false },
+      { "text": "maibukod o alisin", "is_correct": false },
+      { "text": "masaktan o madismaya", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Ang silakbo ng kanyang galit ay tila isang sigwa na handang yumanig sa buong baryo. Ang ibig sabihin ng salitang 'SILAKBO' ay:",
+    "explanation": "'Silakbo' ay biglang pagputok o labis na pagdaloy ng damdamin, tulad ng galit o sigla.",
+    "choices": [
+      { "text": "biglang pagputok ng damdamin", "is_correct": true },
+      { "text": "mabagal na kilos", "is_correct": false },
+      { "text": "tahimik na pag-iisip", "is_correct": false },
+      { "text": "walang pakialam", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Sa gitna ng unos, may isang banaag ng liwanag: ang tapang at pananampalataya ng bayan. Ang ibig sabihin ng salitang 'BANAAG' ay:",
+    "explanation": "'Banaag' ay maliit na liwanag, simula ng pag-asa, o sinag sa dilim.",
+    "choices": [
+      { "text": "sinag o maliit na liwanag", "is_correct": true },
+      { "text": "malakas na hangin", "is_correct": false },
+      { "text": "malakas na ulan", "is_correct": false },
+      { "text": "malamig na gabi", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Matapos ang lahat ng unos, may nagniningning na sigla sa kaniyang mga mata — isang maliwanag na bantayog ng bagong bukang-liwayway. Ang ibig sabihin ng salitang 'SIGLA' ay:",
+    "explanation": "'Sigla' ay lakas, enerhiya, o kasiglahan ng katawan o damdamin.",
+    "choices": [
+      { "text": "lakás o enerhiya", "is_correct": true },
+      { "text": "kapayapaan o tahimik", "is_correct": false },
+      { "text": "kalungkutan o pangungulila", "is_correct": false },
+      { "text": "pagod o panghihina", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Tila ba ang mga bituin ay bumabagtas sa kalangitan at sumasayaw sa tugtugin ng hangin. Ang ibig sabihin ng salitang 'BUMABAGTAS' ay:",
+    "explanation": "'Bumabagtas' ay tumatahak o dumadaan sa isang landas, karaniwan sa poetic o malalim na Tagalog.",
+    "choices": [
+      { "text": "dumadaan o tumatahak sa landas", "is_correct": true },
+      { "text": "tumigil sa paggalaw", "is_correct": false },
+      { "text": "lumipad nang pataas lamang", "is_correct": false },
+      { "text": "lumubog sa ilalim", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Nananalangin siya sa harap ng dambana — humihiling ng awa at kalinga para sa mga dukha. Ang ibig sabihin ng salitang 'DAMBANA' ay:",
+    "explanation": "'Dambana' ay altar o sagradong lugar kung saan isinasagawa ang panalangin o ritwal.",
+    "choices": [
+      { "text": "altar o sagradong lugar", "is_correct": true },
+      { "text": "bahay o tahanan", "is_correct": false },
+      { "text": "paaralan o silid-aralan", "is_correct": false },
+      { "text": "merkado o palengke", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Marahil ay huwad ang ngiting iyon — may itinatagong lihim at kasinungalingan. Ang ibig sabihin ng salitang 'HUWAD' ay:",
+    "explanation": "'Huwad' ay peke, hindi totoo, o may panlilinlang.",
+    "choices": [
+      { "text": "peke o hindi totoo", "is_correct": true },
+      { "text": "totoo o wagas", "is_correct": false },
+      { "text": "matapat o tapat", "is_correct": false },
+      { "text": "ligaya o kasiyahan", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Hindi ito basta aklat, kundi isang aklat ng alaala — puno ng mga karanasang humubog sa pagkatao. Ang ibig sabihin ng salitang 'AKLAT' ay:",
+    "explanation": "'Aklat' ay libro o koleksyon ng nakasulat na kaalaman o karanasan.",
+    "choices": [
+      { "text": "libro o nakasulat na koleksyon", "is_correct": true },
+      { "text": "laruan o kagamitan", "is_correct": false },
+      { "text": "pagkain o meryenda", "is_correct": false },
+      { "text": "damit o kasuotan", "is_correct": false }
     ]
   }
 ]
