@@ -572,11 +572,10 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useParams } from "next/navigation";
-import { getToken } from "@/app/lib/auth";
 // import QuizProgressBar from "@/components/QuizProgressBar";
 // import QuizTimer from "@/components/QuizTimer";
 
-const API_BASE_URL = "http://127.0.0.1:8000/api";
+const API_BASE_URL = "http://localhost:8000/api";
 
 /* ----------------------------- Interfaces ----------------------------- */
 interface Choice {
@@ -740,13 +739,12 @@ export default function QuizDetailPage() {
     };
 
     try {
-      const token = getToken();
       const res = await fetch(`${API_BASE_URL}/quizzes/${quiz.id}/submit/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          ...(token ? { Authorization: `Bearer ${token}` } : {}),
         },
+        credentials: "include", // ✅ THIS IS THE KEY
         body: JSON.stringify(payload),
       });
 

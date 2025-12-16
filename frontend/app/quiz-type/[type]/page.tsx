@@ -502,10 +502,9 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useParams } from "next/navigation";
-import { getToken } from "@/app/lib/auth";
 // import QuizProgressBar from "@/components/QuizProgressBar";
 
-const API_BASE_URL = "http://127.0.0.1:8000/api";
+const API_BASE_URL = "http://localhost:8000/api";
 
 /* ----------------------------- Interfaces ----------------------------- */
 interface Choice {
@@ -670,7 +669,13 @@ export default function RandomQuizPage() {
         setResult(null);
         setActiveTab("summary");
 
-        const res = await fetch(`${API_BASE_URL}/quizzes/random/?type=${type}`);
+        const res = await fetch(
+          `${API_BASE_URL}/quizzes/random/?type=${type}`,
+          {
+            credentials: "include", // ✅
+          }
+        );
+
         const data = await res.json();
 
         if (!res.ok) {
@@ -754,13 +759,12 @@ export default function RandomQuizPage() {
     };
 
     try {
-      const token = getToken();
       const res = await fetch(`${API_BASE_URL}/quizzes/random/submit/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          ...(token ? { Authorization: `Bearer ${token}` } : {}),
         },
+        credentials: "include", // ✅ SEND COOKIES
         body: JSON.stringify(payload),
       });
 

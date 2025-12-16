@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { signup, login } from "../lib/api";
-import { saveToken } from "../lib/auth";
 
 export default function RegisterPage() {
   const router = useRouter();
@@ -15,10 +14,8 @@ export default function RegisterPage() {
   const [loading, setLoading] = useState(false);
   const [strength, setStrength] = useState({ label: "", color: "" });
 
-  // Password strength check logic
   const evaluatePassword = (pwd: string) => {
     let score = 0;
-
     if (pwd.length >= 8) score++;
     if (/[A-Z]/.test(pwd)) score++;
     if (/[a-z]/.test(pwd)) score++;
@@ -63,18 +60,12 @@ export default function RegisterPage() {
 
     try {
       setLoading(true);
-      const result = await signup(username, password);
 
-      if (result?.error) {
-        setError(result.error);
-        return;
-      }
-
-      const data = await login(username, password);
-      saveToken(data.access);
+      await signup(username, password);
+      await login(username, password); // 🍪 cookies set here
 
       setSuccess("Account created successfully! Redirecting...");
-      setTimeout(() => router.push("/"), 1500);
+      setTimeout(() => router.replace("/"), 1200);
     } catch (err: any) {
       setError(err.message || "Registration failed.");
     } finally {
@@ -83,10 +74,7 @@ export default function RegisterPage() {
   };
 
   return (
-    <div
-      className="max-w-sm mx-auto p-6 border rounded shadow"
-      style={{ marginTop: "80px" }}
-    >
+    <div className="max-w-sm mx-auto p-6 border rounded shadow mt-20">
       <h1 className="text-xl font-semibold mb-4 text-center">
         Create an Account
       </h1>
@@ -113,7 +101,6 @@ export default function RegisterPage() {
           required
         />
 
-        {/* Password strength meter */}
         {password && (
           <div className="mb-2">
             <div className="w-full h-2 bg-gray-200 rounded">
@@ -132,7 +119,7 @@ export default function RegisterPage() {
                       : 100
                   }%`,
                 }}
-              ></div>
+              />
             </div>
             <p
               className={`text-xs mt-1 ${strength.color.replace(
@@ -162,16 +149,6 @@ export default function RegisterPage() {
           {loading ? "Creating..." : "Sign Up"}
         </button>
       </form>
-
-      <div className="mt-4 text-sm text-gray-600">
-        <p className="font-semibold">Password requirements:</p>
-        <ul className="list-disc ml-5 text-xs">
-          <li>At least 8 characters long</li>
-          <li>Includes uppercase & lowercase letters</li>
-          <li>Has at least one number</li>
-          <li>Has one special character (e.g. @, #, %)</li>
-        </ul>
-      </div>
 
       <p className="text-sm text-center mt-4">
         Already have an account?{" "}

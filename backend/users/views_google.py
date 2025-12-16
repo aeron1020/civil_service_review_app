@@ -1,18 +1,23 @@
 # views_google.py
 
+import logging
 from django.conf import settings
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
+from django.utils.decorators import method_decorator
+from django.views.decorators.csrf import csrf_exempt
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework_simplejwt.tokens import RefreshToken
 from google.oauth2 import id_token
 from google.auth.transport import requests as google_requests
-from .models import Profile
-import logging
+from .serializers import UserSerializer
+from .views import set_jwt_cookies
 
 logger = logging.getLogger(__name__)
+User = get_user_model()
 
+@method_decorator(csrf_exempt, name="dispatch")
 class GoogleLoginView(APIView):
     permission_classes = []  # Allow any
 
@@ -20,65 +25,39 @@ class GoogleLoginView(APIView):
         try:
             token = request.data.get("credential") or request.data.get("id_token")
             if not token:
-                return Response({"error": "Missing Google ID token."}, status=400)
+                return Response({"error": "Missing Google ID token."}, status=status.HTTP_400_BAD_REQUEST)
 
             # Verify Google token
             idinfo = id_token.verify_oauth2_token(token, google_requests.Request())
 
             if idinfo.get("aud") != settings.GOOGLE_CLIENT_ID:
-                return Response({"error": "Invalid Google client ID."}, status=400)
+                return Response({"error": "Invalid Google client ID."}, status=status.HTTP_400_BAD_REQUEST)
 
             email = idinfo.get("email")
             google_id = idinfo.get("sub")
             username = email.split("@")[0] if email else None
 
             if not email or not google_id:
-                return Response({"error": "Invalid Google token: missing email or ID."}, status=400)
+                return Response({"error": "Invalid Google token"}, status=status.HTTP_400_BAD_REQUEST)
 
             # Check if user exists
-            user, created = User.objects.get_or_create(
-                email=email,
-                defaults={"username": username},
-            )
-
-            # Add auth_provider and google_id dynamically
+            user, created = User.objects.get_or_create(email=email, defaults={"username": username})
             if created:
                 user.set_unusable_password()
                 user.save()
-                Profile.objects.get_or_create(user=user)
-                user.profile.auth_provider = "google"
-                user.profile.google_id = google_id
-                user.profile.save()
-            else:
-                profile, _ = Profile.objects.get_or_create(user=user)
-                # Prevent conflict with local accounts
-                if getattr(profile, "auth_provider", "local") != "google":
-                    return Response(
-                        {"error": "Email already registered using local login."},
-                        status=400
-                    )
-                profile.auth_provider = "google"
-                profile.google_id = google_id
-                profile.save()
 
             # Generate JWT tokens
             refresh = RefreshToken.for_user(user)
+            access = str(refresh.access_token)
 
-            return Response({
-                "access": str(refresh.access_token),
-                "refresh": str(refresh),
-                "user": {
-                    "id": user.id,
-                    "username": user.username,
-                    "email": user.email,
-                    "auth_provider": "google",
-                }
-            })
+            response = Response({"user": UserSerializer(user).data, "message": "Google login successful"}, status=status.HTTP_200_OK)
+            set_jwt_cookies(response, access, str(refresh))
+            return response
 
         except ValueError as e:
             # Invalid token
             logger.exception("Google login failed")
-            return Response({"error": "Invalid Google token."}, status=401)
+            return Response({"error": "Invalid token."}, status=status.HTTP_401_UNAUTHORIZED)
         except Exception as e:
             logger.exception("Unexpected error during Google login")
-            return Response({"error": str(e)}, status=500)
+            return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

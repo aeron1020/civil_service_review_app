@@ -2,43 +2,38 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { isTokenExpired, refreshToken, getToken } from "../app/lib/auth";
+import { useSession } from "next-auth/react";
 
-export default function ProtectedRoute({
-  children,
-}: {
+interface ProtectedRouteProps {
   children: React.ReactNode;
-}) {
+}
+
+export default function ProtectedRoute({ children }: ProtectedRouteProps) {
   const router = useRouter();
+  const { data: session, status } = useSession();
   const [isChecking, setIsChecking] = useState(true);
 
   useEffect(() => {
-    const verifyAuth = async () => {
-      const token = getToken();
+    if (status === "loading") {
+      // Still checking session
+      return;
+    }
 
-      // ❌ No token → redirect to login
-      if (!token) {
-        router.replace("/login");
-        return;
-      }
-
-      // ⏳ Token expired? Try refresh
-      if (isTokenExpired()) {
-        const newToken = await refreshToken();
-        if (!newToken) {
-          router.replace("/login");
-          return;
-        }
-      }
-
+    if (status === "unauthenticated") {
+      router.replace("/login");
+    } else {
+      // Authenticated
       setIsChecking(false);
-    };
+    }
+  }, [status, router]);
 
-    verifyAuth();
-  }, [router]);
-
-  if (isChecking)
-    return <p className="text-center mt-20">Checking authentication...</p>;
+  if (isChecking) {
+    return (
+      <p className="text-center mt-20 text-gray-500 dark:text-gray-400">
+        Checking authentication...
+      </p>
+    );
+  }
 
   return <>{children}</>;
 }

@@ -5,7 +5,7 @@ import api, { extractError } from "./apiClient";
  */
 export async function login(username: string, password: string) {
   try {
-    const res = await api.post("/users/login/", { username, password });
+    const res = await api.post("/users/auth/login/", { username, password });
     return res.data;
   } catch (err) {
     throw new Error(extractError(err));
@@ -19,12 +19,8 @@ export async function signup(username: string, password: string) {
   try {
     const res = await api.post("/users/register/", { username, password });
     return res.data;
-  } catch (error: any) {
-    const message = extractError(error);
-    return {
-      error: message,
-      errors: error.response?.data || {},
-    };
+  } catch (err) {
+    throw new Error(extractError(err));
   }
 }
 

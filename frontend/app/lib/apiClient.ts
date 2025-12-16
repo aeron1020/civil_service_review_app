@@ -1,130 +1,212 @@
+// // apiClient.ts
+// import axios, { AxiosError, AxiosRequestConfig } from "axios";
+// import { base } from "framer-motion/client";
+
+// const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+
+// console.log("API BASE URL:", BASE_URL);
+
+// const api = axios.create({
+//   baseURL: BASE_URL,
+//   timeout: 15000,
+//   withCredentials: true,
+//   headers: { "Content-Type": "application/json" },
+// });
+
+// let isRefreshing = false;
+
+// type RetriableRequest = AxiosRequestConfig & { _retry?: boolean };
+
+// let failedQueue: {
+//   resolve: (v?: unknown) => void;
+//   reject: (e?: unknown) => void;
+//   config: RetriableRequest;
+// }[] = [];
+
+// function processQueue(error?: unknown) {
+//   failedQueue.forEach((p) => {
+//     if (error) p.reject(error);
+//     else p.resolve(true);
+//   });
+//   failedQueue = [];
+// }
+
+// function shouldAttemptRefresh(url?: string) {
+//   if (!url) return false;
+
+//   return (
+//     !url.includes("/users/auth/login") &&
+//     !url.includes("/users/auth/logout") &&
+//     !url.includes("/users/auth/refresh")
+//     // !url.includes("/users/profile") --- IGNORE ---
+//   );
+// }
+
+// api.interceptors.response.use(
+//   (response) => response,
+//   async (error: AxiosError) => {
+//     const originalRequest = error.config as RetriableRequest;
+//     const status = error.response?.status;
+
+//     if (!originalRequest) return Promise.reject(error);
+
+//     if (
+//       status === 401 &&
+//       !originalRequest._retry &&
+//       shouldAttemptRefresh(originalRequest.url)
+//     ) {
+//       originalRequest._retry = true;
+
+//       if (isRefreshing) {
+//         console.log("⏳ Interceptor: Already refreshing, adding to queue...");
+//         return new Promise((resolve, reject) => {
+//           failedQueue.push({ resolve, reject, config: originalRequest });
+//         }).then(() => api(originalRequest));
+//       }
+
+//       isRefreshing = true;
+//       console.log("🚀 Interceptor: Starting Silent Refresh...");
+
+//       try {
+//         await axios.post(
+//           `${BASE_URL}/users/auth/refresh/`,
+//           {},
+//           { withCredentials: true }
+//         );
+
+//         processQueue();
+//         isRefreshing = false;
+
+//         return api(originalRequest);
+//       } catch (refreshError) {
+//         processQueue(refreshError);
+//         isRefreshing = false;
+
+//         // if (typeof window !== "undefined") {
+//         //   window.location.href = "/login";
+//         // }
+
+//         return Promise.reject(refreshError);
+//       }
+//     }
+
+//     return Promise.reject(error);
+//   }
+// );
+
+// /* ===============================
+//    ERROR HELPER
+// ================================= */
+// export function extractError(err: unknown): string {
+//   const e = err as any;
+//   const data = e?.response?.data;
+
+//   if (!data) return e?.message ?? "Request failed";
+//   if (typeof data === "string") return data;
+//   if (typeof data.detail === "string") return data.detail;
+
+//   const first = Object.values(data)[0];
+//   if (Array.isArray(first)) return String(first[0]);
+
+//   return "Request failed";
+// }
+
+// export default api;
+
 // apiClient.ts
 import axios, { AxiosError, AxiosRequestConfig } from "axios";
-import { tokenService } from "./auth";
 
-/* ===============================
-   BASE URL
-================================= */
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
-
-console.log("[API] BASE_URL:", BASE_URL);
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000/api";
 
 const api = axios.create({
   baseURL: BASE_URL,
   timeout: 15000,
+  withCredentials: true, // Required for cookies
   headers: { "Content-Type": "application/json" },
 });
 
-/* ===============================
-   REQUEST INTERCEPTOR
-================================= */
-api.interceptors.request.use(
-  (config) => {
-    const token = tokenService.get();
+let isRefreshing = false;
+let failedQueue: any[] = [];
 
-    console.log("%c[API REQUEST]", "color: green; font-weight:bold;", {
-      url: config.url,
-      method: config.method,
-      access_token: token?.slice(0, 20) + "...",
-    });
+const processQueue = (error: any = null) => {
+  failedQueue.forEach((prom) => {
+    if (error) prom.reject(error);
+    else prom.resolve();
+  });
+  failedQueue = [];
+};
 
-    if (token && config.headers) {
-      config.headers.Authorization = `Bearer ${token}`;
-    }
-    return config;
-  },
-  (err) => Promise.reject(err)
-);
+function shouldAttemptRefresh(url?: string) {
+  if (!url) return false;
+  // Don't refresh on login/logout/refresh to avoid infinite loops
+  return (
+    !url.includes("/users/auth/login") &&
+    !url.includes("/users/auth/logout") &&
+    !url.includes("/users/auth/refresh")
+  );
+}
 
-/* ===============================
-   RESPONSE INTERCEPTOR
-================================= */
 api.interceptors.response.use(
-  (response) => {
-    console.log("%c[API RESPONSE OK]", "color: blue;", response.config.url);
-    return response;
-  },
+  (response) => response,
   async (error: AxiosError) => {
     const originalRequest = error.config as AxiosRequestConfig & {
       _retry?: boolean;
     };
-    const status = error.response?.status;
 
-    console.log("%c[API ERROR]", "color:red; font-weight:bold;", {
-      url: originalRequest?.url,
-      status: error.response?.status,
-      data: error.response?.data,
-    });
-
-    if (originalRequest?.url?.includes("token/refresh")) {
-      console.warn("[REFRESH] Refresh endpoint failed. Logging out.");
-      tokenService.logout();
-      return Promise.reject(error);
-    }
-
-    if (status === 401 && !originalRequest._retry) {
+    if (
+      error.response?.status === 401 &&
+      !originalRequest._retry &&
+      shouldAttemptRefresh(originalRequest.url)
+    ) {
       originalRequest._retry = true;
 
-      console.warn("[AUTH] Access token expired. Attempting refresh…");
-
-      if (tokenService.isRefreshing()) {
-        console.log("[AUTH] Refresh in progress → queuing request");
-
+      if (isRefreshing) {
+        console.log("⏳ Interceptor: Queueing request while refreshing...");
         return new Promise((resolve, reject) => {
-          tokenService.subscribe((newToken) => {
-            if (!newToken) return reject(error);
-
-            console.log("[AUTH] Queued request using new token");
-
-            if (originalRequest.headers)
-              originalRequest.headers.Authorization = `Bearer ${newToken}`;
-            resolve(api(originalRequest));
-          });
-        });
+          failedQueue.push({ resolve, reject });
+        })
+          .then(() => api(originalRequest))
+          .catch((err) => Promise.reject(err));
       }
 
-      const newToken = await tokenService.refresh();
+      isRefreshing = true;
+      console.log(
+        "🚀 Interceptor: Access Token expired. Attempting refresh..."
+      );
 
-      console.log("[AUTH] Refresh Result:", newToken);
+      try {
+        // We use plain axios here to avoid the interceptor loop
+        await axios.post(
+          `${BASE_URL}/users/auth/refresh/`,
+          {},
+          { withCredentials: true }
+        );
 
-      if (!newToken) {
-        console.warn("[AUTH] Refresh failed → Logging out");
-        tokenService.logout();
-        return Promise.reject(error);
+        console.log("✅ Interceptor: Refresh successful.");
+        isRefreshing = false;
+        processQueue(); // Resolve all pending requests in queue
+
+        return api(originalRequest); // Retry the original failed request
+      } catch (refreshError) {
+        console.error("❌ Interceptor: Refresh token failed or expired.");
+        isRefreshing = false;
+        processQueue(refreshError);
+
+        // Optional: window.location.href = "/login";
+        return Promise.reject(refreshError);
       }
-
-      if (originalRequest.headers)
-        originalRequest.headers.Authorization = `Bearer ${newToken}`;
-
-      console.log("[AUTH] Retrying original request:", originalRequest.url);
-
-      return api(originalRequest);
     }
-
     return Promise.reject(error);
   }
 );
 
-/* ===============================
-   ERROR HELPER
-================================= */
 export function extractError(err: unknown): string {
-  const e = err as AxiosError | any;
+  const e = err as any;
   const data = e?.response?.data;
-
   if (!data) return e?.message ?? "Request failed";
-
   if (typeof data === "string") return data;
-  if (typeof data.detail === "string") return data.detail;
-
-  if (Array.isArray(data?.non_field_errors)) return data.non_field_errors[0];
-
-  const first = Object.values(data)[0];
-
-  if (Array.isArray(first)) return first[0];
-  if (typeof first === "string") return first;
-
-  return "Request failed";
+  if (data.detail) return data.detail;
+  return "An error occurred";
 }
 
 export default api;

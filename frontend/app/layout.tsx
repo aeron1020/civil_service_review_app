@@ -2,11 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
-import ThemeProviderWrapper from "../components/ThemeProviderWrapper"; // ✅ use this
+import ThemeProviderWrapper from "../components/ThemeProviderWrapper";
 import Footer from "@/components/Footer";
-import Providers from "components/Providers";
 import GoogleProvider from "@/components/GoogleProvider";
-import AuthInit from "./AuthInit";
+import { AuthProvider } from "components/AuthContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,6 +22,37 @@ export const metadata: Metadata = {
   description: "Take quizzes and practice for the Civil Service Exam",
 };
 
+// export default function RootLayout({
+//   children,
+// }: {
+//   children: React.ReactNode;
+// }) {
+//   return (
+//     <html lang="en" suppressHydrationWarning>
+//       <head>
+//         <script
+//           src="https://accounts.google.com/gsi/client"
+//           async
+//           defer
+//         ></script>
+//       </head>
+
+//       <body
+//         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300`}
+//       >
+//         <AuthProvider>
+//           <ThemeProviderWrapper>
+//             <GoogleProvider />
+//             <Navbar />
+//             <main className="min-h-screen">{children}</main>
+//             <Footer />
+//           </ThemeProviderWrapper>
+//         </AuthProvider>
+//       </body>
+//     </html>
+//   );
+// }
+
 export default function RootLayout({
   children,
 }: {
@@ -31,7 +61,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* ⭐ REQUIRED FOR GOOGLE LOGIN */}
         <script
           src="https://accounts.google.com/gsi/client"
           async
@@ -39,19 +68,15 @@ export default function RootLayout({
         ></script>
       </head>
 
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300`}
-      >
-        <AuthInit />
-        <Providers>
-          {" "}
+      <body className="...">
+        <AuthProvider>
           <ThemeProviderWrapper>
             <GoogleProvider />
             <Navbar />
             <main className="min-h-screen">{children}</main>
             <Footer />
           </ThemeProviderWrapper>
-        </Providers>
+        </AuthProvider>
       </body>
     </html>
   );

@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'corsheaders',
 
+    'rest_framework_simplejwt.token_blacklist',
+
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -83,8 +85,24 @@ MIDDLEWARE = [
 # CORS
 from corsheaders.defaults import default_headers
 CORS_ALLOW_HEADERS = list(default_headers) + ["content-type", "authorization"]
-CORS_ALLOWED_ORIGINS = ["http://localhost:3000"]
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://127.0.0.1:8000",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+
+]
 CORS_ALLOW_CREDENTIALS = True
+
+# JWT cookie configuration for HttpOnly cookies
+JWT_ACCESS_COOKIE_NAME = "access"
+JWT_REFRESH_COOKIE_NAME = "refresh"
+JWT_COOKIE_SAMESITE = "Lax"       # Adjust as needed: 'Lax', 'Strict', 'None'
+SECURE_COOKIE_FOR_JWT = False     # set True in production (HTTPS)
 
 ROOT_URLCONF = 'backend.urls'
 
@@ -172,7 +190,8 @@ REST_FRAMEWORK = {
 
     # Authentication
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        "users.authentication.CookieJWTAuthentication",
+        "rest_framework.authentication.SessionAuthentication",
     ),
 
 }
@@ -184,12 +203,20 @@ AUTH_PASSWORD_VALIDATORS = [
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
 ]
 
+SESSION_COOKIE_AGE = 86400 # 1 day
+
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=5),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
     "ROTATE_REFRESH_TOKENS": True,
     "BLACKLIST_AFTER_ROTATION": True,
-    "AUTH_HEADER_TYPES": ("Bearer",),
+    
+    # Add these so the library knows you are using cookies
+    "AUTH_COOKIE": "access",          # Match your JWT_ACCESS_COOKIE_NAME
+    "AUTH_COOKIE_REFRESH": "refresh", # Match your JWT_REFRESH_COOKIE_NAME
+    "AUTH_COOKIE_SECURE": False,      # False for localhost
+    "AUTH_COOKIE_HTTP_ONLY": True,
+    "AUTH_COOKIE_SAMESITE": "Lax",
 }
 
 MEDIA_URL = '/media/'

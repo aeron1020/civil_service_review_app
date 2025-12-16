@@ -1,5 +1,156 @@
-// login/page.tsx
+// "use client";
+
+// import { useEffect, useRef, useState } from "react";
+// import Script from "next/script";
+// import { useRouter } from "next/navigation";
+
+// declare global {
+//   interface Window {
+//     google: any;
+//   }
+// }
+
+// const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+// const GOOGLE_CLIENT_ID = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
+
+// export default function LoginPage() {
+//   const router = useRouter();
+//   const btnRef = useRef<HTMLDivElement | null>(null);
+
+//   const [username, setUsername] = useState("");
+//   const [password, setPassword] = useState("");
+//   const [loading, setLoading] = useState(false);
+//   const [error, setError] = useState<string | null>(null);
+
+//   // OPTIONAL: check auth by calling backend
+//   useEffect(() => {
+//     fetch(`${API_BASE}/users/profile/`, {
+//       credentials: "include",
+//     }).then((res) => {
+//       if (res.ok) router.replace("/");
+//     });
+//   }, [router]);
+
+//   const initGoogle = () => {
+//     if (!GOOGLE_CLIENT_ID || !window.google || !btnRef.current) return;
+
+//     window.google.accounts.id.initialize({
+//       client_id: GOOGLE_CLIENT_ID,
+//       callback: handleGoogleLogin,
+//     });
+
+//     window.google.accounts.id.renderButton(btnRef.current, {
+//       theme: "outline",
+//       size: "large",
+//       width: 250,
+//     });
+//   };
+
+//   async function handleGoogleLogin(response: any) {
+//     setError(null);
+
+//     try {
+//       const res = await fetch(`${API_BASE}/users/auth/google/`, {
+//         method: "POST",
+//         headers: { "Content-Type": "application/json" },
+//         credentials: "include", // 🔥 REQUIRED
+//         body: JSON.stringify({ credential: response.credential }),
+//       });
+
+//       const data = await res.json();
+
+//       if (!res.ok) {
+//         throw new Error(data.error || data.detail || "Google login failed");
+//       }
+
+//       // ✅ Cookies are already set — just redirect
+//       window.dispatchEvent(new Event("auth-changed"));
+//       router.push("/");
+//     } catch (err: any) {
+//       setError(err.message || "Google login failed");
+//     }
+//   }
+
+//   async function handleLocalLogin() {
+//     setError(null);
+//     setLoading(true);
+
+//     try {
+//       const res = await fetch(`${API_BASE}/users/auth/login/`, {
+//         method: "POST",
+//         headers: { "Content-Type": "application/json" },
+//         credentials: "include", // 🔥 REQUIRED
+//         body: JSON.stringify({ username, password }),
+//       });
+
+//       const data = await res.json();
+//       if (!res.ok) {
+//         throw new Error(data.detail || "Invalid credentials");
+//       }
+
+//       // ✅ Cookies set — redirect
+//       window.dispatchEvent(new Event("auth-changed"));
+//       router.push("/");
+//     } catch (err: any) {
+//       setError(err.message || "Login failed");
+//     } finally {
+//       setLoading(false);
+//     }
+//   }
+
+//   return (
+//     <div className="max-w-md mx-auto mt-20 p-6 border rounded shadow">
+//       <Script
+//         src="https://accounts.google.com/gsi/client"
+//         strategy="afterInteractive"
+//         onLoad={initGoogle}
+//       />
+
+//       <h1 className="text-2xl font-bold mb-6 text-center">Login</h1>
+
+//       <input
+//         type="text"
+//         placeholder="Username"
+//         value={username}
+//         onChange={(e) => setUsername(e.target.value)}
+//         className="w-full p-2 border rounded mb-2"
+//       />
+
+//       <input
+//         type="password"
+//         placeholder="Password"
+//         value={password}
+//         onChange={(e) => setPassword(e.target.value)}
+//         className="w-full p-2 border rounded mb-4"
+//       />
+
+//       <button
+//         onClick={handleLocalLogin}
+//         disabled={loading}
+//         className="w-full p-2 bg-green-500 text-white rounded"
+//       >
+//         {loading ? "Logging in..." : "Login"}
+//       </button>
+
+//       <div className="my-4 flex items-center">
+//         <hr className="flex-grow" />
+//         <span className="px-2 text-gray-500">OR</span>
+//         <hr className="flex-grow" />
+//       </div>
+
+//       <div ref={btnRef} className="flex justify-center" />
+
+//       {error && <p className="text-red-500 text-center mt-4">{error}</p>}
+//     </div>
+//   );
+// }
+
 "use client";
+
+import { useEffect, useRef, useState } from "react";
+import Script from "next/script";
+import { useRouter } from "next/navigation";
+import { useAuth } from "@/components/AuthContext";
 
 declare global {
   interface Window {
@@ -7,18 +158,12 @@ declare global {
   }
 }
 
-import { useEffect, useRef, useState } from "react";
-import Script from "next/script";
-import { useRouter } from "next/navigation";
-import { tokenService } from "../lib/auth";
-
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000/api";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
 const GOOGLE_CLIENT_ID = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
-
-console.log("NEXT_PUBLIC_API_URL:", process.env.NEXT_PUBLIC_API_URL);
 
 export default function LoginPage() {
   const router = useRouter();
+  const { refreshUser } = useAuth(); // ✅ ADD THIS
   const btnRef = useRef<HTMLDivElement | null>(null);
 
   const [username, setUsername] = useState("");
@@ -26,121 +171,76 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // redirect if already logged in
+  // Optional auto-redirect if already logged in
   useEffect(() => {
-    const token = tokenService.get();
-    if (token && !tokenService.expired()) router.replace("/");
+    fetch(`${API_BASE}/users/profile/`, {
+      credentials: "include",
+    }).then((res) => {
+      if (res.ok) router.replace("/");
+    });
   }, [router]);
 
-  // initialize Google Identity Services
   const initGoogle = () => {
     if (!GOOGLE_CLIENT_ID || !window.google || !btnRef.current) return;
 
-    try {
-      window.google.accounts.id.initialize({
-        client_id: GOOGLE_CLIENT_ID,
-        callback: handleCredentialResponse,
-      });
+    window.google.accounts.id.initialize({
+      client_id: GOOGLE_CLIENT_ID,
+      callback: handleGoogleLogin,
+    });
 
-      // Render the button inline in the form
-      window.google.accounts.id.renderButton(btnRef.current, {
-        theme: "outline",
-        size: "large",
-        width: 250, // optional: control width
-        text: "signin_with", // shows "Sign in with Google"
-      });
-    } catch (e) {
-      console.warn("Google Identity init failed", e);
-    }
+    window.google.accounts.id.renderButton(btnRef.current, {
+      theme: "outline",
+      size: "large",
+      width: 250,
+    });
   };
 
-  async function handleCredentialResponse(response: any) {
-    console.log("GOOGLE RESPONSE:", response);
-    console.log("GOOGLE CREDENTIAL:", response.credential);
-
+  async function handleGoogleLogin(response: any) {
     setError(null);
-    const credential = response?.credential;
-    if (!credential) {
-      setError("Google credential not returned");
-      return;
-    }
 
     try {
       const res = await fetch(`${API_BASE}/users/auth/google/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ credential }),
+        credentials: "include",
+        body: JSON.stringify({ credential: response.credential }),
       });
 
-      // parse JSON safely
-      let data: any;
-      try {
-        data = await res.json();
-      } catch {
-        throw new Error("Invalid JSON response from backend.");
-      }
-
+      const data = await res.json();
       if (!res.ok) {
-        throw new Error(data?.error || data?.detail || "Google login failed");
+        throw new Error(data.error || data.detail || "Google login failed");
       }
 
-      // Always extract tokens safely
-      const access =
-        data.access ?? data.tokens?.access ?? data.tokens?.access_token;
-      const refresh =
-        data.refresh ?? data.tokens?.refresh ?? data.tokens?.refresh_token;
-
-      console.log("BACKEND RESPONSE:", data);
-      console.log("ACCESS:", access);
-      console.log("REFRESH:", refresh);
-
-      if (!access || !refresh) {
-        throw new Error(
-          "Backend did not return access/refresh tokens properly."
-        );
-      }
-
-      // Save tokens in tokenService
-      tokenService.save(access, refresh);
-
-      // Redirect to home after login
+      // ✅ SYNC AUTH CONTEXT
+      await refreshUser();
       router.push("/");
     } catch (err: any) {
-      console.error("Google login error", err);
-      setError(err.message || "Login failed");
+      setError(err.message || "Google login failed");
     }
   }
 
   async function handleLocalLogin() {
     setError(null);
     setLoading(true);
+
     try {
-      const res = await fetch(`${API_BASE}/users/login/`, {
+      const res = await fetch(`${API_BASE}/users/auth/login/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        credentials: "include",
         body: JSON.stringify({ username, password }),
       });
+
       const data = await res.json();
-      if (!res.ok)
-        throw new Error(data.detail || data.error || "Invalid credentials");
-
-      const access = data.access || data.access_token || data.tokens?.access;
-
-      const refresh =
-        data.refresh || data.refresh_token || data.tokens?.refresh;
-
-      if (!access || !refresh) {
-        console.error("LOCAL LOGIN TOKEN MISSING", data);
-        setError("Login successful but no token received");
-        return;
+      if (!res.ok) {
+        throw new Error(data.detail || "Invalid credentials");
       }
-      console.error("LOCAL LOGIN TOKEN MISSING means OK", data);
-      tokenService.save(access, refresh);
 
+      // ✅ SYNC AUTH CONTEXT
+      await refreshUser();
       router.push("/");
     } catch (err: any) {
-      console.error("Login failed:", err);
-      setError(err.message || "Login failed. Please try again.");
+      setError(err.message || "Login failed");
     } finally {
       setLoading(false);
     }
@@ -153,53 +253,42 @@ export default function LoginPage() {
         strategy="afterInteractive"
         onLoad={initGoogle}
       />
+
       <h1 className="text-2xl font-bold mb-6 text-center">Login</h1>
 
-      <div className="space-y-3">
-        {/* Local login form */}
-        <input
-          type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          className="w-full p-2 border rounded"
-          disabled={loading}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className="w-full p-2 border rounded"
-          disabled={loading}
-        />
-        <button
-          onClick={handleLocalLogin}
-          disabled={loading}
-          className={`w-full p-2 text-white rounded ${
-            loading ? "bg-green-400" : "bg-green-500 hover:bg-green-600"
-          }`}
-        >
-          {loading ? "Logging in..." : "Login"}
-        </button>
+      <input
+        type="text"
+        placeholder="Username"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+        className="w-full p-2 border rounded mb-2"
+      />
 
-        <div className="flex items-center my-3">
-          <hr className="flex-grow border-gray-300" />
-          <span className="px-2 text-gray-500 text-sm">OR</span>
-          <hr className="flex-grow border-gray-300" />
-        </div>
-        {/* Inline Google button */}
-        <div ref={btnRef} className="flex justify-center" />
+      <input
+        type="password"
+        placeholder="Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        className="w-full p-2 border rounded mb-4"
+      />
 
-        {error && <p className="text-red-500 text-sm text-center">{error}</p>}
+      <button
+        onClick={handleLocalLogin}
+        disabled={loading}
+        className="w-full p-2 bg-green-500 text-white rounded"
+      >
+        {loading ? "Logging in..." : "Login"}
+      </button>
 
-        <p className="text-sm text-center mt-4">
-          Don't have an account?{" "}
-          <a href="/register" className="text-blue-600 hover:underline">
-            Sign up
-          </a>
-        </p>
+      <div className="my-4 flex items-center">
+        <hr className="flex-grow" />
+        <span className="px-2 text-gray-500">OR</span>
+        <hr className="flex-grow" />
       </div>
+
+      <div ref={btnRef} className="flex justify-center" />
+
+      {error && <p className="text-red-500 text-center mt-4">{error}</p>}
     </div>
   );
 }
