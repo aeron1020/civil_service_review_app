@@ -48,5 +48,270 @@
       { "text": "Manuel L. Quezon", "is_correct": true },
       { "text": "Emilio Aguinaldo", "is_correct": false }
     ]
+  },
+  {
+    "text": "Which event is generally considered the beginning of Spanish colonization in the Philippines?",
+    "explanation": "The arrival of Ferdinand Magellan in 1521 marked the first contact with Spain and the beginning of Spanish involvement in the Philippines.",
+    "choices": [
+      { "text": "The founding of Intramuros", "is_correct": false },
+      { "text": "The arrival of Ferdinand Magellan", "is_correct": true },
+      { "text": "The execution of Gomburza", "is_correct": false },
+      { "text": "The opening of the Suez Canal", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who ordered the execution of Gomburza in 1872?",
+    "explanation": "Governor-General Rafael Izquierdo ordered the execution of Gomburza following the Cavite Mutiny.",
+    "choices": [
+      { "text": "Carlos María de la Torre", "is_correct": false },
+      { "text": "Rafael Izquierdo", "is_correct": true },
+      { "text": "Emilio Aguinaldo", "is_correct": false },
+      { "text": "Miguel López de Legazpi", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which movement sought reforms from Spain through peaceful means?",
+    "explanation": "The Propaganda Movement aimed to secure reforms for Filipinos through peaceful advocacy and writings.",
+    "choices": [
+      { "text": "Katipunan", "is_correct": false },
+      { "text": "Propaganda Movement", "is_correct": true },
+      { "text": "Hukbalahap", "is_correct": false },
+      { "text": "La Liga Filipina", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What was the primary objective of the Katipunan?",
+    "explanation": "The Katipunan aimed to gain independence from Spain through armed revolution.",
+    "choices": [
+      {
+        "text": "To request representation in the Spanish Cortes",
+        "is_correct": false
+      },
+      {
+        "text": "To achieve independence through revolution",
+        "is_correct": true
+      },
+      { "text": "To promote Spanish culture", "is_correct": false },
+      { "text": "To establish trade relations with Spain", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Where was the Philippine Declaration of Independence proclaimed on June 12, 1898?",
+    "explanation": "The Declaration of Independence was proclaimed in Kawit, Cavite.",
+    "choices": [
+      { "text": "Malolos, Bulacan", "is_correct": false },
+      { "text": "Manila", "is_correct": false },
+      { "text": "Kawit, Cavite", "is_correct": true },
+      { "text": "Biak-na-Bato", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which treaty formally ended the Spanish-American War?",
+    "explanation": "The Treaty of Paris of 1898 ended the Spanish-American War and transferred the Philippines to the United States.",
+    "choices": [
+      { "text": "Treaty of Tordesillas", "is_correct": false },
+      { "text": "Treaty of Paris (1898)", "is_correct": true },
+      { "text": "Treaty of Manila", "is_correct": false },
+      { "text": "Treaty of Biak-na-Bato", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who was the first President of the First Philippine Republic?",
+    "explanation": "Emilio Aguinaldo served as the first President of the First Philippine Republic.",
+    "choices": [
+      { "text": "Andres Bonifacio", "is_correct": false },
+      { "text": "Manuel L. Quezon", "is_correct": false },
+      { "text": "Emilio Aguinaldo", "is_correct": true },
+      { "text": "Jose Rizal", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which law provided for the gradual granting of independence to the Philippines by the United States?",
+    "explanation": "The Tydings–McDuffie Act established the Commonwealth of the Philippines and set a timetable for independence.",
+    "choices": [
+      { "text": "Jones Law", "is_correct": false },
+      { "text": "Tydings–McDuffie Act", "is_correct": true },
+      { "text": "Bell Trade Act", "is_correct": false },
+      { "text": "Hare-Hawes Act", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who was the President of the Commonwealth of the Philippines?",
+    "explanation": "Manuel L. Quezon served as President of the Commonwealth government.",
+    "choices": [
+      { "text": "Sergio Osmeña", "is_correct": false },
+      { "text": "Manuel L. Quezon", "is_correct": true },
+      { "text": "Jose P. Laurel", "is_correct": false },
+      { "text": "Ramon Magsaysay", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which event marked the start of Japanese occupation in the Philippines during World War II?",
+    "explanation": "Japanese forces invaded the Philippines shortly after the attack on Pearl Harbor in 1941.",
+    "choices": [
+      { "text": "Fall of Bataan", "is_correct": false },
+      { "text": "Japanese invasion of the Philippines", "is_correct": true },
+      { "text": "Battle of Leyte Gulf", "is_correct": false },
+      { "text": "Declaration of Manila as an open city", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who served as President of the Philippines during the Japanese occupation?",
+    "explanation": "Jose P. Laurel served as President of the Second Philippine Republic under Japanese occupation.",
+    "choices": [
+      { "text": "Manuel Roxas", "is_correct": false },
+      { "text": "Sergio Osmeña", "is_correct": false },
+      { "text": "Jose P. Laurel", "is_correct": true },
+      { "text": "Emilio Aguinaldo", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What was the significance of the Battle of Leyte Gulf?",
+    "explanation": "The Battle of Leyte Gulf was the largest naval battle of World War II and led to the liberation of the Philippines.",
+    "choices": [
+      {
+        "text": "It marked the start of Japanese occupation",
+        "is_correct": false
+      },
+      {
+        "text": "It led to the return of General MacArthur",
+        "is_correct": true
+      },
+      { "text": "It ended Spanish rule", "is_correct": false },
+      { "text": "It established the Commonwealth", "is_correct": false }
+    ]
+  },
+  {
+    "text": "When did the Philippines gain full independence from the United States?",
+    "explanation": "The Philippines gained full independence on July 4, 1946.",
+    "choices": [
+      { "text": "June 12, 1898", "is_correct": false },
+      { "text": "July 4, 1946", "is_correct": true },
+      { "text": "December 8, 1941", "is_correct": false },
+      { "text": "February 25, 1986", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who was the first President of the Third Philippine Republic?",
+    "explanation": "Manuel Roxas became the first President of the independent Republic of the Philippines in 1946.",
+    "choices": [
+      { "text": "Elpidio Quirino", "is_correct": false },
+      { "text": "Manuel Roxas", "is_correct": true },
+      { "text": "Ramon Magsaysay", "is_correct": false },
+      { "text": "Carlos P. Garcia", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine president was known for his strong anti-corruption campaign and populist leadership?",
+    "explanation": "Ramon Magsaysay was known for his integrity, accessibility, and anti-corruption stance.",
+    "choices": [
+      { "text": "Ferdinand Marcos", "is_correct": false },
+      { "text": "Ramon Magsaysay", "is_correct": true },
+      { "text": "Diosdado Macapagal", "is_correct": false },
+      { "text": "Carlos P. Garcia", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which event marked the declaration of Martial Law in the Philippines?",
+    "explanation": "President Ferdinand Marcos declared Martial Law in 1972 through Proclamation No. 1081.",
+    "choices": [
+      { "text": "EDSA People Power Revolution", "is_correct": false },
+      { "text": "Proclamation No. 1081", "is_correct": true },
+      { "text": "Jabidah Massacre", "is_correct": false },
+      { "text": "Mendiola Massacre", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which event led to the end of the Marcos regime in 1986?",
+    "explanation": "The EDSA People Power Revolution peacefully ended the Marcos dictatorship.",
+    "choices": [
+      { "text": "Declaration of Martial Law", "is_correct": false },
+      { "text": "EDSA People Power Revolution", "is_correct": true },
+      { "text": "Snap elections of 1978", "is_correct": false },
+      { "text": "Assassination of Jose Rizal", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who became President after the 1986 People Power Revolution?",
+    "explanation": "Corazon C. Aquino became President following the EDSA Revolution.",
+    "choices": [
+      { "text": "Imelda Marcos", "is_correct": false },
+      { "text": "Corazon C. Aquino", "is_correct": true },
+      { "text": "Fidel V. Ramos", "is_correct": false },
+      { "text": "Joseph Estrada", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which constitution is currently in effect in the Philippines?",
+    "explanation": "The 1987 Constitution was ratified after the EDSA Revolution and remains in effect today.",
+    "choices": [
+      { "text": "1935 Constitution", "is_correct": false },
+      { "text": "1973 Constitution", "is_correct": false },
+      { "text": "1987 Constitution", "is_correct": true },
+      { "text": "Malolos Constitution", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who is recognized as the national hero of the Philippines?",
+    "explanation": "Jose Rizal is recognized as the national hero due to his writings and influence on Philippine nationalism.",
+    "choices": [
+      { "text": "Andres Bonifacio", "is_correct": false },
+      { "text": "Jose Rizal", "is_correct": true },
+      { "text": "Apolinario Mabini", "is_correct": false },
+      { "text": "Marcelo H. del Pilar", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What was the primary purpose of the Malolos Congress of 1898?",
+    "explanation": "The Malolos Congress was convened to draft the first Philippine Constitution and establish a republican government.",
+    "choices": [
+      { "text": "To negotiate peace with Spain", "is_correct": false },
+      { "text": "To draft the Philippine Constitution", "is_correct": true },
+      { "text": "To elect provincial governors", "is_correct": false },
+      { "text": "To organize labor unions", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine president implemented the New Society (Bagong Lipunan) program?",
+    "explanation": "President Ferdinand E. Marcos Sr. introduced the New Society as part of his governance during Martial Law.",
+    "choices": [
+      { "text": "Diosdado Macapagal", "is_correct": false },
+      { "text": "Ferdinand E. Marcos Sr.", "is_correct": true },
+      { "text": "Corazon Aquino", "is_correct": false },
+      { "text": "Ramon Magsaysay", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which event is considered the first armed conflict between Filipino revolutionaries and American forces?",
+    "explanation": "The Battle of San Juan Bridge in 1899 marked the beginning of the Philippine-American War.",
+    "choices": [
+      { "text": "Battle of Tirad Pass", "is_correct": false },
+      { "text": "Battle of San Juan Bridge", "is_correct": true },
+      { "text": "Cry of Balintawak", "is_correct": false },
+      { "text": "Battle of Manila Bay", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What was the significance of the Jones Law of 1916?",
+    "explanation": "The Jones Law promised eventual independence to the Philippines and reorganized its legislature.",
+    "choices": [
+      { "text": "It declared immediate independence", "is_correct": false },
+      { "text": "It established Spanish rule", "is_correct": false },
+      {
+        "text": "It promised eventual Philippine independence",
+        "is_correct": true
+      },
+      { "text": "It abolished the Philippine Assembly", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Filipino hero was executed at Bagumbayan (Luneta) on December 30, 1896?",
+    "explanation": "Dr. José Rizal was executed by Spanish authorities, an event that intensified the Philippine Revolution.",
+    "choices": [
+      { "text": "Andres Bonifacio", "is_correct": false },
+      { "text": "Emilio Aguinaldo", "is_correct": false },
+      { "text": "José Rizal", "is_correct": true },
+      { "text": "Antonio Luna", "is_correct": false }
+    ]
   }
 ]

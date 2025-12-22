@@ -1,279 +1,778 @@
 [
   {
-    "text": "Which sentence is grammatically correct (1)?",
-    "explanation": "‘Neither of the solutions is effective’ uses the correct singular verb with ‘neither’.",
+    "text": "Choose the correct sentence (0).",
+    "explanation": "The correct sentence uses proper subject-verb agreement.",
     "choices": [
+      { "text": "Each of the students have a book.", "is_correct": false },
+      { "text": "Each of the students has a book.", "is_correct": true },
       {
-        "text": "Neither of the solutions are effective.",
+        "text": "Each of the students are having a book.",
         "is_correct": false
       },
-      { "text": "Neither of the solutions is effective.", "is_correct": true },
-      { "text": "Neither of the solution is effective.", "is_correct": false },
-      { "text": "Neither solutions is effective.", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Choose the correct form to complete the sentence: She ____ to the meeting every Monday.",
-    "explanation": "‘Goes’ is the correct simple present form.",
-    "choices": [
-      { "text": "go", "is_correct": false },
-      { "text": "goes", "is_correct": true },
-      { "text": "going", "is_correct": false },
-      { "text": "gone", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Choose the correct sentence (1).",
-    "explanation": "‘Each participant must submit his or her form’ uses correct agreement.",
-    "choices": [
-      {
-        "text": "Each participant must submit their form.",
-        "is_correct": false
-      },
-      {
-        "text": "Each participant must submit his or her form.",
-        "is_correct": true
-      },
-      {
-        "text": "Each participants must submit their form.",
-        "is_correct": false
-      },
-      {
-        "text": "Each of the participant must submit their form.",
-        "is_correct": false
-      }
-    ]
-  },
-  {
-    "text": "Complete the sentence: The committee ____ meeting today.",
-    "explanation": "‘Is’ is used for groups acting as a unit.",
-    "choices": [
-      { "text": "are", "is_correct": false },
-      { "text": "is", "is_correct": true },
-      { "text": "were", "is_correct": false },
-      { "text": "be", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Which of the following is correctly punctuated?",
-    "explanation": "Comma after introductory phrase is correct.",
-    "choices": [
-      { "text": "After the meeting we went home.", "is_correct": false },
-      { "text": "After the meeting, we went home.", "is_correct": true },
-      { "text": "After, the meeting we went home.", "is_correct": false },
-      { "text": "After the meeting we, went home.", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Choose the correct word: The manager gave ____ employees a bonus.",
-    "explanation": "‘Their’ is the correct plural possessive.",
-    "choices": [
-      { "text": "there", "is_correct": false },
-      { "text": "their", "is_correct": true },
-      { "text": "they're", "is_correct": false },
-      { "text": "theirs", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Which word best completes the sentence: She sings ____ than her sister.",
-    "explanation": "Comparative form is ‘better’.",
-    "choices": [
-      { "text": "good", "is_correct": false },
-      { "text": "better", "is_correct": true },
-      { "text": "best", "is_correct": false },
-      { "text": "more good", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Choose the correct tag question: He is your teacher, ____?",
-    "explanation": "Positive statement → negative tag.",
-    "choices": [
-      { "text": "is he", "is_correct": false },
-      { "text": "isn't he", "is_correct": true },
-      { "text": "aren't he", "is_correct": false },
-      { "text": "doesn't he", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Complete the sentence: She arrived early ____ finish her report.",
-    "explanation": "Purpose = ‘to’.",
-    "choices": [
-      { "text": "to", "is_correct": true },
-      { "text": "for", "is_correct": false },
-      { "text": "so", "is_correct": false },
-      { "text": "and", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Which sentence is correct (2)?",
-    "explanation": "Parallel structure needed: cleaned, cooked, and washed.",
-    "choices": [
-      {
-        "text": "She cleaned the room, cooked dinner, and was washing the dishes.",
-        "is_correct": false
-      },
-      {
-        "text": "She cleaned the room, cooked dinner, and washed the dishes.",
-        "is_correct": true
-      },
-      {
-        "text": "She cleaned the room, cooking dinner, and washed the dishes.",
-        "is_correct": false
-      },
-      {
-        "text": "She cleaning the room, cooked dinner, and washed dishes.",
-        "is_correct": false
-      }
-    ]
-  },
-  {
-    "text": "Choose the correct verb: Either Anna or her sisters ____ going.",
-    "explanation": "Verb agrees with the nearer subject: sisters → are.",
-    "choices": [
-      { "text": "is", "is_correct": false },
-      { "text": "are", "is_correct": true },
-      { "text": "was", "is_correct": false },
-      { "text": "be", "is_correct": false }
+      { "text": "Each of the student have books.", "is_correct": false }
     ]
   },
   {
     "text": "Choose the correct sentence (2).",
-    "explanation": "‘Whom’ is the object.",
+    "explanation": "The correct sentence avoids double negatives.",
     "choices": [
-      { "text": "Whom did you speak to?", "is_correct": true },
-      { "text": "Who did you speak to?", "is_correct": false },
-      { "text": "Whom did you spoke to?", "is_correct": false },
-      { "text": "Who you speak to?", "is_correct": false }
+      {
+        "text": "He didn’t do nothing about the problem.",
+        "is_correct": false
+      },
+      {
+        "text": "He didn’t do anything about the problem.",
+        "is_correct": true
+      },
+      { "text": "He don’t do nothing about the problem.", "is_correct": false },
+      {
+        "text": "He doesn’t did anything about the problem.",
+        "is_correct": false
+      }
     ]
   },
   {
-    "text": "Complete the sentence: The results of the study ____ surprising.",
-    "explanation": "‘Were’ agrees with plural ‘results’.",
+    "text": "Choose the correct sentence (3).",
+    "explanation": "The correct sentence uses the proper verb tense.",
     "choices": [
-      { "text": "was", "is_correct": false },
-      { "text": "were", "is_correct": true },
-      { "text": "is", "is_correct": false },
-      { "text": "be", "is_correct": false }
+      { "text": "She has finish her report yesterday.", "is_correct": false },
+      { "text": "She finished her report yesterday.", "is_correct": true },
+      { "text": "She has finished her report yesterday.", "is_correct": false },
+      { "text": "She finishing her report yesterday.", "is_correct": false }
     ]
   },
   {
-    "text": "Which is correct (1)?",
-    "explanation": "Uses correct subject–verb agreement.",
+    "text": "Choose the correct sentence (4).",
+    "explanation": "The correct sentence uses the correct pronoun agreement.",
     "choices": [
-      { "text": "Ten pesos are enough.", "is_correct": false },
-      { "text": "Ten pesos is enough.", "is_correct": true },
-      { "text": "Ten peso is enough.", "is_correct": false },
-      { "text": "Ten pesos be enough.", "is_correct": false }
+      { "text": "Everyone must bring their own ID.", "is_correct": false },
+      { "text": "Everyone must bring his or her own ID.", "is_correct": true },
+      { "text": "Everyone must bring theirselves ID.", "is_correct": false },
+      { "text": "Everyone must brings their ID.", "is_correct": false }
     ]
   },
   {
-    "text": "Choose the correct past form: She ____ the letter yesterday.",
-    "explanation": "Simple past: wrote.",
+    "text": "Choose the correct sentence (5).",
+    "explanation": "The correct sentence uses proper comparison form.",
     "choices": [
-      { "text": "write", "is_correct": false },
-      { "text": "wrote", "is_correct": true },
-      { "text": "written", "is_correct": false },
-      { "text": "writing", "is_correct": false }
+      {
+        "text": "This problem is more easier than the last one.",
+        "is_correct": false
+      },
+      {
+        "text": "This problem is easier than the last one.",
+        "is_correct": true
+      },
+      {
+        "text": "This problem is most easier than the last one.",
+        "is_correct": false
+      },
+      { "text": "This problem is easy than the last one.", "is_correct": false }
     ]
   },
   {
-    "text": "Which sentence is correctly written (1)?",
-    "explanation": "Apostrophe correctly shows possession.",
+    "text": "Choose the correct sentence (6).",
+    "explanation": "The correct sentence uses the correct preposition.",
     "choices": [
-      { "text": "The childrens' playground is closed.", "is_correct": false },
-      { "text": "The children's playground is closed.", "is_correct": true },
-      { "text": "The childrens playground is closed.", "is_correct": false },
-      { "text": "The childrens's playground is closed.", "is_correct": false }
+      { "text": "She is married with a doctor.", "is_correct": false },
+      { "text": "She is married to a doctor.", "is_correct": true },
+      { "text": "She is married by a doctor.", "is_correct": false },
+      { "text": "She is married from a doctor.", "is_correct": false }
     ]
   },
   {
-    "text": "Choose the correct connector: She studied hard; ____ she passed the exam.",
-    "explanation": "‘Therefore’ shows logical result.",
+    "text": "Choose the correct sentence (7).",
+    "explanation": "The correct sentence avoids redundancy.",
     "choices": [
-      { "text": "however", "is_correct": false },
-      { "text": "therefore", "is_correct": true },
-      { "text": "although", "is_correct": false },
-      { "text": "meanwhile", "is_correct": false }
+      {
+        "text": "They returned back to the office early.",
+        "is_correct": false
+      },
+      { "text": "They returned to the office early.", "is_correct": true },
+      {
+        "text": "They back returned to the office early.",
+        "is_correct": false
+      },
+      { "text": "They returned again back to the office.", "is_correct": false }
     ]
   },
   {
-    "text": "Which sentence uses the correct verb tense?",
-    "explanation": "Present perfect for an experience up to now.",
+    "text": "Choose the correct sentence (8).",
+    "explanation": "The correct sentence uses correct subject-verb agreement with compound subjects.",
     "choices": [
-      { "text": "I have saw that movie.", "is_correct": false },
-      { "text": "I have seen that movie.", "is_correct": true },
-      { "text": "I seen that movie.", "is_correct": false },
-      { "text": "I have see that movie.", "is_correct": false }
+      {
+        "text": "Bread and butter are his favorite breakfast.",
+        "is_correct": false
+      },
+      {
+        "text": "Bread and butter is his favorite breakfast.",
+        "is_correct": true
+      },
+      {
+        "text": "Bread and butter were his favorite breakfast.",
+        "is_correct": false
+      },
+      {
+        "text": "Bread and butter have his favorite breakfast.",
+        "is_correct": false
+      }
     ]
   },
   {
-    "text": "Choose the correct article: She adopted ____ unique idea.",
-    "explanation": "‘A’ is used before consonant sound ‘yoo’.",
+    "text": "Choose the correct sentence (9).",
+    "explanation": "The correct sentence uses the correct form of the verb after 'did'.",
     "choices": [
-      { "text": "an", "is_correct": false },
-      { "text": "a", "is_correct": true },
-      { "text": "the", "is_correct": false },
-      { "text": "none", "is_correct": false }
+      { "text": "She did not knew the answer.", "is_correct": false },
+      { "text": "She did not know the answer.", "is_correct": true },
+      { "text": "She did not known the answer.", "is_correct": false },
+      { "text": "She did not knowing the answer.", "is_correct": false }
     ]
   },
   {
-    "text": "Complete the sentence: He is the person ____ helped me.",
-    "explanation": "‘Who’ is the subject of the clause.",
+    "text": "Choose the correct sentence (10).",
+    "explanation": "The correct sentence uses proper capitalization and punctuation.",
     "choices": [
-      { "text": "whom", "is_correct": false },
-      { "text": "who", "is_correct": true },
-      { "text": "whose", "is_correct": false },
-      { "text": "that whom", "is_correct": false }
+      { "text": "my father works in manila.", "is_correct": false },
+      { "text": "My father works in Manila.", "is_correct": true },
+      { "text": "My Father works in manila.", "is_correct": false },
+      { "text": "my Father works in Manila.", "is_correct": false }
     ]
   },
   {
-    "text": "Which sentence is correct (3)?",
-    "explanation": "Correct placement of adverb.",
+    "text": "Which sentence is grammatically correct?",
+    "explanation": "The correct sentence avoids a dangling modifier by clearly stating who performed the action.",
     "choices": [
-      { "text": "She quickly finished the work.", "is_correct": true },
-      { "text": "She finished quickly the work.", "is_correct": false },
-      { "text": "Quickly she finished the work the.", "is_correct": false },
-      { "text": "She the work quickly finished.", "is_correct": false }
+      {
+        "text": "Walking down the street, the wallet was found by Maria.",
+        "is_correct": false
+      },
+      {
+        "text": "Walking down the street, Maria found a wallet.",
+        "is_correct": true
+      },
+      {
+        "text": "The wallet was found while walking down the street by Maria.",
+        "is_correct": false
+      },
+      {
+        "text": "While walking, the street revealed a wallet to Maria.",
+        "is_correct": false
+      }
     ]
   },
   {
-    "text": "Choose the correct pronoun: Everyone must bring ____ own lunch.",
-    "explanation": "‘His or her’ agrees with singular ‘everyone’.",
+    "text": "Choose the sentence with correct parallel structure.",
+    "explanation": "Parallel structure requires items in a list to follow the same grammatical form.",
     "choices": [
-      { "text": "their", "is_correct": false },
-      { "text": "his or her", "is_correct": true },
-      { "text": "they", "is_correct": false },
-      { "text": "them", "is_correct": false }
+      {
+        "text": "She enjoys reading, to jog, and swimming.",
+        "is_correct": false
+      },
+      {
+        "text": "She enjoys reading, jogging, and swimming.",
+        "is_correct": true
+      },
+      {
+        "text": "She enjoys to read, jogging, and swims.",
+        "is_correct": false
+      },
+      { "text": "She enjoys reading, jog, and to swim.", "is_correct": false }
     ]
   },
   {
-    "text": "Choose the correct form: The workers ____ already completed the project.",
-    "explanation": "Present perfect plural: have completed.",
+    "text": "Which sentence contains a grammatical error?",
+    "explanation": "The subject 'each' is singular and requires a singular verb.",
     "choices": [
-      { "text": "has", "is_correct": false },
-      { "text": "have", "is_correct": true },
-      { "text": "having", "is_correct": false },
-      { "text": "had been", "is_correct": false }
+      {
+        "text": "Each of the employees is required to attend.",
+        "is_correct": false
+      },
+      { "text": "Everyone knows the policy.", "is_correct": false },
+      { "text": "The team meets every Friday.", "is_correct": false },
+      { "text": "Each of the applicants are qualified.", "is_correct": true }
     ]
   },
   {
-    "text": "Choose the grammatically correct sentence (2).",
-    "explanation": "Uses correct word order.",
-    "choices": [
-      { "text": "Rarely I go to the cinema.", "is_correct": false },
-      { "text": "I rarely go to the cinema.", "is_correct": true },
-      { "text": "I go rarely to the cinema.", "is_correct": false },
-      { "text": "To the cinema rarely I go.", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Complete the sentence: Neither the students nor the teacher ____ present.",
-    "explanation": "Verb agrees with the nearest subject: teacher → is.",
+    "text": "Fill in the blank with the correct word.\nNeither of the answers _____ correct.",
+    "explanation": "The subject 'neither' is singular, so it takes a singular verb.",
     "choices": [
       { "text": "are", "is_correct": false },
-      { "text": "is", "is_correct": true },
       { "text": "were", "is_correct": false },
-      { "text": "be", "is_correct": false }
+      { "text": "is", "is_correct": true },
+      { "text": "have been", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence is grammatically correct?",
+    "explanation": "The correct sentence properly places the modifier next to the word it describes.",
+    "choices": [
+      {
+        "text": "After reading the report, the meeting was canceled.",
+        "is_correct": false
+      },
+      {
+        "text": "After reading the report, the manager canceled the meeting.",
+        "is_correct": true
+      },
+      {
+        "text": "The meeting was canceled after reading the report.",
+        "is_correct": false
+      },
+      {
+        "text": "After the report was read, canceling the meeting.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Choose the sentence that demonstrates correct parallelism.",
+    "explanation": "All items in a series must follow the same grammatical form.",
+    "choices": [
+      { "text": "He likes to cook, jogging, and swims.", "is_correct": false },
+      {
+        "text": "He likes cooking, jogging, and swimming.",
+        "is_correct": true
+      },
+      {
+        "text": "He likes to cook, jogging, and to swim.",
+        "is_correct": false
+      },
+      { "text": "He likes cooking, jog, and to swim.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence uses the idiom correctly?",
+    "explanation": "‘On the same page’ means to agree or share the same understanding.",
+    "choices": [
+      { "text": "They are on the same page of the book.", "is_correct": false },
+      {
+        "text": "The team is on the same page about the project goals.",
+        "is_correct": true
+      },
+      { "text": "They turned the same page yesterday.", "is_correct": false },
+      { "text": "They wrote on the same page together.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence contains an error in verb tense?",
+    "explanation": "The sentence incorrectly shifts verb tense.",
+    "choices": [
+      { "text": "She finished her work and went home.", "is_correct": false },
+      { "text": "He was reading when the phone rang.", "is_correct": false },
+      { "text": "They have completed the task already.", "is_correct": false },
+      { "text": "He entered the room and is sitting down.", "is_correct": true }
+    ]
+  },
+  {
+    "text": "Fill in the blank with the correct word.\nThe number of applicants _____ increased this year.",
+    "explanation": "‘The number’ is treated as a singular subject.",
+    "choices": [
+      { "text": "have", "is_correct": false },
+      { "text": "are", "is_correct": false },
+      { "text": "has", "is_correct": true },
+      { "text": "were", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence avoids ambiguity?",
+    "explanation": "The correct sentence clearly states who performed the action.",
+    "choices": [
+      {
+        "text": "She told her sister that she was promoted.",
+        "is_correct": false
+      },
+      {
+        "text": "She told her sister about her promotion.",
+        "is_correct": true
+      },
+      { "text": "She told her sister she got promoted.", "is_correct": false },
+      {
+        "text": "She said she was promoted to her sister.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence correctly uses subject-verb agreement?",
+    "explanation": "Collective nouns may be treated as singular when acting as a unit.",
+    "choices": [
+      { "text": "The jury are divided in their opinion.", "is_correct": false },
+      { "text": "The jury is divided in its opinion.", "is_correct": true },
+      { "text": "The jury were deciding its verdict.", "is_correct": false },
+      { "text": "The jury have reached its decision.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the sentence with correct use of comparison.",
+    "explanation": "Comparatives are used when comparing two items.",
+    "choices": [
+      {
+        "text": "Of the two designs, this is the most attractive.",
+        "is_correct": false
+      },
+      {
+        "text": "Of the two designs, this is the more attractive.",
+        "is_correct": true
+      },
+      {
+        "text": "Of the two designs, this is the attractive one.",
+        "is_correct": false
+      },
+      {
+        "text": "Of the two designs, this is attractiver.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence contains a misplaced modifier?",
+    "explanation": "The modifier is incorrectly placed, making the sentence unclear.",
+    "choices": [
+      {
+        "text": "Running quickly, the finish line came into view.",
+        "is_correct": true
+      },
+      {
+        "text": "Running quickly, the athlete saw the finish line.",
+        "is_correct": false
+      },
+      {
+        "text": "The athlete ran quickly toward the finish line.",
+        "is_correct": false
+      },
+      {
+        "text": "The finish line came into view as the athlete ran.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence correctly uses an idiomatic expression?",
+    "explanation": "‘In the long run’ refers to a long-term outcome.",
+    "choices": [
+      {
+        "text": "In the long run of the marathon, he won.",
+        "is_correct": false
+      },
+      {
+        "text": "In the long run, saving money will benefit her.",
+        "is_correct": true
+      },
+      {
+        "text": "In the long running, he improved his skills.",
+        "is_correct": false
+      },
+      { "text": "In the longest run, the plan will work.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence is grammatically correct?",
+    "explanation": "The phrase 'as well as' does not make the subject plural.",
+    "choices": [
+      {
+        "text": "The manager, as well as the employees, are attending the meeting.",
+        "is_correct": false
+      },
+      {
+        "text": "The manager, as well as the employees, is attending the meeting.",
+        "is_correct": true
+      },
+      {
+        "text": "The manager and the employees is attending the meeting.",
+        "is_correct": false
+      },
+      {
+        "text": "The manager with the employees are attending the meeting.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence uses correct subject-verb agreement?",
+    "explanation": "‘A number of’ takes a plural verb, while ‘the number of’ takes a singular verb.",
+    "choices": [
+      {
+        "text": "A number of applicants has submitted their forms.",
+        "is_correct": false
+      },
+      {
+        "text": "A number of applicants have submitted their forms.",
+        "is_correct": true
+      },
+      {
+        "text": "The number of applicants have increased.",
+        "is_correct": false
+      },
+      {
+        "text": "The number of applicants are increasing.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence avoids faulty comparison?",
+    "explanation": "Comparisons must be logically equivalent.",
+    "choices": [
+      {
+        "text": "Her salary is higher than any employee in the company.",
+        "is_correct": false
+      },
+      {
+        "text": "Her salary is higher than that of any other employee in the company.",
+        "is_correct": true
+      },
+      {
+        "text": "Her salary is higher than any other employee.",
+        "is_correct": false
+      },
+      {
+        "text": "Her salary is higher than all employees.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence is logically and grammatically correct?",
+    "explanation": "The comparison must exclude the subject being compared.",
+    "choices": [
+      {
+        "text": "He is more qualified than anyone in the applicants.",
+        "is_correct": false
+      },
+      {
+        "text": "He is more qualified than any other applicant.",
+        "is_correct": true
+      },
+      {
+        "text": "He is more qualified than all applicants.",
+        "is_correct": false
+      },
+      {
+        "text": "He is the most qualified than the others.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence correctly uses the word 'only'?",
+    "explanation": "Misplacing 'only' changes the meaning of the sentence.",
+    "choices": [
+      {
+        "text": "She only said she would help her sister.",
+        "is_correct": false
+      },
+      {
+        "text": "She said she would help only her sister.",
+        "is_correct": true
+      },
+      {
+        "text": "Only she said she would help her sister.",
+        "is_correct": false
+      },
+      {
+        "text": "She said only she would help her sister.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence is free from ambiguity?",
+    "explanation": "The sentence clearly identifies who owns the object.",
+    "choices": [
+      {
+        "text": "Maria spoke to Ana about her promotion.",
+        "is_correct": false
+      },
+      {
+        "text": "Maria spoke to Ana about Maria’s promotion.",
+        "is_correct": true
+      },
+      {
+        "text": "Maria spoke about her promotion to Ana.",
+        "is_correct": false
+      },
+      { "text": "Maria told Ana she was promoted.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence correctly applies the rule on correlative conjunctions?",
+    "explanation": "Verbs must agree with the subject closest to them.",
+    "choices": [
+      {
+        "text": "Either the teachers or the principal are responsible.",
+        "is_correct": false
+      },
+      {
+        "text": "Either the teachers or the principal is responsible.",
+        "is_correct": true
+      },
+      {
+        "text": "Either the principal or the teachers is responsible.",
+        "is_correct": false
+      },
+      {
+        "text": "Either the principal or the teachers was responsible.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence avoids illogical construction?",
+    "explanation": "Abstract ideas cannot logically perform physical actions.",
+    "choices": [
+      {
+        "text": "His explanation convinced the committee.",
+        "is_correct": false
+      },
+      {
+        "text": "He convinced the committee with his explanation.",
+        "is_correct": true
+      },
+      { "text": "The explanation persuaded the members.", "is_correct": false },
+      { "text": "The idea argued against the proposal.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence correctly uses a conditional statement?",
+    "explanation": "The verb tenses must match the condition being expressed.",
+    "choices": [
+      {
+        "text": "If she will study harder, she would pass.",
+        "is_correct": false
+      },
+      { "text": "If she studied harder, she would pass.", "is_correct": true },
+      {
+        "text": "If she studies harder, she would have passed.",
+        "is_correct": false
+      },
+      {
+        "text": "If she had studied harder, she will pass.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence is logically sound?",
+    "explanation": "A sentence must not contradict itself.",
+    "choices": [
+      {
+        "text": "The meeting was postponed to an earlier date.",
+        "is_correct": false
+      },
+      {
+        "text": "The meeting was rescheduled to a later date.",
+        "is_correct": true
+      },
+      { "text": "The meeting was delayed ahead of time.", "is_correct": false },
+      {
+        "text": "The meeting was advanced after the deadline.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence is grammatically correct?",
+    "explanation": "The phrase 'as well as' does not make the subject plural.",
+    "choices": [
+      {
+        "text": "The manager, as well as the employees, are attending the meeting.",
+        "is_correct": false
+      },
+      {
+        "text": "The manager, as well as the employees, is attending the meeting.",
+        "is_correct": true
+      },
+      {
+        "text": "The manager and the employees is attending the meeting.",
+        "is_correct": false
+      },
+      {
+        "text": "The manager with the employees are attending the meeting.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence uses correct subject-verb agreement?",
+    "explanation": "‘A number of’ takes a plural verb, while ‘the number of’ takes a singular verb.",
+    "choices": [
+      {
+        "text": "A number of applicants has submitted their forms.",
+        "is_correct": false
+      },
+      {
+        "text": "A number of applicants have submitted their forms.",
+        "is_correct": true
+      },
+      {
+        "text": "The number of applicants have increased.",
+        "is_correct": false
+      },
+      {
+        "text": "The number of applicants are increasing.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence avoids faulty comparison?",
+    "explanation": "Comparisons must be logically equivalent.",
+    "choices": [
+      {
+        "text": "Her salary is higher than any employee in the company.",
+        "is_correct": false
+      },
+      {
+        "text": "Her salary is higher than that of any other employee in the company.",
+        "is_correct": true
+      },
+      {
+        "text": "Her salary is higher than any other employee.",
+        "is_correct": false
+      },
+      {
+        "text": "Her salary is higher than all employees.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence is logically and grammatically correct?",
+    "explanation": "The comparison must exclude the subject being compared.",
+    "choices": [
+      {
+        "text": "He is more qualified than anyone in the applicants.",
+        "is_correct": false
+      },
+      {
+        "text": "He is more qualified than any other applicant.",
+        "is_correct": true
+      },
+      {
+        "text": "He is more qualified than all applicants.",
+        "is_correct": false
+      },
+      {
+        "text": "He is the most qualified than the others.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence correctly uses the word 'only'?",
+    "explanation": "Misplacing 'only' changes the meaning of the sentence.",
+    "choices": [
+      {
+        "text": "She only said she would help her sister.",
+        "is_correct": false
+      },
+      {
+        "text": "She said she would help only her sister.",
+        "is_correct": true
+      },
+      {
+        "text": "Only she said she would help her sister.",
+        "is_correct": false
+      },
+      {
+        "text": "She said only she would help her sister.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence is free from ambiguity?",
+    "explanation": "The sentence clearly identifies who owns the object.",
+    "choices": [
+      {
+        "text": "Maria spoke to Ana about her promotion.",
+        "is_correct": false
+      },
+      {
+        "text": "Maria spoke to Ana about Maria’s promotion.",
+        "is_correct": true
+      },
+      {
+        "text": "Maria spoke about her promotion to Ana.",
+        "is_correct": false
+      },
+      { "text": "Maria told Ana she was promoted.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence correctly applies the rule on correlative conjunctions?",
+    "explanation": "Verbs must agree with the subject closest to them.",
+    "choices": [
+      {
+        "text": "Either the teachers or the principal are responsible.",
+        "is_correct": false
+      },
+      {
+        "text": "Either the teachers or the principal is responsible.",
+        "is_correct": true
+      },
+      {
+        "text": "Either the principal or the teachers is responsible.",
+        "is_correct": false
+      },
+      {
+        "text": "Either the principal or the teachers was responsible.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence avoids illogical construction?",
+    "explanation": "Abstract ideas cannot logically perform physical actions.",
+    "choices": [
+      {
+        "text": "His explanation convinced the committee.",
+        "is_correct": false
+      },
+      {
+        "text": "He convinced the committee with his explanation.",
+        "is_correct": true
+      },
+      { "text": "The explanation persuaded the members.", "is_correct": false },
+      { "text": "The idea argued against the proposal.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence correctly uses a conditional statement?",
+    "explanation": "The verb tenses must match the condition being expressed.",
+    "choices": [
+      {
+        "text": "If she will study harder, she would pass.",
+        "is_correct": false
+      },
+      { "text": "If she studied harder, she would pass.", "is_correct": true },
+      {
+        "text": "If she studies harder, she would have passed.",
+        "is_correct": false
+      },
+      {
+        "text": "If she had studied harder, she will pass.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which sentence is logically sound?",
+    "explanation": "A sentence must not contradict itself.",
+    "choices": [
+      {
+        "text": "The meeting was postponed to an earlier date.",
+        "is_correct": false
+      },
+      {
+        "text": "The meeting was rescheduled to a later date.",
+        "is_correct": true
+      },
+      { "text": "The meeting was delayed ahead of time.", "is_correct": false },
+      {
+        "text": "The meeting was advanced after the deadline.",
+        "is_correct": false
+      }
     ]
   }
 ]

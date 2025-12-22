@@ -1,5 +1,219 @@
 [
   {
+    "text": "Statement: The government should introduce work-from-home arrangements to reduce traffic congestion in major cities.\nAssumption:",
+    "explanation": "The statement presumes that allowing employees to work from home will directly reduce the number of people commuting daily, thereby easing traffic congestion.",
+    "choices": [
+      {
+        "text": "A significant number of workers commute daily to offices in major cities",
+        "is_correct": true
+      },
+      {
+        "text": "All jobs can be performed efficiently from home",
+        "is_correct": false
+      },
+      {
+        "text": "Traffic congestion exists only during office hours",
+        "is_correct": false
+      },
+      {
+        "text": "Employees prefer working from home over office work",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Statement: Schools should ban the use of mobile phones inside classrooms to improve student concentration.\nAssumption:",
+    "explanation": "The statement assumes that the presence or use of mobile phones inside classrooms negatively affects students’ concentration during lessons.",
+    "choices": [
+      {
+        "text": "Mobile phones distract students from classroom activities",
+        "is_correct": true
+      },
+      {
+        "text": "All students misuse mobile phones in school",
+        "is_correct": false
+      },
+      {
+        "text": "Teachers are unable to control classroom behavior",
+        "is_correct": false
+      },
+      {
+        "text": "Learning is impossible with any form of technology",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Statement: The city administration should impose higher penalties on littering to keep public places clean.\nAssumption:",
+    "explanation": "The statement assumes that stricter penalties will discourage people from littering and that current penalties are insufficient to ensure cleanliness.",
+    "choices": [
+      {
+        "text": "Higher penalties can influence public behavior",
+        "is_correct": true
+      },
+      {
+        "text": "Most citizens intentionally litter public places",
+        "is_correct": false
+      },
+      {
+        "text": "Cleanliness depends only on government action",
+        "is_correct": false
+      },
+      {
+        "text": "All littering occurs due to lack of waste bins",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Statement: Online examinations should be introduced to speed up the recruitment process.\nAssumption:",
+    "explanation": "The statement presumes that online examinations are faster to administer and evaluate than traditional paper-based examinations.",
+    "choices": [
+      {
+        "text": "Online examinations can be conducted and assessed more quickly",
+        "is_correct": true
+      },
+      {
+        "text": "All applicants have advanced computer skills",
+        "is_correct": false
+      },
+      {
+        "text": "Online exams are completely free from technical issues",
+        "is_correct": false
+      },
+      {
+        "text": "Traditional examinations are always inaccurate",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Statement: The company should allow flexible working hours to improve employee morale.\nAssumption:",
+    "explanation": "The statement assumes that flexibility in work schedules positively affects employees’ morale and job satisfaction.",
+    "choices": [
+      {
+        "text": "Flexible working hours can improve employee morale",
+        "is_correct": true
+      },
+      {
+        "text": "All employees dislike fixed working hours",
+        "is_correct": false
+      },
+      {
+        "text": "Employee morale depends only on salary increases",
+        "is_correct": false
+      },
+      {
+        "text": "Flexible hours reduce organizational discipline",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Statement: The government should invest more in renewable energy to reduce dependence on fossil fuels.\nAssumption:",
+    "explanation": "The statement presumes that renewable energy sources are viable alternatives to fossil fuels and that increased investment will help reduce dependence.",
+    "choices": [
+      {
+        "text": "Renewable energy can partially replace fossil fuels",
+        "is_correct": true
+      },
+      {
+        "text": "Fossil fuels will completely run out in the near future",
+        "is_correct": false
+      },
+      {
+        "text": "Renewable energy sources are always cheaper",
+        "is_correct": false
+      },
+      {
+        "text": "Energy demand will decrease automatically",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Statement: Schools should include financial literacy in their curriculum to prepare students for adulthood.\nAssumption:",
+    "explanation": "The statement assumes that teaching financial literacy in schools equips students with essential skills needed to manage personal finances effectively as adults.",
+    "choices": [
+      {
+        "text": "Financial literacy is an essential life skill that can be taught in schools",
+        "is_correct": true
+      },
+      {
+        "text": "Students cannot learn financial skills outside school",
+        "is_correct": false
+      },
+      {
+        "text": "All adults currently lack financial knowledge",
+        "is_correct": false
+      },
+      {
+        "text": "Financial literacy guarantees financial success",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Statement: The company decided to hire more staff to improve customer service efficiency.\nAssumption:",
+    "explanation": "The decision assumes that the current number of staff is insufficient to handle customer demands effectively, leading to inefficiency in service delivery.",
+    "choices": [
+      {
+        "text": "The existing workforce is unable to manage customer volume efficiently",
+        "is_correct": true
+      },
+      { "text": "New employees will never make mistakes", "is_correct": false },
+      {
+        "text": "Customer complaints are unavoidable in any business",
+        "is_correct": false
+      },
+      {
+        "text": "Technology cannot be used to improve customer service",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Statement: Public transport fares should be reduced to encourage more people to use buses and trains.\nAssumption:",
+    "explanation": "The statement assumes that high fares discourage people from using public transportation and that lowering fares will motivate more commuters to shift from private vehicles.",
+    "choices": [
+      {
+        "text": "Cost is a major factor influencing the use of public transportation",
+        "is_correct": true
+      },
+      {
+        "text": "All commuters prefer public transport over private vehicles",
+        "is_correct": false
+      },
+      {
+        "text": "Public transport services are always comfortable and efficient",
+        "is_correct": false
+      },
+      {
+        "text": "Traffic congestion has no relation to transportation choices",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Statement: The organization should conduct regular training programs to enhance employee productivity.\nAssumption:",
+    "explanation": "The statement presumes that training improves employees’ skills and knowledge, which in turn leads to higher productivity at work.",
+    "choices": [
+      {
+        "text": "Employee skills and knowledge can be improved through training",
+        "is_correct": true
+      },
+      { "text": "All employees are currently unskilled", "is_correct": false },
+      {
+        "text": "Productivity depends only on employee motivation",
+        "is_correct": false
+      },
+      {
+        "text": "Training programs are always expensive and time-consuming",
+        "is_correct": false
+      }
+    ]
+  },
+  {
     "text": "All employees in a company must wear an ID. Some employees in the Marketing Department work remotely. Which conclusion is valid?",
     "explanation": "All employees must wear an ID. Remote workers are employees. Therefore, remote Marketing employees must also wear IDs. We cannot conclude anything about other departments.",
     "choices": [
@@ -62,6 +276,124 @@
       { "text": "P, Q, S, R", "is_correct": false },
       { "text": "Q, P, S, R", "is_correct": false },
       { "text": "S, P, Q, R", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Statements: All engineers are professionals. Some professionals are managers.\nConclusion: Some engineers are managers.\nWhich conclusion is logically correct?",
+    "explanation": "The statements do not establish a direct relationship between engineers and managers. While engineers are professionals and some professionals are managers, it does not necessarily follow that any engineer is a manager.",
+    "choices": [
+      { "text": "The conclusion follows", "is_correct": false },
+      { "text": "The conclusion does not follow", "is_correct": true },
+      { "text": "The conclusion is both true and false", "is_correct": false },
+      { "text": "The conclusion cannot be determined", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Statements: All teachers are educated. No educated person is unemployed.\nConclusion: No teacher is unemployed.\nWhich conclusion is logically correct?",
+    "explanation": "If all teachers are educated and no educated person is unemployed, then teachers cannot be unemployed. The conclusion logically follows from the statements.",
+    "choices": [
+      { "text": "The conclusion follows", "is_correct": true },
+      { "text": "The conclusion does not follow", "is_correct": false },
+      { "text": "The conclusion is uncertain", "is_correct": false },
+      {
+        "text": "The conclusion contradicts the statements",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Statements: Some cats are pets. All pets are friendly.\nConclusion: Some cats are friendly.\nWhich conclusion is logically correct?",
+    "explanation": "Since some cats are pets and all pets are friendly, those cats that are pets must be friendly. Therefore, the conclusion follows.",
+    "choices": [
+      { "text": "The conclusion follows", "is_correct": true },
+      { "text": "The conclusion does not follow", "is_correct": false },
+      { "text": "The conclusion is partially correct", "is_correct": false },
+      { "text": "The conclusion is invalid", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Statements: No vehicles are bicycles. All bicycles have two wheels.\nConclusion: No vehicles have two wheels.\nWhich conclusion is logically correct?",
+    "explanation": "The statements only say that bicycles have two wheels and vehicles are not bicycles. This does not mean vehicles cannot have two wheels. Therefore, the conclusion does not follow.",
+    "choices": [
+      { "text": "The conclusion follows", "is_correct": false },
+      { "text": "The conclusion does not follow", "is_correct": true },
+      { "text": "The conclusion is definitely true", "is_correct": false },
+      {
+        "text": "The conclusion contradicts both statements",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Statements: All fruits are healthy. Some healthy things are expensive.\nConclusion: Some fruits are expensive.\nWhich conclusion is logically correct?",
+    "explanation": "Although all fruits are healthy and some healthy things are expensive, there is no certainty that fruits belong to the expensive group. Hence, the conclusion does not logically follow.",
+    "choices": [
+      { "text": "The conclusion follows", "is_correct": false },
+      { "text": "The conclusion does not follow", "is_correct": true },
+      { "text": "The conclusion is both true and false", "is_correct": false },
+      { "text": "The conclusion is always true", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Statements: All officers are trained. No trained person is careless. Some clerks are careless.\nConclusion: Some clerks are not officers.\nWhich conclusion is logically correct?",
+    "explanation": "If all officers are trained and no trained person is careless, then no officer can be careless. Since some clerks are careless, those clerks cannot be officers. Therefore, the conclusion follows.",
+    "choices": [
+      { "text": "The conclusion follows", "is_correct": true },
+      { "text": "The conclusion does not follow", "is_correct": false },
+      { "text": "The conclusion is uncertain", "is_correct": false },
+      {
+        "text": "The conclusion contradicts the statements",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Statements: Some doctors are researchers. All researchers are analytical. No analytical person is impulsive.\nConclusion: Some doctors are not impulsive.\nWhich conclusion is logically correct?",
+    "explanation": "Some doctors are researchers, and all researchers are analytical. Since no analytical person is impulsive, those doctors who are researchers cannot be impulsive. Therefore, some doctors are not impulsive.",
+    "choices": [
+      { "text": "The conclusion follows", "is_correct": true },
+      { "text": "The conclusion does not follow", "is_correct": false },
+      { "text": "The conclusion is partially correct", "is_correct": false },
+      { "text": "The conclusion is contradictory", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Statements: No artist is careless. Some careless people are drivers.\nConclusion: Some drivers are not artists.\nWhich conclusion is logically correct?",
+    "explanation": "If no artist is careless, then any careless person cannot be an artist. Since some drivers are careless, those drivers are not artists. Therefore, the conclusion follows.",
+    "choices": [
+      { "text": "The conclusion follows", "is_correct": true },
+      { "text": "The conclusion does not follow", "is_correct": false },
+      { "text": "The conclusion is uncertain", "is_correct": false },
+      {
+        "text": "The conclusion contradicts the statements",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Statements: All managers are planners. Some planners are not leaders. No leader is careless.\nConclusion: Some managers may be careless.\nWhich conclusion is logically correct?",
+    "explanation": "All managers are planners, but some planners are not leaders. There is no statement linking planners directly to carelessness unless they are leaders. Therefore, it is possible that some managers may be careless. The conclusion is logically valid as a possibility.",
+    "choices": [
+      { "text": "The conclusion follows", "is_correct": true },
+      { "text": "The conclusion does not follow", "is_correct": false },
+      { "text": "The conclusion is definitely false", "is_correct": false },
+      {
+        "text": "The conclusion contradicts the statements",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Statements: Some students are athletes. All athletes are disciplined. No disciplined person is irresponsible.\nConclusion: Some students are not irresponsible.\nWhich conclusion is logically correct?",
+    "explanation": "Some students are athletes. All athletes are disciplined, and no disciplined person is irresponsible. Therefore, those students who are athletes are not irresponsible. Hence, the conclusion follows.",
+    "choices": [
+      { "text": "The conclusion follows", "is_correct": true },
+      { "text": "The conclusion does not follow", "is_correct": false },
+      { "text": "The conclusion is uncertain", "is_correct": false },
+      {
+        "text": "The conclusion contradicts the statements",
+        "is_correct": false
+      }
     ]
   }
 ]

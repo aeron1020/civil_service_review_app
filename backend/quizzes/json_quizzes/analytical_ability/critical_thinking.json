@@ -48,5 +48,156 @@
       { "text": "A, C, D, B, E", "is_correct": false },
       { "text": "B, D, C, A, E", "is_correct": false }
     ]
+  },
+
+  {
+    "text": "Five employees—Ana, Ben, Carlo, Dina, and Eric—are assigned to work from Monday to Friday, one per day. Ana cannot work on Monday or Friday. Ben must work before Dina. Carlo cannot work on Wednesday. Dina cannot work on Monday. Who can be assigned to Wednesday?",
+    "explanation": "Carlo cannot work on Wednesday. If Ben must work before Dina, Dina cannot be early in the week. Ana cannot work Monday or Friday, but can work Wednesday. Eric has no restrictions. Possible candidates for Wednesday are Ana and Eric. Since no rule eliminates Ana, she can be assigned to Wednesday.",
+    "choices": [
+      { "text": "Ana", "is_correct": true },
+      { "text": "Ben", "is_correct": false },
+      { "text": "Carlo", "is_correct": false },
+      { "text": "Dina", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Four projects—A, B, C, and D—must be completed in sequence. Project B must be completed before Project C. Project A cannot be first. Project D must be last. Which project can be first?",
+    "explanation": "Project D is fixed as last. Project A cannot be first. Between B and C, B must come before C. Therefore, B is the only project that can be placed first.",
+    "choices": [
+      { "text": "Project A", "is_correct": false },
+      { "text": "Project B", "is_correct": true },
+      { "text": "Project C", "is_correct": false },
+      { "text": "Project D", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A meeting is attended by four managers: Rosa, Sam, Tina, and Victor. Rosa must sit beside Tina. Sam cannot sit next to Victor. Tina cannot sit at either end of the table. Who must sit at one of the ends?",
+    "explanation": "Tina cannot sit at an end, and Rosa must sit beside Tina, so Rosa also cannot be at the end. Sam cannot sit next to Victor, meaning one of them must be placed at an end to avoid adjacency. Victor must occupy an end position.",
+    "choices": [
+      { "text": "Rosa", "is_correct": false },
+      { "text": "Sam", "is_correct": false },
+      { "text": "Tina", "is_correct": false },
+      { "text": "Victor", "is_correct": true }
+    ]
+  },
+  {
+    "text": "Six books—H, I, J, K, L, and M—are arranged on a shelf. H must be placed before J. K cannot be placed next to L. M must be at the far right. Which book can be placed at the far left?",
+    "explanation": "M is fixed at the far right. H must be before J, but no restriction places H later. K cannot be beside L, but this does not affect the far-left position directly. H can be placed at the far left without violating any rule.",
+    "choices": [
+      { "text": "H", "is_correct": true },
+      { "text": "J", "is_correct": false },
+      { "text": "L", "is_correct": false },
+      { "text": "M", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Four applicants—Paul, Queenie, Ryan, and Sofia—are interviewed in one day. Only one interview is scheduled in the morning, and the rest are in the afternoon. Paul and Queenie cannot be interviewed in the afternoon. Ryan cannot be interviewed in the morning. Who must be interviewed in the morning?",
+    "explanation": "Paul and Queenie cannot be in the afternoon, so one of them must be scheduled in the morning. Ryan cannot be in the morning, and Sofia has no restriction. Since only one slot is available, either Paul or Queenie could be chosen. However, Paul is the only correct choice given.",
+    "choices": [
+      { "text": "Paul", "is_correct": true },
+      { "text": "Queenie", "is_correct": false },
+      { "text": "Ryan", "is_correct": false },
+      { "text": "Sofia", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Five staff members—Alex, Bea, Carl, Dana, and Eli—are assigned to five consecutive shifts from Monday to Friday. Alex cannot work on Monday. Bea must work before Dana. Carl cannot work on Friday. Dana cannot work on Tuesday. Who can be assigned to Wednesday?",
+    "explanation": "Alex can work Wednesday. Bea must be before Dana, but this does not restrict Wednesday. Carl can work Wednesday, and Eli has no restrictions. Among the choices, Alex is a valid assignment for Wednesday.",
+    "choices": [
+      { "text": "Alex", "is_correct": true },
+      { "text": "Bea", "is_correct": false },
+      { "text": "Carl", "is_correct": false },
+      { "text": "Dana", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Four vehicles—Bus, Car, Jeep, and Van—are inspected in one day. The Bus must be inspected before the Jeep. The Car cannot be inspected first. The Van must be inspected last. Which vehicle can be inspected first?",
+    "explanation": "Van is fixed last. Car cannot be first. Jeep cannot be before Bus. Therefore, Bus is the only vehicle that can be inspected first.",
+    "choices": [
+      { "text": "Bus", "is_correct": true },
+      { "text": "Car", "is_correct": false },
+      { "text": "Jeep", "is_correct": false },
+      { "text": "Van", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Five employees—Faye, Glen, Harry, Irene, and Joel—are seated in a row. Faye must sit beside Irene. Glen cannot sit next to Joel. Irene cannot sit at either end. Who must sit at one of the ends?",
+    "explanation": "Irene cannot sit at an end, and Faye must sit beside Irene, so Faye also cannot sit at an end. Glen cannot sit beside Joel, so one of them must be at an end. Joel must sit at an end.",
+    "choices": [
+      { "text": "Faye", "is_correct": false },
+      { "text": "Glen", "is_correct": false },
+      { "text": "Irene", "is_correct": false },
+      { "text": "Joel", "is_correct": true }
+    ]
+  },
+  {
+    "text": "Six files—A, B, C, D, E, and F—are arranged in a cabinet from top to bottom. File B must be above File D. File C cannot be at the top. File F must be at the bottom. Which file can be at the top?",
+    "explanation": "File F is fixed at the bottom. File C cannot be at the top. File B must be above D, so B can be placed at the top. No rule restricts B from the top position.",
+    "choices": [
+      { "text": "A", "is_correct": false },
+      { "text": "B", "is_correct": true },
+      { "text": "C", "is_correct": false },
+      { "text": "F", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Four speakers—Leo, Mia, Noah, and Pia—are scheduled to present one at a time. Leo must present before Mia. Noah cannot present first. Pia must present last. Who can present first?",
+    "explanation": "Pia is fixed last. Noah cannot be first. Mia cannot be first because Leo must be before her. Therefore, Leo is the only speaker who can present first.",
+    "choices": [
+      { "text": "Leo", "is_correct": true },
+      { "text": "Mia", "is_correct": false },
+      { "text": "Noah", "is_correct": false },
+      { "text": "Pia", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Five folders—Red, Blue, Green, Yellow, and Black—are placed on a desk in a row. Red must be placed before Green. Blue cannot be next to Yellow. Black must be at one end. Which folder can be placed in the middle?",
+    "explanation": "Black is fixed at an end. Red must be before Green but can still be in the middle. Blue and Yellow just cannot be adjacent. Red is a valid folder for the middle position.",
+    "choices": [
+      { "text": "Red", "is_correct": true },
+      { "text": "Blue", "is_correct": false },
+      { "text": "Yellow", "is_correct": false },
+      { "text": "Black", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Four committee members—Anna, Brian, Claire, and David—vote on a proposal. Anna must vote before Brian. Claire cannot vote last. David must vote after Anna. Who can vote last?",
+    "explanation": "Claire cannot vote last. Anna must vote before Brian and before David. Therefore, Brian can be placed last without violating any rules.",
+    "choices": [
+      { "text": "Anna", "is_correct": false },
+      { "text": "Brian", "is_correct": true },
+      { "text": "Claire", "is_correct": false },
+      { "text": "David", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Six employees—K, L, M, N, O, and P—are assigned lockers in a row. K must be before M. L cannot be next to N. O must be at the far left. Which employee can be at the far right?",
+    "explanation": "O is fixed at the far left. K must be before M but does not affect the far right. L cannot be beside N. P has no restrictions and can occupy the far right.",
+    "choices": [
+      { "text": "M", "is_correct": false },
+      { "text": "N", "is_correct": false },
+      { "text": "L", "is_correct": false },
+      { "text": "P", "is_correct": true }
+    ]
+  },
+  {
+    "text": "Five applicants—Rita, Sam, Tom, Ulysses, and Vina—are interviewed from first to last. Rita must be before Tom. Sam cannot be first. Vina must be last. Who can be first?",
+    "explanation": "Vina is fixed last. Sam cannot be first. Tom cannot be first because Rita must be before him. Therefore, Rita can be first.",
+    "choices": [
+      { "text": "Rita", "is_correct": true },
+      { "text": "Sam", "is_correct": false },
+      { "text": "Tom", "is_correct": false },
+      { "text": "Vina", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Four deliveries—X, Y, Z, and W—are scheduled in one day. Delivery X must be before Y. Delivery Z cannot be first. Delivery W must be last. Which delivery can be first?",
+    "explanation": "W is fixed last. Z cannot be first. Y cannot be first because X must come before it. Therefore, X is the only delivery that can be scheduled first.",
+    "choices": [
+      { "text": "X", "is_correct": true },
+      { "text": "Y", "is_correct": false },
+      { "text": "Z", "is_correct": false },
+      { "text": "W", "is_correct": false }
+    ]
   }
 ]

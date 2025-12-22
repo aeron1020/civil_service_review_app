@@ -48,5 +48,305 @@
       { "text": "DOST", "is_correct": false },
       { "text": "DOF", "is_correct": false }
     ]
+  },
+  {
+    "text": "Which issue has triggered widespread protests and civil society mobilization across the Philippines in 2025, with rallies such as the ‘Trillion Peso March’ and “Rally for Transparency, Accountability, Justice, and Peace” demanding accountability and reforms?",
+    "explanation": "Mass demonstrations in 2025 were driven by public outrage over alleged corruption and irregularities in government-funded flood control and infrastructure projects, prompting calls for transparency and accountability. :contentReference[oaicite:1]{index=1}",
+    "choices": [
+      { "text": "Land reform policies", "is_correct": false },
+      {
+        "text": "Flood control project corruption scandals",
+        "is_correct": true
+      },
+      { "text": "Trade tariff increases", "is_correct": false },
+      { "text": "Higher student tuition fees", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In late 2025, the Bangko Sentral ng Pilipinas (BSP) took which significant monetary action in response to weakened economic activity amid declining business sentiment linked to governance concerns?",
+    "explanation": "In December 2025, the BSP cut its key interest rates by 25 basis points to stimulate economic activity after corruption-linked governance concerns dampened spending and business confidence. :contentReference[oaicite:2]{index=2}",
+    "choices": [
+      { "text": "Raised reserve requirement ratio", "is_correct": false },
+      { "text": "Cut benchmark interest rates", "is_correct": true },
+      { "text": "Implemented currency controls", "is_correct": false },
+      {
+        "text": "Increased central bank lending facilities",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "The West Philippine Sea issue of the Philippines is primarily based on which international law?",
+    "explanation": "The Philippines anchors its claim on the United Nations Convention on the Law of the Sea (UNCLOS), which defines maritime rights and exclusive economic zones.",
+    "choices": [
+      { "text": "Treaty of Paris of 1898", "is_correct": false },
+      {
+        "text": "United Nations Convention on the Law of the Sea (UNCLOS)",
+        "is_correct": true
+      },
+      { "text": "Geneva Convention", "is_correct": false },
+      { "text": "World Trade Organization Agreement", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which branch of the Philippine government is primarily responsible for making laws?",
+    "explanation": "The legislative branch, composed of the Senate and the House of Representatives, is responsible for enacting laws.",
+    "choices": [
+      { "text": "Executive", "is_correct": false },
+      { "text": "Judicial", "is_correct": false },
+      { "text": "Legislative", "is_correct": true },
+      { "text": "Constitutional Commissions", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who is considered the highest civilian authority in the Philippines?",
+    "explanation": "Under the Constitution, the President is the head of state and government and serves as the highest civilian authority.",
+    "choices": [
+      { "text": "Chief Justice", "is_correct": false },
+      { "text": "Senate President", "is_correct": false },
+      { "text": "President of the Philippines", "is_correct": true },
+      { "text": "Speaker of the House", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which government agency is primarily responsible for conducting national elections in the Philippines?",
+    "explanation": "The Commission on Elections (COMELEC) enforces and administers all laws related to elections and plebiscites.",
+    "choices": [
+      {
+        "text": "Department of the Interior and Local Government",
+        "is_correct": false
+      },
+      { "text": "Commission on Elections (COMELEC)", "is_correct": true },
+      { "text": "Supreme Court", "is_correct": false },
+      { "text": "Office of the Ombudsman", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which constitutional principle states that government authority comes from the people?",
+    "explanation": "The Constitution declares that sovereignty resides in the people and all government authority emanates from them.",
+    "choices": [
+      { "text": "Separation of powers", "is_correct": false },
+      { "text": "Checks and balances", "is_correct": false },
+      { "text": "Popular sovereignty", "is_correct": true },
+      { "text": "Judicial review", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which law promotes ethical behavior and accountability among public officials and employees?",
+    "explanation": "Republic Act No. 6713 sets ethical standards and norms of conduct for public officials and employees.",
+    "choices": [
+      { "text": "Republic Act No. 9165", "is_correct": false },
+      { "text": "Republic Act No. 6713", "is_correct": true },
+      { "text": "Republic Act No. 1425", "is_correct": false },
+      { "text": "Republic Act No. 6975", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sector is mainly targeted by government food security programs?",
+    "explanation": "Food security programs focus on agriculture to ensure stable food supply and support Filipino farmers.",
+    "choices": [
+      { "text": "Mining sector", "is_correct": false },
+      { "text": "Agricultural sector", "is_correct": true },
+      { "text": "Tourism sector", "is_correct": false },
+      { "text": "Manufacturing sector", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Why is disaster preparedness a major government priority in the Philippines?",
+    "explanation": "The Philippines is frequently affected by typhoons, earthquakes, and floods due to its geographic location.",
+    "choices": [
+      { "text": "Because of high crime rates", "is_correct": false },
+      {
+        "text": "Because the country is prone to natural disasters",
+        "is_correct": true
+      },
+      { "text": "Due to population decline", "is_correct": false },
+      { "text": "Because of industrial pollution alone", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which constitutional commission investigates corruption and misconduct of public officials?",
+    "explanation": "The Office of the Ombudsman investigates and prosecutes public officials accused of corruption.",
+    "choices": [
+      { "text": "Civil Service Commission", "is_correct": false },
+      { "text": "Commission on Audit", "is_correct": false },
+      { "text": "Office of the Ombudsman", "is_correct": true },
+      { "text": "Department of Justice", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which international organization does the Philippines belong to that promotes regional cooperation in Southeast Asia?",
+    "explanation": "The Philippines is a founding member of the Association of Southeast Asian Nations (ASEAN).",
+    "choices": [
+      { "text": "European Union", "is_correct": false },
+      { "text": "United Nations", "is_correct": false },
+      { "text": "ASEAN", "is_correct": true },
+      { "text": "G7", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which document serves as the supreme law of the Philippines?",
+    "explanation": "The 1987 Philippine Constitution is the highest law of the land, and all laws must conform to it.",
+    "choices": [
+      { "text": "Civil Code of the Philippines", "is_correct": false },
+      { "text": "1987 Philippine Constitution", "is_correct": true },
+      { "text": "Revised Penal Code", "is_correct": false },
+      { "text": "Administrative Code", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which constitutional commission is primarily responsible for auditing government funds?",
+    "explanation": "The Commission on Audit (COA) examines and audits government revenues and expenditures to ensure accountability.",
+    "choices": [
+      { "text": "Civil Service Commission", "is_correct": false },
+      { "text": "Commission on Elections", "is_correct": false },
+      { "text": "Commission on Audit (COA)", "is_correct": true },
+      { "text": "Office of the Ombudsman", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the main purpose of the Civil Service Commission (CSC)?",
+    "explanation": "The CSC oversees the merit and fitness system in government service and promotes professionalism in the bureaucracy.",
+    "choices": [
+      { "text": "Conduct national elections", "is_correct": false },
+      { "text": "Supervise government employees", "is_correct": true },
+      { "text": "Audit government funds", "is_correct": false },
+      { "text": "Interpret laws", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which body has the power of judicial review in the Philippines?",
+    "explanation": "The Supreme Court has the authority to determine whether laws or government actions are constitutional.",
+    "choices": [
+      { "text": "Congress", "is_correct": false },
+      { "text": "President", "is_correct": false },
+      { "text": "Supreme Court", "is_correct": true },
+      { "text": "Civil Service Commission", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which right is guaranteed under the Bill of Rights of the Philippine Constitution?",
+    "explanation": "The Bill of Rights protects fundamental freedoms such as free speech, due process, and equal protection of the law.",
+    "choices": [
+      { "text": "Right to unlimited government aid", "is_correct": false },
+      { "text": "Freedom of speech", "is_correct": true },
+      { "text": "Right to ignore laws", "is_correct": false },
+      { "text": "Freedom from paying taxes", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine government policy focuses on reducing poverty and improving social protection?",
+    "explanation": "Social protection programs aim to support vulnerable sectors and reduce poverty through targeted assistance.",
+    "choices": [
+      { "text": "Industrial deregulation only", "is_correct": false },
+      {
+        "text": "Social protection and poverty alleviation programs",
+        "is_correct": true
+      },
+      { "text": "Military modernization alone", "is_correct": false },
+      { "text": "Exclusive export promotion", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Why is environmental protection emphasized in Philippine national policies?",
+    "explanation": "Environmental protection is important due to the country’s rich biodiversity and vulnerability to environmental degradation.",
+    "choices": [
+      {
+        "text": "Because natural resources are unlimited",
+        "is_correct": false
+      },
+      {
+        "text": "Due to the country’s biodiversity and environmental risks",
+        "is_correct": true
+      },
+      { "text": "To reduce population growth", "is_correct": false },
+      { "text": "To limit agricultural activities", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sector is primarily responsible for implementing basic education in the Philippines?",
+    "explanation": "The Department of Education (DepEd) oversees elementary and secondary education nationwide.",
+    "choices": [
+      { "text": "Commission on Higher Education", "is_correct": false },
+      { "text": "Department of Education (DepEd)", "is_correct": true },
+      {
+        "text": "Technical Education and Skills Development Authority",
+        "is_correct": false
+      },
+      { "text": "Department of Labor and Employment", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which principle ensures that no branch of government becomes too powerful?",
+    "explanation": "The system of checks and balances allows each branch to limit the powers of the others.",
+    "choices": [
+      { "text": "Popular sovereignty", "is_correct": false },
+      { "text": "Checks and balances", "is_correct": true },
+      { "text": "Judicial supremacy", "is_correct": false },
+      { "text": "Centralization of power", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which international organization promotes cooperation among countries on peace and security, and of which the Philippines is a member?",
+    "explanation": "The Philippines is a member of the United Nations, which works to maintain international peace and cooperation.",
+    "choices": [
+      { "text": "World Health Organization", "is_correct": false },
+      { "text": "United Nations (UN)", "is_correct": true },
+      { "text": "North Atlantic Treaty Organization", "is_correct": false },
+      {
+        "text": "Organization for Economic Cooperation and Development",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which branch of government is responsible for implementing and enforcing laws in the Philippines?",
+    "explanation": "The executive branch, headed by the President, enforces and implements laws passed by Congress.",
+    "choices": [
+      { "text": "Legislative branch", "is_correct": false },
+      { "text": "Judicial branch", "is_correct": false },
+      { "text": "Executive branch", "is_correct": true },
+      { "text": "Constitutional commissions", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which agency is responsible for ensuring fair and orderly conduct of elections in the Philippines?",
+    "explanation": "The Commission on Elections (COMELEC) administers and enforces all election-related laws.",
+    "choices": [
+      { "text": "Civil Service Commission", "is_correct": false },
+      { "text": "Commission on Audit", "is_correct": false },
+      { "text": "Commission on Elections (COMELEC)", "is_correct": true },
+      { "text": "Department of Justice", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which constitutional right protects individuals from being deprived of life, liberty, or property without legal process?",
+    "explanation": "The right to due process ensures fairness and legality in government actions affecting individuals.",
+    "choices": [
+      { "text": "Freedom of religion", "is_correct": false },
+      { "text": "Right to due process", "is_correct": true },
+      { "text": "Freedom of assembly", "is_correct": false },
+      { "text": "Right against self-incrimination", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which government institution is primarily tasked with maintaining peace and order at the community level?",
+    "explanation": "Local government units, through barangays and local officials, play a key role in maintaining peace and order.",
+    "choices": [
+      { "text": "Supreme Court", "is_correct": false },
+      { "text": "Local Government Units (LGUs)", "is_correct": true },
+      { "text": "Commission on Audit", "is_correct": false },
+      { "text": "Civil Service Commission", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Why is transparency important in public service?",
+    "explanation": "Transparency promotes accountability, builds public trust, and helps prevent corruption in government.",
+    "choices": [
+      { "text": "To limit citizen participation", "is_correct": false },
+      { "text": "To increase secrecy in government", "is_correct": false },
+      { "text": "To promote accountability and trust", "is_correct": true },
+      { "text": "To delay public access to information", "is_correct": false }
+    ]
   }
 ]

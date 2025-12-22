@@ -248,5 +248,205 @@
       { "text": "1800 mAh", "is_correct": true },
       { "text": "1900 mAh", "is_correct": false }
     ]
+  },
+  {
+    "text": "Two numbers are in the ratio 3:5. If their difference is 64, what is the larger number?",
+    "explanation": "Let the numbers be 3x and 5x. Their difference is 2x = 64, so x = 32. Larger number = 5 × 32 = 160.",
+    "choices": [
+      { "text": "128", "is_correct": false },
+      { "text": "144", "is_correct": false },
+      { "text": "160", "is_correct": true },
+      { "text": "192", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A worker can finish a job in 18 days, while another worker can do the same job in 12 days. How many days will it take them to finish the job working together?",
+    "explanation": "Work rates: 1/18 + 1/12 = 5/36. Time = 36/5 = 7.2 days.",
+    "choices": [
+      { "text": "6 days", "is_correct": false },
+      { "text": "7.2 days", "is_correct": true },
+      { "text": "8 days", "is_correct": false },
+      { "text": "9 days", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A sum of money doubles itself in 10 years at simple interest. What is the annual rate of interest?",
+    "explanation": "If money doubles, interest equals principal. Rate = 100% ÷ 10 years = 10% per year.",
+    "choices": [
+      { "text": "5%", "is_correct": false },
+      { "text": "8%", "is_correct": false },
+      { "text": "10%", "is_correct": true },
+      { "text": "12%", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The average age of 5 persons is 30 years. When one person leaves, the average age becomes 28 years. What was the age of the person who left?",
+    "explanation": "Total age originally = 5 × 30 = 150. New total = 4 × 28 = 112. Difference = 38.",
+    "choices": [
+      { "text": "32 years", "is_correct": false },
+      { "text": "34 years", "is_correct": false },
+      { "text": "38 years", "is_correct": true },
+      { "text": "40 years", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A train running at 72 km/h crosses a platform 280 meters long in 30 seconds. What is the length of the train?",
+    "explanation": "72 km/h = 20 m/s. Distance = speed × time = 20 × 30 = 600 m. Train length = 600 − 280 = 320 m.",
+    "choices": [
+      { "text": "300 m", "is_correct": false },
+      { "text": "320 m", "is_correct": true },
+      { "text": "340 m", "is_correct": false },
+      { "text": "360 m", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A solution contains milk and water in the ratio 7:3. If 10 liters of water are added, the ratio becomes 7:5. How many liters of milk were originally present?",
+    "explanation": "Let original milk = 7x, water = 3x. After adding water: 7x : (3x + 10) = 7 : 5. Solving gives x = 5, milk = 35 liters.",
+    "choices": [
+      { "text": "28 liters", "is_correct": false },
+      { "text": "30 liters", "is_correct": false },
+      { "text": "35 liters", "is_correct": true },
+      { "text": "40 liters", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If the price of a commodity increases by 25%, by what percent should consumption be reduced so that expenditure remains the same?",
+    "explanation": "Required reduction = (Increase ÷ (100 + Increase)) × 100 = 25/125 × 100 = 20%.",
+    "choices": [
+      { "text": "15%", "is_correct": false },
+      { "text": "20%", "is_correct": true },
+      { "text": "22%", "is_correct": false },
+      { "text": "25%", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A man walks at 5 km/h and returns at 4 km/h. What is his average speed for the whole journey?",
+    "explanation": "Average speed = (2ab) ÷ (a + b) = (2 × 5 × 4) ÷ 9 = 40/9 ≈ 4.44 km/h.",
+    "choices": [
+      { "text": "4 km/h", "is_correct": false },
+      { "text": "4.44 km/h", "is_correct": true },
+      { "text": "4.5 km/h", "is_correct": false },
+      { "text": "5 km/h", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The ratio of the present ages of A and B is 4:5. After 10 years, the ratio becomes 5:6. What is A’s present age?",
+    "explanation": "Let ages be 4x and 5x. (4x+10)/(5x+10)=5/6. Solving gives x=10, so A=40.",
+    "choices": [
+      { "text": "32 years", "is_correct": false },
+      { "text": "36 years", "is_correct": false },
+      { "text": "40 years", "is_correct": true },
+      { "text": "45 years", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The average of 10 numbers is 50. If two numbers 30 and 70 are removed, what is the new average?",
+    "explanation": "Original sum = 10 × 50 = 500. New sum = 500 − 100 = 400. New average = 400 ÷ 8 = 50.",
+    "choices": [
+      { "text": "45", "is_correct": false },
+      { "text": "48", "is_correct": false },
+      { "text": "50", "is_correct": true },
+      { "text": "52", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A store offers a 20% discount on an item originally priced at ₱1,250. What is the discounted price?",
+    "explanation": "A 20% discount means subtracting 20% of ₱1,250 (₱250) from the original price.",
+    "choices": [
+      { "text": "₱900", "is_correct": false },
+      { "text": "₱1,000", "is_correct": true },
+      { "text": "₱1,050", "is_correct": false },
+      { "text": "₱1,100", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 5 workers can complete a job in 12 days, how many days will it take 10 workers to finish the same job?",
+    "explanation": "Work is inversely proportional to the number of workers. Doubling the workers halves the time.",
+    "choices": [
+      { "text": "3 days", "is_correct": false },
+      { "text": "6 days", "is_correct": true },
+      { "text": "12 days", "is_correct": false },
+      { "text": "24 days", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A train travels 180 kilometers in 3 hours. What is its average speed?",
+    "explanation": "Average speed is distance divided by time: 180 ÷ 3 = 60 km/h.",
+    "choices": [
+      { "text": "50 km/h", "is_correct": false },
+      { "text": "60 km/h", "is_correct": true },
+      { "text": "70 km/h", "is_correct": false },
+      { "text": "90 km/h", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The ratio of boys to girls in a class is 3:5. If there are 40 students in the class, how many are boys?",
+    "explanation": "Total parts = 3 + 5 = 8. Boys = (3/8) × 40 = 15.",
+    "choices": [
+      { "text": "12", "is_correct": false },
+      { "text": "15", "is_correct": true },
+      { "text": "18", "is_correct": false },
+      { "text": "25", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Ana is 6 years older than Ben. If Ben is 14 years old, how old is Ana?",
+    "explanation": "Ana’s age is Ben’s age plus 6 years.",
+    "choices": [
+      { "text": "18 years old", "is_correct": false },
+      { "text": "20 years old", "is_correct": true },
+      { "text": "22 years old", "is_correct": false },
+      { "text": "24 years old", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The average of five numbers is 24. What is their total sum?",
+    "explanation": "Average multiplied by the number of values gives the total sum: 24 × 5 = 120.",
+    "choices": [
+      { "text": "100", "is_correct": false },
+      { "text": "110", "is_correct": false },
+      { "text": "120", "is_correct": true },
+      { "text": "130", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A man earns ₱600 per day. How much will he earn in 18 days?",
+    "explanation": "Total earnings are found by multiplying daily wage by number of days.",
+    "choices": [
+      { "text": "₱9,800", "is_correct": false },
+      { "text": "₱10,200", "is_correct": false },
+      { "text": "₱10,800", "is_correct": true },
+      { "text": "₱11,400", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the simple interest on ₱10,000 at 6% per year for 2 years?",
+    "explanation": "Simple interest = Principal × Rate × Time = 10,000 × 0.06 × 2 = ₱1,200.",
+    "choices": [
+      { "text": "₱600", "is_correct": false },
+      { "text": "₱1,000", "is_correct": false },
+      { "text": "₱1,200", "is_correct": true },
+      { "text": "₱1,500", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If a number is increased by 25%, the result is 500. What was the original number?",
+    "explanation": "The original number is 500 ÷ 1.25 = 400.",
+    "choices": [
+      { "text": "350", "is_correct": false },
+      { "text": "375", "is_correct": false },
+      { "text": "400", "is_correct": true },
+      { "text": "425", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A car uses 8 liters of gasoline to travel 96 kilometers. How many kilometers can it travel using 12 liters?",
+    "explanation": "Distance is directly proportional to fuel used. (96 ÷ 8) × 12 = 144 km.",
+    "choices": [
+      { "text": "120 km", "is_correct": false },
+      { "text": "132 km", "is_correct": false },
+      { "text": "144 km", "is_correct": true },
+      { "text": "156 km", "is_correct": false }
+    ]
   }
 ]

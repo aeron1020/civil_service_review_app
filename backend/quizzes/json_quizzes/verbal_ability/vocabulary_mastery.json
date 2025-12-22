@@ -342,6 +342,156 @@
     ]
   },
   {
+    "text": "Choose the word that is closest in meaning to *ABATE*.",
+    "explanation": "Abate means to lessen or reduce in intensity.",
+    "choices": [
+      { "text": "Increase", "is_correct": false },
+      { "text": "Reduce", "is_correct": true },
+      { "text": "Ignore", "is_correct": false },
+      { "text": "Prolong", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the word that is opposite in meaning to *SCARCE*.",
+    "explanation": "Scarce means insufficient or rare; its opposite is abundant.",
+    "choices": [
+      { "text": "Rare", "is_correct": false },
+      { "text": "Limited", "is_correct": false },
+      { "text": "Abundant", "is_correct": true },
+      { "text": "Costly", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Select the correct word to complete the sentence: The manager’s ______ decision caused confusion among the staff.",
+    "explanation": "Ambiguous means unclear or having more than one interpretation.",
+    "choices": [
+      { "text": "Definite", "is_correct": false },
+      { "text": "Ambiguous", "is_correct": true },
+      { "text": "Prompt", "is_correct": false },
+      { "text": "Careless", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct analogy: BOOK : AUTHOR :: SONG : ____",
+    "explanation": "An author writes a book; a composer creates a song.",
+    "choices": [
+      { "text": "Singer", "is_correct": false },
+      { "text": "Listener", "is_correct": false },
+      { "text": "Composer", "is_correct": true },
+      { "text": "Audience", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which word does NOT belong to the group?",
+    "explanation": "All except 'Chair' relate to writing.",
+    "choices": [
+      { "text": "Pen", "is_correct": false },
+      { "text": "Paper", "is_correct": false },
+      { "text": "Notebook", "is_correct": false },
+      { "text": "Chair", "is_correct": true }
+    ]
+  },
+  {
+    "text": "Choose the correct meaning of the idiom: *spill the beans*.",
+    "explanation": "The idiom means to reveal a secret.",
+    "choices": [
+      { "text": "Waste food", "is_correct": false },
+      { "text": "Reveal information", "is_correct": true },
+      { "text": "Cook carelessly", "is_correct": false },
+      { "text": "Make a mistake", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct word: She was praised for her ______ handling of the situation.",
+    "explanation": "Tactful means showing sensitivity and good judgment.",
+    "choices": [
+      { "text": "Tactless", "is_correct": false },
+      { "text": "Tactful", "is_correct": true },
+      { "text": "Harsh", "is_correct": false },
+      { "text": "Carefree", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the word closest in meaning to *IMMINENT*.",
+    "explanation": "Imminent means about to happen very soon.",
+    "choices": [
+      { "text": "Distant", "is_correct": false },
+      { "text": "Delayed", "is_correct": false },
+      { "text": "Impending", "is_correct": true },
+      { "text": "Unlikely", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Select the correct word: The committee will ______ the proposal next week.",
+    "explanation": "Deliberate means to discuss carefully before deciding.",
+    "choices": [
+      { "text": "Ignore", "is_correct": false },
+      { "text": "Deliberate", "is_correct": true },
+      { "text": "Cancel", "is_correct": false },
+      { "text": "Oppose", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the antonym of *TRANSPARENT* (as used in decision-making).",
+    "explanation": "In this context, transparent means open; its opposite is secretive.",
+    "choices": [
+      { "text": "Clear", "is_correct": false },
+      { "text": "Honest", "is_correct": false },
+      { "text": "Secretive", "is_correct": true },
+      { "text": "Fair", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the word that best completes the sentence: His explanation was so ______ that no one understood it.",
+    "explanation": "Vague means unclear or lacking detail.",
+    "choices": [
+      { "text": "Clear", "is_correct": false },
+      { "text": "Logical", "is_correct": false },
+      { "text": "Vague", "is_correct": true },
+      { "text": "Brief", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which word is a one-word substitute for: *A person who speaks two languages*?",
+    "explanation": "A bilingual person speaks two languages.",
+    "choices": [
+      { "text": "Linguist", "is_correct": false },
+      { "text": "Translator", "is_correct": false },
+      { "text": "Bilingual", "is_correct": true },
+      { "text": "Polyglot", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct word: The manager decided to ______ the meeting due to bad weather.",
+    "explanation": "Postpone means to delay or reschedule.",
+    "choices": [
+      { "text": "Cancel", "is_correct": false },
+      { "text": "Postpone", "is_correct": true },
+      { "text": "Conclude", "is_correct": false },
+      { "text": "Advance", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct analogy: GENEROUS : STINGY :: BRAVE : ____",
+    "explanation": "Generous and stingy are opposites; brave is opposite of cowardly.",
+    "choices": [
+      { "text": "Fearless", "is_correct": false },
+      { "text": "Bold", "is_correct": false },
+      { "text": "Cowardly", "is_correct": true },
+      { "text": "Strong", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the word closest in meaning to *METICULOUS*.",
+    "explanation": "Meticulous means very careful and precise.",
+    "choices": [
+      { "text": "Careless", "is_correct": false },
+      { "text": "Thorough", "is_correct": true },
+      { "text": "Hasty", "is_correct": false },
+      { "text": "Relaxed", "is_correct": false }
+    ]
+  },
+  {
     "text": "Sa gitna ng unos, may isang banaag ng liwanag: ang tapang at pananampalataya ng bayan. Ang ibig sabihin ng salitang 'BANAAG' ay:",
     "explanation": "'Banaag' ay maliit na liwanag, simula ng pag-asa, o sinag sa dilim.",
     "choices": [

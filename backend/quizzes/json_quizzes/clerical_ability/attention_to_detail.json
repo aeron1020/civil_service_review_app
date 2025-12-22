@@ -48,5 +48,255 @@
       { "text": "Marianne Santos", "is_correct": true },
       { "text": "Mariane Dizon", "is_correct": false }
     ]
+  },
+  {
+    "text": "Which entry is different from the others?",
+    "explanation": "The correct answer contains a different spelling.",
+    "choices": [
+      { "text": "Accomodation", "is_correct": true },
+      { "text": "Accommodation", "is_correct": false },
+      { "text": "Accommodation", "is_correct": false },
+      { "text": "Accommodation", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which name is NOT arranged correctly in alphabetical order?",
+    "explanation": "Alphabetical order follows last name first, then first name.",
+    "choices": [
+      { "text": "Cruz, Ana", "is_correct": false },
+      { "text": "Cruz, Mark", "is_correct": false },
+      { "text": "Cruz, Allan", "is_correct": true },
+      { "text": "Cruz, Zenaida", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which number is incorrectly written?",
+    "explanation": "The incorrect option has a misplaced comma.",
+    "choices": [
+      { "text": "1,250", "is_correct": false },
+      { "text": "12,500", "is_correct": false },
+      { "text": "125,00", "is_correct": true },
+      { "text": "125,000", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which entry does NOT exactly match the reference?\nReference: Santos, Maria L.",
+    "explanation": "The correct answer does not exactly match the spacing or punctuation.",
+    "choices": [
+      { "text": "Santos, Maria L.", "is_correct": false },
+      { "text": "Santos, Maria L", "is_correct": true },
+      { "text": "Santos, Maria  L.", "is_correct": true },
+      { "text": "Santos, Maria L.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which time entry is written incorrectly?",
+    "explanation": "Time should be written consistently using correct format.",
+    "choices": [
+      { "text": "8:30 a.m.", "is_correct": false },
+      { "text": "08:30 AM", "is_correct": false },
+      { "text": "8.30 a.m.", "is_correct": true },
+      { "text": "8:30 AM", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which word is misspelled?",
+    "explanation": "The correct answer contains an incorrect spelling.",
+    "choices": [
+      { "text": "Receive", "is_correct": false },
+      { "text": "Recieve", "is_correct": true },
+      { "text": "Receipt", "is_correct": false },
+      { "text": "Receiver", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which date is written incorrectly?",
+    "explanation": "Dates must follow a consistent format.",
+    "choices": [
+      { "text": "March 15, 2024", "is_correct": false },
+      { "text": "15 March 2024", "is_correct": false },
+      { "text": "March 15 2024", "is_correct": true },
+      { "text": "03/15/2024", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which entry contains an extra character?",
+    "explanation": "The correct answer includes an unnecessary symbol.",
+    "choices": [
+      { "text": "Invoice No. 2451", "is_correct": false },
+      { "text": "Invoice No.. 2451", "is_correct": true },
+      { "text": "Invoice No. 2451", "is_correct": false },
+      { "text": "Invoice No. 2451", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which item is NOT formatted consistently?",
+    "explanation": "Consistency in capitalization is required.",
+    "choices": [
+      { "text": "Office Supplies", "is_correct": false },
+      { "text": "Office supplies", "is_correct": true },
+      { "text": "Office Supplies", "is_correct": false },
+      { "text": "Office Supplies", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which amount is written incorrectly?",
+    "explanation": "Currency formatting must be correct.",
+    "choices": [
+      { "text": "₱1,250.00", "is_correct": false },
+      { "text": "₱12,500.50", "is_correct": false },
+      { "text": "₱1250.00", "is_correct": true },
+      { "text": "₱125,000.00", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which telephone number is inconsistent with the others?",
+    "explanation": "The incorrect option uses a different number format.",
+    "choices": [
+      { "text": "(02) 8123-4567", "is_correct": false },
+      { "text": "02-8123-4567", "is_correct": false },
+      { "text": "8123-4567", "is_correct": true },
+      { "text": "(02)8123-4567", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which entry violates capitalization rules?",
+    "explanation": "Proper nouns should be capitalized correctly.",
+    "choices": [
+      { "text": "Department of Education", "is_correct": false },
+      { "text": "department of Education", "is_correct": true },
+      { "text": "Department of Education", "is_correct": false },
+      { "text": "Department Of Education", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which instruction was NOT followed correctly?\nInstruction: Write names in ALL CAPS.",
+    "explanation": "The correct answer is not written in all capital letters.",
+    "choices": [
+      { "text": "JUAN DELA CRUZ", "is_correct": false },
+      { "text": "MARIA SANTOS", "is_correct": false },
+      { "text": "Pedro Reyes", "is_correct": true },
+      { "text": "ANA LUNA", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which entry has an incorrect abbreviation?",
+    "explanation": "Standard abbreviations must be used.",
+    "choices": [
+      { "text": "Street", "is_correct": false },
+      { "text": "St.", "is_correct": false },
+      { "text": "Str.", "is_correct": true },
+      { "text": "Ave.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which entry contains a spacing error?",
+    "explanation": "Spacing must be consistent and accurate.",
+    "choices": [
+      { "text": "Room 201", "is_correct": false },
+      { "text": "Room  201", "is_correct": true },
+      { "text": "Room 201", "is_correct": false },
+      { "text": "Room 201", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which entry does NOT exactly match the reference?\nReference: DELA CRUZ, JUAN P.",
+    "explanation": "Exact matching includes capitalization, spacing, and punctuation.",
+    "choices": [
+      { "text": "DELA CRUZ, JUAN P.", "is_correct": false },
+      { "text": "DELA CRUZ, JUAN P", "is_correct": true },
+      { "text": "DELA CRUZ, JUAN  P.", "is_correct": true },
+      { "text": "DELA CRUZ, JUAN P.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which amount is incorrectly written?",
+    "explanation": "Thousands and decimals must be placed correctly in currency format.",
+    "choices": [
+      { "text": "₱10,500.75", "is_correct": false },
+      { "text": "₱105,00.75", "is_correct": true },
+      { "text": "₱1,050.00", "is_correct": false },
+      { "text": "₱100,500.00", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which date is inconsistent with the others?",
+    "explanation": "All dates should follow the same format.",
+    "choices": [
+      { "text": "04/12/2025", "is_correct": false },
+      { "text": "05/18/2025", "is_correct": false },
+      { "text": "2025/06/21", "is_correct": true },
+      { "text": "07/03/2025", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which entry contains an error in capitalization?",
+    "explanation": "Proper nouns should follow standard capitalization rules.",
+    "choices": [
+      { "text": "Bureau of Internal Revenue", "is_correct": false },
+      { "text": "Bureau Of Internal Revenue", "is_correct": true },
+      { "text": "Department of Agriculture", "is_correct": false },
+      { "text": "Department of Health", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which time entry is incorrectly written?",
+    "explanation": "Time formatting must be consistent and accurate.",
+    "choices": [
+      { "text": "9:15 a.m.", "is_correct": false },
+      { "text": "09:15 AM", "is_correct": false },
+      { "text": "9.15 a.m.", "is_correct": true },
+      { "text": "9:15 AM", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which entry violates standard abbreviation rules?",
+    "explanation": "Only standard abbreviations are acceptable in clerical work.",
+    "choices": [
+      { "text": "No. 214", "is_correct": false },
+      { "text": "Brgy. Malinis", "is_correct": false },
+      { "text": "Stre. Rizal", "is_correct": true },
+      { "text": "Ave. Mabini", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which item contains an extra space that affects accuracy?",
+    "explanation": "Extra spaces are considered clerical errors.",
+    "choices": [
+      { "text": "File No. 302", "is_correct": false },
+      { "text": "File No.  302", "is_correct": true },
+      { "text": "File No. 302", "is_correct": false },
+      { "text": "File No. 302", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which telephone number is formatted incorrectly?",
+    "explanation": "The correct format must include the area code consistently.",
+    "choices": [
+      { "text": "(02) 8234-5678", "is_correct": false },
+      { "text": "(02)8234-5678", "is_correct": false },
+      { "text": "02-8234-5678", "is_correct": true },
+      { "text": "(02) 8234-5678", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which entry contains an incorrect symbol usage?",
+    "explanation": "Symbols must be used consistently and correctly.",
+    "choices": [
+      { "text": "Grade: 95%", "is_correct": false },
+      { "text": "Discount – 10%", "is_correct": false },
+      { "text": "Interest @5%", "is_correct": true },
+      { "text": "Tax: 12%", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which entry is NOT consistent with the reference?\nReference: Room 405-B",
+    "explanation": "Exact matching includes hyphens and spacing.",
+    "choices": [
+      { "text": "Room 405-B", "is_correct": false },
+      { "text": "Room 405B", "is_correct": true },
+      { "text": "Room 405-B", "is_correct": false },
+      { "text": "Room 405-B", "is_correct": false }
+    ]
   }
 ]

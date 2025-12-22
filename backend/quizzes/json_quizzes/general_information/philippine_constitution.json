@@ -1,52 +1,326 @@
 [
   {
-    "text": "Which principle in the 1987 Constitution mandates that public office is a public trust?",
-    "explanation": "Article XI, Section 1 of the 1987 Constitution states that 'Public office is a public trust.'",
+    "text": "Which of the following powers allows the Supreme Court to determine whether there has been a grave abuse of discretion by any branch or instrumentality of the government?",
+    "explanation": "Judicial power includes the duty of courts to determine grave abuse of discretion amounting to lack or excess of jurisdiction.",
     "choices": [
-      { "text": "Accountability of Public Officers", "is_correct": true },
-      { "text": "Bill of Rights", "is_correct": false },
-      { "text": "Separation of Powers", "is_correct": false },
-      { "text": "Checks and Balances", "is_correct": false }
+      { "text": "Police power", "is_correct": false },
+      { "text": "Judicial review", "is_correct": true },
+      { "text": "Power of impeachment", "is_correct": false },
+      { "text": "Power of appropriation", "is_correct": false }
     ]
   },
   {
-    "text": "Who has the sole power to declare the existence of a state of war according to the Constitution?",
-    "explanation": "Article VI grants Congress the exclusive authority to declare the existence of a state of war.",
+    "text": "Which constitutional doctrine prevents courts from interfering with acts of the political branches unless there is grave abuse of discretion?",
+    "explanation": "The political question doctrine limits judicial review over issues committed to the discretion of political branches.",
     "choices": [
-      { "text": "The President", "is_correct": false },
-      { "text": "The Senate only", "is_correct": false },
-      { "text": "The Congress", "is_correct": true },
-      { "text": "The Supreme Court", "is_correct": false }
+      { "text": "Doctrine of separation of powers", "is_correct": false },
+      { "text": "Doctrine of checks and balances", "is_correct": false },
+      { "text": "Political question doctrine", "is_correct": true },
+      { "text": "Doctrine of state immunity", "is_correct": false }
     ]
   },
   {
-    "text": "Which constitutional body is tasked to investigate cases of graft and corruption involving public officials?",
-    "explanation": "The Ombudsman, as provided in Article XI, is responsible for investigating corruption involving government officials.",
+    "text": "Which of the following rights may be suspended during the suspension of the privilege of the writ of habeas corpus?",
+    "explanation": "Only the privilege of the writ of habeas corpus may be suspended, not the writ itself nor other constitutional rights.",
     "choices": [
-      { "text": "Civil Service Commission", "is_correct": false },
-      { "text": "Office of the Ombudsman", "is_correct": true },
-      { "text": "Commission on Audit", "is_correct": false },
-      { "text": "Sandiganbayan", "is_correct": false }
+      { "text": "Freedom of speech", "is_correct": false },
+      { "text": "Right to bail", "is_correct": false },
+      { "text": "Privilege of the writ of habeas corpus", "is_correct": true },
+      { "text": "Right against self-incrimination", "is_correct": false }
     ]
   },
   {
-    "text": "Under the Constitution, who appoints the Chief Justice of the Supreme Court?",
-    "explanation": "The President appoints the Chief Justice from a list submitted by the Judicial and Bar Council.",
+    "text": "Which of the following statements about martial law under the 1987 Constitution is TRUE?",
+    "explanation": "The Constitution expressly provides that the Constitution remains in force during martial law.",
     "choices": [
-      { "text": "Congress", "is_correct": false },
-      { "text": "Judicial and Bar Council", "is_correct": false },
-      { "text": "The President", "is_correct": true },
-      { "text": "The Supreme Court en banc", "is_correct": false }
+      {
+        "text": "The Constitution is suspended during martial law",
+        "is_correct": false
+      },
+      {
+        "text": "Civil courts are automatically abolished",
+        "is_correct": false
+      },
+      { "text": "The Constitution remains operative", "is_correct": true },
+      {
+        "text": "Legislative power is transferred to the President",
+        "is_correct": false
+      }
     ]
   },
   {
-    "text": "The right to due process and equal protection of the law is found in which part of the Constitution?",
-    "explanation": "These rights are protected under Article III, the Bill of Rights.",
+    "text": "Which constitutional principle limits the exercise of government power to promote fairness and justice?",
+    "explanation": "The due process clause requires fairness in the exercise of governmental power.",
+    "choices": [
+      { "text": "Police power", "is_correct": false },
+      { "text": "Eminent domain", "is_correct": false },
+      { "text": "Due process", "is_correct": true },
+      { "text": "Taxation", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which doctrine provides that the State cannot be sued without its consent?",
+    "explanation": "The doctrine of state immunity protects the State from being sued without its consent.",
+    "choices": [
+      { "text": "Doctrine of qualified political agency", "is_correct": false },
+      { "text": "Doctrine of state immunity", "is_correct": true },
+      { "text": "Doctrine of separation of powers", "is_correct": false },
+      { "text": "Doctrine of judicial supremacy", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which constitutional requirement must be met before private property may be taken for public use?",
+    "explanation": "The Constitution requires just compensation when private property is taken for public use.",
+    "choices": [
+      { "text": "Public bidding", "is_correct": false },
+      { "text": "Just compensation", "is_correct": true },
+      { "text": "Popular approval", "is_correct": false },
+      { "text": "Judicial review", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following powers is NOT exercised by Congress?",
+    "explanation": "Judicial power belongs to the courts, not Congress.",
+    "choices": [
+      { "text": "Power of impeachment", "is_correct": false },
+      { "text": "Power of appropriation", "is_correct": false },
+      { "text": "Judicial power", "is_correct": true },
+      { "text": "Power to declare the existence of war", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which condition must exist for the declaration of a state of national emergency to justify the exercise of emergency powers?",
+    "explanation": "Emergency powers require a law passed by Congress and are limited in duration and scope.",
+    "choices": [
+      { "text": "Verbal approval of the Cabinet", "is_correct": false },
+      { "text": "Authorization by Congress", "is_correct": true },
+      { "text": "Approval by the Supreme Court", "is_correct": false },
+      { "text": "Ratification by the people", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which principle ensures that laws do not unfairly discriminate between persons similarly situated?",
+    "explanation": "The equal protection clause guarantees that all persons are treated alike under similar conditions.",
+    "choices": [
+      { "text": "Due process", "is_correct": false },
+      { "text": "Equal protection of the laws", "is_correct": true },
+      { "text": "Popular sovereignty", "is_correct": false },
+      { "text": "Checks and balances", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the official title of the Philippine Constitution currently in effect?",
+    "explanation": "The Constitution ratified in 1987 is officially known as the 1987 Constitution of the Republic of the Philippines.",
+    "choices": [
+      { "text": "1935 Constitution", "is_correct": false },
+      { "text": "1973 Constitution", "is_correct": false },
+      { "text": "1987 Constitution", "is_correct": true },
+      { "text": "Malolos Constitution", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which article of the Philippine Constitution contains the Bill of Rights?",
+    "explanation": "Article III of the Constitution is known as the Bill of Rights, which protects individual liberties.",
     "choices": [
       { "text": "Article II", "is_correct": false },
       { "text": "Article III", "is_correct": true },
-      { "text": "Article VI", "is_correct": false },
-      { "text": "Article VII", "is_correct": false }
+      { "text": "Article IV", "is_correct": false },
+      { "text": "Article V", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who are considered natural-born citizens of the Philippines?",
+    "explanation": "Natural-born citizens are those who are citizens from birth without having to perform any act to acquire citizenship.",
+    "choices": [
+      {
+        "text": "Those who applied for Philippine citizenship",
+        "is_correct": false
+      },
+      {
+        "text": "Those who became citizens through naturalization",
+        "is_correct": false
+      },
+      {
+        "text": "Citizens of the Philippines from birth without any act to acquire citizenship",
+        "is_correct": true
+      },
+      { "text": "Foreigners married to Filipino citizens", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the minimum age requirement to vote in Philippine elections?",
+    "explanation": "The Constitution provides that Filipino citizens who are at least 18 years old may vote.",
+    "choices": [
+      { "text": "16 years old", "is_correct": false },
+      { "text": "18 years old", "is_correct": true },
+      { "text": "21 years old", "is_correct": false },
+      { "text": "25 years old", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which branch of the government has the power to interpret laws?",
+    "explanation": "The Judicial Branch interprets laws and determines whether acts of the government are constitutional.",
+    "choices": [
+      { "text": "Legislative", "is_correct": false },
+      { "text": "Executive", "is_correct": false },
+      { "text": "Judicial", "is_correct": true },
+      { "text": "Administrative", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the term of office of the President of the Philippines?",
+    "explanation": "The President serves a single term of six years with no re-election.",
+    "choices": [
+      { "text": "Four years", "is_correct": false },
+      { "text": "Five years", "is_correct": false },
+      { "text": "Six years", "is_correct": true },
+      { "text": "Seven years", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which constitutional principle states that government authority comes from the people?",
+    "explanation": "The principle of popular sovereignty means that all government power emanates from the people.",
+    "choices": [
+      { "text": "Separation of powers", "is_correct": false },
+      { "text": "Checks and balances", "is_correct": false },
+      { "text": "Popular sovereignty", "is_correct": true },
+      { "text": "Judicial supremacy", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which body is granted the power to declare the existence of a state of war?",
+    "explanation": "Only Congress, voting jointly, may declare the existence of a state of war.",
+    "choices": [
+      { "text": "The President", "is_correct": false },
+      { "text": "The Supreme Court", "is_correct": false },
+      { "text": "Congress", "is_correct": true },
+      { "text": "The Armed Forces", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What type of government does the Philippines have according to the Constitution?",
+    "explanation": "The Philippines follows a democratic and republican form of government.",
+    "choices": [
+      { "text": "Federal and parliamentary", "is_correct": false },
+      { "text": "Monarchical", "is_correct": false },
+      { "text": "Democratic and republican", "is_correct": true },
+      { "text": "Authoritarian", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which constitutional right protects a person from being tried twice for the same offense?",
+    "explanation": "The right against double jeopardy prevents a person from being tried again for the same crime once acquitted or convicted.",
+    "choices": [
+      { "text": "Right to due process", "is_correct": false },
+      { "text": "Right against self-incrimination", "is_correct": false },
+      { "text": "Right against double jeopardy", "is_correct": true },
+      { "text": "Right to speedy trial", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which government agency is responsible for administering elections in the Philippines?",
+    "explanation": "The Commission on Elections (COMELEC) is the constitutional body tasked with enforcing and administering election laws.",
+    "choices": [
+      { "text": "Civil Service Commission", "is_correct": false },
+      { "text": "Commission on Audit", "is_correct": false },
+      { "text": "Commission on Elections", "is_correct": true },
+      {
+        "text": "Department of the Interior and Local Government",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which constitutional commission has the power to audit government accounts?",
+    "explanation": "The Commission on Audit (COA) examines and audits the revenues and expenditures of the government.",
+    "choices": [
+      { "text": "Civil Service Commission", "is_correct": false },
+      { "text": "Commission on Elections", "is_correct": false },
+      { "text": "Commission on Audit", "is_correct": true },
+      { "text": "Office of the Ombudsman", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which right allows an accused person to remain silent during investigation?",
+    "explanation": "The right against self-incrimination allows a person to refuse to answer questions that may incriminate them.",
+    "choices": [
+      { "text": "Right to counsel", "is_correct": false },
+      { "text": "Right against self-incrimination", "is_correct": true },
+      { "text": "Right to bail", "is_correct": false },
+      { "text": "Right to privacy", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the minimum age requirement to run for President of the Philippines?",
+    "explanation": "A presidential candidate must be at least 40 years old on election day.",
+    "choices": [
+      { "text": "35 years old", "is_correct": false },
+      { "text": "40 years old", "is_correct": true },
+      { "text": "45 years old", "is_correct": false },
+      { "text": "50 years old", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which principle prevents one branch of government from exercising the powers of another?",
+    "explanation": "The separation of powers divides government authority among the legislative, executive, and judicial branches.",
+    "choices": [
+      { "text": "Checks and balances", "is_correct": false },
+      { "text": "Judicial review", "is_correct": false },
+      { "text": "Separation of powers", "is_correct": true },
+      { "text": "Popular sovereignty", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which body has the authority to declare martial law?",
+    "explanation": "The President may declare martial law, subject to constitutional limitations and review by Congress and the Supreme Court.",
+    "choices": [
+      { "text": "Congress", "is_correct": false },
+      { "text": "The President", "is_correct": true },
+      { "text": "The Supreme Court", "is_correct": false },
+      { "text": "The Armed Forces", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the maximum duration of martial law under the Constitution unless extended by Congress?",
+    "explanation": "Martial law may last for up to 60 days unless extended by Congress.",
+    "choices": [
+      { "text": "30 days", "is_correct": false },
+      { "text": "45 days", "is_correct": false },
+      { "text": "60 days", "is_correct": true },
+      { "text": "90 days", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which constitutional right ensures fair treatment in legal proceedings?",
+    "explanation": "The right to due process guarantees fairness in judicial and administrative proceedings.",
+    "choices": [
+      { "text": "Right to bail", "is_correct": false },
+      { "text": "Right to due process", "is_correct": true },
+      { "text": "Right to information", "is_correct": false },
+      { "text": "Right to privacy", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sectoral representatives are guaranteed seats in the House of Representatives?",
+    "explanation": "The party-list system ensures representation of marginalized and underrepresented sectors.",
+    "choices": [
+      { "text": "Business groups only", "is_correct": false },
+      { "text": "Religious organizations", "is_correct": false },
+      {
+        "text": "Marginalized and underrepresented sectors",
+        "is_correct": true
+      },
+      { "text": "Foreign organizations", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which constitutional provision protects freedom of speech, expression, and the press?",
+    "explanation": "These freedoms are guaranteed under the Bill of Rights in the Philippine Constitution.",
+    "choices": [
+      { "text": "Freedom of religion", "is_correct": false },
+      { "text": "Freedom of expression and the press", "is_correct": true },
+      { "text": "Right to travel", "is_correct": false },
+      { "text": "Right to information", "is_correct": false }
     ]
   }
 ]

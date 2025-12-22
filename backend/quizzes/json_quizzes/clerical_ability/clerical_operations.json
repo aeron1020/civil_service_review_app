@@ -48,5 +48,338 @@
       { "text": "A concise list of attendance records", "is_correct": true },
       { "text": "A copy of all timecards", "is_correct": false }
     ]
+  },
+  {
+    "text": "What should be done FIRST when receiving an official document for filing?",
+    "explanation": "Documents must be checked for completeness before any clerical action.",
+    "choices": [
+      { "text": "Stamp the document as received", "is_correct": false },
+      {
+        "text": "Check if the document is complete and signed",
+        "is_correct": true
+      },
+      { "text": "File the document immediately", "is_correct": false },
+      { "text": "Make photocopies for reference", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A letter is marked 'CONFIDENTIAL'. What is the proper clerical action?",
+    "explanation": "Confidential documents must be handled with restricted access.",
+    "choices": [
+      { "text": "Place it on the general incoming tray", "is_correct": false },
+      { "text": "Read it to understand the contents", "is_correct": false },
+      {
+        "text": "Forward it directly to the authorized officer",
+        "is_correct": true
+      },
+      { "text": "File it with regular correspondence", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which filing method is MOST appropriate for employee records?",
+    "explanation": "Employee files are commonly arranged alphabetically for easy retrieval.",
+    "choices": [
+      { "text": "Chronological filing", "is_correct": false },
+      { "text": "Numerical filing", "is_correct": false },
+      { "text": "Alphabetical filing", "is_correct": true },
+      { "text": "Geographical filing", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A document must be copied and sent to three different departments. What should be done FIRST?",
+    "explanation": "Preparing copies ensures efficiency before distribution.",
+    "choices": [
+      { "text": "Send the original to one department", "is_correct": false },
+      { "text": "Prepare the required number of copies", "is_correct": true },
+      { "text": "Log the document as outgoing mail", "is_correct": false },
+      { "text": "Attach routing slips immediately", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which action BEST ensures accurate record keeping?",
+    "explanation": "Entries must be verified before being recorded.",
+    "choices": [
+      { "text": "Writing entries quickly to save time", "is_correct": false },
+      {
+        "text": "Recording information before checking details",
+        "is_correct": false
+      },
+      { "text": "Verifying data before recording", "is_correct": true },
+      { "text": "Letting another clerk encode the data", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If an error is discovered in an official logbook, what is the proper clerical procedure?",
+    "explanation": "Corrections must remain visible to maintain record integrity.",
+    "choices": [
+      { "text": "Erase the error completely", "is_correct": false },
+      { "text": "Use correction fluid", "is_correct": false },
+      {
+        "text": "Draw a single line through the error and initial it",
+        "is_correct": true
+      },
+      { "text": "Rewrite the entire page", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which task should be given PRIORITY at the start of the workday?",
+    "explanation": "Time-sensitive documents must be handled first.",
+    "choices": [
+      { "text": "Arranging office supplies", "is_correct": false },
+      { "text": "Filing old records", "is_correct": false },
+      {
+        "text": "Processing urgent incoming communications",
+        "is_correct": true
+      },
+      { "text": "Cleaning the filing cabinets", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the BEST way to track outgoing documents?",
+    "explanation": "Outgoing logs ensure accountability and traceability.",
+    "choices": [
+      { "text": "Keeping copies on the desk", "is_correct": false },
+      { "text": "Listing them in an outgoing mail log", "is_correct": true },
+      { "text": "Memorizing the recipients", "is_correct": false },
+      {
+        "text": "Filing them immediately without recording",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "A clerk is asked to retrieve a file quickly. What filing system helps MOST?",
+    "explanation": "Clearly labeled and organized files speed up retrieval.",
+    "choices": [
+      { "text": "Files arranged randomly by date", "is_correct": false },
+      { "text": "Files stacked according to size", "is_correct": false },
+      { "text": "Files labeled and indexed properly", "is_correct": true },
+      { "text": "Files grouped by color of folders", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which practice BEST prevents loss of important records?",
+    "explanation": "Controlled access reduces the risk of loss or misuse.",
+    "choices": [
+      { "text": "Allowing anyone to access files", "is_correct": false },
+      {
+        "text": "Leaving files on desks after work hours",
+        "is_correct": false
+      },
+      {
+        "text": "Keeping records in secured filing cabinets",
+        "is_correct": true
+      },
+      { "text": "Storing files without labels", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the primary purpose of a routing slip attached to a document?",
+    "explanation": "Routing slips show the path and responsible offices for a document.",
+    "choices": [
+      { "text": "To decorate the document", "is_correct": false },
+      {
+        "text": "To indicate where the document should go",
+        "is_correct": true
+      },
+      { "text": "To replace the document number", "is_correct": false },
+      { "text": "To serve as a duplicate copy", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which task is usually performed after receiving incoming mail?",
+    "explanation": "Incoming mail must be recorded before distribution.",
+    "choices": [
+      { "text": "Filing immediately", "is_correct": false },
+      { "text": "Recording in the mail logbook", "is_correct": true },
+      { "text": "Returning to the sender", "is_correct": false },
+      { "text": "Making photocopies first", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the BEST way to arrange files that are frequently accessed?",
+    "explanation": "Frequently used files should be easily reachable.",
+    "choices": [
+      { "text": "Placed in locked storage", "is_correct": false },
+      { "text": "Kept on the top shelves", "is_correct": false },
+      { "text": "Stored in accessible filing cabinets", "is_correct": true },
+      { "text": "Mixed with inactive records", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Why are duplicate copies of documents kept in an office?",
+    "explanation": "Duplicates serve as backups and references.",
+    "choices": [
+      { "text": "To increase paper usage", "is_correct": false },
+      { "text": "To replace the original documents", "is_correct": false },
+      { "text": "For backup and reference purposes", "is_correct": true },
+      { "text": "To avoid filing originals", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which clerical task helps ensure smooth office communication?",
+    "explanation": "Proper distribution ensures messages reach the right recipients.",
+    "choices": [
+      { "text": "Ignoring routine memoranda", "is_correct": false },
+      { "text": "Delaying document distribution", "is_correct": false },
+      { "text": "Timely distribution of documents", "is_correct": true },
+      {
+        "text": "Filing documents without reading headers",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What information is MOST important in a document logbook?",
+    "explanation": "Key details help track documents accurately.",
+    "choices": [
+      { "text": "Paper size and color", "is_correct": false },
+      { "text": "Sender, date received, and subject", "is_correct": true },
+      { "text": "Font style used", "is_correct": false },
+      { "text": "Length of the document", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which action demonstrates proper document handling?",
+    "explanation": "Proper labeling prevents misplacement.",
+    "choices": [
+      { "text": "Leaving files unlabeled", "is_correct": false },
+      {
+        "text": "Mixing documents from different departments",
+        "is_correct": false
+      },
+      { "text": "Labeling files clearly and accurately", "is_correct": true },
+      { "text": "Placing files randomly", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Why should outdated records be archived?",
+    "explanation": "Archiving keeps active files organized while preserving records.",
+    "choices": [
+      { "text": "To destroy them immediately", "is_correct": false },
+      { "text": "To make space for active records", "is_correct": true },
+      { "text": "To confuse file retrieval", "is_correct": false },
+      { "text": "To avoid record keeping", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the proper action when a document is misfiled?",
+    "explanation": "Correct filing maintains system accuracy.",
+    "choices": [
+      { "text": "Leave it where it was found", "is_correct": false },
+      { "text": "Remove it and file it correctly", "is_correct": true },
+      { "text": "Discard the document", "is_correct": false },
+      { "text": "Create a new file unnecessarily", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which practice helps reduce clerical errors?",
+    "explanation": "Double-checking minimizes mistakes.",
+    "choices": [
+      { "text": "Rushing tasks to meet deadlines", "is_correct": false },
+      { "text": "Skipping verification steps", "is_correct": false },
+      { "text": "Reviewing work before finalizing", "is_correct": true },
+      { "text": "Letting others correct mistakes later", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the main purpose of filing documents?",
+    "explanation": "Filing keeps documents organized and easy to retrieve.",
+    "choices": [
+      { "text": "To decorate the office", "is_correct": false },
+      { "text": "To organize and store records properly", "is_correct": true },
+      { "text": "To hide documents", "is_correct": false },
+      { "text": "To reduce paperwork immediately", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which item is commonly used to hold loose papers together?",
+    "explanation": "Paper clips are used to temporarily hold documents.",
+    "choices": [
+      { "text": "Stapler", "is_correct": false },
+      { "text": "Paper clip", "is_correct": true },
+      { "text": "Envelope", "is_correct": false },
+      { "text": "Folder", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What should you do first when you receive a document?",
+    "explanation": "Recording helps track received documents.",
+    "choices": [
+      { "text": "File it immediately", "is_correct": false },
+      { "text": "Record it in the logbook", "is_correct": true },
+      { "text": "Throw away the envelope", "is_correct": false },
+      { "text": "Make copies", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which office tool is used for making copies of documents?",
+    "explanation": "A photocopier duplicates documents.",
+    "choices": [
+      { "text": "Printer", "is_correct": false },
+      { "text": "Scanner", "is_correct": false },
+      { "text": "Photocopier", "is_correct": true },
+      { "text": "Typewriter", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Why are folders labeled?",
+    "explanation": "Labels help identify file contents easily.",
+    "choices": [
+      { "text": "To make them colorful", "is_correct": false },
+      { "text": "To identify the contents", "is_correct": true },
+      { "text": "To replace filing cabinets", "is_correct": false },
+      { "text": "To hide documents", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which filing system arranges documents by name?",
+    "explanation": "Alphabetical filing uses names or titles.",
+    "choices": [
+      { "text": "Numerical", "is_correct": false },
+      { "text": "Chronological", "is_correct": false },
+      { "text": "Alphabetical", "is_correct": true },
+      { "text": "Geographical", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the purpose of a logbook?",
+    "explanation": "A logbook records important office transactions.",
+    "choices": [
+      { "text": "To store unused papers", "is_correct": false },
+      { "text": "To record activities and documents", "is_correct": true },
+      { "text": "To write personal notes", "is_correct": false },
+      { "text": "To replace filing cabinets", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which task is part of a clerk’s responsibility?",
+    "explanation": "Clerks assist with basic office tasks.",
+    "choices": [
+      { "text": "Approving budgets", "is_correct": false },
+      { "text": "Drafting laws", "is_correct": false },
+      { "text": "Handling and organizing documents", "is_correct": true },
+      { "text": "Managing company finances", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which item is used to store documents neatly?",
+    "explanation": "Folders help keep documents organized.",
+    "choices": [
+      { "text": "Envelope", "is_correct": false },
+      { "text": "Folder", "is_correct": true },
+      { "text": "Notebook", "is_correct": false },
+      { "text": "Clipboard", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Why is neat handwriting important in clerical work?",
+    "explanation": "Clear handwriting prevents misunderstanding.",
+    "choices": [
+      { "text": "To impress supervisors", "is_correct": false },
+      { "text": "To avoid confusion and errors", "is_correct": true },
+      { "text": "To save ink", "is_correct": false },
+      { "text": "To write faster", "is_correct": false }
+    ]
   }
 ]

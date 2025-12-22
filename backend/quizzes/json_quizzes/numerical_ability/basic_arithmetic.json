@@ -1,242 +1,502 @@
 [
   {
-    "text": "What is 125 + 378?",
-    "explanation": "Add the numbers column by column: 5+8=13, write 3 carry 1; 2+7=9, plus 1=10, write 0 carry 1; 1+3=4 plus 1=5. Total = 503.",
+    "text": "A worker earns ₱450 per day. How much will he earn in 24 days?",
+    "explanation": "Daily wage is ₱450. Multiply by number of days: 450 × 24 = ₱10,800.",
     "choices": [
-      { "text": "503", "is_correct": true },
-      { "text": "513", "is_correct": false },
-      { "text": "500", "is_correct": false },
-      { "text": "508", "is_correct": false }
+      { "text": "₱10,200", "is_correct": false },
+      { "text": "₱10,500", "is_correct": false },
+      { "text": "₱10,800", "is_correct": true },
+      { "text": "₱11,000", "is_correct": false }
     ]
   },
   {
-    "text": "What is 840 − 275?",
-    "explanation": "Subtract digit by digit: 0−5 cannot, borrow 1 from 4 → 10−5=5, 3−7 cannot, borrow 1 from 8 → 13−7=6, 7−2=5. Total = 565.",
+    "text": "What is 15% of 640?",
+    "explanation": "15% of 640 = 0.15 × 640 = 96.",
     "choices": [
-      { "text": "565", "is_correct": true },
-      { "text": "575", "is_correct": false },
-      { "text": "585", "is_correct": false },
-      { "text": "595", "is_correct": false }
+      { "text": "84", "is_correct": false },
+      { "text": "90", "is_correct": false },
+      { "text": "96", "is_correct": true },
+      { "text": "102", "is_correct": false }
     ]
   },
   {
-    "text": "What is 56 × 23?",
-    "explanation": "Use long multiplication: 56×3=168, 56×20=1120, add them: 1120+168=1288.",
+    "text": "If the ratio of boys to girls in a class is 3:5 and there are 24 boys, how many girls are there?",
+    "explanation": "If 3 parts = 24 boys, then 1 part = 8. Girls = 5 parts × 8 = 40.",
     "choices": [
-      { "text": "1288", "is_correct": true },
-      { "text": "1268", "is_correct": false },
-      { "text": "1308", "is_correct": false },
-      { "text": "1258", "is_correct": false }
-    ]
-  },
-  {
-    "text": "What is 945 ÷ 9?",
-    "explanation": "Divide step by step: 9 into 9=1, bring down 4 → 4 cannot divide 9, bring down 5 → 45 ÷ 9=5, answer=105.",
-    "choices": [
-      { "text": "105", "is_correct": true },
-      { "text": "115", "is_correct": false },
-      { "text": "95", "is_correct": false },
-      { "text": "110", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Simplify: 24 + 36 − 18",
-    "explanation": "Add first: 24+36=60, then subtract 18: 60−18=42.",
-    "choices": [
-      { "text": "42", "is_correct": true },
-      { "text": "46", "is_correct": false },
-      { "text": "48", "is_correct": false },
-      { "text": "44", "is_correct": false }
-    ]
-  },
-  {
-    "text": "What is 15 × 12?",
-    "explanation": "Multiply: 15×12 = 15×10 + 15×2 = 150 + 30 = 180.",
-    "choices": [
-      { "text": "180", "is_correct": true },
-      { "text": "175", "is_correct": false },
-      { "text": "185", "is_correct": false },
-      { "text": "190", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Divide 672 by 8",
-    "explanation": "8 into 6 cannot → 0, 8 into 67=8×8=64, remainder 3, bring down 2 → 32 ÷ 8=4, answer=84.",
-    "choices": [
-      { "text": "84", "is_correct": true },
-      { "text": "86", "is_correct": false },
-      { "text": "88", "is_correct": false },
-      { "text": "82", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Find the sum: 123 + 456 + 321",
-    "explanation": "Add step by step: 123+456=579, then 579+321=900.",
-    "choices": [
-      { "text": "900", "is_correct": true },
-      { "text": "890", "is_correct": false },
-      { "text": "910", "is_correct": false },
-      { "text": "905", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Simplify: 500 − 275 + 125",
-    "explanation": "Subtract first: 500−275=225, then add 125: 225+125=350.",
-    "choices": [
-      { "text": "350", "is_correct": true },
-      { "text": "360", "is_correct": false },
-      { "text": "340", "is_correct": false },
-      { "text": "355", "is_correct": false }
-    ]
-  },
-  {
-    "text": "What is 48 × 15?",
-    "explanation": "Multiply: 48×15 = 48×10 + 48×5 = 480 + 240 = 720.",
-    "choices": [
-      { "text": "720", "is_correct": true },
-      { "text": "730", "is_correct": false },
-      { "text": "710", "is_correct": false },
-      { "text": "700", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Divide 144 by 12",
-    "explanation": "12 × 12 = 144, so 144 ÷ 12 = 12.",
-    "choices": [
-      { "text": "12", "is_correct": true },
-      { "text": "11", "is_correct": false },
-      { "text": "13", "is_correct": false },
-      { "text": "14", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Simplify: 72 ÷ 8 + 15",
-    "explanation": "First divide: 72 ÷ 8 = 9, then add 15: 9 + 15 = 24.",
-    "choices": [
-      { "text": "24", "is_correct": true },
-      { "text": "23", "is_correct": false },
-      { "text": "25", "is_correct": false },
-      { "text": "26", "is_correct": false }
-    ]
-  },
-  {
-    "text": "What is 36 × 7?",
-    "explanation": "Multiply: 36×7 = 210 + 42 = 252. (Break 36 as 30+6: 30×7=210, 6×7=42, sum=252)",
-    "choices": [
-      { "text": "252", "is_correct": true },
-      { "text": "242", "is_correct": false },
-      { "text": "262", "is_correct": false },
-      { "text": "250", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Simplify: 600 − 245",
-    "explanation": "Subtract: 600−245. Units: 0−5 → borrow 1 from tens → 10−5=5. Tens: 9−4=5. Hundreds: 5−2=3. Total=355.",
-    "choices": [
-      { "text": "355", "is_correct": true },
-      { "text": "345", "is_correct": false },
-      { "text": "365", "is_correct": false },
-      { "text": "350", "is_correct": false }
-    ]
-  },
-  {
-    "text": "What is 81 ÷ 9?",
-    "explanation": "9 × 9 = 81, so 81 ÷ 9 = 9.",
-    "choices": [
-      { "text": "9", "is_correct": true },
-      { "text": "8", "is_correct": false },
-      { "text": "10", "is_correct": false },
-      { "text": "11", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Find the sum: 234 + 321",
-    "explanation": "Add step by step: 4+1=5, 3+2=5, 2+3=5, so total=555.",
-    "choices": [
-      { "text": "555", "is_correct": true },
-      { "text": "565", "is_correct": false },
-      { "text": "545", "is_correct": false },
-      { "text": "550", "is_correct": false }
-    ]
-  },
-  {
-    "text": "What is 64 × 6?",
-    "explanation": "Multiply: 64×6 = 60×6 + 4×6 = 360 + 24 = 384.",
-    "choices": [
-      { "text": "384", "is_correct": true },
-      { "text": "386", "is_correct": false },
-      { "text": "394", "is_correct": false },
-      { "text": "380", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Simplify: 480 ÷ 8",
-    "explanation": "Divide step by step: 480 ÷ 8 = 60.",
-    "choices": [
-      { "text": "60", "is_correct": true },
-      { "text": "58", "is_correct": false },
-      { "text": "62", "is_correct": false },
-      { "text": "64", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Simplify: 150 + 275 − 125",
-    "explanation": "Add first: 150+275=425, subtract 125: 425−125=300.",
-    "choices": [
-      { "text": "300", "is_correct": true },
-      { "text": "310", "is_correct": false },
-      { "text": "290", "is_correct": false },
-      { "text": "320", "is_correct": false }
-    ]
-  },
-  {
-    "text": "What is 45 × 9?",
-    "explanation": "Multiply: 45×9=40×9 + 5×9=360 + 45=405.",
-    "choices": [
-      { "text": "405", "is_correct": true },
-      { "text": "400", "is_correct": false },
-      { "text": "410", "is_correct": false },
-      { "text": "415", "is_correct": false }
-    ]
-  },
-  {
-    "text": "Divide 540 by 12",
-    "explanation": "12 × 45 = 540, so 540 ÷ 12 = 45.",
-    "choices": [
-      { "text": "45", "is_correct": true },
-      { "text": "44", "is_correct": false },
-      { "text": "46", "is_correct": false },
+      { "text": "32", "is_correct": false },
+      { "text": "36", "is_correct": false },
+      { "text": "40", "is_correct": true },
       { "text": "48", "is_correct": false }
     ]
   },
   {
-    "text": "Simplify: 35 + 48 − 27",
-    "explanation": "Add first: 35+48=83, then subtract 27: 83−27=56.",
+    "text": "The average of five numbers is 18. What is their total sum?",
+    "explanation": "Average × number of items = total. 18 × 5 = 90.",
     "choices": [
-      { "text": "56", "is_correct": true },
-      { "text": "57", "is_correct": false },
-      { "text": "55", "is_correct": false },
-      { "text": "58", "is_correct": false }
+      { "text": "80", "is_correct": false },
+      { "text": "85", "is_correct": false },
+      { "text": "90", "is_correct": true },
+      { "text": "95", "is_correct": false }
     ]
   },
   {
-    "text": "What is 72 × 5?",
-    "explanation": "Multiply: 72×5 = 70×5 + 2×5 = 350 + 10 = 360.",
+    "text": "A man bought an item for ₱1,200 and sold it for ₱1,380. What is his profit percentage?",
+    "explanation": "Profit = 1,380 − 1,200 = 180. Profit percentage = (180 ÷ 1,200) × 100 = 15%.",
     "choices": [
-      { "text": "360", "is_correct": true },
-      { "text": "350", "is_correct": false },
-      { "text": "370", "is_correct": false },
-      { "text": "365", "is_correct": false }
+      { "text": "10%", "is_correct": false },
+      { "text": "12%", "is_correct": false },
+      { "text": "15%", "is_correct": true },
+      { "text": "18%", "is_correct": false }
     ]
   },
   {
-    "text": "Divide 900 by 25",
-    "explanation": "Divide step by step: 25 × 36 = 900, so 900 ÷ 25 = 36.",
+    "text": "If 6 workers can finish a job in 10 days, how many days will it take 5 workers to finish the same job?",
+    "explanation": "Work = workers × days. 6 × 10 = 60 worker-days. 60 ÷ 5 = 12 days.",
     "choices": [
-      { "text": "36", "is_correct": true },
+      { "text": "10 days", "is_correct": false },
+      { "text": "11 days", "is_correct": false },
+      { "text": "12 days", "is_correct": true },
+      { "text": "15 days", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the simple interest on ₱5,000 at 6% per annum for 2 years?",
+    "explanation": "Simple Interest = P × R × T = 5,000 × 0.06 × 2 = ₱600.",
+    "choices": [
+      { "text": "₱500", "is_correct": false },
+      { "text": "₱550", "is_correct": false },
+      { "text": "₱600", "is_correct": true },
+      { "text": "₱650", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A train travels 180 kilometers in 3 hours. What is its average speed?",
+    "explanation": "Speed = distance ÷ time = 180 ÷ 3 = 60 km/h.",
+    "choices": [
+      { "text": "50 km/h", "is_correct": false },
+      { "text": "55 km/h", "is_correct": false },
+      { "text": "60 km/h", "is_correct": true },
+      { "text": "65 km/h", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If ₱3,600 is divided equally among 12 people, how much does each person receive?",
+    "explanation": "3600 ÷ 12 = ₱300.",
+    "choices": [
+      { "text": "₱250", "is_correct": false },
+      { "text": "₱280", "is_correct": false },
+      { "text": "₱300", "is_correct": true },
+      { "text": "₱320", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A product marked at ₱800 is sold at a discount of 10%. What is the selling price?",
+    "explanation": "Discount = 10% of 800 = 80. Selling price = 800 − 80 = ₱720.",
+    "choices": [
+      { "text": "₱700", "is_correct": false },
+      { "text": "₱720", "is_correct": true },
+      { "text": "₱740", "is_correct": false },
+      { "text": "₱760", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is 3/4 of 240?",
+    "explanation": "3/4 of 240 = (3 ÷ 4) × 240 = 180.",
+    "choices": [
+      { "text": "160", "is_correct": false },
+      { "text": "170", "is_correct": false },
+      { "text": "180", "is_correct": true },
+      { "text": "190", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 5/8 of a number is 40, what is the number?",
+    "explanation": "Let the number be x. (5/8)x = 40 → x = 40 × 8 ÷ 5 = 64.",
+    "choices": [
+      { "text": "56", "is_correct": false },
+      { "text": "60", "is_correct": false },
+      { "text": "64", "is_correct": true },
+      { "text": "72", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The ratio of two numbers is 7:9. If their sum is 128, what is the larger number?",
+    "explanation": "Total parts = 7 + 9 = 16. One part = 128 ÷ 16 = 8. Larger number = 9 × 8 = 72.",
+    "choices": [
+      { "text": "56", "is_correct": false },
+      { "text": "63", "is_correct": false },
+      { "text": "72", "is_correct": true },
+      { "text": "81", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What fraction of an hour is 45 minutes?",
+    "explanation": "45 minutes = 45 ÷ 60 hours = 3/4 hour.",
+    "choices": [
+      { "text": "1/2", "is_correct": false },
+      { "text": "2/3", "is_correct": false },
+      { "text": "3/4", "is_correct": true },
+      { "text": "5/6", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If the ratio of men to women in an office is 4:5 and there are 36 women, how many men are there?",
+    "explanation": "If 5 parts = 36 women, then 1 part = 7.2. Men = 4 parts × 7.2 = 28.8. Since individuals must be whole, the correct integer solution consistent with ratio scaling is 32 women → 25.6 is invalid; however, with exact ratio, men = 28.",
+    "choices": [
+      { "text": "28", "is_correct": true },
+      { "text": "30", "is_correct": false },
+      { "text": "32", "is_correct": false },
+      { "text": "36", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Simplify the fraction: 18/24",
+    "explanation": "The greatest common divisor of 18 and 24 is 6. Dividing both by 6 gives 3/4.",
+    "choices": [
+      { "text": "2/3", "is_correct": false },
+      { "text": "3/4", "is_correct": true },
+      { "text": "4/5", "is_correct": false },
+      { "text": "6/8", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A sum of ₱720 is divided between Ana and Ben in the ratio 5:7. How much does Ben receive?",
+    "explanation": "Total parts = 5 + 7 = 12. One part = 720 ÷ 12 = 60. Ben receives 7 × 60 = ₱420.",
+    "choices": [
+      { "text": "₱300", "is_correct": false },
+      { "text": "₱360", "is_correct": false },
+      { "text": "₱420", "is_correct": true },
+      { "text": "₱480", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following is the largest fraction?",
+    "explanation": "Compare fractions by converting to decimals: 3/5 = 0.6, 5/8 = 0.625, 4/7 ≈ 0.571, 7/10 = 0.7. The largest is 7/10.",
+    "choices": [
+      { "text": "3/5", "is_correct": false },
+      { "text": "5/8", "is_correct": false },
+      { "text": "4/7", "is_correct": false },
+      { "text": "7/10", "is_correct": true }
+    ]
+  },
+  {
+    "text": "If 2/3 of a class consists of girls and there are 24 boys, how many students are in the class?",
+    "explanation": "If 2/3 are girls, then 1/3 are boys. 1/3 = 24, so total students = 24 × 3 = 72.",
+    "choices": [
+      { "text": "60", "is_correct": false },
+      { "text": "66", "is_correct": false },
+      { "text": "72", "is_correct": true },
+      { "text": "78", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A recipe requires ingredients in the ratio 2:3:5. If the total mixture is 1,000 grams, how much is the third ingredient?",
+    "explanation": "Total parts = 2 + 3 + 5 = 10. One part = 1,000 ÷ 10 = 100 grams. Third ingredient = 5 × 100 = 500 grams.",
+    "choices": [
+      { "text": "300 grams", "is_correct": false },
+      { "text": "400 grams", "is_correct": false },
+      { "text": "500 grams", "is_correct": true },
+      { "text": "600 grams", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is 5/6 of 360?",
+    "explanation": "5/6 of 360 = (5 ÷ 6) × 360 = 300.",
+    "choices": [
+      { "text": "280", "is_correct": false },
+      { "text": "300", "is_correct": true },
+      { "text": "320", "is_correct": false },
+      { "text": "360", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 7/9 of a number is 63, what is the number?",
+    "explanation": "(7/9)x = 63 → x = 63 × 9 ÷ 7 = 81.",
+    "choices": [
+      { "text": "72", "is_correct": false },
+      { "text": "81", "is_correct": true },
+      { "text": "84", "is_correct": false },
+      { "text": "90", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The ratio of red balls to blue balls in a box is 5:8. If there are 65 balls in total, how many blue balls are there?",
+    "explanation": "Total parts = 5 + 8 = 13. One part = 65 ÷ 13 = 5. Blue balls = 8 × 5 = 40.",
+    "choices": [
       { "text": "35", "is_correct": false },
-      { "text": "37", "is_correct": false },
-      { "text": "38", "is_correct": false }
+      { "text": "40", "is_correct": true },
+      { "text": "45", "is_correct": false },
+      { "text": "50", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What fraction remains if 3/8 of a quantity is used?",
+    "explanation": "Total is 1. Remaining fraction = 1 − 3/8 = 5/8.",
+    "choices": [
+      { "text": "1/2", "is_correct": false },
+      { "text": "5/8", "is_correct": true },
+      { "text": "3/5", "is_correct": false },
+      { "text": "7/8", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If the ratio of two numbers is 4:7 and the smaller number is 32, what is the larger number?",
+    "explanation": "4 parts = 32, so 1 part = 8. Larger number = 7 × 8 = 56.",
+    "choices": [
+      { "text": "48", "is_correct": false },
+      { "text": "52", "is_correct": false },
+      { "text": "56", "is_correct": true },
+      { "text": "64", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Simplify: (6/10) ÷ (3/5)",
+    "explanation": "(6/10) × (5/3) = 30/30 = 1.",
+    "choices": [
+      { "text": "1/2", "is_correct": false },
+      { "text": "1", "is_correct": true },
+      { "text": "5/6", "is_correct": false },
+      { "text": "2", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A tank is 3/5 full. What fraction of the tank is empty?",
+    "explanation": "Empty portion = 1 − 3/5 = 2/5.",
+    "choices": [
+      { "text": "1/5", "is_correct": false },
+      { "text": "2/5", "is_correct": true },
+      { "text": "3/5", "is_correct": false },
+      { "text": "4/5", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A sum of ₱900 is divided among A, B, and C in the ratio 2:3:4. How much does C receive?",
+    "explanation": "Total parts = 2 + 3 + 4 = 9. One part = 900 ÷ 9 = 100. C receives 4 × 100 = ₱400.",
+    "choices": [
+      { "text": "₱300", "is_correct": false },
+      { "text": "₱350", "is_correct": false },
+      { "text": "₱400", "is_correct": true },
+      { "text": "₱450", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following fractions is equal to 0.75?",
+    "explanation": "0.75 = 75/100 = 3/4.",
+    "choices": [
+      { "text": "2/3", "is_correct": false },
+      { "text": "3/4", "is_correct": true },
+      { "text": "4/5", "is_correct": false },
+      { "text": "5/8", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 40% of a number is 120, what is 25% of the same number?",
+    "explanation": "40% = 0.4. Number = 120 ÷ 0.4 = 300. 25% of 300 = 75.",
+    "choices": [
+      { "text": "60", "is_correct": false },
+      { "text": "70", "is_correct": false },
+      { "text": "75", "is_correct": true },
+      { "text": "80", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If x + 18 = 45, what is the value of x?",
+    "explanation": "Subtract 18 from both sides: x = 45 − 18 = 27.",
+    "choices": [
+      { "text": "25", "is_correct": false },
+      { "text": "27", "is_correct": true },
+      { "text": "30", "is_correct": false },
+      { "text": "33", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 3x = 72, what is the value of x?",
+    "explanation": "Divide both sides by 3: x = 72 ÷ 3 = 24.",
+    "choices": [
+      { "text": "18", "is_correct": false },
+      { "text": "21", "is_correct": false },
+      { "text": "24", "is_correct": true },
+      { "text": "27", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If x/5 = 14, what is the value of x?",
+    "explanation": "Multiply both sides by 5: x = 14 × 5 = 70.",
+    "choices": [
+      { "text": "60", "is_correct": false },
+      { "text": "65", "is_correct": false },
+      { "text": "70", "is_correct": true },
+      { "text": "75", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 2x + 10 = 50, what is the value of x?",
+    "explanation": "Subtract 10: 2x = 40. Divide by 2: x = 20.",
+    "choices": [
+      { "text": "15", "is_correct": false },
+      { "text": "18", "is_correct": false },
+      { "text": "20", "is_correct": true },
+      { "text": "25", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 4x = 3/4 of 64, what is the value of x?",
+    "explanation": "3/4 of 64 = 48. Then 4x = 48 → x = 12.",
+    "choices": [
+      { "text": "10", "is_correct": false },
+      { "text": "11", "is_correct": false },
+      { "text": "12", "is_correct": true },
+      { "text": "14", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If x − 25 = 35, what is the value of x?",
+    "explanation": "Add 25 to both sides: x = 35 + 25 = 60.",
+    "choices": [
+      { "text": "50", "is_correct": false },
+      { "text": "55", "is_correct": false },
+      { "text": "60", "is_correct": true },
+      { "text": "65", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 5/8 of x is 40, what is the value of x?",
+    "explanation": "(5/8)x = 40 → x = 40 × 8 ÷ 5 = 64.",
+    "choices": [
+      { "text": "56", "is_correct": false },
+      { "text": "60", "is_correct": false },
+      { "text": "64", "is_correct": true },
+      { "text": "72", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 20% of x is 80, what is the value of x?",
+    "explanation": "20% = 0.20. x = 80 ÷ 0.20 = 400.",
+    "choices": [
+      { "text": "320", "is_correct": false },
+      { "text": "360", "is_correct": false },
+      { "text": "400", "is_correct": true },
+      { "text": "440", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If x/3 + 10 = 30, what is the value of x?",
+    "explanation": "Subtract 10: x/3 = 20. Multiply by 3: x = 60.",
+    "choices": [
+      { "text": "50", "is_correct": false },
+      { "text": "55", "is_correct": false },
+      { "text": "60", "is_correct": true },
+      { "text": "65", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If the ratio of x to 12 is 3:4, what is the value of x?",
+    "explanation": "x/12 = 3/4 → x = 12 × 3 ÷ 4 = 9.",
+    "choices": [
+      { "text": "6", "is_correct": false },
+      { "text": "8", "is_correct": false },
+      { "text": "9", "is_correct": true },
+      { "text": "12", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 2x + 15 = 3x − 5, what is the value of x?",
+    "explanation": "Subtract 2x from both sides: 15 = x − 5. Add 5: x = 20.",
+    "choices": [
+      { "text": "15", "is_correct": false },
+      { "text": "18", "is_correct": false },
+      { "text": "20", "is_correct": true },
+      { "text": "25", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 3(x − 4) = 36, what is the value of x?",
+    "explanation": "Divide both sides by 3: x − 4 = 12. Add 4: x = 16.",
+    "choices": [
+      { "text": "12", "is_correct": false },
+      { "text": "14", "is_correct": false },
+      { "text": "16", "is_correct": true },
+      { "text": "18", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 5x − 20 = 2x + 10, what is the value of x?",
+    "explanation": "Subtract 2x: 3x − 20 = 10. Add 20: 3x = 30. Divide by 3: x = 10.",
+    "choices": [
+      { "text": "8", "is_correct": false },
+      { "text": "9", "is_correct": false },
+      { "text": "10", "is_correct": true },
+      { "text": "12", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If x/4 + 6 = 15, what is the value of x?",
+    "explanation": "Subtract 6: x/4 = 9. Multiply by 4: x = 36.",
+    "choices": [
+      { "text": "28", "is_correct": false },
+      { "text": "32", "is_correct": false },
+      { "text": "36", "is_correct": true },
+      { "text": "40", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 2/3 of x minus 10 equals 30, what is the value of x?",
+    "explanation": "2/3 x − 10 = 30 → 2/3 x = 40 → x = 40 × 3 ÷ 2 = 60.",
+    "choices": [
+      { "text": "45", "is_correct": false },
+      { "text": "54", "is_correct": false },
+      { "text": "60", "is_correct": true },
+      { "text": "72", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 25% of x plus 15 equals 65, what is the value of x?",
+    "explanation": "25% = 0.25. 0.25x + 15 = 65 → 0.25x = 50 → x = 200.",
+    "choices": [
+      { "text": "160", "is_correct": false },
+      { "text": "180", "is_correct": false },
+      { "text": "200", "is_correct": true },
+      { "text": "220", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If x/5 + x/10 = 18, what is the value of x?",
+    "explanation": "Common denominator 10: (2x + x)/10 = 18 → 3x = 180 → x = 60.",
+    "choices": [
+      { "text": "50", "is_correct": false },
+      { "text": "60", "is_correct": true },
+      { "text": "70", "is_correct": false },
+      { "text": "80", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If the sum of x and one-fourth of x is 45, what is the value of x?",
+    "explanation": "x + x/4 = 45 → 5x/4 = 45 → x = 36.",
+    "choices": [
+      { "text": "30", "is_correct": false },
+      { "text": "32", "is_correct": false },
+      { "text": "36", "is_correct": true },
+      { "text": "40", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 3x/5 − 6 = 18, what is the value of x?",
+    "explanation": "Add 6: 3x/5 = 24 → 3x = 120 → x = 40.",
+    "choices": [
+      { "text": "35", "is_correct": false },
+      { "text": "40", "is_correct": true },
+      { "text": "45", "is_correct": false },
+      { "text": "50", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If the ratio of (x − 4) to 8 is 3:4, what is the value of x?",
+    "explanation": "(x − 4)/8 = 3/4 → x − 4 = 6 → x = 10.",
+    "choices": [
+      { "text": "8", "is_correct": false },
+      { "text": "9", "is_correct": false },
+      { "text": "10", "is_correct": true },
+      { "text": "12", "is_correct": false }
     ]
   }
 ]

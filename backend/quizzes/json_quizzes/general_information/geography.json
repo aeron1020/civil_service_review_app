@@ -48,5 +48,255 @@
       { "text": "Cagayan River", "is_correct": true },
       { "text": "Pasig River", "is_correct": false }
     ]
+  },
+  {
+    "text": "Which Philippine region is composed entirely of island provinces and has no land border with any other region?",
+    "explanation": "MIMAROPA consists of Mindoro, Marinduque, Romblon, and Palawan, all of which are island provinces.",
+    "choices": [
+      { "text": "Region I", "is_correct": false },
+      { "text": "MIMAROPA", "is_correct": true },
+      { "text": "Region VII", "is_correct": false },
+      { "text": "CAR", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which body of water lies to the west of the Philippines?",
+    "explanation": "The West Philippine Sea is part of the South China Sea and lies west of the Philippine archipelago.",
+    "choices": [
+      { "text": "Philippine Sea", "is_correct": false },
+      { "text": "Celebes Sea", "is_correct": false },
+      { "text": "West Philippine Sea", "is_correct": true },
+      { "text": "Sulu Sea", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the longest river in the Philippines?",
+    "explanation": "The Cagayan River is the longest river in the Philippines, located in Northern Luzon.",
+    "choices": [
+      { "text": "Agusan River", "is_correct": false },
+      { "text": "Pasig River", "is_correct": false },
+      { "text": "Cagayan River", "is_correct": true },
+      { "text": "Pampanga River", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine province is known as the country’s largest in terms of land area?",
+    "explanation": "Palawan is the largest province in the Philippines based on total land area.",
+    "choices": [
+      { "text": "Isabela", "is_correct": false },
+      { "text": "Mindoro", "is_correct": false },
+      { "text": "Palawan", "is_correct": true },
+      { "text": "Cebu", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine mountain is considered the highest peak in the country?",
+    "explanation": "Mount Apo, located in Mindanao, is the highest mountain in the Philippines.",
+    "choices": [
+      { "text": "Mount Pulag", "is_correct": false },
+      { "text": "Mount Apo", "is_correct": true },
+      { "text": "Mount Mayon", "is_correct": false },
+      { "text": "Mount Kanlaon", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which strait separates Luzon from Mindoro Island?",
+    "explanation": "The Verde Island Passage separates the island of Luzon from Mindoro.",
+    "choices": [
+      { "text": "San Bernardino Strait", "is_correct": false },
+      { "text": "Mindoro Strait", "is_correct": false },
+      { "text": "Verde Island Passage", "is_correct": true },
+      { "text": "Surigao Strait", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which region is known as the Rice Granary of the Philippines?",
+    "explanation": "Central Luzon is known as the Rice Granary due to its vast rice-producing plains.",
+    "choices": [
+      { "text": "Ilocos Region", "is_correct": false },
+      { "text": "Central Luzon", "is_correct": true },
+      { "text": "Western Visayas", "is_correct": false },
+      { "text": "Cagayan Valley", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine sea is located east of the country?",
+    "explanation": "The Philippine Sea lies east of the archipelago and is part of the Pacific Ocean.",
+    "choices": [
+      { "text": "South China Sea", "is_correct": false },
+      { "text": "Sulu Sea", "is_correct": false },
+      { "text": "Philippine Sea", "is_correct": true },
+      { "text": "Celebes Sea", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which province is geographically located in Luzon but administratively part of the Bicol Region?",
+    "explanation": "Camarines Norte is located in Luzon and is one of the provinces of the Bicol Region.",
+    "choices": [
+      { "text": "Aurora", "is_correct": false },
+      { "text": "Quezon", "is_correct": false },
+      { "text": "Camarines Norte", "is_correct": true },
+      { "text": "Albay", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which volcano is known for having the most perfectly shaped cone in the Philippines?",
+    "explanation": "Mayon Volcano in Albay is famous for its near-perfect cone shape.",
+    "choices": [
+      { "text": "Mount Apo", "is_correct": false },
+      { "text": "Mount Pinatubo", "is_correct": false },
+      { "text": "Mayon Volcano", "is_correct": true },
+      { "text": "Taal Volcano", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine region lies between the Visayas and Mindanao?",
+    "explanation": "Eastern Visayas lies between Luzon and Mindanao and faces the Pacific Ocean.",
+    "choices": [
+      { "text": "Western Visayas", "is_correct": false },
+      { "text": "Eastern Visayas", "is_correct": true },
+      { "text": "Central Visayas", "is_correct": false },
+      { "text": "SOCCSKSARGEN", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which gulf is located on the southwestern coast of Mindanao?",
+    "explanation": "Moro Gulf is located along the southwestern coast of Mindanao.",
+    "choices": [
+      { "text": "Lingayen Gulf", "is_correct": false },
+      { "text": "Leyte Gulf", "is_correct": false },
+      { "text": "Moro Gulf", "is_correct": true },
+      { "text": "Davao Gulf", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine island is known as the ‘Sugar Bowl of the Philippines’?",
+    "explanation": "Negros Island is known for its extensive sugarcane plantations.",
+    "choices": [
+      { "text": "Panay", "is_correct": false },
+      { "text": "Negros", "is_correct": true },
+      { "text": "Mindoro", "is_correct": false },
+      { "text": "Leyte", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine province is located at the northernmost tip of the country?",
+    "explanation": "Batanes is the northernmost province of the Philippines.",
+    "choices": [
+      { "text": "Ilocos Norte", "is_correct": false },
+      { "text": "Cagayan", "is_correct": false },
+      { "text": "Batanes", "is_correct": true },
+      { "text": "Apayao", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which major fault line runs through Metro Manila?",
+    "explanation": "The West Valley Fault is a major active fault line that runs through parts of Metro Manila.",
+    "choices": [
+      { "text": "Philippine Fault", "is_correct": false },
+      { "text": "East Valley Fault", "is_correct": false },
+      { "text": "West Valley Fault", "is_correct": true },
+      { "text": "Cotabato Fault", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which island group has the most number of provinces?",
+    "explanation": "Luzon has the most provinces compared to Visayas and Mindanao.",
+    "choices": [
+      { "text": "Luzon", "is_correct": true },
+      { "text": "Visayas", "is_correct": false },
+      { "text": "Mindanao", "is_correct": false },
+      { "text": "Palawan", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sea separates the Visayas from Mindanao?",
+    "explanation": "The Bohol Sea separates the Visayas from Mindanao.",
+    "choices": [
+      { "text": "Sibuyan Sea", "is_correct": false },
+      { "text": "Bohol Sea", "is_correct": true },
+      { "text": "Camotes Sea", "is_correct": false },
+      { "text": "Visayan Sea", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine province is famous for the Chocolate Hills?",
+    "explanation": "The Chocolate Hills are located in the province of Bohol.",
+    "choices": [
+      { "text": "Cebu", "is_correct": false },
+      { "text": "Bohol", "is_correct": true },
+      { "text": "Leyte", "is_correct": false },
+      { "text": "Samar", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine region faces the Pacific Ocean and is frequently hit by typhoons?",
+    "explanation": "The Bicol Region faces the Pacific Ocean and is often affected by typhoons.",
+    "choices": [
+      { "text": "Ilocos Region", "is_correct": false },
+      { "text": "Bicol Region", "is_correct": true },
+      { "text": "Central Visayas", "is_correct": false },
+      { "text": "Western Mindanao", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which plateau is known as the Summer Capital of the Philippines?",
+    "explanation": "The Baguio area, located on the Cordillera plateau, is known as the Summer Capital of the Philippines.",
+    "choices": [
+      { "text": "Bukidnon Plateau", "is_correct": false },
+      { "text": "Tagaytay Ridge", "is_correct": false },
+      { "text": "Cordillera Plateau", "is_correct": true },
+      { "text": "Zambales Plateau", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which body of water separates the islands of Samar and Leyte?",
+    "explanation": "The San Juanico Strait separates the islands of Samar and Leyte and is crossed by the San Juanico Bridge.",
+    "choices": [
+      { "text": "Surigao Strait", "is_correct": false },
+      { "text": "San Juanico Strait", "is_correct": true },
+      { "text": "Bohol Sea", "is_correct": false },
+      { "text": "Tañon Strait", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine province is known as the country’s marble capital?",
+    "explanation": "Romblon is known as the Marble Capital of the Philippines due to its high-quality marble deposits.",
+    "choices": [
+      { "text": "Palawan", "is_correct": false },
+      { "text": "Romblon", "is_correct": true },
+      { "text": "Bulacan", "is_correct": false },
+      { "text": "Antique", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which strait connects the Pacific Ocean to the Philippine Sea and lies between Samar and Luzon?",
+    "explanation": "The San Bernardino Strait lies between Samar and Luzon and connects the Philippine Sea to the Pacific Ocean.",
+    "choices": [
+      { "text": "Surigao Strait", "is_correct": false },
+      { "text": "San Bernardino Strait", "is_correct": true },
+      { "text": "Mindoro Strait", "is_correct": false },
+      { "text": "Verde Island Passage", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which province is geographically part of Mindanao but administratively belongs to the Bangsamoro Autonomous Region in Muslim Mindanao (BARMM)?",
+    "explanation": "Maguindanao is a province in Mindanao that forms part of the BARMM.",
+    "choices": [
+      { "text": "Bukidnon", "is_correct": false },
+      { "text": "Maguindanao", "is_correct": true },
+      { "text": "Davao del Norte", "is_correct": false },
+      { "text": "Surigao del Sur", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine mountain range runs along the eastern coast of Luzon?",
+    "explanation": "The Sierra Madre Mountain Range runs along the eastern side of Luzon and serves as a natural barrier against typhoons.",
+    "choices": [
+      { "text": "Cordillera Central", "is_correct": false },
+      { "text": "Zambales Mountains", "is_correct": false },
+      { "text": "Sierra Madre Mountain Range", "is_correct": true },
+      { "text": "Caraballo Mountains", "is_correct": false }
+    ]
   }
 ]

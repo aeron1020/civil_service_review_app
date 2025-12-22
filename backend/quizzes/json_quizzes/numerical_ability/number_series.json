@@ -220,6 +220,156 @@
     ]
   },
   {
+    "text": "Find the odd one out: 2, 4, 8, 16, 18",
+    "explanation": "All numbers except 18 are powers of 2.",
+    "choices": [
+      { "text": "2", "is_correct": false },
+      { "text": "8", "is_correct": false },
+      { "text": "16", "is_correct": false },
+      { "text": "18", "is_correct": true }
+    ]
+  },
+  {
+    "text": "Find the next number in the series: 2, 6, 18, 54, ___",
+    "explanation": "Each term is multiplied by 3: 2×3=6, 6×3=18, 18×3=54. Next is 54×3=162.",
+    "choices": [
+      { "text": "108", "is_correct": false },
+      { "text": "162", "is_correct": true },
+      { "text": "216", "is_correct": false },
+      { "text": "324", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next number in the series: 1, 4, 10, 22, ___",
+    "explanation": "Multiply by 2 and add 2: (1×2)+2=4, (4×2)+2=10, (10×2)+2=22. Next: (22×2)+2=46.",
+    "choices": [
+      { "text": "42", "is_correct": false },
+      { "text": "44", "is_correct": false },
+      { "text": "46", "is_correct": true },
+      { "text": "48", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next term in the series: A, C, F, J, ___",
+    "explanation": "Letter positions increase by +2, +3, +4. Next increase is +5: J → O.",
+    "choices": [
+      { "text": "M", "is_correct": false },
+      { "text": "N", "is_correct": false },
+      { "text": "O", "is_correct": true },
+      { "text": "P", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next number in the series: 100, 97, 91, 82, ___",
+    "explanation": "Subtract increasing odd numbers: −3, −6, −9. Next is −12: 82 − 12 = 70.",
+    "choices": [
+      { "text": "72", "is_correct": false },
+      { "text": "70", "is_correct": true },
+      { "text": "68", "is_correct": false },
+      { "text": "64", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next term in the series: Z25, X23, V21, T19, ___",
+    "explanation": "Letters move backward by 2 (Z, X, V, T → R). Numbers decrease by 2 (25, 23, 21, 19 → 17).",
+    "choices": [
+      { "text": "R17", "is_correct": true },
+      { "text": "S18", "is_correct": false },
+      { "text": "Q15", "is_correct": false },
+      { "text": "P16", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next number in the series: 5, 11, 23, 47, ___",
+    "explanation": "Multiply by 2 and add 1: (5×2)+1=11, (11×2)+1=23, (23×2)+1=47. Next: (47×2)+1=95.",
+    "choices": [
+      { "text": "93", "is_correct": false },
+      { "text": "95", "is_correct": true },
+      { "text": "97", "is_correct": false },
+      { "text": "99", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next term in the series: 2A, 6C, 12F, 20J, ___",
+    "explanation": "Numbers follow n(n+1): 1×2, 2×3, 3×4, 4×5. Next is 5×6=30. Letters increase by +2, +3, +4, so next is +5: J → O.",
+    "choices": [
+      { "text": "24M", "is_correct": false },
+      { "text": "30O", "is_correct": true },
+      { "text": "32P", "is_correct": false },
+      { "text": "36R", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next number in the series: 1, 2, 6, 24, 120, ___",
+    "explanation": "Factorial pattern: 1!, 2!, 3!, 4!, 5!. Next is 6! = 720.",
+    "choices": [
+      { "text": "240", "is_correct": false },
+      { "text": "360", "is_correct": false },
+      { "text": "720", "is_correct": true },
+      { "text": "840", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next term in the series: B3, E8, J15, Q24, ___",
+    "explanation": "Letters move by increasing gaps: +3, +5, +7; next is +9: Q → Z. Numbers follow n²−1: 2²−1, 3²−1, 4²−1, 5²−1; next is 6²−1 = 35.",
+    "choices": [
+      { "text": "X32", "is_correct": false },
+      { "text": "Y34", "is_correct": false },
+      { "text": "Z35", "is_correct": true },
+      { "text": "Z36", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next number in the series: 9, 27, 81, 243, ___",
+    "explanation": "Each term is multiplied by 3. 243 × 3 = 729.",
+    "choices": [
+      { "text": "486", "is_correct": false },
+      { "text": "729", "is_correct": true },
+      { "text": "756", "is_correct": false },
+      { "text": "810", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the odd one out: 3, 5, 7, 11, 15",
+    "explanation": "All numbers except 15 are prime numbers.",
+    "choices": [
+      { "text": "3", "is_correct": false },
+      { "text": "5", "is_correct": false },
+      { "text": "7", "is_correct": false },
+      { "text": "15", "is_correct": true }
+    ]
+  },
+  {
+    "text": "Find the odd one out: 1, 4, 9, 16, 20",
+    "explanation": "All numbers except 20 are perfect squares.",
+    "choices": [
+      { "text": "4", "is_correct": false },
+      { "text": "9", "is_correct": false },
+      { "text": "16", "is_correct": false },
+      { "text": "20", "is_correct": true }
+    ]
+  },
+  {
+    "text": "Find the odd one out: 6, 10, 14, 18, 21",
+    "explanation": "All numbers except 21 increase by 4 starting from 6.",
+    "choices": [
+      { "text": "10", "is_correct": false },
+      { "text": "14", "is_correct": false },
+      { "text": "18", "is_correct": false },
+      { "text": "21", "is_correct": true }
+    ]
+  },
+  {
+    "text": "Find the odd one out: 8, 27, 64, 125, 150",
+    "explanation": "8, 27, 64, and 125 are perfect cubes. 150 is not.",
+    "choices": [
+      { "text": "27", "is_correct": false },
+      { "text": "64", "is_correct": false },
+      { "text": "125", "is_correct": false },
+      { "text": "150", "is_correct": true }
+    ]
+  },
+  {
     "text": "Complete the series: 100, 90, 81, 73, ?",
     "explanation": "Differences: −10, −9, −8. Following the pattern subtracting one less each time: next difference = −7. So 73 − 7 = 66.",
     "choices": [
@@ -247,6 +397,157 @@
       { "text": "41", "is_correct": false },
       { "text": "42", "is_correct": true },
       { "text": "44", "is_correct": false }
+    ]
+  },
+
+  {
+    "text": "Find the next term in the series: A1, C3, E5, G7, ___",
+    "explanation": "Letters skip one each time (A, C, E, G → I) and numbers increase by 2 (1, 3, 5, 7 → 9).",
+    "choices": [
+      { "text": "H8", "is_correct": false },
+      { "text": "I9", "is_correct": true },
+      { "text": "J10", "is_correct": false },
+      { "text": "G9", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next term in the series: Z26, X24, V22, T20, ___",
+    "explanation": "Letters move backward by 2 and numbers decrease by 2.",
+    "choices": [
+      { "text": "S19", "is_correct": false },
+      { "text": "R18", "is_correct": true },
+      { "text": "U21", "is_correct": false },
+      { "text": "P16", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next term in the series: B2, D4, F6, H8, ___",
+    "explanation": "Letters move forward by 2 and numbers increase by 2.",
+    "choices": [
+      { "text": "I9", "is_correct": false },
+      { "text": "J10", "is_correct": true },
+      { "text": "K12", "is_correct": false },
+      { "text": "H10", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next term in the series: M13, L12, K11, J10, ___",
+    "explanation": "Letters move backward by 1 and numbers decrease by 1.",
+    "choices": [
+      { "text": "I9", "is_correct": true },
+      { "text": "H8", "is_correct": false },
+      { "text": "J9", "is_correct": false },
+      { "text": "K10", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next term in the series: A2, C4, F6, J8, ___",
+    "explanation": "Letters move forward by increasing steps (+2, +3, +4), so next is +5: J → O. Numbers increase by 2.",
+    "choices": [
+      { "text": "L10", "is_correct": false },
+      { "text": "M10", "is_correct": false },
+      { "text": "O10", "is_correct": true },
+      { "text": "P12", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next number in the series: 2, 5, 4, 9, 6, 13, ___",
+    "explanation": "The series alternates: +3, −1, +5, −3, +7. After 6 → 13 (+7), next is −5: 13 − 5 = 8.",
+    "choices": [
+      { "text": "8", "is_correct": true },
+      { "text": "9", "is_correct": false },
+      { "text": "10", "is_correct": false },
+      { "text": "11", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next number in the series: 1, 1, 2, 3, 5, 8, ___",
+    "explanation": "Each number is the sum of the two preceding numbers (Fibonacci series). Next is 5 + 8 = 13.",
+    "choices": [
+      { "text": "11", "is_correct": false },
+      { "text": "12", "is_correct": false },
+      { "text": "13", "is_correct": true },
+      { "text": "15", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next term in the series: A, D, I, P, ___",
+    "explanation": "Letter positions increase by odd numbers: +3, +5, +7. Next is +9: P → Y.",
+    "choices": [
+      { "text": "W", "is_correct": false },
+      { "text": "X", "is_correct": false },
+      { "text": "Y", "is_correct": true },
+      { "text": "Z", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next number in the series: 81, 27, 9, 3, ___",
+    "explanation": "Each term is divided by 3. 3 ÷ 3 = 1.",
+    "choices": [
+      { "text": "0", "is_correct": false },
+      { "text": "1", "is_correct": true },
+      { "text": "3", "is_correct": false },
+      { "text": "9", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next term in the series: Z, X, U, Q, ___",
+    "explanation": "Letter gaps increase: −2, −3, −4. Next is −5: Q → L.",
+    "choices": [
+      { "text": "M", "is_correct": false },
+      { "text": "L", "is_correct": true },
+      { "text": "K", "is_correct": false },
+      { "text": "J", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next number in the series: 4, 12, 36, 108, ___",
+    "explanation": "Each term is multiplied by 3. 108 × 3 = 324.",
+    "choices": [
+      { "text": "216", "is_correct": false },
+      { "text": "300", "is_correct": false },
+      { "text": "324", "is_correct": true },
+      { "text": "432", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next term in the series: A2, C6, F12, J20, ___",
+    "explanation": "Letters increase by +2, +3, +4; numbers follow n(n+1): 1×2, 2×3, 3×4, 4×5. Next letter +5: J → O; next number 5×6 = 30.",
+    "choices": [
+      { "text": "M24", "is_correct": false },
+      { "text": "O30", "is_correct": true },
+      { "text": "P32", "is_correct": false },
+      { "text": "N28", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next number in the series: 10, 11, 13, 16, 20, ___",
+    "explanation": "Differences increase by 1: +1, +2, +3, +4. Next is +5: 20 + 5 = 25.",
+    "choices": [
+      { "text": "24", "is_correct": false },
+      { "text": "25", "is_correct": true },
+      { "text": "26", "is_correct": false },
+      { "text": "27", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next term in the series: 3A, 5C, 7E, 9G, ___",
+    "explanation": "Numbers increase by 2 (odd numbers). Letters skip one each time (A, C, E, G → I).",
+    "choices": [
+      { "text": "10H", "is_correct": false },
+      { "text": "11I", "is_correct": true },
+      { "text": "9I", "is_correct": false },
+      { "text": "11J", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next number in the series: 50, 47, 41, 32, ___",
+    "explanation": "Subtract consecutive odd numbers: −3, −6, −9. Next is −12: 32 − 12 = 20.",
+    "choices": [
+      { "text": "18", "is_correct": false },
+      { "text": "19", "is_correct": false },
+      { "text": "20", "is_correct": true },
+      { "text": "21", "is_correct": false }
     ]
   }
 ]

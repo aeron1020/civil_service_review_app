@@ -1,5 +1,120 @@
 [
   {
+    "passage": "For decades, the river served as the lifeline of the town, supplying water for farming, fishing, and daily household needs. Children once played along its banks, while elders gathered nearby to exchange stories at dusk. Over time, however, factories rose upstream, bringing employment but also waste that slowly altered the river’s clarity and scent. Residents noticed fewer fish, and farmers struggled with unpredictable harvests.\n\nDespite these changes, community leaders initially hesitated to confront the issue, fearing economic consequences. It was only after repeated flooding and health concerns that collective action emerged. Environmental groups partnered with local officials to rehabilitate the river through stricter regulations and public awareness campaigns. While recovery was gradual, the town began to recognize that progress without responsibility comes at a cost. The river, though changed, became a reminder that sustainable development requires foresight and collective accountability.",
+    "questions": [
+      {
+        "text": "What role did the river play in the town before industrialization?",
+        "explanation": "The passage describes the river as essential to daily life, supporting agriculture, fishing, and community activities.",
+        "choices": [
+          {
+            "text": "It supported farming, fishing, and daily household needs",
+            "is_correct": true
+          },
+          {
+            "text": "It served mainly as a transportation route",
+            "is_correct": false
+          },
+          {
+            "text": "It was primarily a tourist attraction",
+            "is_correct": false
+          },
+          {
+            "text": "It marked the boundary of the town",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "Why did community leaders initially avoid addressing the river’s condition?",
+        "explanation": "They feared that opposing factories might negatively affect employment and economic stability.",
+        "choices": [
+          {
+            "text": "They lacked evidence of pollution",
+            "is_correct": false
+          },
+          {
+            "text": "They feared economic consequences",
+            "is_correct": true
+          },
+          {
+            "text": "They believed the river would naturally recover",
+            "is_correct": false
+          },
+          {
+            "text": "They were unaware of public concern",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "What event most strongly prompted collective action in the town?",
+        "explanation": "Repeated flooding and health issues made the impact of pollution impossible to ignore.",
+        "choices": [
+          {
+            "text": "The closure of several factories",
+            "is_correct": false
+          },
+          {
+            "text": "Public protests by farmers",
+            "is_correct": false
+          },
+          {
+            "text": "Flooding and health concerns",
+            "is_correct": true
+          },
+          {
+            "text": "Pressure from national government agencies",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "Which statement best reflects the author’s attitude toward development?",
+        "explanation": "The passage suggests that development must be balanced with responsibility and long-term planning.",
+        "choices": [
+          {
+            "text": "Economic growth should always take priority",
+            "is_correct": false
+          },
+          {
+            "text": "Development is harmful and should be avoided",
+            "is_correct": false
+          },
+          {
+            "text": "Progress must be balanced with accountability",
+            "is_correct": true
+          },
+          {
+            "text": "Environmental protection is unnecessary",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "What does the river ultimately symbolize in the passage?",
+        "explanation": "The river represents the consequences of unchecked progress and the need for sustainable, collective action.",
+        "choices": [
+          {
+            "text": "The decline of rural traditions",
+            "is_correct": false
+          },
+          {
+            "text": "A warning about irresponsible development",
+            "is_correct": true
+          },
+          {
+            "text": "The inevitability of environmental damage",
+            "is_correct": false
+          },
+          {
+            "text": "The failure of local leadership",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
     "passage": "When Elena returned to her hometown after nearly ten years in the city, she immediately noticed how much had changed. The once quiet main street now had several new shops, and the plaza where she used to play as a child had been renovated with brighter lamps and wider pathways. Despite these improvements, Elena felt a strange sense of distance—almost as if she was looking at a familiar place through a window rather than standing in it.\n\nAs she walked around, she passed by the old bakery owned by Mrs. Ramos. The smell of freshly baked pan de sal drifted into the air, and for a moment Elena felt the same warmth she did during her childhood mornings. Mrs. Ramos recognized her instantly and welcomed her inside. Their brief conversation reminded Elena that while places may change, some connections remain untouched. Still, as she stepped out of the bakery, she knew that her memories belonged to a version of the town that existed only in her mind.",
     "questions": [
       {
@@ -189,6 +304,237 @@
     ]
   },
   {
+    "passage": "Sa loob ng maraming taon, ang maliit na pampublikong aklatan sa bayan ay nagsilbing tahimik na kanlungan ng kaalaman. Dito unang natutong magbasa ang maraming bata, habang ang matatanda naman ay humahanap ng impormasyon para sa trabaho at pang-araw-araw na pangangailangan. Gayunman, nang dumami ang digital na teknolohiya, unti-unting nabawasan ang mga bumibisita sa aklatan. Mas pinili ng marami ang mabilis na sagot mula sa internet kaysa sa masusing pagbabasa ng mga aklat.\n\nSa kabila nito, hindi tuluyang nawala ang halaga ng aklatan. Nang magsimula ang mga programang pangkomunidad tulad ng libreng tutorial, storytelling para sa mga bata, at pagsasanay sa digital literacy, muling nabuhay ang interes ng mga tao. Napagtanto ng pamunuan na ang aklatan ay hindi lamang imbakan ng libro, kundi isang lugar ng pagkatuto at ugnayan ng komunidad. Sa ganitong paraan, napatunayan na ang pagbabago ay hindi nangangahulugang pagkawala, kundi pagkakataon para sa panibagong layunin.",
+    "questions": [
+      {
+        "text": "Ano ang pangunahing tungkulin ng pampublikong aklatan noong mga unang taon?",
+        "explanation": "Inilarawan ang aklatan bilang lugar kung saan natutong magbasa ang mga bata at kumukuha ng kaalaman ang matatanda.",
+        "choices": [
+          {
+            "text": "Magsilbing tahimik na kanlungan ng kaalaman",
+            "is_correct": true
+          },
+          {
+            "text": "Maging sentro ng aliwan sa bayan",
+            "is_correct": false
+          },
+          {
+            "text": "Magbigay ng libreng internet access",
+            "is_correct": false
+          },
+          {
+            "text": "Maging opisina ng pamahalaan",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "Ano ang pangunahing dahilan ng pagbaba ng bilang ng mga bumibisita sa aklatan?",
+        "explanation": "Mas pinili ng mga tao ang mabilis na impormasyon mula sa internet kaysa sa tradisyunal na pagbabasa.",
+        "choices": [
+          {
+            "text": "Kakulangan ng bagong aklat",
+            "is_correct": false
+          },
+          {
+            "text": "Pag-usbong ng digital na teknolohiya",
+            "is_correct": true
+          },
+          {
+            "text": "Mahigpit na patakaran ng aklatan",
+            "is_correct": false
+          },
+          {
+            "text": "Pagtaas ng bayarin sa serbisyo",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "Paano muling nabuhay ang interes ng komunidad sa aklatan?",
+        "explanation": "Nabanggit ang mga programang pangkomunidad tulad ng tutorial, storytelling, at digital literacy training.",
+        "choices": [
+          {
+            "text": "Sa pamamagitan ng pagpaparami ng libro",
+            "is_correct": false
+          },
+          {
+            "text": "Sa pagbibigay ng mga programang pangkomunidad",
+            "is_correct": true
+          },
+          {
+            "text": "Sa pagbawas ng oras ng operasyon",
+            "is_correct": false
+          },
+          {
+            "text": "Sa paglipat ng aklatan online",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "Ano ang bagong pananaw ng pamunuan tungkol sa aklatan?",
+        "explanation": "Napagtanto nilang ang aklatan ay hindi lamang imbakan ng libro kundi sentro ng pagkatuto at ugnayan.",
+        "choices": [
+          {
+            "text": "Isa lamang itong imbakan ng aklat",
+            "is_correct": false
+          },
+          {
+            "text": "Isang lugar ng pagkatuto at ugnayan ng komunidad",
+            "is_correct": true
+          },
+          {
+            "text": "Isang lipas na institusyon",
+            "is_correct": false
+          },
+          {
+            "text": "Isang pasilidad na hindi na kailangan",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "Ano ang pangunahing mensahe ng huling pangungusap ng teksto?",
+        "explanation": "Ipinapakita nito na ang pagbabago ay maaaring magbigay ng bagong layunin sa halip na magdulot ng pagkawala.",
+        "choices": [
+          {
+            "text": "Ang pagbabago ay laging nakakasira",
+            "is_correct": false
+          },
+          {
+            "text": "Ang tradisyon ay hindi na mahalaga",
+            "is_correct": false
+          },
+          {
+            "text": "Ang pagbabago ay pagkakataon para sa panibagong layunin",
+            "is_correct": true
+          },
+          {
+            "text": "Ang teknolohiya ay pumapalit sa edukasyon",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "passage": "Sa isang demokratikong lipunan, mahalagang papel ang ginagampanan ng politika sa paghubog ng direksyon ng bansa. Sa Pilipinas, ang eleksyon ay nagsisilbing pangunahing mekanismo upang maipahayag ng mamamayan ang kanilang kagustuhan at pananaw. Gayunpaman, hindi maikakaila na maraming botante ang naaapektuhan ng personal na interes, popularidad ng kandidato, o maling impormasyon, sa halip na malinaw na pagsusuri sa plataporma at kakayahan.\n\nDahil dito, patuloy na hinaharap ng bansa ang hamon ng pagpapatatag ng matalinong pagboto. Iminumungkahi ng ilang sektor na palakasin ang edukasyong pampulitika upang maunawaan ng mga mamamayan ang kahalagahan ng polisiya, pananagutan, at pamamahala. Sa ganitong paraan, ang politika ay hindi lamang nagiging labanan ng kapangyarihan, kundi isang proseso ng kolektibong pagpapasya para sa kapakanan ng nakararami.",
+    "questions": [
+      {
+        "text": "Ano ang pangunahing papel ng eleksyon ayon sa teksto?",
+        "explanation": "Binanggit na ang eleksyon ang paraan upang maipahayag ng mamamayan ang kanilang kagustuhan at pananaw.",
+        "choices": [
+          {
+            "text": "Magbigay-daan sa mamamayan na maipahayag ang kanilang kagustuhan",
+            "is_correct": true
+          },
+          {
+            "text": "Pumili ng mga tanyag na personalidad",
+            "is_correct": false
+          },
+          {
+            "text": "Palitan ang umiiral na sistema ng pamahalaan",
+            "is_correct": false
+          },
+          {
+            "text": "Limitahan ang partisipasyon ng mamamayan",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "Ano ang ipinahihiwatig na problema sa paraan ng pagboto ng ilang mamamayan?",
+        "explanation": "Ipinapakita na ang desisyon ng ilan ay nakabatay sa popularidad o maling impormasyon, hindi sa pagsusuri ng kakayahan.",
+        "choices": [
+          {
+            "text": "Kakulangan ng sapat na kandidato",
+            "is_correct": false
+          },
+          {
+            "text": "Pagboto batay sa personal na interes o maling impormasyon",
+            "is_correct": true
+          },
+          {
+            "text": "Kawalan ng eleksyon",
+            "is_correct": false
+          },
+          {
+            "text": "Labis na pakikialam ng pamahalaan",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "Ano ang iminungkahing solusyon upang mapabuti ang kalidad ng pagboto?",
+        "explanation": "Binanggit ang pagpapalakas ng edukasyong pampulitika upang maging mas mapanuri ang mga botante.",
+        "choices": [
+          {
+            "text": "Pagbabawas ng bilang ng mga botante",
+            "is_correct": false
+          },
+          {
+            "text": "Pagpapalakas ng edukasyong pampulitika",
+            "is_correct": true
+          },
+          {
+            "text": "Paglilimita sa kampanya ng mga kandidato",
+            "is_correct": false
+          },
+          {
+            "text": "Pag-alis ng party-list system",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "Ano ang pananaw ng may-akda tungkol sa tunay na layunin ng politika?",
+        "explanation": "Ipinapakita ng teksto na ang politika ay dapat magsilbi sa kapakanan ng nakararami, hindi lamang sa kapangyarihan.",
+        "choices": [
+          {
+            "text": "Isang labanan ng impluwensiya at yaman",
+            "is_correct": false
+          },
+          {
+            "text": "Isang proseso ng kolektibong pagpapasya para sa kapakanan ng mamamayan",
+            "is_correct": true
+          },
+          {
+            "text": "Isang personal na interes ng mga politiko",
+            "is_correct": false
+          },
+          {
+            "text": "Isang pormalidad na walang tunay na epekto",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "Anong pangunahing tema ang binibigyang-diin ng teksto?",
+        "explanation": "Binibigyang-diin ng teksto ang kahalagahan ng matalinong pagboto at responsableng pakikilahok sa politika.",
+        "choices": [
+          {
+            "text": "Ang kahinaan ng sistemang demokratiko",
+            "is_correct": false
+          },
+          {
+            "text": "Ang kahalagahan ng edukasyon at pananagutan sa politika",
+            "is_correct": true
+          },
+          {
+            "text": "Ang epekto ng media sa eleksyon",
+            "is_correct": false
+          },
+          {
+            "text": "Ang tunggalian ng mga partidong politikal",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+
+  {
     "passage": "For years, the old train station had been a landmark in Lira's town, even though it no longer operated. Its wooden benches were faded, and vines crawled along the sides of the abandoned ticket booth. As a child, Lira would sit there with her father, listening to stories about the trains that once passed through, carrying farmers, workers, and students to distant provinces. To her, the place had always felt alive, even in its silence.\n\nOne afternoon, while taking her usual walk, she saw construction workers surveying the station grounds. The local government had decided to convert the area into a commercial complex. Although she understood the need for development, Lira felt a pang of sadness. The station was a quiet reminder of her father, who had passed away a few years earlier. As she stood there, she realized that losing the station meant losing a tangible piece of their shared history.",
     "questions": [
       {
@@ -318,6 +664,236 @@
           { "text": "Markets are no longer useful", "is_correct": false },
           { "text": "Childhood memories fade quickly", "is_correct": false },
           { "text": "Modernization improves everything", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "passage": "In recent years, remote work has shifted from a temporary solution to a permanent feature of many organizations. Initially adopted out of necessity, companies soon recognized its advantages, including reduced operational costs and increased employee flexibility. Workers reported higher job satisfaction due to less time spent commuting and greater control over their schedules.\n\nHowever, the transition was not without challenges. Some managers struggled with maintaining productivity and team cohesion, while employees experienced blurred boundaries between work and personal life. Over time, organizations began investing in digital collaboration tools and clearer performance metrics. These adjustments revealed that remote work is most effective when supported by intentional management practices. Ultimately, the experience reshaped traditional views of productivity, emphasizing outcomes over physical presence.",
+    "questions": [
+      {
+        "text": "What initially led organizations to adopt remote work?",
+        "explanation": "The passage states that remote work was first implemented as a necessary response to circumstances.",
+        "choices": [
+          {
+            "text": "It was adopted out of necessity",
+            "is_correct": true
+          },
+          {
+            "text": "It was mandated by labor unions",
+            "is_correct": false
+          },
+          {
+            "text": "It replaced traditional office culture",
+            "is_correct": false
+          },
+          {
+            "text": "It was introduced to increase surveillance",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "Which benefit of remote work is mentioned from the employees’ perspective?",
+        "explanation": "Employees valued reduced commuting time and greater schedule control.",
+        "choices": [
+          {
+            "text": "Greater job security",
+            "is_correct": false
+          },
+          {
+            "text": "Higher salaries",
+            "is_correct": false
+          },
+          {
+            "text": "Increased flexibility and satisfaction",
+            "is_correct": true
+          },
+          {
+            "text": "More opportunities for promotion",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "What challenge did managers face during the transition?",
+        "explanation": "Managers had difficulty ensuring productivity and maintaining team cohesion.",
+        "choices": [
+          {
+            "text": "Training employees to use technology",
+            "is_correct": false
+          },
+          {
+            "text": "Maintaining productivity and teamwork",
+            "is_correct": true
+          },
+          {
+            "text": "Reducing operational costs",
+            "is_correct": false
+          },
+          {
+            "text": "Hiring new employees",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "What solution helped improve the effectiveness of remote work?",
+        "explanation": "Organizations invested in tools and clear performance metrics to address challenges.",
+        "choices": [
+          {
+            "text": "Stricter office attendance rules",
+            "is_correct": false
+          },
+          {
+            "text": "Increased employee monitoring",
+            "is_correct": false
+          },
+          {
+            "text": "Digital tools and clearer management practices",
+            "is_correct": true
+          },
+          {
+            "text": "Reducing employee autonomy",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "What broader shift in thinking does the passage highlight?",
+        "explanation": "The passage emphasizes a move away from physical presence toward measuring results.",
+        "choices": [
+          {
+            "text": "A preference for traditional office setups",
+            "is_correct": false
+          },
+          {
+            "text": "An emphasis on outcomes rather than location",
+            "is_correct": true
+          },
+          {
+            "text": "A decline in workplace collaboration",
+            "is_correct": false
+          },
+          {
+            "text": "The elimination of management roles",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "passage": "Ang pagsasaka ng palay ay matagal nang nagsisilbing pundasyon ng kabuhayan ng maraming Pilipino, lalo na sa mga lalawigan. Bukod sa pagiging pangunahing pinagkukunan ng pagkain, nagbibigay ito ng hanapbuhay sa milyun-milyong magsasaka at manggagawang bukid. Gayunpaman, sa paglipas ng mga taon, humarap ang sektor ng agrikultura sa samu’t saring hamon tulad ng pagbabago ng klima, pagtaas ng gastos sa produksyon, at kakulangan sa makabagong teknolohiya.\n\nDahil sa pabago-bagong panahon, mas naging madalas ang tagtuyot at pagbaha na direktang nakaaapekto sa ani ng palay. Dagdag pa rito, maraming magsasaka ang nahihirapang makasabay sa modernong pamamaraan ng pagsasaka dahil sa kakulangan sa puhunan at sapat na kaalaman. Iminumungkahi ng mga eksperto na ang pamumuhunan sa irigasyon, pananaliksik, at pagsasanay ng magsasaka ay mahalaga upang mapalakas ang lokal na produksyon ng bigas. Sa ganitong paraan, hindi lamang natitiyak ang seguridad sa pagkain, kundi napapabuti rin ang kalagayan ng sektor na matagal nang nagsisilbi sa bansa.",
+    "questions": [
+      {
+        "text": "Ano ang pangunahing papel ng pagsasaka ng palay ayon sa teksto?",
+        "explanation": "Binanggit na ito ay pinagkukunan ng pagkain at kabuhayan ng maraming Pilipino.",
+        "choices": [
+          {
+            "text": "Pinagkukunan ng pagkain at kabuhayan",
+            "is_correct": true
+          },
+          {
+            "text": "Eksport na produkto para sa ibang bansa",
+            "is_correct": false
+          },
+          {
+            "text": "Alternatibong hanapbuhay sa lungsod",
+            "is_correct": false
+          },
+          {
+            "text": "Industriyang nakatuon sa teknolohiya",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "Alin sa mga sumusunod ang HINDI binanggit na hamon sa pagsasaka ng palay?",
+        "explanation": "Binanggit ang klima, gastos, at teknolohiya, ngunit hindi ang kakulangan sa lupa.",
+        "choices": [
+          {
+            "text": "Pagbabago ng klima",
+            "is_correct": false
+          },
+          {
+            "text": "Pagtaas ng gastos sa produksyon",
+            "is_correct": false
+          },
+          {
+            "text": "Kakulangan sa makabagong teknolohiya",
+            "is_correct": false
+          },
+          {
+            "text": "Kakulangan sa lupang sakahan",
+            "is_correct": true
+          }
+        ]
+      },
+      {
+        "text": "Paano nakaaapekto ang pabago-bagong panahon sa mga magsasaka?",
+        "explanation": "Ang madalas na tagtuyot at pagbaha ay direktang nagpapababa ng ani ng palay.",
+        "choices": [
+          {
+            "text": "Pinapataas nito ang presyo ng binhi",
+            "is_correct": false
+          },
+          {
+            "text": "Direkta nitong naaapektuhan ang ani ng palay",
+            "is_correct": true
+          },
+          {
+            "text": "Pinapabilis nito ang pag-aani",
+            "is_correct": false
+          },
+          {
+            "text": "Wala itong epekto sa produksyon",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "Ano ang ipinahihiwatig na dahilan kung bakit nahihirapan ang ilang magsasaka na mag-modernisa?",
+        "explanation": "Ipinapakita na kakulangan sa puhunan at kaalaman ang hadlang sa modernisasyon.",
+        "choices": [
+          {
+            "text": "Kawalan ng interes sa pagbabago",
+            "is_correct": false
+          },
+          {
+            "text": "Kakulangan sa puhunan at sapat na kaalaman",
+            "is_correct": true
+          },
+          {
+            "text": "Mahigpit na regulasyon ng pamahalaan",
+            "is_correct": false
+          },
+          {
+            "text": "Pagliit ng pamilihan ng bigas",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "Ano ang pangunahing mensahe ng huling bahagi ng teksto?",
+        "explanation": "Binibigyang-diin na ang pamumuhunan sa agrikultura ay mahalaga para sa seguridad sa pagkain at kapakanan ng mga magsasaka.",
+        "choices": [
+          {
+            "text": "Ang pagsasaka ng palay ay hindi na mahalaga",
+            "is_correct": false
+          },
+          {
+            "text": "Ang pag-angkat ng bigas ang pinakamainam na solusyon",
+            "is_correct": false
+          },
+          {
+            "text": "Mahalaga ang pamumuhunan upang mapalakas ang lokal na produksyon",
+            "is_correct": true
+          },
+          {
+            "text": "Ang teknolohiya lamang ang solusyon sa lahat ng problema",
+            "is_correct": false
+          }
         ]
       }
     ]

@@ -48,5 +48,305 @@
       { "text": "Legal documents", "is_correct": false },
       { "text": "General correspondence", "is_correct": false }
     ]
+  },
+  {
+    "text": "Which filing system arranges records by last name?",
+    "explanation": "Alphabetical filing is based on names or titles.",
+    "choices": [
+      { "text": "Numerical", "is_correct": false },
+      { "text": "Alphabetical", "is_correct": true },
+      { "text": "Chronological", "is_correct": false },
+      { "text": "Geographical", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In alphabetical filing, which name comes first?",
+    "explanation": "Alphabetical order is based on the first letter of the surname.",
+    "choices": [
+      { "text": "Reyes, Ana", "is_correct": false },
+      { "text": "Garcia, Maria", "is_correct": true },
+      { "text": "Santos, Juan", "is_correct": false },
+      { "text": "Villanueva, Carlo", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which filing system arranges records by date?",
+    "explanation": "Chronological filing organizes documents by time or date.",
+    "choices": [
+      { "text": "Alphabetical", "is_correct": false },
+      { "text": "Numerical", "is_correct": false },
+      { "text": "Chronological", "is_correct": true },
+      { "text": "Subject", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What does coding in filing refer to?",
+    "explanation": "Coding assigns symbols or numbers to files for easy identification.",
+    "choices": [
+      { "text": "Writing secret messages", "is_correct": false },
+      { "text": "Assigning numbers or symbols to records", "is_correct": true },
+      { "text": "Encrypting files", "is_correct": false },
+      { "text": "Deleting old records", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which code is usually used in numerical filing?",
+    "explanation": "Numerical filing uses numbers as file identifiers.",
+    "choices": [
+      { "text": "AB-12", "is_correct": false },
+      { "text": "001", "is_correct": true },
+      { "text": "File-A", "is_correct": false },
+      { "text": "Code-X", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which record should be filed first in alphabetical order?",
+    "explanation": "Filing starts with the surname.",
+    "choices": [
+      { "text": "Lopez, Maria", "is_correct": false },
+      { "text": "Anderson, Paul", "is_correct": true },
+      { "text": "Zamora, Leo", "is_correct": false },
+      { "text": "Santos, Juan", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In filing, what is the purpose of an index?",
+    "explanation": "An index helps locate files quickly.",
+    "choices": [
+      { "text": "To decorate file cabinets", "is_correct": false },
+      { "text": "To locate records easily", "is_correct": true },
+      { "text": "To store old files", "is_correct": false },
+      { "text": "To code documents", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which filing system is best for invoices numbered 001–500?",
+    "explanation": "Numerical filing is best for numbered records.",
+    "choices": [
+      { "text": "Alphabetical", "is_correct": false },
+      { "text": "Numerical", "is_correct": true },
+      { "text": "Subject", "is_correct": false },
+      { "text": "Geographical", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What should be checked first before filing a document?",
+    "explanation": "Correctness ensures proper filing.",
+    "choices": [
+      { "text": "Paper color", "is_correct": false },
+      { "text": "Correct name or code", "is_correct": true },
+      { "text": "Staple placement", "is_correct": false },
+      { "text": "Number of pages", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which filing system groups documents by topic?",
+    "explanation": "Subject filing organizes documents by subject matter.",
+    "choices": [
+      { "text": "Chronological", "is_correct": false },
+      { "text": "Numerical", "is_correct": false },
+      { "text": "Subject", "is_correct": true },
+      { "text": "Alphabetical", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which name should be filed first in alphabetical order?",
+    "explanation": "Prefixes like 'De' are considered part of the surname.",
+    "choices": [
+      { "text": "De la Cruz, Ana", "is_correct": true },
+      { "text": "Del Rosario, Ben", "is_correct": false },
+      { "text": "Cruz, Maria", "is_correct": false },
+      { "text": "Dela Peña, Juan", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In alphabetical filing, how should the name 'Santos Jr., Pedro' be filed?",
+    "explanation": "Suffixes like Jr. do not affect filing order unless names are identical.",
+    "choices": [
+      { "text": "Under J for Jr.", "is_correct": false },
+      { "text": "Under S for Santos", "is_correct": true },
+      { "text": "Under P for Pedro", "is_correct": false },
+      { "text": "Under R for Jr.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which document should be filed first using chronological filing?",
+    "explanation": "Chronological filing arranges documents by date, starting with the earliest.",
+    "choices": [
+      { "text": "March 10, 2023", "is_correct": false },
+      { "text": "January 5, 2023", "is_correct": true },
+      { "text": "December 20, 2023", "is_correct": false },
+      { "text": "July 15, 2023", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which code should come first in numerical filing?",
+    "explanation": "Numbers are filed in true numerical order, not digit-by-digit.",
+    "choices": [
+      { "text": "100", "is_correct": false },
+      { "text": "20", "is_correct": true },
+      { "text": "305", "is_correct": false },
+      { "text": "450", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In filing names with identical surnames, what determines the order next?",
+    "explanation": "When surnames are the same, the given name is used.",
+    "choices": [
+      { "text": "Middle name", "is_correct": false },
+      { "text": "Given name", "is_correct": true },
+      { "text": "Suffix", "is_correct": false },
+      { "text": "Date of birth", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which filing system is MOST appropriate for employee records by department?",
+    "explanation": "Subject filing groups documents by category or department.",
+    "choices": [
+      { "text": "Alphabetical", "is_correct": false },
+      { "text": "Numerical", "is_correct": false },
+      { "text": "Subject", "is_correct": true },
+      { "text": "Chronological", "is_correct": false }
+    ]
+  },
+  {
+    "text": "How should the name 'MacArthur, Luis' be filed?",
+    "explanation": "'Mac' is considered one word when filing alphabetically.",
+    "choices": [
+      { "text": "Under A for Arthur", "is_correct": false },
+      { "text": "Under M for MacArthur", "is_correct": true },
+      { "text": "Under C for Arthur", "is_correct": false },
+      { "text": "Under L for Luis", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which code indicates correct numerical sequencing?",
+    "explanation": "Proper numerical filing follows increasing numeric value.",
+    "choices": [
+      { "text": "009, 010, 100", "is_correct": true },
+      { "text": "010, 009, 100", "is_correct": false },
+      { "text": "100, 010, 009", "is_correct": false },
+      { "text": "009, 100, 010", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which filing error is MOST serious?",
+    "explanation": "Misfiling causes records to be lost or hard to retrieve.",
+    "choices": [
+      { "text": "Wrong folder color", "is_correct": false },
+      { "text": "Misfiled document", "is_correct": true },
+      { "text": "Loose paper clip", "is_correct": false },
+      { "text": "Bent paper", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What should be done FIRST when coding a new document?",
+    "explanation": "Proper classification ensures accurate coding.",
+    "choices": [
+      { "text": "Assign a number immediately", "is_correct": false },
+      { "text": "Determine the correct category", "is_correct": true },
+      { "text": "Store it in the cabinet", "is_correct": false },
+      { "text": "Make copies", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which name should be filed LAST in alphabetical order?",
+    "explanation": "Alphabetical filing is based on the surname first, then given name.",
+    "choices": [
+      { "text": "Alonzo, Marco", "is_correct": false },
+      { "text": "Bautista, Carla", "is_correct": false },
+      { "text": "Reyes, Anton", "is_correct": false },
+      { "text": "Zamora, Luis", "is_correct": true }
+    ]
+  },
+  {
+    "text": "How should the name 'De Vera, John' be filed?",
+    "explanation": "Prefixes like 'De' are treated as part of the surname.",
+    "choices": [
+      { "text": "Under D for De Vera", "is_correct": true },
+      { "text": "Under V for Vera", "is_correct": false },
+      { "text": "Under J for John", "is_correct": false },
+      { "text": "Under E for Vera", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which filing method arranges records by year, month, then day?",
+    "explanation": "Chronological filing organizes documents by date.",
+    "choices": [
+      { "text": "Alphabetical", "is_correct": false },
+      { "text": "Numerical", "is_correct": false },
+      { "text": "Chronological", "is_correct": true },
+      { "text": "Geographical", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which numerical code should be filed first?",
+    "explanation": "True numerical order is used in numerical filing.",
+    "choices": [
+      { "text": "56", "is_correct": true },
+      { "text": "102", "is_correct": false },
+      { "text": "305", "is_correct": false },
+      { "text": "1000", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If two files have the same name, which is filed first?",
+    "explanation": "When names are identical, suffixes like Jr. or Sr. are considered.",
+    "choices": [
+      { "text": "The one with Jr.", "is_correct": false },
+      { "text": "The one without suffix", "is_correct": true },
+      { "text": "The older file", "is_correct": false },
+      { "text": "The longer name", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which filing system is BEST for invoices with control numbers?",
+    "explanation": "Numerical filing allows easy tracking of numbered documents.",
+    "choices": [
+      { "text": "Alphabetical", "is_correct": false },
+      { "text": "Subject", "is_correct": false },
+      { "text": "Chronological", "is_correct": false },
+      { "text": "Numerical", "is_correct": true }
+    ]
+  },
+  {
+    "text": "How should the name 'St. John, Mark' be filed?",
+    "explanation": "'St.' is considered part of the surname when filing.",
+    "choices": [
+      { "text": "Under J for John", "is_correct": false },
+      { "text": "Under S for St. John", "is_correct": true },
+      { "text": "Under T for John", "is_correct": false },
+      { "text": "Under M for Mark", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following should be filed FIRST numerically?",
+    "explanation": "Leading zeros do not affect numerical value.",
+    "choices": [
+      { "text": "005", "is_correct": true },
+      { "text": "020", "is_correct": false },
+      { "text": "100", "is_correct": false },
+      { "text": "500", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the MAIN purpose of coding documents?",
+    "explanation": "Coding helps identify and retrieve documents efficiently.",
+    "choices": [
+      { "text": "To decorate folders", "is_correct": false },
+      { "text": "To simplify retrieval", "is_correct": true },
+      { "text": "To reduce paperwork", "is_correct": false },
+      { "text": "To increase storage space", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which step should be done AFTER indexing a document?",
+    "explanation": "After indexing, the document is coded before filing.",
+    "choices": [
+      { "text": "Classification", "is_correct": false },
+      { "text": "Coding", "is_correct": true },
+      { "text": "Sorting", "is_correct": false },
+      { "text": "Retrieval", "is_correct": false }
+    ]
   }
 ]

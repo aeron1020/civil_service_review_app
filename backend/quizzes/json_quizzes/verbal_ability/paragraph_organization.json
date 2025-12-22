@@ -330,6 +330,106 @@
     ]
   },
   {
+    "text": "Which arrangement of sentences forms a clear and logical paragraph?\n\nA. Public service requires integrity and accountability.\nB. Government employees are expected to serve the public honestly.\nC. This principle helps maintain public trust in government institutions.\nD. Integrity ensures that public officials act in the best interest of citizens.",
+    "explanation": "The paragraph should begin with a general idea, followed by explanation and supporting details, and end with a conclusion. Sentence A introduces the topic, B and D explain it, and C concludes the idea.",
+    "choices": [
+      { "text": "A-B-D-C", "is_correct": true },
+      { "text": "B-A-D-C", "is_correct": false },
+      { "text": "A-D-C-B", "is_correct": false },
+      { "text": "D-B-A-C", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the best sentence order.\n\nA. These disasters often disrupt livelihoods and infrastructure.\nB. The Philippines is frequently affected by natural disasters.\nC. Typhoons, earthquakes, and volcanic eruptions occur regularly.\nD. Preparedness and resilience are therefore essential for communities.",
+    "explanation": "Sentence B introduces the topic, C provides examples, A explains the impact, and D presents a conclusion.",
+    "choices": [
+      { "text": "B-C-A-D", "is_correct": true },
+      { "text": "C-B-A-D", "is_correct": false },
+      { "text": "B-A-C-D", "is_correct": false },
+      { "text": "A-B-C-D", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Arrange the sentences to form a coherent paragraph.\n\nA. Reading regularly improves vocabulary and comprehension.\nB. It also enhances critical thinking skills.\nC. Reading is considered one of the most beneficial habits.\nD. As a result, readers are better equipped to analyze information.",
+    "explanation": "Sentence C introduces the topic, A and B explain the benefits, and D summarizes the outcome.",
+    "choices": [
+      { "text": "C-A-B-D", "is_correct": true },
+      { "text": "A-B-C-D", "is_correct": false },
+      { "text": "C-B-A-D", "is_correct": false },
+      { "text": "B-A-C-D", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Select the correct order of sentences.\n\nA. Proper waste management helps reduce environmental pollution.\nB. Segregation of waste allows recyclable materials to be reused.\nC. It also minimizes health risks caused by improper disposal.\nD. Effective waste management is a shared responsibility.",
+    "explanation": "Sentence D introduces the broad idea, A explains its importance, and B and C provide supporting details.",
+    "choices": [
+      { "text": "D-A-B-C", "is_correct": true },
+      { "text": "A-D-B-C", "is_correct": false },
+      { "text": "D-B-A-C", "is_correct": false },
+      { "text": "B-A-D-C", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence order forms a well-organized paragraph?\n\nA. This technology has transformed how people communicate.\nB. The internet connects millions of users worldwide.\nC. It allows instant access to information and services.\nD. As a result, communication has become faster and more efficient.",
+    "explanation": "Sentence B introduces the subject, A and C explain its effects, and D concludes the idea.",
+    "choices": [
+      { "text": "B-A-C-D", "is_correct": true },
+      { "text": "A-B-C-D", "is_correct": false },
+      { "text": "B-C-A-D", "is_correct": false },
+      { "text": "C-B-A-D", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct sentence sequence.\n\nA. Exercise helps improve both physical and mental health.\nB. Regular physical activity strengthens the heart and muscles.\nC. It also reduces stress and improves mood.\nD. Maintaining an active lifestyle is therefore highly recommended.",
+    "explanation": "Sentence A introduces the main idea, B and C support it, and D provides a conclusion.",
+    "choices": [
+      { "text": "A-B-C-D", "is_correct": true },
+      { "text": "B-A-C-D", "is_correct": false },
+      { "text": "A-C-B-D", "is_correct": false },
+      { "text": "C-B-A-D", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Arrange the sentences logically.\n\nA. Education plays a vital role in national development.\nB. It equips citizens with knowledge and skills.\nC. These skills help individuals contribute productively to society.\nD. A strong educational system supports economic growth.",
+    "explanation": "Sentence A introduces the topic, B and C explain how education helps individuals, and D connects it to national development.",
+    "choices": [
+      { "text": "A-B-C-D", "is_correct": true },
+      { "text": "B-C-A-D", "is_correct": false },
+      { "text": "A-C-B-D", "is_correct": false },
+      { "text": "D-A-B-C", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Select the best paragraph arrangement.\n\nA. Time management helps individuals accomplish tasks efficiently.\nB. Planning daily activities reduces stress and missed deadlines.\nC. It allows people to prioritize important responsibilities.\nD. Effective time management leads to better productivity.",
+    "explanation": "Sentence A introduces the idea, B and C explain how it works, and D summarizes the benefit.",
+    "choices": [
+      { "text": "A-B-C-D", "is_correct": true },
+      { "text": "B-C-A-D", "is_correct": false },
+      { "text": "C-A-B-D", "is_correct": false },
+      { "text": "A-C-D-B", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence order creates a coherent paragraph?\n\nA. Technology continues to evolve rapidly.\nB. New innovations influence how people work and live.\nC. These changes require individuals to adapt continuously.\nD. Lifelong learning has therefore become increasingly important.",
+    "explanation": "Sentence A introduces the topic, B explains its impact, C discusses the consequence, and D concludes with a solution.",
+    "choices": [
+      { "text": "A-B-C-D", "is_correct": true },
+      { "text": "B-A-C-D", "is_correct": false },
+      { "text": "A-C-B-D", "is_correct": false },
+      { "text": "C-B-A-D", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct sentence sequence.\n\nA. Voting is a fundamental right in a लोकत democratic society.\nB. It allows citizens to participate in governance.\nC. Through elections, leaders are chosen by the people.\nD. This process strengthens democracy and accountability.",
+    "explanation": "Sentence A introduces the main idea, B and C explain how voting works, and D highlights its importance.",
+    "choices": [
+      { "text": "A-B-C-D", "is_correct": true },
+      { "text": "B-C-A-D", "is_correct": false },
+      { "text": "C-B-A-D", "is_correct": false },
+      { "text": "A-C-B-D", "is_correct": false }
+    ]
+  },
+  {
     "text": "Arrange the sentences into a clear and organized paragraph.\nA. Many communities rely on these crops for livelihood.\nB. Agriculture remains a major sector in the Philippine economy.\nC. Farmers grow rice, corn, coconuts, and other products.\nD. These crops are then distributed to different markets across the country.",
     "explanation": "Correct order: B → C → A → D.",
     "choices": [
@@ -413,6 +513,106 @@
       { "text": "ACBD", "is_correct": false },
       { "text": "CBAD", "is_correct": false },
       { "text": "BDAC", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Arrange the sentences to form a clear and logical paragraph.\n\nA. Financial literacy helps individuals manage their money wisely.\nB. It teaches people how to budget, save, and invest.\nC. These skills reduce the risk of debt and financial stress.\nD. As a result, financially literate individuals are more prepared for emergencies.",
+    "explanation": "Sentence A introduces the topic, B explains financial literacy, C describes its benefits, and D concludes with the outcome.",
+    "choices": [
+      { "text": "A-B-C-D", "is_correct": true },
+      { "text": "B-A-C-D", "is_correct": false },
+      { "text": "A-C-B-D", "is_correct": false },
+      { "text": "C-A-B-D", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct sentence order.\n\nA. Climate change poses serious risks to global food security.\nB. Rising temperatures affect crop production worldwide.\nC. Extreme weather events further damage agricultural systems.\nD. Addressing climate change is therefore crucial for food sustainability.",
+    "explanation": "Sentence A presents the main idea, B and C provide supporting details, and D gives a conclusion.",
+    "choices": [
+      { "text": "A-B-C-D", "is_correct": true },
+      { "text": "B-C-A-D", "is_correct": false },
+      { "text": "A-C-B-D", "is_correct": false },
+      { "text": "C-B-A-D", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Select the best paragraph arrangement.\n\nA. Proper communication reduces misunderstandings in the workplace.\nB. Clear instructions help employees perform tasks effectively.\nC. Feedback allows workers to improve their performance.\nD. Effective communication contributes to organizational success.",
+    "explanation": "Sentence A introduces the topic, B and C explain how communication works, and D summarizes its importance.",
+    "choices": [
+      { "text": "A-B-C-D", "is_correct": true },
+      { "text": "B-A-C-D", "is_correct": false },
+      { "text": "C-B-A-D", "is_correct": false },
+      { "text": "A-C-D-B", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which arrangement forms a coherent paragraph?\n\nA. Healthy eating supports overall well-being.\nB. Consuming balanced meals provides essential nutrients.\nC. These nutrients help the body function properly.\nD. Good nutrition reduces the risk of chronic diseases.",
+    "explanation": "Sentence A states the main idea, B and C explain it, and D adds an important result.",
+    "choices": [
+      { "text": "A-B-C-D", "is_correct": true },
+      { "text": "B-C-A-D", "is_correct": false },
+      { "text": "A-C-B-D", "is_correct": false },
+      { "text": "C-A-B-D", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct sentence sequence.\n\nA. Transportation systems play a key role in economic development.\nB. Efficient transport enables the movement of goods and people.\nC. This connectivity supports trade and employment opportunities.\nD. Investing in transport infrastructure benefits the economy.",
+    "explanation": "Sentence A introduces the topic, B and C explain its role, and D concludes with a benefit.",
+    "choices": [
+      { "text": "A-B-C-D", "is_correct": true },
+      { "text": "B-A-C-D", "is_correct": false },
+      { "text": "C-B-A-D", "is_correct": false },
+      { "text": "A-C-B-D", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Arrange the sentences logically.\n\nA. Critical thinking helps individuals evaluate information objectively.\nB. It involves analyzing evidence before forming conclusions.\nC. This skill reduces susceptibility to misinformation.\nD. Critical thinking is essential in decision-making processes.",
+    "explanation": "Sentence D introduces the topic, A and B explain the skill, and C highlights its benefit.",
+    "choices": [
+      { "text": "D-A-B-C", "is_correct": true },
+      { "text": "A-B-C-D", "is_correct": false },
+      { "text": "B-A-D-C", "is_correct": false },
+      { "text": "C-A-B-D", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Select the best paragraph arrangement.\n\nA. Public transportation reduces traffic congestion in cities.\nB. Fewer private vehicles lead to lower carbon emissions.\nC. This contributes to cleaner air and better public health.\nD. Improving public transport systems benefits urban communities.",
+    "explanation": "Sentence D introduces the broad idea, A and B explain its effects, and C concludes with the outcome.",
+    "choices": [
+      { "text": "D-A-B-C", "is_correct": true },
+      { "text": "A-B-C-D", "is_correct": false },
+      { "text": "B-A-D-C", "is_correct": false },
+      { "text": "C-A-B-D", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence order forms a logical paragraph?\n\nA. Technology improves access to education.\nB. Online platforms allow learners to study remotely.\nC. This flexibility benefits working students and professionals.\nD. Educational technology supports lifelong learning.",
+    "explanation": "Sentence A introduces the topic, B explains how it works, C shows who benefits, and D summarizes the idea.",
+    "choices": [
+      { "text": "A-B-C-D", "is_correct": true },
+      { "text": "B-A-C-D", "is_correct": false },
+      { "text": "A-C-B-D", "is_correct": false },
+      { "text": "C-B-A-D", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct sentence arrangement.\n\nA. Environmental conservation protects natural resources.\nB. Sustainable practices ensure resources are available for future generations.\nC. Human activities can either harm or preserve ecosystems.\nD. Responsible actions are necessary to maintain ecological balance.",
+    "explanation": "Sentence A introduces the topic, C explains human impact, B explains sustainability, and D concludes with responsibility.",
+    "choices": [
+      { "text": "A-C-B-D", "is_correct": true },
+      { "text": "C-A-B-D", "is_correct": false },
+      { "text": "A-B-C-D", "is_correct": false },
+      { "text": "B-A-C-D", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Arrange the sentences to create a coherent paragraph.\n\nA. Lifelong learning helps individuals adapt to change.\nB. Continuous skill development improves employability.\nC. This is important in a rapidly evolving job market.\nD. Learning does not end after formal education.",
+    "explanation": "Sentence D introduces the general idea, A explains it, B gives a specific benefit, and C provides context.",
+    "choices": [
+      { "text": "D-A-B-C", "is_correct": true },
+      { "text": "A-B-C-D", "is_correct": false },
+      { "text": "B-A-D-C", "is_correct": false },
+      { "text": "C-D-A-B", "is_correct": false }
     ]
   }
 ]
