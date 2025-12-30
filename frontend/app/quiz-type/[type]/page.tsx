@@ -907,87 +907,153 @@ export default function RandomQuizPage() {
             )}
 
             {activeTab === "breakdown" && (
-              <>
-                <h3 className="text-2xl font-bold text-[var(--foreground)] mb-4">
-                  📘 Detailed Breakdown
-                </h3>
+              <div className="space-y-8 animate-fadeIn">
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="text-2xl font-bold text-[var(--foreground)]">
+                    📘 Detailed Breakdown
+                  </h3>
+                  <span className="text-sm font-medium text-gray-500 uppercase tracking-wider">
+                    {result.details.length} Questions
+                  </span>
+                </div>
 
-                <ul className="space-y-5">
+                <ul className="space-y-6">
                   {result.details.map((d: any, i: number) => {
+                    // --- YOUR ORIGINAL LOGIC PRESERVED ---
                     const status =
                       d.your_answer == null
                         ? "unanswered"
                         : d.your_answer === d.correct_answer
                         ? "correct"
                         : "wrong";
+                    // -------------------------------------
+
+                    const isCorrect = status === "correct";
+                    const isUnanswered = status === "unanswered";
+
+                    // Dynamic Styling Variables
+                    const themeColor = isCorrect
+                      ? "border-green-500/50 bg-green-500/5"
+                      : isUnanswered
+                      ? "border-gray-400/30 bg-gray-400/5"
+                      : "border-red-500/50 bg-red-500/5";
+
+                    const badgeColor = isCorrect
+                      ? "bg-green-500 shadow-green-500/20"
+                      : isUnanswered
+                      ? "bg-gray-400 shadow-gray-400/20"
+                      : "bg-red-500 shadow-red-500/20";
 
                     return (
                       <li
                         key={d.id ?? i}
-                        className={`glass-card p-5 rounded-xl border transition-all ${
-                          status === "correct"
-                            ? "border-green-500/70 bg-green-50/10"
-                            : status === "unanswered"
-                            ? "border-gray-400/50 bg-gray-50/5"
-                            : "border-red-500/70 bg-red-50/10"
-                        }`}
+                        className={`relative group overflow-hidden glass-card p-6 rounded-2xl border transition-all duration-300 hover:shadow-lg ${themeColor}`}
                       >
-                        <div className="flex gap-4">
-                          <div
-                            className={`min-w-10 min-h-10 rounded-full flex items-center justify-center font-bold text-white shadow-md text-lg
-            ${
-              status === "correct"
-                ? "bg-green-500"
-                : status === "unanswered"
-                ? "bg-gray-400"
-                : "bg-red-500"
-            }
-          `}
-                          >
-                            {i + 1}
+                        {/* Background Accent Blur for that "Fancy" feel */}
+                        <div
+                          className={`absolute -right-16 -top-16 w-32 h-32 rounded-full blur-3xl opacity-10 transition-opacity group-hover:opacity-20 ${badgeColor}`}
+                        />
+
+                        <div className="flex flex-col sm:flex-row gap-5 relative z-10">
+                          {/* Left Column: Number and Status Icon */}
+                          <div className="flex flex-row sm:flex-col items-center gap-3">
+                            <div
+                              className={`w-12 h-12 rounded-2xl flex items-center justify-center font-black text-white shadow-xl text-xl transform transition-transform group-hover:scale-110 ${badgeColor}`}
+                            >
+                              {i + 1}
+                            </div>
+                            <div className="sm:mt-2">
+                              {isCorrect ? (
+                                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-green-500/20 text-green-600">
+                                  ✓
+                                </div>
+                              ) : isUnanswered ? (
+                                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-gray-500/20 text-gray-500">
+                                  ?
+                                </div>
+                              ) : (
+                                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-red-500/20 text-red-600">
+                                  ✕
+                                </div>
+                              )}
+                            </div>
                           </div>
 
-                          <div className="flex-1">
-                            <p className="font-semibold text-[var(--foreground)] leading-snug">
-                              {d.question}
-                            </p>
+                          {/* Right Column: Question Content */}
+                          <div className="flex-1 space-y-4">
+                            <div>
+                              <h4 className="text-lg font-bold text-[var(--foreground)] leading-tight mb-1">
+                                {d.question}
+                              </h4>
+                              <div className="flex items-center gap-2">
+                                <span
+                                  className={`text-[10px] font-black uppercase px-2 py-0.5 rounded-md tracking-wider ${
+                                    isCorrect
+                                      ? "bg-green-500/10 text-green-600"
+                                      : isUnanswered
+                                      ? "bg-gray-500/10 text-gray-500"
+                                      : "bg-red-500/10 text-red-600"
+                                  }`}
+                                >
+                                  {status}
+                                </span>
+                              </div>
+                            </div>
 
-                            {/* Status Label */}
-                            <p className="mt-2">
-                              {status === "correct" ? (
-                                <span className="text-green-600 font-semibold">
-                                  ✅ Correct
+                            {/* Answer Box */}
+                            <div className="grid grid-cols-1 gap-3 p-4 rounded-xl bg-black/5 dark:bg-white/5 border border-white/10">
+                              <div className="flex flex-col">
+                                <span className="text-[10px] uppercase font-bold text-gray-500 tracking-widest">
+                                  Your Choice
                                 </span>
-                              ) : status === "unanswered" ? (
-                                <span className="text-gray-500 font-semibold">
-                                  ⏸ Unanswered
+                                <span
+                                  className={`font-medium ${
+                                    isCorrect
+                                      ? "text-green-600"
+                                      : isUnanswered
+                                      ? "text-gray-400"
+                                      : "text-red-600"
+                                  }`}
+                                >
+                                  {d.your_answer || (
+                                    <span className="italic opacity-60">
+                                      No answer selected
+                                    </span>
+                                  )}
                                 </span>
-                              ) : (
-                                <span className="text-red-600 font-semibold">
-                                  ❌ Wrong
-                                </span>
+                              </div>
+
+                              {/* Show correct answer if the user was wrong */}
+                              {!isCorrect && !isUnanswered && (
+                                <div className="flex flex-col pt-2 border-t border-white/5">
+                                  <span className="text-[10px] uppercase font-bold text-green-600/70 tracking-widest">
+                                    Correct Answer
+                                  </span>
+                                  <span className="font-medium text-green-600">
+                                    {d.correct_answer}
+                                  </span>
+                                </div>
                               )}
-                            </p>
+                            </div>
 
-                            <p className="text-sm mt-2">
-                              <strong>Your Answer:</strong>{" "}
-                              {d.your_answer || (
-                                <span className="text-gray-400 italic">
-                                  No answer selected
+                            {/* Explanation */}
+                            {d.explanation && (
+                              <div className="pt-2 border-t border-white/10">
+                                <span className="text-[10px] uppercase font-bold text-[var(--accent)] tracking-widest block mb-1">
+                                  Explanation
                                 </span>
-                              )}
-                            </p>
-
-                            <p className="text-gray-600 dark:text-gray-400 text-sm mt-3 leading-relaxed">
-                              {d.explanation}
-                            </p>
+                                <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed italic">
+                                  "{d.explanation}"
+                                </p>
+                              </div>
+                            )}
                           </div>
                         </div>
                       </li>
                     );
                   })}
                 </ul>
-              </>
+              </div>
             )}
 
             {/* Action Buttons */}

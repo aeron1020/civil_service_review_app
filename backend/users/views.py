@@ -144,4 +144,3 @@ class ActivatePremiumView(APIView):
             "is_premium": profile.is_premium,
             "premium_until": profile.premium_until
         })
-

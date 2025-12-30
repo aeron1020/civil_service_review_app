@@ -282,11 +282,6 @@ class QuizSubmissionAPIView(APIView):
         print(f"Quiz ID: {quiz.id} - Type: {quiz.quiz_type}")
         print(f"Number of visible_question_ids: {len(visible_question_ids)}")
         print(f"visible_question_ids: {visible_question_ids}")
-        # print(f"Number of standalone questions: {len(standalone_qs)}")
-        # print(f"Number of passage questions: {len(passage_qs)}")
-        # print(f"Number of dataset questions: {len(dataset_qs)}")
-        # print(f"Combined IDs (before dedup): {combined_ids}")
-        # print(f"Unique IDs (after dedup): {unique_ids}")
         print(f"Final all_questions count: {len(all_questions)}")
         print(f"Question IDs in all_questions: {[q.id for q in all_questions]}")
         print("------------------------------------------------------------\n")
@@ -300,6 +295,11 @@ class QuizSubmissionAPIView(APIView):
         for question in all_questions:
             qid = int(question.id)
             choice_id = user_answers.get(qid)
+
+            # Fetch the actual correct answer text from the DB for the breakdown
+            correct_choice = question.choices.filter(is_correct=True).first()
+            correct_answer_text = correct_choice.text if correct_choice else "N/A"
+
             if choice_id:
                 try:
                     choice = Choice.objects.get(pk=choice_id, question=question)
@@ -320,6 +320,7 @@ class QuizSubmissionAPIView(APIView):
                 "question": question.text,
                 "your_answer": your_answer,
                 "result": result,
+                "correct_answer": correct_answer_text,
                 "explanation": question.explanation,
             })
 

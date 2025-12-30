@@ -13,7 +13,9 @@ export default function ThemeProviderWrapper({ children }: Props) {
       attribute="class"
       defaultTheme="system"
       enableSystem={true}
-      storageKey="theme" // optional: stores theme in localStorage
+      storageKey="theme"
+      // Setting this to false allows our custom CSS transitions to work
+      disableTransitionOnChange={false}
     >
       {children}
     </ThemeProvider>
