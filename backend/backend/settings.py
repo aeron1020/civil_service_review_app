@@ -63,6 +63,8 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'quizzes',
     'results',
+
+    'blog',
 ]
 
 # Set site id

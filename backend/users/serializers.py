@@ -140,3 +140,32 @@ class UserSerializer(serializers.ModelSerializer):
 
     def get_full_name(self, obj):
         return f"{obj.first_name} {obj.last_name}".strip() or obj.username
+    
+
+class UserUpdateSerializer(serializers.ModelSerializer):
+    # Allow password to be optional (user might only want to change name)
+    password = serializers.CharField(write_only=True, required=False, min_length=8)
+
+    class Meta:
+        model = User
+        fields = ['username', 'email', 'first_name', 'last_name', 'password']
+
+    def validate_password(self, value):
+        if value:
+            # Re-use the validation logic from RegisterSerializer
+            # or move the logic to a helper function to keep it DRY
+            try:
+                validate_password(value)
+            except DjangoValidationError as e:
+                raise serializers.ValidationError(list(e.messages))
+            # ... (Add the same regex checks from your RegisterSerializer here)
+        return value
+
+    def update(self, instance, validated_data):
+        password = validated_data.pop('password', None)
+        for attr, value in validated_data.items():
+            setattr(instance, attr, value)
+        if password:
+            instance.set_password(password)
+        instance.save()
+        return instance

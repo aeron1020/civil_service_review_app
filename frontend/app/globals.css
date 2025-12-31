@@ -1,94 +1,104 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f5f5f7;
-  --foreground: #1d1d1f;
-  --accent: #0071e3;
-  /* MINIMIZED: Reduced opacity from 0.7 to 0.4 and softened border */
-  --glass-bg: rgba(255, 255, 255, 0.4);
-  --glass-border: rgba(0, 0, 0, 0.08);
-  /* MINIMIZED: Reduced shadow spread and intensity */
-  --shadow-lifted: 0 10px 30px rgba(0, 0, 0, 0.04),
-    0 1px 2px rgba(0, 0, 0, 0.02), inset 0 0 0 1px rgba(255, 255, 255, 0.3);
-  --inner-glow: inset 0 1px 1px rgba(255, 255, 255, 0.4);
+  /* FANCY LIGHT: Pearlescent Frost */
+  --background: #f8f9fb;
+  --foreground: #121214;
+  /* Radiant Gradient: Indigo to Violet */
+  --accent: #6366f1;
+  --accent-secondary: #a855f7;
+
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(99, 102, 241, 0.12);
+
+  --shadow-lifted: 0 20px 40px rgba(99, 102, 241, 0.08),
+    0 1px 3px rgba(0, 0, 0, 0.02), inset 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
 .dark {
-  --background: #000000;
+  /* FANCY DARK: Midnight Iris */
+  --background: #030305;
   --foreground: #f5f5f7;
-  /* MINIMIZED: Deeper, more subtle dark glass */
-  --glass-bg: rgba(28, 28, 30, 0.5);
-  --glass-border: rgba(255, 255, 255, 0.08);
-  --shadow-lifted: 0 15px 35px rgba(0, 0, 0, 0.3),
+  /* Radiant Gradient: Violet to Cyan */
+  --accent: #8b5cf6;
+  --accent-secondary: #06b6d4;
+
+  --glass-bg: rgba(18, 18, 22, 0.75);
+  --glass-border: rgba(139, 92, 246, 0.2);
+
+  --shadow-lifted: 0 25px 50px rgba(0, 0, 0, 0.5),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
-  --inner-glow: inset 0 1px 0px rgba(255, 255, 255, 0.05);
 }
 
-/* --- 🧊 The New 3D Glass Card --- */
+/* --- 🧊 The 3D Glass Card (Refined) --- */
 .glass-card-3d {
   position: relative;
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   border-radius: 24px;
-  /* MINIMIZED: Reduced blur from 25px to 12px and saturation from 200% to 130% */
-  backdrop-filter: blur(12px) saturate(130%);
+  backdrop-filter: blur(20px) saturate(160%);
   box-shadow: var(--shadow-lifted);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
-  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  /* CRITICAL: Changed from hidden to visible so dropdowns/glows work */
+  overflow: visible;
 }
 
-/* Top "Specular" light hit - MINIMIZED opacity */
+/* Specular light hit */
 .glass-card-3d::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 50%;
+  height: 40%;
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.1) 0%,
     transparent 60%
   );
   pointer-events: none;
+  border-radius: 24px 24px 0 0;
 }
 
 .glass-card-3d:hover {
-  /* MINIMIZED: Less aggressive lift and rotation */
-  transform: translateY(-4px) scale(1.005);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08), 0 0 0 1px var(--accent);
+  transform: translateY(-8px) scale(1.01) rotateX(2deg);
+  box-shadow: 0 30px 60px rgba(99, 102, 241, 0.15), 0 0 0 1px var(--accent);
 }
 
 /* --- 🔘 The "Floating" 3D Button --- */
 .btn-3d {
-  --btn-color: #0071e3;
   position: relative;
-  background: linear-gradient(180deg, #4dabff 0%, var(--btn-color) 100%);
+  /* Now uses the fancy gradient */
+  background: linear-gradient(
+    135deg,
+    var(--accent) 0%,
+    var(--accent-secondary) 100%
+  );
   color: white;
   padding: 10px 24px;
   border-radius: 14px;
-  font-weight: 600;
+  font-weight: 700;
   border: none;
   cursor: pointer;
-  /* MINIMIZED: Thinner 3D depth */
-  box-shadow: 0 1px 0 #004a99, 0 2px 0 #004a99,
-    0 8px 16px rgba(0, 113, 227, 0.2);
-  transition: all 0.1s ease;
-  transform: translateY(-2px);
+  /* Sophisticated depth */
+  box-shadow: 0 4px 15px -3px rgba(139, 92, 246, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .btn-3d:hover {
-  background: linear-gradient(180deg, #62b7ff 0%, #007cf0 100%);
-  transform: translateY(-3px);
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.5);
 }
 
 .btn-3d:active {
-  transform: translateY(0px);
-  box-shadow: 0 1px 0 #004a99, 0 2px 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(1px);
 }
 
-/* --- 🌈 3D Mesh Background --- */
+/* --- 🌈 3D Mesh Background (Triple Gradient) --- */
 .mesh-bg {
   position: fixed;
   top: 0;
@@ -99,23 +109,21 @@
   background-color: var(--background);
   background-image: radial-gradient(
       at 0% 0%,
-      hsla(210, 100%, 93%, 1) 0,
+      hsla(243, 75%, 95%, 1) 0,
       transparent 50%
     ),
-    radial-gradient(at 100% 100%, hsla(210, 100%, 90%, 1) 0, transparent 50%);
+    radial-gradient(at 100% 0%, hsla(270, 70%, 94%, 1) 0, transparent 50%),
+    radial-gradient(at 50% 100%, hsla(210, 80%, 96%, 1) 0, transparent 50%);
 }
 
 .dark .mesh-bg {
   background-image: radial-gradient(
       at 0% 0%,
-      hsla(240, 15%, 15%, 1) 0,
+      hsla(263, 50%, 12%, 1) 0,
       transparent 50%
     ),
-    radial-gradient(at 100% 100%, hsla(240, 20%, 10%, 1) 0, transparent 50%);
-}
-
-.perspective-1000 {
-  perspective: 1000px;
+    radial-gradient(at 100% 0%, hsla(280, 40%, 10%, 1) 0, transparent 50%),
+    radial-gradient(at 50% 100%, hsla(230, 45%, 8%, 1) 0, transparent 50%);
 }
 
 .text-gradient {
@@ -129,16 +137,35 @@
   display: inline-block;
 }
 
-/* Updated Glass Card for the Grid - MINIMIZED */
+/* Base Glass Card */
 .glass-card {
+  position: relative;
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   border-radius: 28px;
-  backdrop-filter: blur(10px) saturate(120%);
+  backdrop-filter: blur(15px) saturate(140%);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  box-shadow: 0 8px 30px -10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.05);
 }
 
-.dark .glass-card {
-  box-shadow: 0 15px 40px -12px rgba(0, 0, 0, 0.4);
+.glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12), 0 0 0 1px var(--accent);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(99, 102, 241, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(99, 102, 241, 0.6);
 }

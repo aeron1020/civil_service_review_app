@@ -9,7 +9,7 @@ from rest_framework.views import APIView
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
-from .serializers import RegisterSerializer, UserSerializer
+from .serializers import RegisterSerializer, UserSerializer, UserUpdateSerializer
 from quizzes.models import QuizResult
 from quizzes.serializers import QuizResultSerializer
 
@@ -121,6 +121,14 @@ class UserProfileView(APIView):
         quiz_results = QuizResult.objects.filter(user=user).order_by('-submitted_at')
         quiz_data = QuizResultSerializer(quiz_results, many=True).data
         return Response({"user": user_data, "quiz_results": quiz_data})
+    
+    def post(self, request):
+        # Using partial=True so they can update just names or just password
+        serializer = UserUpdateSerializer(request.user, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response({"detail": "Profile updated successfully", "user": UserSerializer(request.user).data})
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
 
 from .models import Profile

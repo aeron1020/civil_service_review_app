@@ -14,7 +14,7 @@ export default function RandomQuizCard() {
   ];
 
   return (
-    <div className="mt-12 pb-8">
+    <div className="mt-12">
       <div className="text-center mb-16">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -66,7 +66,7 @@ export default function RandomQuizCard() {
 
                 <div className="flex items-center justify-between pt-5 border-t border-black/5 dark:border-white/5">
                   <span className="text-[10px] font-black uppercase tracking-widest group-hover:text-[var(--accent)] transition-colors">
-                    Generate Session
+                    Start Random Quiz
                   </span>
                   <div className="w-8 h-8 rounded-full flex items-center justify-center group-hover:bg-[var(--accent)] group-hover:text-white transition-all duration-300">
                     <ArrowRight

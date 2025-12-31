@@ -744,7 +744,7 @@ export default function QuizDetailPage() {
         headers: {
           "Content-Type": "application/json",
         },
-        credentials: "include", // ✅ THIS IS THE KEY
+        credentials: "include",
         body: JSON.stringify(payload),
       });
 
@@ -804,26 +804,8 @@ export default function QuizDetailPage() {
   const totalCount = steps.length;
 
   return (
-    <div className="pt-6 max-w-3xl mx-auto animate-fadeIn">
-      {/* <QuizProgressBar answeredCount={answeredCount} totalCount={totalCount} /> */}
-
-      {/* timer */}
-      {/* {quiz.time_limit ? (
-        <div className="mb-4">
-          <QuizTimer
-            durationMinutes={quiz.time_limit}
-            onExpire={() => {
-              // auto-submit on expire
-              handleSubmit();
-            }}
-            onTimeUpdate={(sec: number) => {
-              setTimeSpent(sec);
-            }}
-          />
-        </div>
-      ) : null} */}
-
-      <div className="glass-card p-4 rounded-2xl">
+    <div className="max-w-3xl mx-auto animate-fadeIn">
+      <div className="glass-card p-2 rounded-2xl">
         {/* 🧪 SHOW QUIZ ONLY WHEN NO RESULT YET */}
         {!result && (
           <>
@@ -834,27 +816,16 @@ export default function QuizDetailPage() {
               {quiz.description}
             </p>
 
-            {/* DEBUG INFO */}
-            {/* <div className="mb-4 text-sm text-gray-500 bg-white/5 dark:bg-black/20 p-3 rounded-xl border border-white/10">
-              <strong>DEBUG</strong>
-              <div>
-                Step: {currentStep + 1} / {totalCount}
-              </div>
-              <div>
-                Visible questions (stored):{" "}
-                {steps.map((s) => s.question.id).join(", ")}
-              </div>
-            </div> */}
-
             {/* --- MAIN ONE-STEP DISPLAY --- */}
             <div className="space-y-6">
               {/* PASSAGE */}
               {step.context && step.context.kind === "passage" && (
-                <div className="glass-card p-6 rounded-2xl border border-white/10">
-                  <h2 className="text-xl font-semibold text-[var(--accent)] mb-3">
+                <div className="glass-card-3d p-8">
+                  <h2 className="text-xl font-black italic uppercase tracking-tighter text-gradient mb-4">
                     {step.context.title || "Reading Comprehension"}
                   </h2>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+
+                  <p className="text-[var(--foreground)] leading-relaxed font-medium opacity-90">
                     {step.context.text}
                   </p>
                 </div>
@@ -887,7 +858,7 @@ export default function QuizDetailPage() {
                   {currentStep + 1}. {step.question.text}
                 </h3>
 
-                <ul className="space-y-3">
+                {/* <ul className="space-y-3">
                   {step.question.choices.map((c) => (
                     <li key={c.id}>
                       <div
@@ -910,8 +881,46 @@ export default function QuizDetailPage() {
                       </div>
                     </li>
                   ))}
-                </ul>
+                </ul> */}
+                <ul className="space-y-3">
+                  {step.question.choices.map((c, index) => (
+                    <li key={c.id}>
+                      <div
+                        onClick={() => handleSelect(step.question.id, c.id)}
+                        className={`cursor-pointer px-4 py-3 rounded-xl transition-all duration-200 backdrop-blur-md border flex justify-between items-center group
+    ${
+      answers[step.question.id] === c.id
+        ? "bg-[var(--accent)]/20 border-[var(--accent)] text-[var(--accent)] font-semibold scale-[1.02] shadow-md"
+        : "border-white/20 hover:border-[var(--accent)]/30 hover:bg-[var(--accent)]/10"
+    }`}
+                      >
+                        <div className="flex items-center gap-4">
+                          {/* --- Letter Label --- */}
+                          <span
+                            className={`text-[10px] font-black uppercase w-6 h-6 rounded-lg flex items-center justify-center border transition-all
+            ${
+              answers[step.question.id] === c.id
+                ? "bg-[var(--accent)] text-white border-[var(--accent)]"
+                : "bg-black/5 dark:bg-white/5 border-white/10 opacity-40 group-hover:opacity-100"
+            }`}
+                          >
+                            {String.fromCharCode(65 + index)} {/* 65 is 'A' */}
+                          </span>
 
+                          <span>{c.text}</span>
+                        </div>
+
+                        <div
+                          className={`w-4 h-4 rounded-full border-2 transition-all duration-200 ${
+                            answers[step.question.id] === c.id
+                              ? "border-[var(--accent)] bg-[var(--accent)]"
+                              : "border-[var(--accent)]/40"
+                          }`}
+                        />
+                      </div>
+                    </li>
+                  ))}
+                </ul>
                 {step.question.explanation && (
                   <p className="text-gray-500 text-sm mt-3">
                     Explanation will be shown after submission.

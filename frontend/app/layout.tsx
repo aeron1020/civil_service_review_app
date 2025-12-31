@@ -18,8 +18,9 @@
 // });
 
 // export const metadata: Metadata = {
-//   title: "CSE Review App",
-//   description: "Take quizzes and practice for the Civil Service Exam",
+//   title: "Civil Service Review | 3D Interactive Prep",
+//   description:
+//     "Master the Civil Service Exam with tactile, 3D interactive quizzes.",
 // };
 
 // export default function RootLayout({
@@ -30,6 +31,7 @@
 //   return (
 //     <html lang="en" suppressHydrationWarning>
 //       <head>
+//         {/* Keeping Google GSI as requested */}
 //         <script
 //           src="https://accounts.google.com/gsi/client"
 //           async
@@ -37,12 +39,26 @@
 //         ></script>
 //       </head>
 
-//       <body className="...">
+//       <body
+//         className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-blue-500/30`}
+//       >
 //         <AuthProvider>
 //           <ThemeProviderWrapper>
+//             {/* 🌈 3D MESH BACKGROUND - This makes glassmorphism look real */}
+//             <div className="mesh-bg" aria-hidden="true" />
+
 //             <GoogleProvider />
+
+//             {/* Navbar is fixed, so it doesn't need to be inside <main> */}
 //             <Navbar />
-//             <main className="min-h-screen">{children}</main>
+
+//             {/* The 'pt-12' ensures content starts below the floating nav,
+//                and animate-fadeIn gives it that premium Apple entry.
+//             */}
+//             <main className="relative min-h-screen pt-12 animate-fadeIn px-4 sm:px-6 lg:px-8">
+//               <div className="max-w-7xl mx-auto">{children}</div>
+//             </main>
+
 //             <Footer />
 //           </ThemeProviderWrapper>
 //         </AuthProvider>
@@ -50,13 +66,13 @@
 //     </html>
 //   );
 // }
-
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
 import Navbar from "../components/Navbar";
-import ThemeProviderWrapper from "../components/ThemeProviderWrapper";
 import Footer from "@/components/Footer";
+import ThemeProviderWrapper from "../components/ThemeProviderWrapper";
 import GoogleProvider from "@/components/GoogleProvider";
 import { AuthProvider } from "components/AuthContext";
 
@@ -84,32 +100,40 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Keeping Google GSI as requested */}
-        <script
-          src="https://accounts.google.com/gsi/client"
-          async
-          defer
-        ></script>
+        {/* Google Identity Services */}
+        <script src="https://accounts.google.com/gsi/client" async defer />
       </head>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-blue-500/30`}
+        className={`
+          ${geistSans.variable}
+          ${geistMono.variable}
+          antialiased
+          bg-[var(--background)]
+          text-[var(--foreground)]
+          selection:bg-[var(--accent)]/25
+        `}
       >
         <AuthProvider>
           <ThemeProviderWrapper>
-            {/* 🌈 3D MESH BACKGROUND - This makes glassmorphism look real */}
+            {/* 🌈 Mesh background — required for glass depth */}
             <div className="mesh-bg" aria-hidden="true" />
 
             <GoogleProvider />
 
-            {/* Navbar is fixed, so it doesn't need to be inside <main> */}
+            {/* Floating glass navbar */}
             <Navbar />
 
-            {/* The 'pt-12' ensures content starts below the floating nav, 
-               and animate-fadeIn gives it that premium Apple entry.
+            {/* 
+              Main content shell
+              - pt-16 aligns with floating nav height
+              - relative enables glass layering
+              - perspective enhances 3D hover effects
             */}
-            <main className="relative min-h-screen pt-12 animate-fadeIn px-4 sm:px-6 lg:px-8">
-              <div className="max-w-7xl mx-auto">{children}</div>
+            <main className="relative min-h-screen pt-16 perspective-1000">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                {children}
+              </div>
             </main>
 
             <Footer />

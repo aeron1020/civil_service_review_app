@@ -542,7 +542,7 @@ interface QuizResponse {
   delivered: number;
   has_passage: boolean;
   passage?: Passage | null;
-  questions: Question[]; // standalone
+  questions: Question[];
   datasets?: DataSet[];
   time_limit?: number;
 }
@@ -645,7 +645,7 @@ export default function RandomQuizPage() {
   // step management & answers
   const [steps, setSteps] = useState<Step[]>([]);
   const [currentStep, setCurrentStep] = useState(0);
-  const [answers, setAnswers] = useState<Record<number, number>>({}); // questionId -> choiceId
+  const [answers, setAnswers] = useState<Record<number, number>>({});
 
   // submission/result
   const [submitting, setSubmitting] = useState(false);
@@ -764,7 +764,7 @@ export default function RandomQuizPage() {
         headers: {
           "Content-Type": "application/json",
         },
-        credentials: "include", // ✅ SEND COOKIES
+        credentials: "include", // SEND COOKIES
         body: JSON.stringify(payload),
       });
 
@@ -825,10 +825,10 @@ export default function RandomQuizPage() {
     return <p className="text-center mt-10">No questions available.</p>;
 
   return (
-    <div className="pt-6 p-0 max-w-3xl mx-auto animate-fadeIn">
+    <div className="max-w-3xl mx-auto animate-fadeIn">
       {/* <QuizProgressBar answeredCount={answeredCount} totalCount={totalCount} /> */}
 
-      <div className="glass-card p-4 rounded-2xl">
+      <div className="glass-card p-2 rounded-2xl">
         <h1 className="text-3xl font-bold mb-2 text-center bg-clip-text text-transparent bg-gradient-to-r from-[var(--accent)] to-blue-500">
           Randomized {quiz.quiz_type}
         </h1>
@@ -1082,7 +1082,7 @@ export default function RandomQuizPage() {
                 <h2 className="text-lg font-semibold text-[var(--accent)] mb-2">
                   {current.context.title || "Reading Comprehension"}
                 </h2>
-                <p className="text-gray-700 whitespace-pre-line">
+                <p className="text-[var(--foreground)] leading-relaxed font-medium opacity-90">
                   {current.context.text}
                 </p>
               </div>

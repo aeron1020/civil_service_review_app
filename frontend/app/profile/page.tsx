@@ -20,6 +20,8 @@ import {
   ChevronRight,
   ShieldCheck,
 } from "lucide-react";
+import { Settings } from "lucide-react";
+import Link from "next/link";
 
 /* --- TYPES (Kept Original) --- */
 interface QuizResult {
@@ -188,13 +190,32 @@ export default function ProfileDashboard() {
         </motion.div>
 
         <div className="text-center md:text-left">
-          <motion.h1
-            initial={{ x: -20, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            className="text-5xl font-black tracking-tighter mb-3 italic"
-          >
-            {fullName}
-          </motion.h1>
+          <div className="flex items-center gap-4 mb-3">
+            <motion.h1
+              initial={{ x: -20, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              className="text-5xl font-black tracking-tighter italic"
+            >
+              {fullName}
+            </motion.h1>
+
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.2 }}
+            >
+              <Link
+                href="settings"
+                className="p-2 rounded-xl bg-black/5 dark:bg-white/5 border border-white/10 hover:bg-[var(--accent)] hover:text-white transition-all duration-300 flex items-center justify-center group"
+                title="Profile Settings"
+              >
+                <Settings
+                  size={24}
+                  className="group-hover:rotate-90 transition-transform duration-500"
+                />
+              </Link>
+            </motion.div>
+          </div>
           <div className="flex flex-wrap justify-center md:justify-start gap-5 text-[10px] font-black uppercase tracking-widest opacity-50">
             <span className="flex items-center gap-2">
               <Mail size={14} /> {profile.user.email}
@@ -324,7 +345,7 @@ export default function ProfileDashboard() {
               exit={{ opacity: 0, y: -15 }}
               className="space-y-4"
             >
-              {[...profile.quiz_results].reverse().map((q) => (
+              {/* {[...profile.quiz_results].reverse().map((q) => (
                 <div
                   key={q.id}
                   className="glass-card-3d p-5 flex items-center justify-between group cursor-default"
@@ -368,7 +389,70 @@ export default function ProfileDashboard() {
                     />
                   </div>
                 </div>
-              ))}
+              ))} */}
+              {[...profile.quiz_results]
+                /* 1. Sort by Date: Newest (b) to Oldest (a) */
+                .sort(
+                  (a, b) =>
+                    new Date(b.submitted_at).getTime() -
+                    new Date(a.submitted_at).getTime()
+                )
+                .map((q) => (
+                  <div
+                    key={q.id}
+                    className="glass-card-3d p-5 flex items-center justify-between group cursor-default"
+                  >
+                    <div className="flex items-center gap-5">
+                      <div
+                        className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-transform group-hover:scale-110 duration-300 ${
+                          q.score >= 75
+                            ? "bg-emerald-500/10 text-emerald-500 shadow-[0_0_15px_rgba(16,185,129,0.1)]"
+                            : "bg-amber-500/10 text-amber-500 shadow-[0_0_15px_rgba(245,158,11,0.1)]"
+                        }`}
+                      >
+                        <Trophy size={20} />
+                      </div>
+                      <div>
+                        {/* Changed text color to your custom foreground (Black in light mode) */}
+                        <p className="font-black text-sm tracking-tight text-[var(--foreground)]">
+                          {q.quiz_title}
+                        </p>
+                        <p className="text-[10px] opacity-40 font-bold uppercase tracking-widest text-[var(--foreground)]">
+                          {QUIZ_TYPE_LABELS[q.quiz_type] || q.quiz_type} •{" "}
+                          {new Date(q.submitted_at).toLocaleDateString(
+                            "en-US",
+                            {
+                              month: "short",
+                              day: "numeric",
+                              year: "numeric",
+                            }
+                          )}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-6">
+                      <div className="text-right">
+                        <p
+                          className={`text-xl font-black italic tracking-tighter ${
+                            q.score >= 75
+                              ? "text-emerald-500"
+                              : "text-amber-500"
+                          }`}
+                        >
+                          {q.score}%
+                        </p>
+                        <p className="text-[9px] font-black opacity-20 uppercase tracking-widest text-[var(--foreground)]">
+                          Final Score
+                        </p>
+                      </div>
+                      <ChevronRight
+                        size={18}
+                        className="opacity-20 group-hover:translate-x-1 group-hover:opacity-100 transition-all text-[var(--foreground)]"
+                      />
+                    </div>
+                  </div>
+                ))}
             </motion.div>
           )}
 
