@@ -9,6 +9,7 @@ import {
   Share2,
   Bookmark,
   Loader2,
+  Check,
 } from "lucide-react";
 import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
 
@@ -20,6 +21,7 @@ export default function PostDetail() {
   const router = useRouter();
   const [post, setPost] = useState<any>(null);
   const [loading, setLoading] = useState(true);
+  const [copied, setCopied] = useState(false);
 
   // --- Reading Progress Logic ---
   const { scrollYProgress } = useScroll();
@@ -28,6 +30,29 @@ export default function PostDetail() {
     damping: 30,
     restDelta: 0.001,
   });
+
+  // --- 🧠 SHARE LOGIC ---
+  const handleShare = async () => {
+    const url = window.location.href;
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: post.title, url });
+      } catch (err) {
+        console.error(err);
+      }
+    } else {
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
+
+  // --- ⏱️ READING TIME ESTIMATOR ---
+  const getReadingTime = (text: string) => {
+    const wordsPerMinute = 200;
+    const words = text.split(/\s+/).length;
+    return Math.ceil(words / wordsPerMinute);
+  };
 
   useEffect(() => {
     fetch(`${API_BASE_URL}/blog/posts/${slug}/`)
@@ -155,6 +180,16 @@ export default function PostDetail() {
           <ArrowLeft size={14} /> Back to Bulletin
         </motion.button>
 
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="flex gap-4 mb-6"
+        >
+          <span className="px-3 py-1 rounded-full bg-[var(--accent)]/10 border border-[var(--accent)]/20 text-[var(--accent)] text-[9px] font-black uppercase tracking-widest">
+            {getReadingTime(post.content)} Min Read
+          </span>
+        </motion.div>
+
         {/* --- Header Section --- */}
         <header className="mb-16 space-y-10">
           <motion.h1
@@ -198,9 +233,19 @@ export default function PostDetail() {
             </div>
 
             <div className="hidden sm:flex gap-3">
-              <button className="p-3 rounded-full hover:bg-white/5 transition-all opacity-30 hover:opacity-100 border border-transparent hover:border-white/10">
-                <Share2 size={18} />
+              <button
+                onClick={handleShare}
+                className={`p-3 rounded-full transition-all border flex items-center justify-center
+      ${
+        copied
+          ? "bg-[var(--accent)]/20 border-[var(--accent)] text-[var(--accent)] opacity-100"
+          : "opacity-30 hover:opacity-100 border-transparent hover:border-white/10 hover:bg-white/5"
+      }`}
+              >
+                {/* Change icon based on copy status */}
+                {copied ? <Check size={18} /> : <Share2 size={18} />}
               </button>
+
               <button className="p-3 rounded-full hover:bg-white/5 transition-all opacity-30 hover:opacity-100 border border-transparent hover:border-white/10">
                 <Bookmark size={18} />
               </button>

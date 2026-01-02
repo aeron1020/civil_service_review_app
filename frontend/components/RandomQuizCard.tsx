@@ -25,8 +25,8 @@ export default function RandomQuizCard() {
           <Zap size={12} fill="currentColor" /> Adaptive Learning
         </motion.div>
 
-        <h2 className="text-4xl md:text-5xl font-black tracking-tighter mb-4">
-          Random Challenge Mode
+        <h2 className="text-5xl md:text-7xl font-black tracking-tighter italic uppercase leading-[0.85]">
+          Try Random <span className="text-gradient">Quiz Mode</span>
         </h2>
 
         <p className="opacity-50 font-medium max-w-lg mx-auto leading-relaxed">

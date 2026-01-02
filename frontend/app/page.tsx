@@ -309,31 +309,31 @@ export default function HomePage() {
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedType, setSelectedType] = useState<string>("");
-  const [posts, setPosts] = useState([]);
+  // const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
-    fetch("http://localhost:8000/api/blog/posts/")
-      .then((res) => res.json())
-      .then((data) => {
-        // Check if data is an array or if it's hidden inside 'results'
-        const actualPosts = Array.isArray(data) ? data : data.results;
+  // useEffect(() => {
+  //   fetch("http://localhost:8000/api/blog/posts/")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       // Check if data is an array or if it's hidden inside 'results'
+  //       const actualPosts = Array.isArray(data) ? data : data.results;
 
-        if (actualPosts) {
-          setPosts(actualPosts.slice(0, 3));
-        } else {
-          console.error("Data received but 'results' not found:", data);
-        }
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error("Fetch error:", err);
-        setLoading(false);
-      });
-  }, []);
+  //       if (actualPosts) {
+  //         setPosts(actualPosts.slice(0, 3));
+  //       } else {
+  //         console.error("Data received but 'results' not found:", data);
+  //       }
+  //       setLoading(false);
+  //     })
+  //     .catch((err) => {
+  //       console.error("Fetch error:", err);
+  //       setLoading(false);
+  //     });
+  // }, []);
 
-  // Extract the latest and the rest
-  const featuredPost = posts[0];
-  const remainingPosts = posts.slice(1);
+  // // Extract the latest and the rest
+  // const featuredPost = posts[0];
+  // const remainingPosts = posts.slice(1);
 
   useEffect(() => {
     async function fetchAllQuizzes(
@@ -405,7 +405,7 @@ export default function HomePage() {
       {/* --- ✨ AMBIENT LIGHTING --- */}
       <div className="mesh-bg opacity-40" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-[var(--accent)]/5 blur-[120px] rounded-full pointer-events-none" />
-      {featuredPost && <FeaturedPost post={featuredPost} />}
+      {/* {featuredPost && <FeaturedPost post={featuredPost} />} */}
       {/* --- HERO SECTION --- */}
       <section className="relative pt-12 pb-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
@@ -498,7 +498,7 @@ export default function HomePage() {
             transition={{ duration: 0.3 }}
           >
             <div className="flex items-end justify-between mb-10 border-b border-white/5 pb-5 px-2">
-              <h2 className="text-4xl font-black tracking-tight uppercase">
+              <h2 className="text-5xl md:text-7xl font-black tracking-tighter italic uppercase leading-[0.85]">
                 {selectedType}
               </h2>
               <span className="text-[10px] font-black opacity-30 tracking-[0.3em] uppercase">
@@ -565,7 +565,7 @@ export default function HomePage() {
           <div className="pt-12 border-t border-white/5">
             <ExamScope />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {posts && posts.length > 0 ? (
               posts.map((post: any, index: number) => (
                 <BlogCard key={post.id || index} post={post} index={index} />
@@ -573,7 +573,7 @@ export default function HomePage() {
             ) : (
               <p>No posts found. Check console.</p>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -76,7 +76,7 @@ export default function FeaturedPost({ post }: FeaturedPostProps) {
             >
               <span className="h-px w-8 bg-[var(--accent)]" />
               <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[var(--accent)] opacity-80">
-                Editorial Choice
+                Latest Article
               </span>
             </motion.div>
 

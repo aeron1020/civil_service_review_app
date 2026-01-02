@@ -111,7 +111,7 @@ export default function Footer() {
                     Get in touch
                   </p>
                   <a
-                    href="mailto:support@civilserviceapp.ph"
+                    href="mailto:support@freecsereviewer.ph"
                     className="text-sm font-bold opacity-70 hover:opacity-100 transition-opacity"
                   >
                     Support Desk

@@ -837,11 +837,11 @@ export default function QuizDetailPage() {
                   <h2 className="text-xl font-semibold text-[var(--accent)] mb-3">
                     {step.context.title || "Data Interpretation"}
                   </h2>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                  <p className="text-[var(--foreground)] leading-relaxed font-medium opacity-90">
                     {step.context.text}
                   </p>
                   {step.context.image && (
-                    <div className="flex justify-center mb-4">
+                    <div className="flex justify-center mb-4 mt-4">
                       <img
                         src={step.context.image}
                         alt={step.context.title}
