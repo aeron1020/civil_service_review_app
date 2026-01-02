@@ -85,25 +85,44 @@ export async function login(username: string, password: string) {
 /**
  * ✅ Register - Updated with Name Fields
  */
+// export async function signup(
+//   username: string,
+//   email: string,
+//   password: string,
+//   first_name: string, // Added
+//   last_name: string // Added
+// ) {
+//   try {
+//     const res = await api.post("/users/register/", {
+//       username,
+//       email,
+//       password,
+//       first_name, // Sent to backend
+//       last_name, // Sent to backend
+//     });
+//     return res.data;
+//   } catch (err) {
+//     throw new Error(extractError(err));
+//   }
+// }
+
 export async function signup(
   username: string,
   email: string,
   password: string,
-  first_name: string, // Added
-  last_name: string // Added
+  first_name: string,
+  last_name: string
 ) {
-  try {
-    const res = await api.post("/users/register/", {
-      username,
-      email,
-      password,
-      first_name, // Sent to backend
-      last_name, // Sent to backend
-    });
-    return res.data;
-  } catch (err) {
-    throw new Error(extractError(err));
-  }
+  // Remove the try/catch here.
+  // Let the RegisterPage handle the catch so it can see the full Axios error.
+  const res = await api.post("/users/register/", {
+    username,
+    email,
+    password,
+    first_name,
+    last_name,
+  });
+  return res.data;
 }
 
 /**

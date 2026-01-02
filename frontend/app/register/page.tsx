@@ -50,25 +50,91 @@ export default function RegisterPage() {
     if (name === "password") setIsTouched(true);
   };
 
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setError(null);
+
+  //   if (!formData.password) {
+  //     setError("Password cannot be empty.");
+  //     return;
+  //   }
+
+  //   if (Object.values(checks).some((check) => check === false)) {
+  //     setError("Please meet all password requirements.");
+  //     return;
+  //   }
+
+  //   if (formData.password !== formData.confirm) {
+  //     setError("Passwords do not match.");
+  //     return;
+  //   }
+
+  //   try {
+  //     setLoading(true);
+  //     await signup(
+  //       formData.username,
+  //       formData.email,
+  //       formData.password,
+  //       formData.first_name,
+  //       formData.last_name
+  //     );
+
+  //     setSuccess(true);
+  //     setTimeout(() => {
+  //       window.location.href = "/login"; // Force reload for clean state
+  //     }, 2000);
+  //   } catch (err: any) {
+  //     const backendErrors = err.response?.data;
+  //     if (backendErrors && typeof backendErrors === "object") {
+  //       const messages = Object.values(backendErrors).flat() as string[];
+  //       setError(messages);
+  //     } else {
+  //       setError(err.message || "An unexpected error occurred.");
+  //     }
+  //     setLoading(false);
+  //   }
+  // };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
 
-    if (!formData.password) {
-      setError("Password cannot be empty.");
-      return;
-    }
-
-    if (Object.values(checks).some((check) => check === false)) {
-      setError("Please meet all password requirements.");
-      return;
-    }
-
+    // Client-side validation
     if (formData.password !== formData.confirm) {
       setError("Passwords do not match.");
       return;
     }
 
+    // try {
+    //   setLoading(true);
+    //   await signup(
+    //     formData.username,
+    //     formData.email,
+    //     formData.password,
+    //     formData.first_name,
+    //     formData.last_name
+    //   );
+
+    //   setSuccess(true);
+    //   setTimeout(() => {
+    //     window.location.href = "/login";
+    //   }, 2000);
+    // } catch (err: any) {
+    //   const backendErrors = err.response?.data;
+
+    //   if (backendErrors && typeof backendErrors === "object") {
+    //     // Flatten all error messages into an array
+    //     const messages = Object.entries(backendErrors).map(([key, value]) => {
+    //       const fieldName =
+    //         key.charAt(0).toUpperCase() + key.slice(1).replace("_", " ");
+    //       return `${fieldName}: ${Array.isArray(value) ? value[0] : value}`;
+    //     });
+    //     setError(messages);
+    //   } else {
+    //     setError(err.message || "Connection to intelligence server failed.");
+    //   }
+    //   setLoading(false);
+    // }
     try {
       setLoading(true);
       await signup(
@@ -81,18 +147,31 @@ export default function RegisterPage() {
 
       setSuccess(true);
       setTimeout(() => {
-        window.location.href = "/login"; // Force reload for clean state
+        window.location.href = "/login";
       }, 2000);
     } catch (err: any) {
       const backendErrors = err.response?.data;
+
       if (backendErrors && typeof backendErrors === "object") {
-        const messages = Object.values(backendErrors).flat() as string[];
+        // This turns {"username": ["Already exists"]} into ["Username: Already exists"]
+        const messages = Object.entries(backendErrors).map(([key, value]) => {
+          const fieldName =
+            key.charAt(0).toUpperCase() + key.slice(1).replace("_", " ");
+          const message = Array.isArray(value) ? value[0] : value;
+          return `${fieldName}: ${message}`;
+        });
         setError(messages);
       } else {
-        setError(err.message || "An unexpected error occurred.");
+        setError("Intelligence server connection failed.");
       }
       setLoading(false);
     }
+  };
+
+  // Helper to check if a specific field has an error (for UI highlighting)
+  const hasError = (field: string) => {
+    if (!error || !Array.isArray(error)) return false;
+    return error.some((msg) => msg.toLowerCase().includes(field.toLowerCase()));
   };
 
   if (success) {
@@ -192,7 +271,7 @@ export default function RegisterPage() {
             </div>
           </div>
 
-          <div className="relative">
+          {/* <div className="relative">
             <User
               className="absolute left-4 top-1/2 -translate-y-1/2 opacity-20"
               size={18}
@@ -204,6 +283,35 @@ export default function RegisterPage() {
               onChange={handleChange}
               className="w-full pl-12 pr-4 py-4 rounded-xl bg-black/5 dark:bg-white/5 border border-white/10 outline-none focus:border-emerald-500/50 transition-all font-medium text-sm"
             />
+          </div> */}
+
+          <div className="relative">
+            <User
+              className={`absolute left-4 top-1/2 -translate-y-1/2 transition-colors ${
+                hasError("username") ? "text-red-500 opacity-100" : "opacity-20"
+              }`}
+              size={18}
+            />
+            <input
+              name="username"
+              placeholder="Username"
+              required
+              onChange={handleChange}
+              className={`w-full pl-12 pr-4 py-4 rounded-xl bg-black/5 dark:bg-white/5 border outline-none transition-all font-medium text-sm ${
+                hasError("username")
+                  ? "border-red-500/50 focus:border-red-500 shadow-[0_0_15px_rgba(239,68,68,0.1)]"
+                  : "border-white/10 focus:border-emerald-500/50"
+              }`}
+            />
+            {hasError("username") && (
+              <motion.span
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-[9px] font-black text-red-500 uppercase tracking-widest"
+              >
+                Taken
+              </motion.span>
+            )}
           </div>
 
           <div className="relative">
