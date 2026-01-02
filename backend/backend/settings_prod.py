@@ -82,11 +82,16 @@ FRONTEND_URL = os.getenv("FRONTEND_URL")
 CORS_ALLOWED_ORIGINS = [
     "https://freecsereview.online",
     "https://civilservicereviewapp2.vercel.app",
+    "https://civilservicereviewapp2-p2rw9i0gy-olsenaerons-projects.vercel.app", 
+    "https://www.freecsereview.online",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     "https://freecsereview.online",
     "https://civilservicereviewapp2.vercel.app",
+    "https://civilservicereviewapp2-p2rw9i0gy-olsenaerons-projects.vercel.app", 
+    "https://www.freecsereview.online",
+    
 ]
 
 CORS_ALLOW_CREDENTIALS = True
