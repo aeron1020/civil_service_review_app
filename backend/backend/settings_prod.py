@@ -77,8 +77,18 @@ DATABASES = {
 
 # --- CORS & CSRF ---
 FRONTEND_URL = os.getenv("FRONTEND_URL")
-CORS_ALLOWED_ORIGINS = [FRONTEND_URL]
-CSRF_TRUSTED_ORIGINS = [FRONTEND_URL]
+# --- CORS & CSRF ---
+# We use a list here to allow multiple frontend addresses
+CORS_ALLOWED_ORIGINS = [
+    "https://freecsereview.online",
+    "https://civilservicereviewapp2.vercel.app",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://freecsereview.online",
+    "https://civilservicereviewapp2.vercel.app",
+]
+
 CORS_ALLOW_CREDENTIALS = True
 
 # --- JWT COOKIE SECURITY (Production Settings) ---
