@@ -3,21 +3,34 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.sqlite3
 
 # Django
 db.sqlite3
 /static/
+/staticfiles/
 media/
+
+# Environment Variables (FIXED: Removed trailing slashes)
+.env
+.env.local
+backend/.env
+frontend/.env.local
 
 # Virtual environment
 venv/
-.env/
+env/
+ENV/
 
 # VSCode / IDE
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# Node / React (for frontend)
+# Node / React
+node_modules/
 frontend/node_modules/
+frontend/.next/
 frontend/build/
+frontend/out/
+.DS_Store
