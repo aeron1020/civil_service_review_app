@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'blog',
 ]
 
-SITE_ID = 1
+SITE_ID = 2
 
 # --- MIDDLEWARE ---
 MIDDLEWARE = [
@@ -91,7 +91,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://civilservicereviewapp2.vercel.app",
     "https://civilservicereviewapp2-p2rw9i0gy-olsenaerons-projects.vercel.app", 
     "https://www.freecsereview.online",
-    
+
 ]
 
 CORS_ALLOW_CREDENTIALS = True
@@ -151,10 +151,25 @@ ACCOUNT_USERNAME_REQUIRED = True
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = "none"
 SOCIALACCOUNT_QUERY_EMAIL = True
+# SOCIALACCOUNT_PROVIDERS = {
+#     "google": {
+#         "SCOPE": ["profile", "email"],
+#         "AUTH_PARAMS": {"access_type": "online"},
+#     }
+# }
+
 SOCIALACCOUNT_PROVIDERS = {
     "google": {
+        "APPS": [
+            {
+                "client_id": GOOGLE_CLIENT_ID, 
+                "secret": os.getenv("GOOGLE_CLIENT_SECRET"),
+                "key": ""
+            },
+        ],
         "SCOPE": ["profile", "email"],
         "AUTH_PARAMS": {"access_type": "online"},
+        "OAUTH_PKCE_ENABLED": True,
     }
 }
 
