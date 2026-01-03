@@ -15,7 +15,7 @@ export default function GoogleLoginButton() {
       setIsLoaded(true);
 
       window.google.accounts.id.initialize({
-        client_id: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID!,
+        client_id: process.env.GOOGLE_CLIENT_ID!,
         callback: handleCredentialResponse,
         // Enhanced UI: Automatically signs in if the user has a single account
         auto_select: false,
