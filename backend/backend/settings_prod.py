@@ -81,15 +81,12 @@ FRONTEND_URL = os.getenv("FRONTEND_URL")
 # We use a list here to allow multiple frontend addresses
 CORS_ALLOWED_ORIGINS = [
     "https://freecsereview.online",
-    "https://civilservicereviewapp2.vercel.app",
-    "https://civilservicereviewapp2-p2rw9i0gy-olsenaerons-projects.vercel.app", 
-    "https://www.freecsereview.online",
+    "https://freecserev-git-main-olsenaerons-projects.vercel.app",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     "https://freecsereview.online",
-    "https://civilservicereviewapp2.vercel.app",
-    "https://civilservicereviewapp2-p2rw9i0gy-olsenaerons-projects.vercel.app", 
+
     "https://www.freecsereview.online",
 
 ]
