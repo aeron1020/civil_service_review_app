@@ -86,17 +86,35 @@ CORS_ALLOWED_ORIGINS = [
 
 CSRF_TRUSTED_ORIGINS = [
     "https://freecsereview.online",
-
     "https://www.freecsereview.online",
+    "https://api.freecsereview.online",
 
 ]
+
+# Allow any Vercel preview URL from your account
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://freecserev-.*\.vercel\.app$",
+    
+]
+
+# Standard production settings for cookies
+CORS_ALLOW_CREDENTIALS = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
+# This allows the cookie to be shared across subdomains
+CSRF_COOKIE_DOMAIN = ".freecsereview.online"
+SESSION_COOKIE_DOMAIN = ".freecsereview.online"
+
+SESSION_COOKIE_SAMESITE = 'None'
+CSRF_COOKIE_SAMESITE = 'None'
 
 CORS_ALLOW_CREDENTIALS = True
 
 # --- JWT COOKIE SECURITY (Production Settings) ---
 JWT_ACCESS_COOKIE_NAME = "access"
 JWT_REFRESH_COOKIE_NAME = "refresh"
-JWT_COOKIE_SAMESITE = "Lax"
+JWT_COOKIE_SAMESITE = "None"
 SECURE_COOKIE_FOR_JWT = True  # Required for HTTPS
 CSRF_COOKIE_SECURE = True     # Required for HTTPS
 SESSION_COOKIE_SECURE = True  # Required for HTTPS
@@ -111,7 +129,7 @@ SIMPLE_JWT = {
     "AUTH_COOKIE_REFRESH": "refresh",
     "AUTH_COOKIE_SECURE": True, # Required for HTTPS
     "AUTH_COOKIE_HTTP_ONLY": True,
-    "AUTH_COOKIE_SAMESITE": "Lax",
+    "AUTH_COOKIE_SAMESITE": "None",
 }
 
 # --- STATIC & MEDIA ---
