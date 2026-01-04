@@ -74,7 +74,7 @@ export default function Navbar() {
             href="/"
             className="text-xl font-black tracking-tighter italic pl-2"
           >
-            FREE CSE <span className="text-[var(--accent)]">REVIEWERrrr</span>
+            FREE CSE <span className="text-[var(--accent)]">REVIEWER</span>
           </Link>
 
           {/* -------- DESKTOP -------- */}
