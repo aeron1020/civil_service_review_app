@@ -69,9 +69,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
 import Navbar from "../components/Navbar";
 import Footer from "@/components/Footer";
+import CSRFInit from "@/components/CSRFInit";
 import ThemeProviderWrapper from "../components/ThemeProviderWrapper";
 import GoogleProvider from "@/components/GoogleProvider";
 import { AuthProvider } from "components/AuthContext";
@@ -115,6 +115,7 @@ export default function RootLayout({
         `}
       >
         <AuthProvider>
+          <CSRFInit />
           <ThemeProviderWrapper>
             {/* 🌈 Mesh background — required for glass depth */}
             <div className="mesh-bg" aria-hidden="true" />

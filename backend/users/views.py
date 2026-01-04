@@ -152,3 +152,13 @@ class ActivatePremiumView(APIView):
             "is_premium": profile.is_premium,
             "premium_until": profile.premium_until
         })
+    
+
+
+from django.http import JsonResponse
+from django.middleware.csrf import get_token
+
+def get_csrf_token(request):
+    # This call forces Django to generate and send a 'csrftoken' cookie
+    token = get_token(request)
+    return JsonResponse({'detail': 'CSRF cookie set'})

@@ -128,6 +128,9 @@ const api = axios.create({
 let isRefreshing = false;
 let failedQueue: any[] = [];
 
+api.defaults.xsrfCookieName = "csrftoken"; // Django's default cookie name
+api.defaults.xsrfHeaderName = "X-CSRFToken"; // Django's default header name
+
 const processQueue = (error: any = null) => {
   failedQueue.forEach((prom) => {
     if (error) prom.reject(error);

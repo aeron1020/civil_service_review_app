@@ -5,7 +5,7 @@ from .views import (
     CookieLoginView,
     CookieRefreshView,
     CookieLogoutView,
-    UserProfileView,
+    UserProfileView, get_csrf_token
 )
 from .views_google import GoogleLoginView
 
@@ -21,4 +21,6 @@ urlpatterns = [
 
     # Profile
     path('profile/', UserProfileView.as_view(), name='user_profile'),
+
+    path('auth/csrf/', get_csrf_token, name='get_csrf_token'),
 ]
