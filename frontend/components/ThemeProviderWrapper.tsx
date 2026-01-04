@@ -11,7 +11,7 @@ export default function ThemeProviderWrapper({ children }: Props) {
   return (
     <ThemeProvider
       attribute="class"
-      defaultTheme="system"
+      defaultTheme="light"
       enableSystem={true}
       storageKey="theme"
       // Setting this to false allows our custom CSS transitions to work
