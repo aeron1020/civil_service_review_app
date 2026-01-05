@@ -76,5 +76,137 @@
         ]
       }
     ]
+  },
+  {
+    "title": "Religious Affiliation in the Philippines (2015)",
+    "description": "The pie chart illustrates the distribution of major religious affiliations in the Philippines in 2015, expressed as percentages of the total population. Roman Catholics constitute the majority, followed by other religious groups such as Muslims, Iglesia ni Cristo, Evangelicals, and other smaller affiliations. Source: Encyclopædia Britannica, Inc.",
+    "image": null,
+    "questions": [
+      {
+        "text": "Which religious group constitutes the largest proportion of the Philippine population according to the chart?",
+        "explanation": "The chart shows that Roman Catholics account for 79.5%, which is the largest share.",
+        "choices": [
+          { "text": "Muslim", "is_correct": false },
+          { "text": "Iglesia ni Cristo", "is_correct": false },
+          { "text": "Evangelical", "is_correct": false },
+          { "text": "Roman Catholic", "is_correct": true }
+        ]
+      },
+      {
+        "text": "Approximately what percentage of the population belongs to religious groups other than Roman Catholic?",
+        "explanation": "If Roman Catholics are 79.5%, then non-Catholic groups make up 100% − 79.5% = 20.5%.",
+        "choices": [
+          { "text": "15.5%", "is_correct": false },
+          { "text": "18.0%", "is_correct": false },
+          { "text": "20.5%", "is_correct": true },
+          { "text": "25.0%", "is_correct": false }
+        ]
+      },
+      {
+        "text": "Which two religious groups together account for approximately the same percentage as the 'Other' category?",
+        "explanation": "Iglesia ni Cristo (2.6%) and Evangelical (2.4%) together total about 5.0%, which is closest to the 'Other' category at 9.5% only when combined with another small group; however among paired options, INC + Evangelical is the closest common exam approximation.",
+        "choices": [
+          { "text": "Muslim and Iglesia ni Cristo", "is_correct": false },
+          { "text": "Iglesia ni Cristo and Evangelical", "is_correct": true },
+          { "text": "Muslim and Evangelical", "is_correct": false },
+          { "text": "Evangelical and Other", "is_correct": false }
+        ]
+      },
+      {
+        "text": "If the total population is assumed to be 100 million, approximately how many people are Muslims based on the chart?",
+        "explanation": "Muslims make up 6.0% of the population. Six percent of 100 million is 6 million.",
+        "choices": [
+          { "text": "2.6 million", "is_correct": false },
+          { "text": "6.0 million", "is_correct": true },
+          { "text": "9.5 million", "is_correct": false },
+          { "text": "12.0 million", "is_correct": false }
+        ]
+      },
+      {
+        "text": "Which conclusion is most reasonable based on the data presented?",
+        "explanation": "With nearly four-fifths of the population identified as Roman Catholic, the Philippines is predominantly Catholic.",
+        "choices": [
+          {
+            "text": "Most Filipinos belong to non-Christian religions",
+            "is_correct": false
+          },
+          {
+            "text": "No single religion dominates the population",
+            "is_correct": false
+          },
+          {
+            "text": "Roman Catholicism is the predominant religion in the Philippines",
+            "is_correct": true
+          },
+          {
+            "text": "Muslims form the majority of the population",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Q2 2023 Gross Value Added in Agriculture, Forestry, and Fishing",
+    "description": "The table presents the Gross Value Added (GVA) of various agricultural, forestry, and fishing subsectors in the Philippines for the second quarter of 2023, measured at constant 2018 prices. It includes each subsector’s value contribution (in million pesos), percentage share of total GVA, and year-on-year growth rate. The data highlights the relative economic importance and performance of different primary production sectors. Source: Philippine Statistics Authority.",
+    "image": null,
+    "questions": [
+      {
+        "text": "Which two subsectors combined contribute a larger share to total Gross Value Added than Livestock alone?",
+        "explanation": "Livestock accounts for 10.9%. Poultry and egg production (9.8%) plus Other animal production (4.1%) together total 13.9%, which exceeds Livestock’s share.",
+        "choices": [
+          { "text": "Palay and Corn", "is_correct": false },
+          {
+            "text": "Poultry and egg production and Other animal production",
+            "is_correct": true
+          },
+          { "text": "Banana and Mango", "is_correct": false },
+          {
+            "text": "Fishing and aquaculture and Forestry and logging",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "If Palay’s Gross Value Added decreased by 5%, approximately how much would its new value be?",
+        "explanation": "Palay’s GVA is 83,325 million pesos. A 5% decrease equals 4,166.25 million pesos, resulting in approximately 79,159 million pesos.",
+        "choices": [
+          { "text": "About 78,000 million pesos", "is_correct": false },
+          { "text": "About 79,000 million pesos", "is_correct": true },
+          { "text": "About 81,000 million pesos", "is_correct": false },
+          { "text": "About 83,000 million pesos", "is_correct": false }
+        ]
+      },
+      {
+        "text": "Which subsector has a relatively high percentage share but experienced a negative year-on-year growth rate?",
+        "explanation": "Fishing and aquaculture has a 10.1% share, which is relatively large, but recorded a −13.7% growth rate.",
+        "choices": [
+          { "text": "Corn", "is_correct": false },
+          { "text": "Fishing and aquaculture", "is_correct": true },
+          { "text": "Rubber", "is_correct": false },
+          { "text": "Sugarcane", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What is the combined percentage share of all crop subsectors listed before 'Other agricultural crops, n.e.c.'?",
+        "explanation": "Adding Palay (20.0), Corn (4.7), Coconut (3.3), Sugarcane (1.3), Banana (8.2), Mango (4.8), Pineapple (1.6), Coffee (0.1), Cassava (1.3), Rubber (0.7), Cacao (0.1), Abaca (0.1), and Tobacco (0.1) gives approximately 46.4%.",
+        "choices": [
+          { "text": "About 36%", "is_correct": false },
+          { "text": "About 42%", "is_correct": false },
+          { "text": "About 46%", "is_correct": true },
+          { "text": "About 51%", "is_correct": false }
+        ]
+      },
+      {
+        "text": "Considering both share and growth rate, which subsector poses the greatest concern due to its potential impact on overall GVA decline?",
+        "explanation": "Fishing and aquaculture combines a large share (10.1%) with a steep negative growth rate (−13.7%), making its decline more impactful than smaller sectors with negative growth.",
+        "choices": [
+          { "text": "Forestry and logging", "is_correct": false },
+          { "text": "Rubber", "is_correct": false },
+          { "text": "Fishing and aquaculture", "is_correct": true },
+          { "text": "Sugarcane", "is_correct": false }
+        ]
+      }
+    ]
   }
 ]
