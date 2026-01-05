@@ -10,6 +10,306 @@
     ]
   },
   {
+    "text": "Who was the leader of the longest revolt in Philippine history against Spanish rule, lasting for 85 years?",
+    "explanation": "Francisco Dagohoy led the longest revolt in Bohol (1744–1829) after a priest refused to give his brother a Christian burial.",
+    "choices": [
+      { "text": "Diego Silang", "is_correct": false },
+      { "text": "Francisco Dagohoy", "is_correct": true },
+      { "text": "Hermano Pule", "is_correct": false },
+      { "text": "Andres Bonifacio", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What was the name of the secret society founded by Andres Bonifacio in 1892 that sought independence from Spain?",
+    "explanation": "The Kataastaasan, Kagalanggalangang Katipunan ng mga Anak ng Bayan (KKK) was founded in Tondo, Manila.",
+    "choices": [
+      { "text": "La Liga Filipina", "is_correct": false },
+      { "text": "Katipunan", "is_correct": true },
+      { "text": "Cuerpo de Compromisarios", "is_correct": false },
+      { "text": "Hukbalahap", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who is known as the 'Sublime Paralytic' and the 'Brains of the Revolution'?",
+    "explanation": "Apolinario Mabini served as the chief adviser to Emilio Aguinaldo despite being paralyzed by polio.",
+    "choices": [
+      { "text": "Emilio Jacinto", "is_correct": false },
+      { "text": "Apolinario Mabini", "is_correct": true },
+      { "text": "Marcelo H. del Pilar", "is_correct": false },
+      { "text": "Antonio Luna", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The execution of which three Filipino priests in 1872 ignited the flames of Philippine nationalism?",
+    "explanation": "The martyrdom of Gomez, Burgos, and Zamora (Gomburza) inspired Jose Rizal and the Propaganda Movement.",
+    "choices": [
+      { "text": "Luna, Jaena, and Ponce", "is_correct": false },
+      { "text": "Gomez, Burgos, and Zamora", "is_correct": true },
+      { "text": "Pelaez, Barlin, and Aglipay", "is_correct": false },
+      { "text": "Aquino, Mabini, and Rizal", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What was the title of Jose Rizal's first novel, published in 1887, which exposed the social cancer of Spanish rule?",
+    "explanation": "Noli Me Tangere (Touch Me Not) was published in Berlin and shifted the focus toward Philippine reforms.",
+    "choices": [
+      { "text": "El Filibusterismo", "is_correct": false },
+      { "text": "Noli Me Tangere", "is_correct": true },
+      { "text": "Mi Ultimo Adios", "is_correct": false },
+      { "text": "A La Juventud Filipina", "is_correct": false }
+    ]
+  },
+  {
+    "text": "On what date was Philippine independence from Spain proclaimed in Kawit, Cavite?",
+    "explanation": "Emilio Aguinaldo proclaimed independence on June 12, 1898, from the window of his mansion.",
+    "choices": [
+      { "text": "July 4, 1946", "is_correct": false },
+      { "text": "June 12, 1898", "is_correct": true },
+      { "text": "December 30, 1896", "is_correct": false },
+      { "text": "August 30, 1896", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who was the youngest General of the Philippine Revolutionary Army, known as the 'Boy General'?",
+    "explanation": "Gregorio del Pilar died defending Tirad Pass to allow Aguinaldo to escape from American forces.",
+    "choices": [
+      { "text": "Emilio Aguinaldo", "is_correct": false },
+      { "text": "Gregorio del Pilar", "is_correct": true },
+      { "text": "Flaviano Yengko", "is_correct": false },
+      { "text": "Miguel Malvar", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What treaty was signed in 1898 where Spain ceded the Philippines to the United States for $20 million?",
+    "explanation": "The Treaty of Paris ended the Spanish-American War and transferred Philippine sovereignty to the USA.",
+    "choices": [
+      { "text": "Treaty of Manila", "is_correct": false },
+      { "text": "Treaty of Paris", "is_correct": true },
+      { "text": "Treaty of Biak-na-Bato", "is_correct": false },
+      { "text": "Treaty of Tordesillas", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who was the first President of the Commonwealth of the Philippines?",
+    "explanation": "Manuel L. Quezon served as the first president of the Commonwealth from 1935 until his death in 1944.",
+    "choices": [
+      { "text": "Sergio Osmeña", "is_correct": false },
+      { "text": "Manuel Roxas", "is_correct": false },
+      { "text": "Manuel L. Quezon", "is_correct": true },
+      { "text": "Emilio Aguinaldo", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What event on April 9, 1942, involved the forced march of Filipino and American POWs under the Japanese?",
+    "explanation": "The Bataan Death March began in Mariveles, Bataan, and ended at Camp O'Donnell in Tarlac.",
+    "choices": [
+      { "text": "Fall of Corregidor", "is_correct": false },
+      { "text": "Bataan Death March", "is_correct": true },
+      { "text": "Leyte Landing", "is_correct": false },
+      { "text": "Battle of Manila", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who was the first female President of the Philippines?",
+    "explanation": "Corazon Aquino took office after the 1986 EDSA People Power Revolution ousted Ferdinand Marcos.",
+    "choices": [
+      { "text": "Gloria Macapagal Arroyo", "is_correct": false },
+      { "text": "Imelda Marcos", "is_correct": false },
+      { "text": "Corazon Aquino", "is_correct": true },
+      { "text": "Miriam Defensor Santiago", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which President moved the Independence Day celebration from July 4 to June 12?",
+    "explanation": "Diosdado Macapagal signed the proclamation in 1962 to honor the actual 1898 declaration.",
+    "choices": [
+      { "text": "Ferdinand Marcos", "is_correct": false },
+      { "text": "Ramon Magsaysay", "is_correct": false },
+      { "text": "Diosdado Macapagal", "is_correct": true },
+      { "text": "Carlos P. Garcia", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who was the 'Brains of the Katipunan' and author of the Kartilya ng Katipunan?",
+    "explanation": "Emilio Jacinto was a law student who became the primary advisor and writer for Bonifacio's KKK.",
+    "choices": [
+      { "text": "Andres Bonifacio", "is_correct": false },
+      { "text": "Emilio Jacinto", "is_correct": true },
+      { "text": "Apolinario Mabini", "is_correct": false },
+      { "text": "Juan Luna", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which explorer gave the name 'Las Islas Filipinas' to the archipelago in honor of Prince Philip II of Spain?",
+    "explanation": "Ruy Lopez de Villalobos gave the name specifically to Leyte and Samar during his 1543 expedition.",
+    "choices": [
+      { "text": "Ferdinand Magellan", "is_correct": false },
+      { "text": "Miguel Lopez de Legazpi", "is_correct": false },
+      { "text": "Ruy Lopez de Villalobos", "is_correct": true },
+      { "text": "Juan Sebastian Elcano", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What was the name of the first Spanish settlement established by Legazpi in 1565?",
+    "explanation": "Cebu was the first permanent Spanish settlement, initially named Villa del Santisimo Nombre de Jesus.",
+    "choices": [
+      { "text": "Manila", "is_correct": false },
+      { "text": "Vigan", "is_correct": false },
+      { "text": "Cebu", "is_correct": true },
+      { "text": "Iloilo", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who was the great orator of the Propaganda Movement and the first editor of 'La Solidaridad'?",
+    "explanation": "Graciano Lopez Jaena founded the paper in Barcelona in 1889 to advocate for Philippine reforms.",
+    "choices": [
+      { "text": "Marcelo H. del Pilar", "is_correct": false },
+      { "text": "Graciano Lopez Jaena", "is_correct": true },
+      { "text": "Jose Rizal", "is_correct": false },
+      { "text": "Mariano Ponce", "is_correct": false }
+    ]
+  },
+  {
+    "text": "During which battle in 1521 was Ferdinand Magellan killed by the forces of Lapu-Lapu?",
+    "explanation": "The Battle of Mactan took place on April 27, 1521, where Lapu-Lapu resisted Spanish intrusion.",
+    "choices": [
+      { "text": "Battle of Manila", "is_correct": false },
+      { "text": "Battle of Mactan", "is_correct": true },
+      { "text": "Battle of Tirad Pass", "is_correct": false },
+      { "text": "Battle of Pinaglabanan", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What was the Japanese-sponsored government (1943–1945) also known as?",
+    "explanation": "It is referred to as the Second Republic, headed by Jose P. Laurel during the occupation.",
+    "choices": [
+      { "text": "Commonwealth Government", "is_correct": false },
+      { "text": "Puppet Republic", "is_correct": true },
+      { "text": "Third Republic", "is_correct": false },
+      { "text": "Freedom Constitution", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who was the 'Great Plebeian' who founded the Katipunan?",
+    "explanation": "Andres Bonifacio is called the Great Plebeian because he came from a humble background.",
+    "choices": [
+      { "text": "Emilio Aguinaldo", "is_correct": false },
+      { "text": "Andres Bonifacio", "is_correct": true },
+      { "text": "Macario Sakay", "is_correct": false },
+      { "text": "Artemio Ricarte", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The 'Cry of Pugad Lawin' involved what symbolic act by the Katipuneros?",
+    "explanation": "The tearing of the 'cedula' (tax certificate) symbolized their refusal to obey Spanish authority.",
+    "choices": [
+      { "text": "Burning of churches", "is_correct": false },
+      { "text": "Tearing of cedulas", "is_correct": true },
+      { "text": "Hoisting the flag", "is_correct": false },
+      { "text": "Signing a blood pact", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who was the Filipino general known as the 'Hero of Tirad Pass'?",
+    "explanation": "Gregorio del Pilar died at the age of 24 while defending the pass against American troops.",
+    "choices": [
+      { "text": "Antonio Luna", "is_correct": false },
+      { "text": "Gregorio del Pilar", "is_correct": true },
+      { "text": "Vicente Lukban", "is_correct": false },
+      { "text": "Artemio Ricarte", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which President is known for the 'Filipino First Policy'?",
+    "explanation": "Carlos P. Garcia implemented this policy to give local businessmen priority over foreign investors.",
+    "choices": [
+      { "text": "Ramon Magsaysay", "is_correct": false },
+      { "text": "Carlos P. Garcia", "is_correct": true },
+      { "text": "Elpidio Quirino", "is_correct": false },
+      { "text": "Manuel Roxas", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who was the last President of the Commonwealth and the first President of the Third Republic?",
+    "explanation": "Manuel Roxas was inaugurated on July 4, 1946, when the US granted full independence.",
+    "choices": [
+      { "text": "Sergio Osmeña", "is_correct": false },
+      { "text": "Manuel Roxas", "is_correct": true },
+      { "text": "Elpidio Quirino", "is_correct": false },
+      { "text": "Carlos P. Garcia", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What was the name of the newspaper used by the Propagandists to air their grievances in Spain?",
+    "explanation": "La Solidaridad was the mouthpiece of Filipino reformers in Europe.",
+    "choices": [
+      { "text": "Kalayaan", "is_correct": false },
+      { "text": "La Solidaridad", "is_correct": true },
+      { "text": "Diario de Manila", "is_correct": false },
+      { "text": "El Renacimiento", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who was the 'Champion of the Masses' whose presidency ended in a tragic plane crash?",
+    "explanation": "Ramon Magsaysay died in 1957 when the presidential plane 'Mt. Pinatubo' crashed in Cebu.",
+    "choices": [
+      { "text": "Manuel L. Quezon", "is_correct": false },
+      { "text": "Ramon Magsaysay", "is_correct": true },
+      { "text": "Diosdado Macapagal", "is_correct": false },
+      { "text": "Carlos P. Romulo", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In what year did President Ferdinand Marcos declare Martial Law through Proclamation No. 1081?",
+    "explanation": "Martial Law was officially signed on September 21, 1972, though announced to the public later.",
+    "choices": [
+      { "text": "1965", "is_correct": false },
+      { "text": "1972", "is_correct": true },
+      { "text": "1981", "is_correct": false },
+      { "text": "1986", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who was the founder of the Aglipayan Church (Philippine Independent Church)?",
+    "explanation": "Gregorio Aglipay, a former Catholic priest, co-founded the church in 1902 during the revolution.",
+    "choices": [
+      { "text": "Felix Manalo", "is_correct": false },
+      { "text": "Gregorio Aglipay", "is_correct": true },
+      { "text": "Isabelo de los Reyes", "is_correct": false },
+      { "text": "Mariano Gomez", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What was the name of the movement that fought against the Japanese in Central Luzon during WWII?",
+    "explanation": "The Hukbalahap (Hukbo ng Bayan Laban sa Hapon) was a peasant-based guerrilla army.",
+    "choices": [
+      { "text": "Makapili", "is_correct": false },
+      { "text": "Hukbalahap", "is_correct": true },
+      { "text": "Kalahi", "is_correct": false },
+      { "text": "Sakdal", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Spanish Governor-General was responsible for the execution of Jose Rizal?",
+    "explanation": "Camilo de Polavieja signed the death warrant for Rizal, leading to his execution in 1896.",
+    "choices": [
+      { "text": "Eulogio Despujol", "is_correct": false },
+      { "text": "Camilo de Polavieja", "is_correct": true },
+      { "text": "Ramon Blanco", "is_correct": false },
+      { "text": "Miguel Lopez de Legazpi", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Where was Jose Rizal exiled for four years before his execution?",
+    "explanation": "Rizal lived in Dapitan from 1892 to 1896, where he practiced medicine and built a school.",
+    "choices": [
+      { "text": "Fort Santiago", "is_correct": false },
+      { "text": "Dapitan", "is_correct": true },
+      { "text": "Bagumbayan", "is_correct": false },
+      { "text": "Palawan", "is_correct": false }
+    ]
+  },
+  {
     "text": "In what year was the Philippine Declaration of Independence proclaimed?",
     "explanation": "Independence from Spain was declared on June 12, 1898.",
     "choices": [

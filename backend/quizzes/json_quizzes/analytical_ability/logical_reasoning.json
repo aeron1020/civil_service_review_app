@@ -132,6 +132,606 @@
     ]
   },
   {
+    "text": "If all mammals are warm-blooded and some mammals are aquatic, which of the following must be true?",
+    "explanation": "Since some mammals are aquatic and all mammals are warm-blooded, those specific aquatic mammals must be warm-blooded. Thus, some aquatic animals are warm-blooded.",
+    "choices": [
+      { "text": "All aquatic animals are mammals", "is_correct": false },
+      { "text": "Some aquatic animals are warm-blooded", "is_correct": true },
+      { "text": "All warm-blooded animals are mammals", "is_correct": false },
+      { "text": "No aquatic animals are cold-blooded", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the next number in the sequence: 5, 10, 20, 40, 80, ___?",
+    "explanation": "The pattern is a geometric progression where each number is multiplied by 2. 80 x 2 = 160.",
+    "choices": [
+      { "text": "100", "is_correct": false },
+      { "text": "120", "is_correct": false },
+      { "text": "160", "is_correct": true },
+      { "text": "200", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 'All flowers are plants' and 'Some plants are medicinal', which conclusion is valid?",
+    "explanation": "In formal logic, the 'some' in the second premise may refer to plants that are not flowers. Therefore, no definite conclusion can be drawn between flowers and medicinal properties.",
+    "choices": [
+      { "text": "All flowers are medicinal", "is_correct": false },
+      { "text": "Some flowers are medicinal", "is_correct": false },
+      { "text": "No flowers are medicinal", "is_correct": false },
+      { "text": "None of the above", "is_correct": true }
+    ]
+  },
+  {
+    "text": "Identify the odd one out in this group: 27, 64, 100, 125.",
+    "explanation": "27 (3³), 64 (4³), and 125 (5³) are perfect cubes. 100 is a perfect square (10²) but not a perfect cube.",
+    "choices": [
+      { "text": "27", "is_correct": false },
+      { "text": "64", "is_correct": false },
+      { "text": "100", "is_correct": true },
+      { "text": "125", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the missing letters in the sequence: ACE, GIK, MOQ, ___?",
+    "explanation": "Each group skips one letter between them (A-c-E) and jumps two letters to the next group (E-fg-G). Following Q, the next jump is R-s-S, then U, then W.",
+    "choices": [
+      { "text": "RST", "is_correct": false },
+      { "text": "STU", "is_correct": false },
+      { "text": "SUW", "is_correct": true },
+      { "text": "TVX", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 'A' is to the North of 'B' and 'C' is to the East of 'B', in what direction is 'A' relative to 'C'?",
+    "explanation": "Relative to C, A is in the North-West direction.",
+    "choices": [
+      { "text": "North-East", "is_correct": false },
+      { "text": "South-East", "is_correct": false },
+      { "text": "North-West", "is_correct": true },
+      { "text": "South-West", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which number comes next: 2, 3, 5, 8, 13, 21, ___?",
+    "explanation": "This is the Fibonacci sequence, where each number is the sum of the two preceding ones. 13 + 21 = 34.",
+    "choices": [
+      { "text": "29", "is_correct": false },
+      { "text": "31", "is_correct": false },
+      { "text": "34", "is_correct": true },
+      { "text": "35", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Statement: 'Only the brave deserve the fair.' Conclusion: 'Arnel is brave. Therefore, he deserves the fair.' Is this valid?",
+    "explanation": "The premise says only the brave deserve the fair, but it doesn't say *all* brave people deserve the fair. This is a fallacy of the converse.",
+    "choices": [
+      { "text": "Logically Valid", "is_correct": false },
+      { "text": "Logically Invalid", "is_correct": true },
+      { "text": "Always True", "is_correct": false },
+      { "text": "Insufficient Information", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Complete the analogy: 'Finger is to Hand as Leaf is to _______'",
+    "explanation": "A finger is a part of a hand; a leaf is a part of a tree or a branch. Branch is the best fit.",
+    "choices": [
+      { "text": "Tree", "is_correct": false },
+      { "text": "Branch", "is_correct": true },
+      { "text": "Flower", "is_correct": false },
+      { "text": "Forest", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If January 1, 2024, was a Monday, what day of the week was January 8, 2024?",
+    "explanation": "There are 7 days in a week. Adding 7 days to any date results in the same day of the week. 1 + 7 = 8.",
+    "choices": [
+      { "text": "Sunday", "is_correct": false },
+      { "text": "Monday", "is_correct": true },
+      { "text": "Tuesday", "is_correct": false },
+      { "text": "Wednesday", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the next term: 1, 4, 9, 16, 25, ___?",
+    "explanation": "These are perfect squares: 1², 2², 3², 4², 5². The next is 6², which is 36.",
+    "choices": [
+      { "text": "30", "is_correct": false },
+      { "text": "34", "is_correct": false },
+      { "text": "36", "is_correct": true },
+      { "text": "40", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Statement 1: All mangoes are golden. Statement 2: All golden things are expensive. Conclusion: All mangoes are expensive.",
+    "explanation": "This follows the transitive property of syllogisms (If A=B and B=C, then A=C).",
+    "choices": [
+      { "text": "Valid", "is_correct": true },
+      { "text": "Invalid", "is_correct": false },
+      { "text": "Probable", "is_correct": false },
+      { "text": "False", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the missing number: 100, 91, 82, 73, ___?",
+    "explanation": "The sequence subtracts 9 from each preceding term. 73 - 9 = 64.",
+    "choices": [
+      { "text": "66", "is_correct": false },
+      { "text": "65", "is_correct": false },
+      { "text": "64", "is_correct": true },
+      { "text": "63", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If some students are athletes and all athletes are healthy, which must be true?",
+    "explanation": "The students who are athletes must be healthy, because all athletes are healthy.",
+    "choices": [
+      { "text": "All students are healthy", "is_correct": false },
+      { "text": "Some students are healthy", "is_correct": true },
+      { "text": "No students are healthy", "is_correct": false },
+      { "text": "Athletes are not students", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Complete the series: J, L, N, P, ___?",
+    "explanation": "The sequence skips one letter: J (k) L (m) N (o) P (q). The next letter is R.",
+    "choices": [
+      { "text": "Q", "is_correct": false },
+      { "text": "R", "is_correct": true },
+      { "text": "S", "is_correct": false },
+      { "text": "T", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In a row of 10 people, if Maria is 4th from the left, what is her position from the right?",
+    "explanation": "The formula for position from the other end is: (Total + 1) - Position. (10 + 1) - 4 = 7th.",
+    "choices": [
+      { "text": "6th", "is_correct": false },
+      { "text": "7th", "is_correct": true },
+      { "text": "5th", "is_correct": false },
+      { "text": "8th", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 5 workers can build a wall in 5 days, how many days will it take 1 worker to build the same wall?",
+    "explanation": "This is inverse proportion. 5 workers x 5 days = 25 worker-days. 1 worker will take 25 days.",
+    "choices": [
+      { "text": "1", "is_correct": false },
+      { "text": "5", "is_correct": false },
+      { "text": "10", "is_correct": false },
+      { "text": "25", "is_correct": true }
+    ]
+  },
+  {
+    "text": "Which word is the odd one out: Apple, Banana, Carrot, Grapes?",
+    "explanation": "Apple, Banana, and Grapes are fruits. Carrot is a vegetable (root).",
+    "choices": [
+      { "text": "Apple", "is_correct": false },
+      { "text": "Banana", "is_correct": false },
+      { "text": "Carrot", "is_correct": true },
+      { "text": "Grapes", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the next number: 3, 6, 11, 18, 27, ___?",
+    "explanation": "The increments are prime numbers (or odd numbers starting from 3): +3, +5, +7, +9. The next is +11. 27 + 11 = 38.",
+    "choices": [
+      { "text": "36", "is_correct": false },
+      { "text": "37", "is_correct": false },
+      { "text": "38", "is_correct": true },
+      { "text": "40", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 'No triangles are squares' and 'All squares are shapes', can we conclude 'No triangles are shapes'?",
+    "explanation": "No. While triangles aren't squares, they can still be categorized as 'shapes'.",
+    "choices": [
+      { "text": "Yes", "is_correct": false },
+      { "text": "No", "is_correct": true },
+      { "text": "Sometimes", "is_correct": false },
+      { "text": "Insufficient Data", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Complete: 'Sound is to Silence as Light is to _______'",
+    "explanation": "The relationship is antonyms. The opposite of light is darkness.",
+    "choices": [
+      { "text": "Darkness", "is_correct": true },
+      { "text": "Sun", "is_correct": false },
+      { "text": "Bright", "is_correct": false },
+      { "text": "Lamp", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the next term in the sequence: 1, 8, 27, 64, ___?",
+    "explanation": "These are perfect cubes: 1³, 2³, 3³, 4³. The next is 5³, which is 125.",
+    "choices": [
+      { "text": "100", "is_correct": false },
+      { "text": "121", "is_correct": false },
+      { "text": "125", "is_correct": true },
+      { "text": "150", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 'All A are B' and 'All C are A', then 'All C are B'. True or False?",
+    "explanation": "This is a valid deductive syllogism (Barbara).",
+    "choices": [
+      { "text": "True", "is_correct": true },
+      { "text": "False", "is_correct": false },
+      { "text": "Only Some", "is_correct": false },
+      { "text": "Cannot be determined", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A is the father of B, but B is not the son of A. How is this possible?",
+    "explanation": "If B is not the son, then B must be the daughter.",
+    "choices": [
+      { "text": "A is the mother", "is_correct": false },
+      { "text": "B is the daughter", "is_correct": true },
+      { "text": "A is the uncle", "is_correct": false },
+      { "text": "B is the nephew", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which number is next: 2, 6, 12, 20, 30, ___?",
+    "explanation": "The difference increases by 2: +4, +6, +8, +10. The next is +12. 30 + 12 = 42.",
+    "choices": [
+      { "text": "40", "is_correct": false },
+      { "text": "42", "is_correct": true },
+      { "text": "44", "is_correct": false },
+      { "text": "48", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In a family, there are 2 fathers and 2 sons. What is the minimum number of people in the family?",
+    "explanation": "Grandfather, Father, and Son. The Grandfather is a father; the Father is both a father and a son; the Son is a son. Total = 3.",
+    "choices": [
+      { "text": "4", "is_correct": false },
+      { "text": "3", "is_correct": true },
+      { "text": "2", "is_correct": false },
+      { "text": "5", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Complete the analogy: 'Book is to Author as Song is to _______'",
+    "explanation": "An author creates a book; a composer creates a song.",
+    "choices": [
+      { "text": "Singer", "is_correct": false },
+      { "text": "Composer", "is_correct": true },
+      { "text": "Dancer", "is_correct": false },
+      { "text": "Poet", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If you are in a race and you pass the person in 2nd place, what place are you in?",
+    "explanation": "If you pass the 2nd person, you take their position, which is 2nd place.",
+    "choices": [
+      { "text": "1st", "is_correct": false },
+      { "text": "2nd", "is_correct": true },
+      { "text": "3rd", "is_correct": false },
+      { "text": "Last", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What comes next in the series: Z, X, V, T, ___?",
+    "explanation": "The sequence moves backward skipping one letter: Z (y) X (w) V (u) T. The next is R.",
+    "choices": [
+      { "text": "S", "is_correct": false },
+      { "text": "R", "is_correct": true },
+      { "text": "Q", "is_correct": false },
+      { "text": "P", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 'Some doctors are lawyers' and 'All lawyers are rich', which must be true?",
+    "explanation": "The doctors who are also lawyers must be rich because all lawyers are rich.",
+    "choices": [
+      { "text": "All doctors are rich", "is_correct": false },
+      { "text": "Some doctors are rich", "is_correct": true },
+      { "text": "No doctors are rich", "is_correct": false },
+      { "text": "Rich people are all doctors", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 'All mammals have lungs' and 'All whales are mammals', which of the following is a valid conclusion?",
+    "explanation": "This follows a categorical syllogism: if all A are B, and all C are A, then all C are B. Therefore, all whales have lungs.",
+    "choices": [
+      { "text": "Some whales have lungs", "is_correct": false },
+      { "text": "All whales have lungs", "is_correct": true },
+      { "text": "Whales are the only mammals with lungs", "is_correct": false },
+      { "text": "Anything with lungs is a whale", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Identify the next number in the sequence: 7, 14, 28, 56, ___",
+    "explanation": "Each term is multiplied by 2. $56 \times 2 = 112$.",
+    "choices": [
+      { "text": "100", "is_correct": false },
+      { "text": "112", "is_correct": true },
+      { "text": "120", "is_correct": false },
+      { "text": "124", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the odd one out: Square, Triangle, Circle, Rectangle.",
+    "explanation": "Square, Triangle, and Rectangle are polygons made of straight lines. A circle is a curved shape.",
+    "choices": [
+      { "text": "Square", "is_correct": false },
+      { "text": "Triangle", "is_correct": false },
+      { "text": "Circle", "is_correct": true },
+      { "text": "Rectangle", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 'P' is taller than 'Q', and 'R' is taller than 'P', who is the shortest among the three?",
+    "explanation": "The order from tallest to shortest is R > P > Q. Therefore, Q is the shortest.",
+    "choices": [
+      { "text": "P", "is_correct": false },
+      { "text": "Q", "is_correct": true },
+      { "text": "R", "is_correct": false },
+      { "text": "Cannot be determined", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In a code, 'APPLE' is 'BQQMF'. How is 'GRAPE' written?",
+    "explanation": "The code shifts each letter forward by one: G+1=H, R+1=S, A+1=B, P+1=Q, E+1=F.",
+    "choices": [
+      { "text": "HSBQF", "is_correct": true },
+      { "text": "HQBQF", "is_correct": false },
+      { "text": "FSZOD", "is_correct": false },
+      { "text": "ISBQF", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which number should replace the question mark: 2, 5, 11, 23, ___?",
+    "explanation": "The pattern is $(n \times 2) + 1$. $(23 \times 2) + 1 = 47$.",
+    "choices": [
+      { "text": "36", "is_correct": false },
+      { "text": "46", "is_correct": false },
+      { "text": "47", "is_correct": true },
+      { "text": "48", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If it is true that 'Some students are lazy' and 'Some lazy people are rich', can we conclude 'Some students are rich'?",
+    "explanation": "No. Two 'some' premises in a syllogism do not allow for a valid conclusion linking the extremes.",
+    "choices": [
+      { "text": "Yes", "is_correct": false },
+      { "text": "No", "is_correct": true },
+      { "text": "Definitely True", "is_correct": false },
+      { "text": "Probably", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Complete the analogy: 'Lungs are to Respiration as Heart is to _______'",
+    "explanation": "Lungs facilitate respiration; the heart facilitates circulation.",
+    "choices": [
+      { "text": "Digestion", "is_correct": false },
+      { "text": "Circulation", "is_correct": true },
+      { "text": "Excretion", "is_correct": false },
+      { "text": "Thinking", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the next term in the sequence: 100, 98, 94, 88, 80, ___?",
+    "explanation": "The difference between terms increases by 2: -2, -4, -6, -8. The next difference is -10. $80 - 10 = 70$.",
+    "choices": [
+      { "text": "72", "is_correct": false },
+      { "text": "71", "is_correct": false },
+      { "text": "70", "is_correct": true },
+      { "text": "68", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 'A' is the brother of 'B', and 'B' is the sister of 'C', how is 'A' related to 'C'?",
+    "explanation": "A and B are siblings. Since B and C are also siblings, A is the brother of C.",
+    "choices": [
+      { "text": "Cousin", "is_correct": false },
+      { "text": "Brother", "is_correct": true },
+      { "text": "Father", "is_correct": false },
+      { "text": "Uncle", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next letters in the sequence: AZ, BY, CX, DW, ___",
+    "explanation": "The first letter moves forward (A, B, C, D -> E), and the second letter moves backward (Z, Y, X, W -> V).",
+    "choices": [
+      { "text": "EV", "is_correct": true },
+      { "text": "EU", "is_correct": false },
+      { "text": "FV", "is_correct": false },
+      { "text": "DV", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A man looks at a portrait and says, 'That man's father is my father's son.' The man in the portrait is his:",
+    "explanation": "If the speaker has no brothers, 'my father's son' is himself. So, 'that man's father is ME.' This makes the person in the portrait his son.",
+    "choices": [
+      { "text": "Father", "is_correct": false },
+      { "text": "Son", "is_correct": true },
+      { "text": "Brother", "is_correct": false },
+      { "text": "Uncle", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which number is missing: 4, 9, 16, 25, ?, 49",
+    "explanation": "These are squares of 2, 3, 4, 5, 6, 7. $6^2 = 36$.",
+    "choices": [
+      { "text": "30", "is_correct": false },
+      { "text": "35", "is_correct": false },
+      { "text": "36", "is_correct": true },
+      { "text": "40", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 3 people can paint 3 rooms in 3 hours, how many hours does it take 1 person to paint 1 room?",
+    "explanation": "Each person paints one room independently. If 3 people take 3 hours for 3 rooms, 1 person takes 3 hours for 1 room.",
+    "choices": [
+      { "text": "1", "is_correct": false },
+      { "text": "3", "is_correct": true },
+      { "text": "6", "is_correct": false },
+      { "text": "9", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which word does not belong: Microscope, Telescope, Periscope, Stethoscope?",
+    "explanation": "Microscope, telescope, and periscope are optical instruments used for seeing. A stethoscope is used for listening (medical).",
+    "choices": [
+      { "text": "Microscope", "is_correct": false },
+      { "text": "Telescope", "is_correct": false },
+      { "text": "Periscope", "is_correct": false },
+      { "text": "Stethoscope", "is_correct": true }
+    ]
+  },
+  {
+    "text": "If 'All squares are rectangles' and 'No rectangles are circles', what must be true?",
+    "explanation": "If no rectangles are circles, and all squares are inside the rectangle category, then no squares can be circles.",
+    "choices": [
+      { "text": "Some squares are circles", "is_correct": false },
+      { "text": "No squares are circles", "is_correct": true },
+      { "text": "All circles are squares", "is_correct": false },
+      { "text": "All rectangles are squares", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What comes next: 1, 3, 6, 10, 15, ___?",
+    "explanation": "The difference increases by 1 each time: +2, +3, +4, +5. The next is +6. $15 + 6 = 21$.",
+    "choices": [
+      { "text": "18", "is_correct": false },
+      { "text": "20", "is_correct": false },
+      { "text": "21", "is_correct": true },
+      { "text": "25", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 'If it snows, the roads are closed' and 'The roads are NOT closed', what is the conclusion?",
+    "explanation": "Modus Tollens: If P then Q. Not Q, therefore Not P. It is not snowing.",
+    "choices": [
+      { "text": "It is snowing", "is_correct": false },
+      { "text": "It is not snowing", "is_correct": true },
+      { "text": "The roads will open soon", "is_correct": false },
+      { "text": "It is raining", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the odd number: 13, 17, 19, 21, 23.",
+    "explanation": "13, 17, 19, and 23 are prime numbers. 21 is a composite number ($3 \times 7$).",
+    "choices": [
+      { "text": "17", "is_correct": false },
+      { "text": "19", "is_correct": false },
+      { "text": "21", "is_correct": true },
+      { "text": "23", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Complete: 'Mountain is to High as Valley is to _______'",
+    "explanation": "Mountains are characterized by being high; valleys are characterized by being low.",
+    "choices": [
+      { "text": "Deep", "is_correct": false },
+      { "text": "Low", "is_correct": true },
+      { "text": "River", "is_correct": false },
+      { "text": "Green", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In a certain code, '321' means 'Hot Filtered Coffee' and '345' means 'Very Hot Day'. Which digit means 'Hot'?",
+    "explanation": "The common word is 'Hot' and the common digit is '3'.",
+    "choices": [
+      { "text": "1", "is_correct": false },
+      { "text": "2", "is_correct": false },
+      { "text": "3", "is_correct": true },
+      { "text": "4", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 10 men can build a house in 6 months, how many men are needed to build it in 3 months?",
+    "explanation": "Inverse proportion: Half the time requires double the manpower. $10 \times 2 = 20$.",
+    "choices": [
+      { "text": "5", "is_correct": false },
+      { "text": "15", "is_correct": false },
+      { "text": "20", "is_correct": true },
+      { "text": "30", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the missing number: 2, 6, 18, ?, 162",
+    "explanation": "Each number is multiplied by 3. $18 \times 3 = 54$.",
+    "choices": [
+      { "text": "36", "is_correct": false },
+      { "text": "48", "is_correct": false },
+      { "text": "54", "is_correct": true },
+      { "text": "60", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If all 'Z' are 'Y' and some 'Y' are 'X', is it certain that some 'Z' are 'X'?",
+    "explanation": "No, the 'X' might only overlap with 'Y' in an area where 'Z' does not exist.",
+    "choices": [
+      { "text": "Yes", "is_correct": false },
+      { "text": "No", "is_correct": true },
+      { "text": "Sometimes", "is_correct": false },
+      { "text": "Always", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A clock shows 3:00. What is the angle between the hour and minute hands?",
+    "explanation": "Each hour represents 30 degrees ($360/12$). At 3:00, the hands are 3 hours apart. $3 \times 30 = 90$ degrees.",
+    "choices": [
+      { "text": "45°", "is_correct": false },
+      { "text": "90°", "is_correct": true },
+      { "text": "120°", "is_correct": false },
+      { "text": "180°", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which word is the synonym of 'Analytic'?",
+    "explanation": "To be analytic is to be logical and systematic in reasoning.",
+    "choices": [
+      { "text": "Emotional", "is_correct": false },
+      { "text": "Logical", "is_correct": true },
+      { "text": "Random", "is_correct": false },
+      { "text": "Hasty", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 'A' is the mother of 'B', and 'C' is the son of 'A', how is 'B' related to 'C'?",
+    "explanation": "They are both children of A, so they are siblings.",
+    "choices": [
+      { "text": "Parent", "is_correct": false },
+      { "text": "Sibling", "is_correct": true },
+      { "text": "Cousin", "is_correct": false },
+      { "text": "Aunt", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Identify the next term: 1/2, 1/4, 1/8, 1/16, ___",
+    "explanation": "Each term is divided by 2. $1/16 div 2 = 1/32$.",
+    "choices": [
+      { "text": "1/20", "is_correct": false },
+      { "text": "1/24", "is_correct": false },
+      { "text": "1/32", "is_correct": true },
+      { "text": "1/64", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct conclusion: 'All dogs are animals. All animals need water.'",
+    "explanation": "Deductive logic: If A=B and B=C, then A=C. All dogs need water.",
+    "choices": [
+      { "text": "Some dogs need water", "is_correct": false },
+      { "text": "All dogs need water", "is_correct": true },
+      { "text": "Water is only for dogs", "is_correct": false },
+      { "text": "Only animals need water", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the missing letter: B, E, H, K, ?",
+    "explanation": "The sequence skips two letters: B (cd) E (fg) H (ij) K (lm). The next is N.",
+    "choices": [
+      { "text": "L", "is_correct": false },
+      { "text": "M", "is_correct": false },
+      { "text": "N", "is_correct": true },
+      { "text": "O", "is_correct": false }
+    ]
+  },
+  {
     "text": "Statement: Schools should include financial literacy in their curriculum to prepare students for adulthood.\nAssumption:",
     "explanation": "The statement assumes that teaching financial literacy in schools equips students with essential skills needed to manage personal finances effectively as adults.",
     "choices": [

@@ -40,6 +40,306 @@
     ]
   },
   {
+    "text": "Which of the following countries is NOT a member of the Association of Southeast Asian Nations (ASEAN)?",
+    "explanation": "Taiwan is not a member of ASEAN. The 10 members are Brunei, Cambodia, Indonesia, Laos, Malaysia, Myanmar, Philippines, Singapore, Thailand, and Vietnam.",
+    "choices": [
+      { "text": "Vietnam", "is_correct": false },
+      { "text": "Taiwan", "is_correct": true },
+      { "text": "Laos", "is_correct": false },
+      { "text": "Myanmar", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine province is known as the 'Cradle of Noble Heroes' and is home to the famous Corregidor Island?",
+    "explanation": "Cavite is known as the Cradle of Noble Heroes (Lupain ng mga Bayani) and Corregidor Island is part of its jurisdiction.",
+    "choices": [
+      { "text": "Bataan", "is_correct": false },
+      { "text": "Cavite", "is_correct": true },
+      { "text": "Laguna", "is_correct": false },
+      { "text": "Batangas", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which ASEAN country is the only one that was never colonized by a European power?",
+    "explanation": "Thailand (formerly Siam) remained independent by acting as a buffer state between French Indochina and the British Empire.",
+    "choices": [
+      { "text": "Singapore", "is_correct": false },
+      { "text": "Thailand", "is_correct": true },
+      { "text": "Indonesia", "is_correct": false },
+      { "text": "Malaysia", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the largest lake in the Philippines?",
+    "explanation": "Laguna de Bay is the largest lake in the Philippines, located between the provinces of Laguna and Rizal.",
+    "choices": [
+      { "text": "Taal Lake", "is_correct": false },
+      { "text": "Lanao Lake", "is_correct": false },
+      { "text": "Laguna de Bay", "is_correct": true },
+      { "text": "Naujan Lake", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In which city is the ASEAN Secretariat headquartered?",
+    "explanation": "The ASEAN Secretariat is located in Jakarta, Indonesia.",
+    "choices": [
+      { "text": "Manila, Philippines", "is_correct": false },
+      { "text": "Bangkok, Thailand", "is_correct": false },
+      { "text": "Jakarta, Indonesia", "is_correct": true },
+      { "text": "Kuala Lumpur, Malaysia", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which province is known as the 'Home of the Winds' due to its frequent typhoons and northern location?",
+    "explanation": "Batanes is the northernmost province of the Philippines and is frequently visited by typhoons.",
+    "choices": [
+      { "text": "Cagayan", "is_correct": false },
+      { "text": "Batanes", "is_correct": true },
+      { "text": "Ilocos Norte", "is_correct": false },
+      { "text": "Catanduanes", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which ASEAN country is a landlocked nation, meaning it has no direct access to the sea?",
+    "explanation": "Laos is the only landlocked country in Southeast Asia.",
+    "choices": [
+      { "text": "Cambodia", "is_correct": false },
+      { "text": "Vietnam", "is_correct": false },
+      { "text": "Laos", "is_correct": true },
+      { "text": "Thailand", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine volcano is known for having a 'lake within a volcano within a lake'?",
+    "explanation": "Taal Volcano in Batangas is famous for its complex geography involving Crater Lake and Vulcan Point.",
+    "choices": [
+      { "text": "Mayon Volcano", "is_correct": false },
+      { "text": "Mount Pinatubo", "is_correct": false },
+      { "text": "Taal Volcano", "is_correct": true },
+      { "text": "Mount Kanlaon", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the smallest country in ASEAN by land area?",
+    "explanation": "Singapore is the smallest country in both Southeast Asia and ASEAN.",
+    "choices": [
+      { "text": "Brunei", "is_correct": false },
+      { "text": "Singapore", "is_correct": true },
+      { "text": "Cambodia", "is_correct": false },
+      { "text": "Timor-Leste", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which island group in the Philippines is the smallest in terms of land area?",
+    "explanation": "Visayas is the smallest of the three major island groups, with Luzon being the largest.",
+    "choices": [
+      { "text": "Luzon", "is_correct": false },
+      { "text": "Mindanao", "is_correct": false },
+      { "text": "Visayas", "is_correct": true },
+      { "text": "Palawan", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which ASEAN country is the world's largest archipelagic state?",
+    "explanation": "Indonesia consists of over 17,000 islands, making it the largest archipelago in the world.",
+    "choices": [
+      { "text": "Philippines", "is_correct": false },
+      { "text": "Indonesia", "is_correct": true },
+      { "text": "Malaysia", "is_correct": false },
+      { "text": "Singapore", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The Maria Cristina Falls, a major source of hydroelectric power, is located in which province?",
+    "explanation": "Maria Cristina Falls is located in Iligan City, Lanao del Norte.",
+    "choices": [
+      { "text": "Bukidnon", "is_correct": false },
+      { "text": "Lanao del Norte", "is_correct": true },
+      { "text": "Davao del Sur", "is_correct": false },
+      { "text": "Misamis Occidental", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which ASEAN nation is famous for the ancient temple complex of Angkor Wat?",
+    "explanation": "Angkor Wat is a UNESCO World Heritage site located in Siem Reap, Cambodia.",
+    "choices": [
+      { "text": "Thailand", "is_correct": false },
+      { "text": "Cambodia", "is_correct": true },
+      { "text": "Vietnam", "is_correct": false },
+      { "text": "Myanmar", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the capital of the Philippines?",
+    "explanation": "Manila is the capital city, while Metro Manila is the National Capital Region (NCR).",
+    "choices": [
+      { "text": "Quezon City", "is_correct": false },
+      { "text": "Manila", "is_correct": true },
+      { "text": "Makati", "is_correct": false },
+      { "text": "Cebu City", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following mountains is the second highest peak in the Philippines?",
+    "explanation": "Mount Pulag in Benguet is the second highest peak, while Mount Apo is the highest.",
+    "choices": [
+      { "text": "Mount Dulang-dulang", "is_correct": false },
+      { "text": "Mount Pulag", "is_correct": true },
+      { "text": "Mount Mayon", "is_correct": false },
+      { "text": "Mount Kitanglad", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The Petronas Twin Towers, once the tallest buildings in the world, are located in which ASEAN capital?",
+    "explanation": "The Petronas Twin Towers are located in Kuala Lumpur, Malaysia.",
+    "choices": [
+      { "text": "Jakarta", "is_correct": false },
+      { "text": "Singapore", "is_correct": false },
+      { "text": "Kuala Lumpur", "is_correct": true },
+      { "text": "Bandar Seri Begawan", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which province is known as the 'Tuna Capital of the Philippines'?",
+    "explanation": "South Cotabato, specifically General Santos City, is known as the Tuna Capital.",
+    "choices": [
+      { "text": "Zamboanga del Sur", "is_correct": false },
+      { "text": "South Cotabato", "is_correct": true },
+      { "text": "Davao Oriental", "is_correct": false },
+      { "text": "Sulu", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the currency used in Thailand?",
+    "explanation": "The official currency of Thailand is the Thai Baht.",
+    "choices": [
+      { "text": "Rupiah", "is_correct": false },
+      { "text": "Ringgit", "is_correct": false },
+      { "text": "Baht", "is_correct": true },
+      { "text": "Dong", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which region in the Philippines is composed of the provinces of Cavite, Laguna, Batangas, Rizal, and Quezon?",
+    "explanation": "CALABARZON is Region IV-A.",
+    "choices": [
+      { "text": "MIMAROPA", "is_correct": false },
+      { "text": "CALABARZON", "is_correct": true },
+      { "text": "Bicol Region", "is_correct": false },
+      { "text": "Central Luzon", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which ASEAN country has the largest population in the world's fourth spot?",
+    "explanation": "Indonesia is the most populous country in ASEAN and the fourth most populous in the world.",
+    "choices": [
+      { "text": "Vietnam", "is_correct": false },
+      { "text": "Philippines", "is_correct": false },
+      { "text": "Indonesia", "is_correct": true },
+      { "text": "Thailand", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which body of water separates the islands of Luzon and Mindoro?",
+    "explanation": "The Verde Island Passage is the strait that separates Luzon from Mindoro.",
+    "choices": [
+      { "text": "San Juanico Strait", "is_correct": false },
+      { "text": "Verde Island Passage", "is_correct": true },
+      { "text": "Guimaras Strait", "is_correct": false },
+      { "text": "Mindoro Strait", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the capital city of Vietnam?",
+    "explanation": "Hanoi is the capital of Vietnam, while Ho Chi Minh City is its largest city.",
+    "choices": [
+      { "text": "Ho Chi Minh City", "is_correct": false },
+      { "text": "Hanoi", "is_correct": true },
+      { "text": "Da Nang", "is_correct": false },
+      { "text": "Hue", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine province is known as the 'Seafood Capital of the Philippines'?",
+    "explanation": "Capiz, specifically Roxas City, is known as the Seafood Capital due to its rich marine resources.",
+    "choices": [
+      { "text": "Iloilo", "is_correct": false },
+      { "text": "Capiz", "is_correct": true },
+      { "text": "Negros Occidental", "is_correct": false },
+      { "text": "Aklan", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The Mekong River, one of the longest in the world, does NOT flow through which ASEAN country?",
+    "explanation": "The Mekong flows through Myanmar, Laos, Thailand, Cambodia, and Vietnam. It does not flow through Malaysia.",
+    "choices": [
+      { "text": "Laos", "is_correct": false },
+      { "text": "Thailand", "is_correct": false },
+      { "text": "Malaysia", "is_correct": true },
+      { "text": "Cambodia", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the name of the bridge that connects the islands of Samar and Leyte?",
+    "explanation": "The San Juanico Bridge is the longest bridge in the Philippines spanning a body of seawater.",
+    "choices": [
+      { "text": "Mactan Bridge", "is_correct": false },
+      { "text": "San Juanico Bridge", "is_correct": true },
+      { "text": "Bamban Bridge", "is_correct": false },
+      { "text": "Marcelo Fernan Bridge", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which ASEAN country uses the 'Kyat' as its official currency?",
+    "explanation": "The Kyat is the currency of Myanmar.",
+    "choices": [
+      { "text": "Cambodia", "is_correct": false },
+      { "text": "Myanmar", "is_correct": true },
+      { "text": "Laos", "is_correct": false },
+      { "text": "Brunei", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In which province can you find the Hundred Islands National Park?",
+    "explanation": "The Hundred Islands are located in Alaminos City, Pangasinan.",
+    "choices": [
+      { "text": "Zambales", "is_correct": false },
+      { "text": "Pangasinan", "is_correct": true },
+      { "text": "La Union", "is_correct": false },
+      { "text": "Ilocos Sur", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which ASEAN country is the only sultanate among the member states?",
+    "explanation": "Brunei Darussalam is an absolute monarchy led by a Sultan.",
+    "choices": [
+      { "text": "Malaysia", "is_correct": false },
+      { "text": "Indonesia", "is_correct": false },
+      { "text": "Brunei", "is_correct": true },
+      { "text": "Thailand", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine city is known as the 'City of Golden Friendship'?",
+    "explanation": "Cagayan de Oro City in Mindanao is famously called the City of Golden Friendship.",
+    "choices": [
+      { "text": "Davao City", "is_correct": false },
+      { "text": "Cagayan de Oro", "is_correct": true },
+      { "text": "Zamboanga City", "is_correct": false },
+      { "text": "Butuan City", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the official motto of ASEAN?",
+    "explanation": "The ASEAN motto is 'One Vision, One Identity, One Community.'",
+    "choices": [
+      { "text": "Unity in Diversity", "is_correct": false },
+      { "text": "One Vision, One Identity, One Community", "is_correct": true },
+      { "text": "Peace, Progress, and Prosperity", "is_correct": false },
+      { "text": "Strength in ASEAN", "is_correct": false }
+    ]
+  },
+  {
     "text": "Which Philippine river is considered the longest?",
     "explanation": "The Cagayan River in Luzon is the longest river in the Philippines.",
     "choices": [

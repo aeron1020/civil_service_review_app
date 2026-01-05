@@ -248,5 +248,305 @@
       { "text": "40", "is_correct": true },
       { "text": "42", "is_correct": false }
     ]
+  },
+  {
+    "text": "In a sequence of shapes, a square rotates 45 degrees clockwise in each step. If the first square is standing flat (0 degrees), what is the position of the 5th square?",
+    "explanation": "Step 1: 0°, Step 2: 45°, Step 3: 90°, Step 4: 135°, Step 5: 180°. A 180-degree rotation means the square appears flat again but inverted.",
+    "choices": [
+      { "text": "45 degrees", "is_correct": false },
+      { "text": "90 degrees", "is_correct": false },
+      { "text": "180 degrees", "is_correct": true },
+      { "text": "270 degrees", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Sequence: 1, 1, 2, 3, 5, 8, 13, ___. What comes next?",
+    "explanation": "This is the Fibonacci sequence. Each number is the sum of the two preceding numbers: 8 + 13 = 21.",
+    "choices": [
+      { "text": "18", "is_correct": false },
+      { "text": "20", "is_correct": false },
+      { "text": "21", "is_correct": true },
+      { "text": "25", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A pattern consists of a circle, then a circle with 1 line, then a circle with 2 lines. How many lines will the 10th shape have?",
+    "explanation": "The number of lines is (n-1). For the 10th shape, it is 10-1 = 9 lines.",
+    "choices": [
+      { "text": "8", "is_correct": false },
+      { "text": "9", "is_correct": true },
+      { "text": "10", "is_correct": false },
+      { "text": "11", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In a 3x3 grid, the first row has 1 dot, 2 dots, 3 dots. The second row has 4 dots, 5 dots, 6 dots. What is the sum of dots in the third row?",
+    "explanation": "The third row contains 7, 8, and 9 dots. $7 + 8 + 9 = 24$.",
+    "choices": [
+      { "text": "21", "is_correct": false },
+      { "text": "24", "is_correct": true },
+      { "text": "27", "is_correct": false },
+      { "text": "30", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Pattern: Triangle, Square, Pentagon, Hexagon, ___. What is the next shape?",
+    "explanation": "The sequence follows the number of sides: 3, 4, 5, 6. The next shape must have 7 sides (Heptagon).",
+    "choices": [
+      { "text": "Octagon", "is_correct": false },
+      { "text": "Heptagon", "is_correct": true },
+      { "text": "Nonagon", "is_correct": false },
+      { "text": "Decagon", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Letters: Z, X, V, T, R, ___. What comes next?",
+    "explanation": "The pattern is moving backward through the alphabet, skipping one letter each time.",
+    "choices": [
+      { "text": "P", "is_correct": true },
+      { "text": "Q", "is_correct": false },
+      { "text": "O", "is_correct": false },
+      { "text": "S", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If a pattern of shaded squares follows the prime numbers (2nd, 3rd, 5th, 7th...), which square will be the next one shaded?",
+    "explanation": "The prime number following 7 is 11.",
+    "choices": [
+      { "text": "8th", "is_correct": false },
+      { "text": "9th", "is_correct": false },
+      { "text": "10th", "is_correct": false },
+      { "text": "11th", "is_correct": true }
+    ]
+  },
+  {
+    "text": "Sequence: 2, 6, 18, 54, ___. What is the next number?",
+    "explanation": "Each term is multiplied by 3. $54 \times 3 = 162$.",
+    "choices": [
+      { "text": "108", "is_correct": false },
+      { "text": "152", "is_correct": false },
+      { "text": "162", "is_correct": true },
+      { "text": "172", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A clock hand moves 90 degrees clockwise every hour. If it starts at 12, where will it be after 5 hours?",
+    "explanation": "90° is 1/4 of a circle. 4 hours = 360° (back at 12). 5 hours = 12 + 1/4 turn = 3.",
+    "choices": [
+      { "text": "3", "is_correct": true },
+      { "text": "6", "is_correct": false },
+      { "text": "9", "is_correct": false },
+      { "text": "12", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Letters: A, C, F, J, O, ___. What is the next letter?",
+    "explanation": "The gap increases: A(+2)C, C(+3)F, F(+4)J, J(+5)O. The next gap is +6. O + 6 = U.",
+    "choices": [
+      { "text": "S", "is_correct": false },
+      { "text": "T", "is_correct": false },
+      { "text": "U", "is_correct": true },
+      { "text": "V", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which number is the 'odd one out' in this pattern: 1, 8, 27, 36, 125?",
+    "explanation": "1, 8, 27, and 125 are perfect cubes. 36 is a perfect square but not a cube.",
+    "choices": [
+      { "text": "8", "is_correct": false },
+      { "text": "27", "is_correct": false },
+      { "text": "36", "is_correct": true },
+      { "text": "125", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Pattern: 1/2, 1, 2, 4, 8, ___. What is the next number?",
+    "explanation": "The sequence doubles each time. $8 \times 2 = 16$.",
+    "choices": [
+      { "text": "10", "is_correct": false },
+      { "text": "12", "is_correct": false },
+      { "text": "16", "is_correct": true },
+      { "text": "32", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In a visual pattern, a dot moves from corner to corner of a square clockwise. If it starts at Top-Left, where is it at the 10th move?",
+    "explanation": "The positions repeat every 4 moves. Move 4: TL, Move 8: TL, Move 9: TR, Move 10: BR.",
+    "choices": [
+      { "text": "Top-Right", "is_correct": false },
+      { "text": "Bottom-Right", "is_correct": true },
+      { "text": "Bottom-Left", "is_correct": false },
+      { "text": "Top-Left", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Sequence: 100, 99, 97, 94, 90, ___. What is the next number?",
+    "explanation": "The amount subtracted increases by 1: -1, -2, -3, -4. Next is -5. $90 - 5 = 85$.",
+    "choices": [
+      { "text": "86", "is_correct": false },
+      { "text": "85", "is_correct": true },
+      { "text": "84", "is_correct": false },
+      { "text": "80", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Pattern: AA, CE, EG, GI, ___. What comes next?",
+    "explanation": "The first letter follows A(+2)C(+2)E(+2)G(+2)I. The second follows A(+4)E(+2)G(+2)I... wait, checking logic: A-C-E-G-I and A-E-G-I-K. Next is IK.",
+    "choices": [
+      { "text": "HJ", "is_correct": false },
+      { "text": "IK", "is_correct": true },
+      { "text": "JK", "is_correct": false },
+      { "text": "JL", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If a square is divided into 4, then 16, then 64 parts, what is the next number in the pattern?",
+    "explanation": "The pattern is $4^1, 4^2, 4^3$. The next is $4^4 = 256$.",
+    "choices": [
+      { "text": "128", "is_correct": false },
+      { "text": "256", "is_correct": true },
+      { "text": "512", "is_correct": false },
+      { "text": "1024", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Sequence: 3, 4, 7, 11, 18, ___. What is the next number?",
+    "explanation": "This is a Lucas-style sequence where the next term is the sum of the previous two: $11 + 18 = 29$.",
+    "choices": [
+      { "text": "25", "is_correct": false },
+      { "text": "27", "is_correct": false },
+      { "text": "29", "is_correct": true },
+      { "text": "31", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Visual Pattern: An arrow points North, then North-East, then East. Where does it point next?",
+    "explanation": "The arrow rotates 45 degrees clockwise. Next is South-East.",
+    "choices": [
+      { "text": "South", "is_correct": false },
+      { "text": "South-East", "is_correct": true },
+      { "text": "North-West", "is_correct": false },
+      { "text": "West", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Number: 121, 144, 169, 196, ___. What is the next number?",
+    "explanation": "These are squares of 11, 12, 13, 14. Next is $15^2 = 225$.",
+    "choices": [
+      { "text": "215", "is_correct": false },
+      { "text": "220", "is_correct": false },
+      { "text": "225", "is_correct": true },
+      { "text": "256", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In a 3x3 pattern, if the top row is 2-4-8 and middle row is 3-9-27, what is the third row?",
+    "explanation": "The pattern is $x^1, x^2, x^3$. If it follows 2, 3, then 4: 4, 16, 64.",
+    "choices": [
+      { "text": "4, 8, 12", "is_correct": false },
+      { "text": "4, 16, 64", "is_correct": true },
+      { "text": "5, 10, 15", "is_correct": false },
+      { "text": "4, 20, 100", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Letters: M, N, O, L, R, I, ___. What is the next letter?",
+    "explanation": "Two interleaved sequences: M, O, R (+2, +3...) and N, L, I (-2, -3...). Next in first sequence (R+4) is V.",
+    "choices": [
+      { "text": "S", "is_correct": false },
+      { "text": "U", "is_correct": false },
+      { "text": "V", "is_correct": true },
+      { "text": "W", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Pattern: 1, 2, 6, 24, 120, ___. What is the next number?",
+    "explanation": "The pattern is $n!$ (factorials): 1!, 2!, 3!, 4!, 5!. Next is 6! = 720.",
+    "choices": [
+      { "text": "240", "is_correct": false },
+      { "text": "360", "is_correct": false },
+      { "text": "600", "is_correct": false },
+      { "text": "720", "is_correct": true }
+    ]
+  },
+  {
+    "text": "A circle is divided into 8 slices. If slice 1 is red, slice 2 is blue, slice 3 is red... what color is slice 8?",
+    "explanation": "Odd slices are red, even slices are blue.",
+    "choices": [
+      { "text": "Red", "is_correct": false },
+      { "text": "Blue", "is_correct": true },
+      { "text": "Green", "is_correct": false },
+      { "text": "Yellow", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Sequence: 0, 3, 8, 15, 24, ___. What is the next number?",
+    "explanation": "The sequence is $n^2 - 1$: $1^2-1, 2^2-1, 3^2-1...$ Next is $6^2-1 = 35$.",
+    "choices": [
+      { "text": "30", "is_correct": false },
+      { "text": "33", "is_correct": false },
+      { "text": "35", "is_correct": true },
+      { "text": "36", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Pattern: 8, 4, 12, 6, 18, ___. What is the next number?",
+    "explanation": "Pattern is divide by 2, then multiply by 3. $18 div 2 = 9$.",
+    "choices": [
+      { "text": "9", "is_correct": true },
+      { "text": "12", "is_correct": false },
+      { "text": "21", "is_correct": false },
+      { "text": "24", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Visual: A shape has 1 side, then 2, then 3. Wait, a shape cannot have 1 or 2 straight sides. If the sequence is Circle (1 curve), Semicircle (2 sides), Triangle (3 sides), what is next?",
+    "explanation": "Increasing the number of distinct boundaries/sides: 4 sides (Square/Rectangle).",
+    "choices": [
+      { "text": "Line", "is_correct": false },
+      { "text": "Square", "is_correct": true },
+      { "text": "Pentagon", "is_correct": false },
+      { "text": "Dot", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Letters: D, H, L, P, ___. What is the next letter?",
+    "explanation": "Each letter skips 3 letters (+4 positions): D(+4)H(+4)L(+4)P(+4)T.",
+    "choices": [
+      { "text": "S", "is_correct": false },
+      { "text": "T", "is_correct": true },
+      { "text": "U", "is_correct": false },
+      { "text": "V", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Sequence: 2, 3, 5, 7, 11, 13, ___. What is next?",
+    "explanation": "The sequence of prime numbers. The next prime after 13 is 17.",
+    "choices": [
+      { "text": "14", "is_correct": false },
+      { "text": "15", "is_correct": false },
+      { "text": "17", "is_correct": true },
+      { "text": "19", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Pattern: 1, 4, 2, 8, 4, 16, ___. What is next?",
+    "explanation": "The pattern alternates: multiply by 4, then divide by 2. $16 div 2 = 8$.",
+    "choices": [
+      { "text": "8", "is_correct": true },
+      { "text": "20", "is_correct": false },
+      { "text": "32", "is_correct": false },
+      { "text": "64", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If a pattern of letters is AB, BC, CD, DE... what is the 20th term?",
+    "explanation": "The 1st term starts with A (1st), the 20th term starts with T (20th). So, TU.",
+    "choices": [
+      { "text": "ST", "is_correct": false },
+      { "text": "TU", "is_correct": true },
+      { "text": "UV", "is_correct": false },
+      { "text": "VW", "is_correct": false }
+    ]
   }
 ]

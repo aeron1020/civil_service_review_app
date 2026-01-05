@@ -897,5 +897,611 @@
         ]
       }
     ]
+  },
+  {
+    "title": "The Lifelong Learner",
+    "passage": "In a rapidly evolving global economy, the concept of 'lifelong learning' has become a necessity rather than a choice. Traditional education provides a foundation, but the fast pace of technological advancement means that skills can become obsolete within a few years. Professionals who remain stagnant often find themselves sidelined as new industries emerge. Consequently, the most successful individuals are those who cultivate a growth mindset, actively seeking out workshops, online courses, and mentorship. This commitment to continuous improvement not only enhances personal employability but also drives innovation within organizations. As the boundaries between disciplines blur, the ability to learn and unlearn has become the ultimate competitive advantage in the 21st-century workforce.",
+    "questions": [
+      {
+        "text": "According to the passage, why is lifelong learning now considered a necessity?",
+        "explanation": "The text explains that the fast pace of technological change causes skills to become obsolete quickly.",
+        "choices": [
+          {
+            "text": "Because traditional education is no longer free",
+            "is_correct": false
+          },
+          {
+            "text": "Because technological advancement makes skills obsolete quickly",
+            "is_correct": true
+          },
+          {
+            "text": "Because companies require employees to have multiple degrees",
+            "is_correct": false
+          },
+          {
+            "text": "Because the global population is increasing",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "What does the author suggest happens to professionals who do not update their skills?",
+        "explanation": "The passage states that professionals who remain stagnant 'often find themselves sidelined.'",
+        "choices": [
+          {
+            "text": "They are given more leadership roles",
+            "is_correct": false
+          },
+          {
+            "text": "They find themselves sidelined as industries change",
+            "is_correct": true
+          },
+          {
+            "text": "They are encouraged to retire early with full benefits",
+            "is_correct": false
+          },
+          {
+            "text": "They become more valuable due to their seniority",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "What is the 'ultimate competitive advantage' mentioned in the text?",
+        "explanation": "The final sentence identifies the 'ability to learn and unlearn' as the key advantage.",
+        "choices": [
+          {
+            "text": "The ability to work long hours without rest",
+            "is_correct": false
+          },
+          {
+            "text": "The ability to learn and unlearn information",
+            "is_correct": true
+          },
+          {
+            "text": "Having a high-ranking position in a large firm",
+            "is_correct": false
+          },
+          {
+            "text": "Mastering a single skill for an entire career",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "What does a 'growth mindset' involve based on the context of the passage?",
+        "explanation": "The text describes it as actively seeking out ways to improve, such as workshops and mentorship.",
+        "choices": [
+          {
+            "text": "Focusing solely on salary increases",
+            "is_correct": false
+          },
+          {
+            "text": "Accepting that one's intelligence is fixed",
+            "is_correct": false
+          },
+          {
+            "text": "Actively seeking continuous improvement and learning",
+            "is_correct": true
+          },
+          {
+            "text": "Avoiding challenges to prevent failure",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "What is the author’s primary purpose in writing this passage?",
+        "explanation": "The passage aims to emphasize the importance of continuous learning in the modern world.",
+        "choices": [
+          {
+            "text": "To criticize the traditional school system",
+            "is_correct": false
+          },
+          {
+            "text": "To advocate for higher wages for tech workers",
+            "is_correct": false
+          },
+          {
+            "text": "To highlight the importance of lifelong learning",
+            "is_correct": true
+          },
+          {
+            "text": "To explain the history of the industrial revolution",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Urban Heat Island",
+    "passage": "As cities expand, they often experience what meteorologists call the 'Urban Heat Island' (UHI) effect. This phenomenon occurs when natural landscapes, like forests and water bodies, are replaced by dense concentrations of pavement, buildings, and other surfaces that absorb and retain heat. This results in urban areas being significantly warmer than their surrounding rural counterparts. The lack of vegetation further exacerbates the problem, as trees typically provide shade and release moisture into the air through evapotranspiration. To mitigate this, urban planners are now looking toward 'green architecture,' which incorporates living walls, rooftop gardens, and increased park spaces. These solutions not only lower city temperatures but also improve air quality and the overall mental well-being of residents.",
+    "questions": [
+      {
+        "text": "What causes the 'Urban Heat Island' effect according to the text?",
+        "explanation": "The text explains it is caused by buildings and pavement absorbing and retaining heat.",
+        "choices": [
+          {
+            "text": "The high number of cars in rural areas",
+            "is_correct": false
+          },
+          {
+            "text": "Surfaces that absorb and retain heat in cities",
+            "is_correct": true
+          },
+          {
+            "text": "The natural warmth of tropical climates",
+            "is_correct": false
+          },
+          {
+            "text": "A lack of skyscrapers to block the sun",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "Why is the lack of vegetation a problem for city temperatures?",
+        "explanation": "The passage notes that trees provide shade and release moisture, which helps cooling.",
+        "choices": [
+          {
+            "text": "Plants attract more rainfall to the city",
+            "is_correct": false
+          },
+          {
+            "text": "Vegetation produces wind that cools the streets",
+            "is_correct": false
+          },
+          {
+            "text": "Trees provide shade and release cooling moisture",
+            "is_correct": true
+          },
+          {
+            "text": "Plants absorb the noise from city traffic",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "What does 'green architecture' involve?",
+        "explanation": "The text mentions living walls, rooftop gardens, and park spaces as examples.",
+        "choices": [
+          { "text": "Painting all city buildings green", "is_correct": false },
+          {
+            "text": "Using cheaper, recycled plastic materials",
+            "is_correct": false
+          },
+          {
+            "text": "Incorporating living plants and parks into design",
+            "is_correct": true
+          },
+          { "text": "Building cities closer to the ocean", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What are the secondary benefits of green architecture mentioned in the passage?",
+        "explanation": "Beyond cooling, the text mentions improved air quality and mental well-being.",
+        "choices": [
+          {
+            "text": "Lower construction costs and faster building times",
+            "is_correct": false
+          },
+          {
+            "text": "Improved air quality and mental well-being",
+            "is_correct": true
+          },
+          {
+            "text": "Increased parking spaces and wider roads",
+            "is_correct": false
+          },
+          {
+            "text": "Better internet connectivity in parks",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "In this context, what does the word 'mitigate' most likely mean?",
+        "explanation": "The context discusses solutions to 'lower' or reduce the impact of the heat island effect.",
+        "choices": [
+          { "text": "To increase or amplify", "is_correct": false },
+          { "text": "To ignore or overlook", "is_correct": false },
+          { "text": "To reduce or lessen", "is_correct": true },
+          { "text": "To measure or calculate", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Power of Civic Participation",
+    "passage": "Democracy thrives not just on the strength of its laws, but on the active participation of its citizens. Civic engagement goes beyond the act of voting; it involves staying informed about local issues, attending community meetings, and holding officials accountable. When citizens remain indifferent, the gap between the government and the governed widens, often leading to policies that do not reflect the people's needs. Conversely, an engaged citizenry acts as a watchdog, ensuring transparency and promoting social justice. While the process of participation can be time-consuming, it is the most effective way to ensure that the government remains a true reflection of the collective will. Ultimately, a healthy society is built on the shared responsibility of every individual to contribute to the common good.",
+    "questions": [
+      {
+        "text": "What does the author suggest is necessary for a democracy to thrive?",
+        "explanation": "The author states that active participation of citizens is necessary.",
+        "choices": [
+          { "text": "A large military force", "is_correct": false },
+          { "text": "Strict and unchanging laws", "is_correct": false },
+          {
+            "text": "Active participation of its citizens",
+            "is_correct": true
+          },
+          { "text": "A strong economy above all else", "is_correct": false }
+        ]
+      },
+      {
+        "text": "According to the passage, what is a result of citizen indifference?",
+        "explanation": "The passage says indifference leads to policies that do not reflect the people's needs.",
+        "choices": [
+          {
+            "text": "More efficient government operations",
+            "is_correct": false
+          },
+          {
+            "text": "Policies that fail to reflect the people's needs",
+            "is_correct": true
+          },
+          { "text": "An increase in national wealth", "is_correct": false },
+          { "text": "Better international relations", "is_correct": false }
+        ]
+      },
+      {
+        "text": "How does an engaged citizenry help the government?",
+        "explanation": "The text describes an engaged citizenry as a 'watchdog' that ensures transparency.",
+        "choices": [
+          {
+            "text": "By following every instruction without question",
+            "is_correct": false
+          },
+          {
+            "text": "By ensuring transparency and accountability",
+            "is_correct": true
+          },
+          {
+            "text": "By funding government projects personally",
+            "is_correct": false
+          },
+          {
+            "text": "By limiting the power of local courts",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "What is the author's tone toward civic participation?",
+        "explanation": "The author speaks positively about it, calling it 'the most effective way' to ensure a healthy society.",
+        "choices": [
+          { "text": "Skeptical and doubtful", "is_correct": false },
+          { "text": "Encouraging and supportive", "is_correct": true },
+          { "text": "Hostile and aggressive", "is_correct": false },
+          { "text": "Indifferent and bored", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What is the main idea of the final sentence?",
+        "explanation": "The final sentence emphasizes shared responsibility for the common good.",
+        "choices": [
+          {
+            "text": "Individual success is more important than the community",
+            "is_correct": false
+          },
+          {
+            "text": "Government officials alone are responsible for society",
+            "is_correct": false
+          },
+          {
+            "text": "A healthy society relies on shared responsibility",
+            "is_correct": true
+          },
+          {
+            "text": "Voting is the only way to contribute to society",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Lifelong Learner",
+    "passage": "In a rapidly evolving global economy, the concept of 'lifelong learning' has become a necessity rather than a choice. Traditional education provides a foundation, but the fast pace of technological advancement means that skills can become obsolete within a few years. Professionals who remain stagnant often find themselves sidelined as new industries emerge. Consequently, the most successful individuals are those who cultivate a growth mindset, actively seeking out workshops, online courses, and mentorship. This commitment to continuous improvement not only enhances personal employability but also drives innovation within organizations. As the boundaries between disciplines blur, the ability to learn and unlearn has become the ultimate competitive advantage in the 21st-century workforce.",
+    "questions": [
+      {
+        "text": "According to the passage, why is lifelong learning now considered a necessity?",
+        "explanation": "The text explains that the fast pace of technological change causes skills to become obsolete quickly.",
+        "choices": [
+          {
+            "text": "Because traditional education is no longer free",
+            "is_correct": false
+          },
+          {
+            "text": "Because technological advancement makes skills obsolete quickly",
+            "is_correct": true
+          },
+          {
+            "text": "Because companies require employees to have multiple degrees",
+            "is_correct": false
+          },
+          {
+            "text": "Because the global population is increasing",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "What does the author suggest happens to professionals who do not update their skills?",
+        "explanation": "The passage states that professionals who remain stagnant 'often find themselves sidelined.'",
+        "choices": [
+          {
+            "text": "They are given more leadership roles",
+            "is_correct": false
+          },
+          {
+            "text": "They find themselves sidelined as industries change",
+            "is_correct": true
+          },
+          {
+            "text": "They are encouraged to retire early with full benefits",
+            "is_correct": false
+          },
+          {
+            "text": "They become more valuable due to their seniority",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "What is the 'ultimate competitive advantage' mentioned in the text?",
+        "explanation": "The final sentence identifies the 'ability to learn and unlearn' as the key advantage.",
+        "choices": [
+          {
+            "text": "The ability to work long hours without rest",
+            "is_correct": false
+          },
+          {
+            "text": "The ability to learn and unlearn information",
+            "is_correct": true
+          },
+          {
+            "text": "Having a high-ranking position in a large firm",
+            "is_correct": false
+          },
+          {
+            "text": "Mastering a single skill for an entire career",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "What does a 'growth mindset' involve based on the context of the passage?",
+        "explanation": "The text describes it as actively seeking out ways to improve, such as workshops and mentorship.",
+        "choices": [
+          {
+            "text": "Focusing solely on salary increases",
+            "is_correct": false
+          },
+          {
+            "text": "Accepting that one's intelligence is fixed",
+            "is_correct": false
+          },
+          {
+            "text": "Actively seeking continuous improvement and learning",
+            "is_correct": true
+          },
+          {
+            "text": "Avoiding challenges to prevent failure",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "What is the author’s primary purpose in writing this passage?",
+        "explanation": "The passage aims to emphasize the importance of continuous learning in the modern world.",
+        "choices": [
+          {
+            "text": "To criticize the traditional school system",
+            "is_correct": false
+          },
+          {
+            "text": "To advocate for higher wages for tech workers",
+            "is_correct": false
+          },
+          {
+            "text": "To highlight the importance of lifelong learning",
+            "is_correct": true
+          },
+          {
+            "text": "To explain the history of the industrial revolution",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Passage 2: The Urban Heat Island",
+    "passage": "As cities expand, they often experience what meteorologists call the 'Urban Heat Island' (UHI) effect. This phenomenon occurs when natural landscapes, like forests and water bodies, are replaced by dense concentrations of pavement, buildings, and other surfaces that absorb and retain heat. This results in urban areas being significantly warmer than their surrounding rural counterparts. The lack of vegetation further exacerbates the problem, as trees typically provide shade and release moisture into the air through evapotranspiration. To mitigate this, urban planners are now looking toward 'green architecture,' which incorporates living walls, rooftop gardens, and increased park spaces. These solutions not only lower city temperatures but also improve air quality and the overall mental well-being of residents.",
+    "questions": [
+      {
+        "text": "What causes the 'Urban Heat Island' effect according to the text?",
+        "explanation": "The text explains it is caused by buildings and pavement absorbing and retaining heat.",
+        "choices": [
+          {
+            "text": "The high number of cars in rural areas",
+            "is_correct": false
+          },
+          {
+            "text": "Surfaces that absorb and retain heat in cities",
+            "is_correct": true
+          },
+          {
+            "text": "The natural warmth of tropical climates",
+            "is_correct": false
+          },
+          {
+            "text": "A lack of skyscrapers to block the sun",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "Why is the lack of vegetation a problem for city temperatures?",
+        "explanation": "The passage notes that trees provide shade and release moisture, which helps cooling.",
+        "choices": [
+          {
+            "text": "Plants attract more rainfall to the city",
+            "is_correct": false
+          },
+          {
+            "text": "Vegetation produces wind that cools the streets",
+            "is_correct": false
+          },
+          {
+            "text": "Trees provide shade and release cooling moisture",
+            "is_correct": true
+          },
+          {
+            "text": "Plants absorb the noise from city traffic",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "What does 'green architecture' involve?",
+        "explanation": "The text mentions living walls, rooftop gardens, and park spaces as examples.",
+        "choices": [
+          { "text": "Painting all city buildings green", "is_correct": false },
+          {
+            "text": "Using cheaper, recycled plastic materials",
+            "is_correct": false
+          },
+          {
+            "text": "Incorporating living plants and parks into design",
+            "is_correct": true
+          },
+          { "text": "Building cities closer to the ocean", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What are the secondary benefits of green architecture mentioned in the passage?",
+        "explanation": "Beyond cooling, the text mentions improved air quality and mental well-being.",
+        "choices": [
+          {
+            "text": "Lower construction costs and faster building times",
+            "is_correct": false
+          },
+          {
+            "text": "Improved air quality and mental well-being",
+            "is_correct": true
+          },
+          {
+            "text": "Increased parking spaces and wider roads",
+            "is_correct": false
+          },
+          {
+            "text": "Better internet connectivity in parks",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "In this context, what does the word 'mitigate' most likely mean?",
+        "explanation": "The context discusses solutions to 'lower' or reduce the impact of the heat island effect.",
+        "choices": [
+          { "text": "To increase or amplify", "is_correct": false },
+          { "text": "To ignore or overlook", "is_correct": false },
+          { "text": "To reduce or lessen", "is_correct": true },
+          { "text": "To measure or calculate", "is_correct": false }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Power of Civic Participation",
+    "passage": "Democracy thrives not just on the strength of its laws, but on the active participation of its citizens. Civic engagement goes beyond the act of voting; it involves staying informed about local issues, attending community meetings, and holding officials accountable. When citizens remain indifferent, the gap between the government and the governed widens, often leading to policies that do not reflect the people's needs. Conversely, an engaged citizenry acts as a watchdog, ensuring transparency and promoting social justice. While the process of participation can be time-consuming, it is the most effective way to ensure that the government remains a true reflection of the collective will. Ultimately, a healthy society is built on the shared responsibility of every individual to contribute to the common good.",
+    "questions": [
+      {
+        "text": "What does the author suggest is necessary for a democracy to thrive?",
+        "explanation": "The author states that active participation of citizens is necessary.",
+        "choices": [
+          { "text": "A large military force", "is_correct": false },
+          { "text": "Strict and unchanging laws", "is_correct": false },
+          {
+            "text": "Active participation of its citizens",
+            "is_correct": true
+          },
+          { "text": "A strong economy above all else", "is_correct": false }
+        ]
+      },
+      {
+        "text": "According to the passage, what is a result of citizen indifference?",
+        "explanation": "The passage says indifference leads to policies that do not reflect the people's needs.",
+        "choices": [
+          {
+            "text": "More efficient government operations",
+            "is_correct": false
+          },
+          {
+            "text": "Policies that fail to reflect the people's needs",
+            "is_correct": true
+          },
+          { "text": "An increase in national wealth", "is_correct": false },
+          { "text": "Better international relations", "is_correct": false }
+        ]
+      },
+      {
+        "text": "How does an engaged citizenry help the government?",
+        "explanation": "The text describes an engaged citizenry as a 'watchdog' that ensures transparency.",
+        "choices": [
+          {
+            "text": "By following every instruction without question",
+            "is_correct": false
+          },
+          {
+            "text": "By ensuring transparency and accountability",
+            "is_correct": true
+          },
+          {
+            "text": "By funding government projects personally",
+            "is_correct": false
+          },
+          {
+            "text": "By limiting the power of local courts",
+            "is_correct": false
+          }
+        ]
+      },
+      {
+        "text": "What is the author's tone toward civic participation?",
+        "explanation": "The author speaks positively about it, calling it 'the most effective way' to ensure a healthy society.",
+        "choices": [
+          { "text": "Skeptical and doubtful", "is_correct": false },
+          { "text": "Encouraging and supportive", "is_correct": true },
+          { "text": "Hostile and aggressive", "is_correct": false },
+          { "text": "Indifferent and bored", "is_correct": false }
+        ]
+      },
+      {
+        "text": "What is the main idea of the final sentence?",
+        "explanation": "The final sentence emphasizes shared responsibility for the common good.",
+        "choices": [
+          {
+            "text": "Individual success is more important than the community",
+            "is_correct": false
+          },
+          {
+            "text": "Government officials alone are responsible for society",
+            "is_correct": false
+          },
+          {
+            "text": "A healthy society relies on shared responsibility",
+            "is_correct": true
+          },
+          {
+            "text": "Voting is the only way to contribute to society",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
   }
 ]

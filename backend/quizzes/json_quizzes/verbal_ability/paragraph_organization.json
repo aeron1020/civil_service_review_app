@@ -614,5 +614,452 @@
       { "text": "B-A-D-C", "is_correct": false },
       { "text": "C-D-A-B", "is_correct": false }
     ]
+  },
+  {
+    "text": "Which sentence is the best topic sentence for a paragraph about the Philippine Civil Service Exam?",
+    "explanation": "A topic sentence should be a general statement that introduces the main subject of the paragraph.",
+    "choices": [
+      {
+        "text": "The exam consists of both Professional and Sub-professional levels.",
+        "is_correct": false
+      },
+      {
+        "text": "Preparing for the Civil Service Exam requires a strategic study plan and consistency.",
+        "is_correct": true
+      },
+      {
+        "text": "Many examinees find the math section particularly challenging.",
+        "is_correct": false
+      },
+      {
+        "text": "Results are usually released within 60 days of the test date.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Arrange the following sentences to form a logical paragraph:\n1. Then, dry the surface with a soft microfiber cloth.\n2. First, remove any loose dust with a brush.\n3. Next, apply a small amount of cleaning solution.\n4. Finally, inspect the area for any remaining spots.",
+    "explanation": "The correct sequence follows the chronological transition words: First, Next, Then, Finally.",
+    "choices": [
+      { "text": "2-3-1-4", "is_correct": true },
+      { "text": "2-1-3-4", "is_correct": false },
+      { "text": "3-2-1-4", "is_correct": false },
+      { "text": "1-2-3-4", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence would most likely be the conclusion of a paragraph regarding climate change?",
+    "explanation": "A conclusion summarizes the point and often calls for action or provides a final thought.",
+    "choices": [
+      {
+        "text": "Greenhouse gases trap heat in the atmosphere.",
+        "is_correct": false
+      },
+      {
+        "text": "Therefore, global cooperation is vital to ensuring a habitable planet for future generations.",
+        "is_correct": true
+      },
+      {
+        "text": "Melting ice caps lead to rising sea levels.",
+        "is_correct": false
+      },
+      {
+        "text": "The industrial revolution marked the start of increased carbon emissions.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What is the best order for these sentences?\n1. These vitamins help the body convert food into fuel.\n2. B-complex vitamins are essential for maintaining energy levels.\n3. They also play a key role in brain function and cell health.",
+    "explanation": "Sentence 2 introduces the subject. Sentence 1 explains the 'essential' part using 'These vitamins.' Sentence 3 adds more info with 'also.'",
+    "choices": [
+      { "text": "1-2-3", "is_correct": false },
+      { "text": "3-1-2", "is_correct": false },
+      { "text": "2-1-3", "is_correct": true },
+      { "text": "2-3-1", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence is a supporting detail for the topic 'The Importance of Handwashing'?",
+    "explanation": "Supporting details provide specific evidence or reasons for the main idea.",
+    "choices": [
+      { "text": "Germs are invisible to the naked eye.", "is_correct": false },
+      {
+        "text": "Soap and water can effectively remove pathogens that cause diseases.",
+        "is_correct": true
+      },
+      {
+        "text": "Handwashing is a common practice around the world.",
+        "is_correct": false
+      },
+      {
+        "text": "Many public restrooms have automatic sinks.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Arrange these sentences logically:\n1. It eventually led to the modern internet we use today.\n2. In the late 1960s, ARPANET was created for military use.\n3. This network allowed computers to share data for the first time.",
+    "explanation": "The order is chronological and follows the development: introduction of ARPANET (2), what it allowed (3), and the end result (1).",
+    "choices": [
+      { "text": "2-3-1", "is_correct": true },
+      { "text": "1-2-3", "is_correct": false },
+      { "text": "3-2-1", "is_correct": false },
+      { "text": "2-1-3", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence acts as a transition in a paragraph about shifting from coal to solar energy?",
+    "explanation": "Transitions link two different ideas together, such as the move from coal (old) to solar (new).",
+    "choices": [
+      {
+        "text": "Coal has been a primary source of power for decades.",
+        "is_correct": false
+      },
+      {
+        "text": "Despite these historical benefits, the environmental cost of coal is driving a shift toward solar power.",
+        "is_correct": true
+      },
+      {
+        "text": "Solar panels convert sunlight into electricity.",
+        "is_correct": false
+      },
+      {
+        "text": "Renewable energy is becoming more affordable.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What is the logical order for these steps in making coffee?\n1. Pour hot water over the coffee grounds.\n2. Grind the coffee beans to a medium consistency.\n3. Allow the coffee to brew for four minutes.",
+    "explanation": "The logical sequence is grinding the beans, pouring the water, and then letting it brew.",
+    "choices": [
+      { "text": "2-1-3", "is_correct": true },
+      { "text": "1-2-3", "is_correct": false },
+      { "text": "3-2-1", "is_correct": false },
+      { "text": "2-3-1", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of these sentences does NOT belong in a paragraph about 'Effective Time Management'?",
+    "explanation": "An irrelevant sentence deviates from the core theme of managing time.",
+    "choices": [
+      {
+        "text": "Prioritizing tasks helps in meeting deadlines.",
+        "is_correct": false
+      },
+      {
+        "text": "Distractions should be minimized to maintain focus.",
+        "is_correct": false
+      },
+      {
+        "text": "The office furniture was recently upgraded to improve aesthetics.",
+        "is_correct": true
+      },
+      {
+        "text": "Setting specific goals provides a clear roadmap for the day.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Arrange these sentences into a coherent story:\n1. He felt a surge of joy when he saw his name on the list.\n2. For months, Angelo studied until midnight.\n3. He finally took the licensure exam on a rainy Sunday.",
+    "explanation": "The order shows the preparation (2), the action (3), and the result/emotion (1).",
+    "choices": [
+      { "text": "2-3-1", "is_correct": true },
+      { "text": "3-2-1", "is_correct": false },
+      { "text": "1-2-3", "is_correct": false },
+      { "text": "2-1-3", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence is the best opening for a paragraph about Philippine biodiversity?",
+    "explanation": "A strong opening establishes the setting and the significance of the topic.",
+    "choices": [
+      {
+        "text": "The Philippines is recognized as one of the world's 17 megadiverse countries.",
+        "is_correct": true
+      },
+      { "text": "The Tarsier is found in Bohol.", "is_correct": false },
+      {
+        "text": "Illegal logging is a threat to our forests.",
+        "is_correct": false
+      },
+      {
+        "text": "Many tourists visit Palawan for its beaches.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Determine the logical sequence:\n1. It provides a quick burst of energy.\n2. However, this energy is often followed by a 'sugar crash.'\n3. Consuming sugary snacks is a common habit.",
+    "explanation": "Introduction of the habit (3), the immediate effect (1), and the contradictory downside (2).",
+    "choices": [
+      { "text": "3-1-2", "is_correct": true },
+      { "text": "1-2-3", "is_correct": false },
+      { "text": "3-2-1", "is_correct": false },
+      { "text": "2-1-3", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Identify the concluding sentence for a paragraph about the benefits of exercise.",
+    "explanation": "A conclusion summarizes the overall impact of the benefits mentioned.",
+    "choices": [
+      {
+        "text": "Regular exercise strengthens the heart and lungs.",
+        "is_correct": false
+      },
+      {
+        "text": "Walking 30 minutes a day is a good start.",
+        "is_correct": false
+      },
+      {
+        "text": "In summary, staying active is the cornerstone of a long and healthy life.",
+        "is_correct": true
+      },
+      {
+        "text": "Some people prefer swimming over running.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Order these sentences:\n1. This allows for better air circulation.\n2. When storing clothes, do not pack them too tightly.\n3. It also prevents the growth of mold and mildew.",
+    "explanation": "The advice (2), the immediate reason (1), and the additional reason (3).",
+    "choices": [
+      { "text": "2-1-3", "is_correct": true },
+      { "text": "1-2-3", "is_correct": false },
+      { "text": "3-2-1", "is_correct": false },
+      { "text": "2-3-1", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence is the topic sentence for a paragraph about public speaking?",
+    "explanation": "The topic sentence identifies the broad subject of the paragraph.",
+    "choices": [
+      {
+        "text": "Maintaining eye contact builds trust with the audience.",
+        "is_correct": false
+      },
+      {
+        "text": "Public speaking is a skill that can be mastered through practice and preparation.",
+        "is_correct": true
+      },
+      {
+        "text": "Using visual aids can make a presentation more engaging.",
+        "is_correct": false
+      },
+      { "text": "Nervousness is natural for beginners.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Arrange the sentences:\n1. Consequently, farmers are facing lower crop yields.\n2. The prolonged drought has dried up the local irrigation systems.\n3. This has led to an increase in food prices in the market.",
+    "explanation": "The cause (2), the immediate consequence for farmers (1), and the final impact on consumers (3).",
+    "choices": [
+      { "text": "2-1-3", "is_correct": true },
+      { "text": "1-2-3", "is_correct": false },
+      { "text": "3-2-1", "is_correct": false },
+      { "text": "2-3-1", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence would BEST complete a paragraph on the importance of reading?",
+    "explanation": "A concluding sentence often summarizes the 'importance' discussed throughout.",
+    "choices": [
+      {
+        "text": "Reading books can be done on electronic devices.",
+        "is_correct": false
+      },
+      {
+        "text": "Therefore, reading is not just a hobby, but a vital tool for personal growth.",
+        "is_correct": true
+      },
+      {
+        "text": "Many libraries are now offering free internet access.",
+        "is_correct": false
+      },
+      {
+        "text": "Fiction books allow for imaginative exploration.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Order the following:\n1. Add a pinch of salt to the boiling water.\n2. Wait until the water reaches a rolling boil.\n3. Fill a pot with two liters of water.",
+    "explanation": "The preparation (3), the condition (2), and the action (1).",
+    "choices": [
+      { "text": "3-2-1", "is_correct": true },
+      { "text": "1-2-3", "is_correct": false },
+      { "text": "2-3-1", "is_correct": false },
+      { "text": "3-1-2", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence is out of place in a paragraph about 'The Benefits of Recycling'?",
+    "explanation": "Sentences about 'history' or 'manufacturing' are often irrelevant to 'benefits.'",
+    "choices": [
+      {
+        "text": "Recycling reduces the need for raw material extraction.",
+        "is_correct": false
+      },
+      {
+        "text": "It helps in decreasing the volume of waste in landfills.",
+        "is_correct": false
+      },
+      {
+        "text": "The first plastic was invented in the early 1900s.",
+        "is_correct": true
+      },
+      {
+        "text": "Energy consumption is significantly lower when using recycled materials.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Arrange these sentences:\n1. These include a valid ID and a birth certificate.\n2. To apply for a passport, you must first gather the necessary documents.\n3. Once ready, you can book an appointment online.",
+    "explanation": "The general requirement (2), the specific list (1), and the next step (3).",
+    "choices": [
+      { "text": "2-1-3", "is_correct": true },
+      { "text": "1-2-3", "is_correct": false },
+      { "text": "3-2-1", "is_correct": false },
+      { "text": "2-3-1", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence is the most effective topic sentence for a paragraph on 'Mental Health'?",
+    "explanation": "A topic sentence should be broad enough to cover various sub-topics like awareness and care.",
+    "choices": [
+      { "text": "Meditation can reduce anxiety.", "is_correct": false },
+      {
+        "text": "Mental health awareness is essential for creating a supportive society.",
+        "is_correct": true
+      },
+      { "text": "Many people go to therapy once a week.", "is_correct": false },
+      { "text": "Stress is a common part of modern life.", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the logical sequence?\n1. Finally, she landed her dream job in the city.\n2. She spent years honing her skills through internships.\n3. After graduation, Maria faced many rejections.",
+    "explanation": "The timeline: Graduation/Rejections (3), Work/Honing skills (2), and Success (1).",
+    "choices": [
+      { "text": "3-2-1", "is_correct": true },
+      { "text": "1-2-3", "is_correct": false },
+      { "text": "2-3-1", "is_correct": false },
+      { "text": "3-1-2", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Identify the transition word in this sentence: 'Consequently, the team decided to postpone the event.'",
+    "explanation": "'Consequently' is a transitional adverb indicating a result.",
+    "choices": [
+      { "text": "Decided", "is_correct": false },
+      { "text": "Postpone", "is_correct": false },
+      { "text": "Consequently", "is_correct": true },
+      { "text": "Event", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Order these sentences:\n1. It then travels through the esophagus to the stomach.\n2. Digestion begins in the mouth where food is chewed.\n3. Enzymes in the stomach then break down the food further.",
+    "explanation": "Follows the biological path: Mouth (2), Esophagus (1), Stomach (3).",
+    "choices": [
+      { "text": "2-1-3", "is_correct": true },
+      { "text": "1-2-3", "is_correct": false },
+      { "text": "3-2-1", "is_correct": false },
+      { "text": "2-3-1", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence is the best topic sentence for a paragraph about solar energy?",
+    "explanation": "Introduces the main subject (solar energy) as a viable solution.",
+    "choices": [
+      {
+        "text": "Solar energy is a clean and sustainable alternative to fossil fuels.",
+        "is_correct": true
+      },
+      {
+        "text": "Panels are usually installed on rooftops.",
+        "is_correct": false
+      },
+      { "text": "The sun is 93 million miles away.", "is_correct": false },
+      {
+        "text": "Electricity bills can be high in the summer.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Arrange the sentences:\n1. However, some species are now endangered due to habitat loss.\n2. The Amazon Rainforest is home to millions of species.\n3. This vast ecosystem plays a critical role in regulating the Earth's climate.",
+    "explanation": "Introduction of the place (2), its ecological role (3), and the negative contrast/threat (1).",
+    "choices": [
+      { "text": "2-3-1", "is_correct": true },
+      { "text": "1-2-3", "is_correct": false },
+      { "text": "3-2-1", "is_correct": false },
+      { "text": "2-1-3", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which sentence would likely be the conclusion of a paragraph about financial literacy?",
+    "explanation": "A conclusion provides the final takeaway on the importance of the topic.",
+    "choices": [
+      {
+        "text": "Savings accounts offer low interest rates.",
+        "is_correct": false
+      },
+      {
+        "text": "Credit cards can lead to debt if not managed.",
+        "is_correct": false
+      },
+      {
+        "text": "In conclusion, being financially literate ensures a secure and stable future.",
+        "is_correct": true
+      },
+      {
+        "text": "Budgeting involves tracking your expenses.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Order the following steps:\n1. Check the battery levels regularly.\n2. To maintain your laptop, keep it away from direct sunlight.\n3. You should also clean the screen with a dry cloth.",
+    "explanation": "General advice (2), regular maintenance (1), and additional cleaning tip (3).",
+    "choices": [
+      { "text": "2-1-3", "is_correct": true },
+      { "text": "1-2-3", "is_correct": false },
+      { "text": "3-2-1", "is_correct": false },
+      { "text": "2-3-1", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of these sentences is irrelevant to a paragraph about 'The History of the Jeepney'?",
+    "explanation": "A sentence about modern car prices is not related to the history of a specific vehicle.",
+    "choices": [
+      {
+        "text": "Jeepneys originated from surplus US military jeeps after WWII.",
+        "is_correct": false
+      },
+      {
+        "text": "The average cost of a modern SUV has risen this year.",
+        "is_correct": true
+      },
+      {
+        "text": "They became the primary mode of public transport in the Philippines.",
+        "is_correct": false
+      },
+      {
+        "text": "Over time, they were decorated with vibrant colors and signs.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Arrange the sentences:\n1. This leads to clearer skin and better hydration.\n2. Drinking at least eight glasses of water a day is recommended.\n3. It also aids in flushing out toxins from the body.",
+    "explanation": "The recommendation (2), the first benefit (3), and the visible result (1).",
+    "choices": [
+      { "text": "2-3-1", "is_correct": true },
+      { "text": "1-2-3", "is_correct": false },
+      { "text": "3-2-1", "is_correct": false },
+      { "text": "2-1-3", "is_correct": false }
+    ]
   }
 ]

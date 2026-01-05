@@ -158,6 +158,309 @@
     ]
   },
   {
+    "text": "What is the supreme law of the Republic of the Philippines?",
+    "explanation": "The Constitution is the fundamental and supreme law of the land to which all other laws must conform.",
+    "choices": [
+      { "text": "The Civil Code", "is_correct": false },
+      { "text": "The Revised Penal Code", "is_correct": false },
+      { "text": "The 1987 Constitution", "is_correct": true },
+      { "text": "The Republic Acts", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which article of the 1987 Constitution contains the Bill of Rights?",
+    "explanation": "Article III of the Constitution lists the fundamental rights and privileges of Filipinos that the government cannot violate.",
+    "choices": [
+      { "text": "Article I", "is_correct": false },
+      { "text": "Article II", "is_correct": false },
+      { "text": "Article III", "is_correct": true },
+      { "text": "Article IV", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who has the power to declare the existence of a state of war according to the Constitution?",
+    "explanation": "Under Article VI, Section 23, the Congress, by a two-thirds vote of both Houses in joint session, has the sole power to declare a state of war.",
+    "choices": [
+      { "text": "The President", "is_correct": false },
+      { "text": "The Congress", "is_correct": true },
+      { "text": "The Supreme Court", "is_correct": false },
+      { "text": "The Secretary of National Defense", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the minimum age requirement to run for President of the Philippines?",
+    "explanation": "Article VII, Section 2 states that a candidate for President must be at least 40 years of age on the day of the election.",
+    "choices": [
+      { "text": "35 years old", "is_correct": false },
+      { "text": "40 years old", "is_correct": true },
+      { "text": "45 years old", "is_correct": false },
+      { "text": "50 years old", "is_correct": false }
+    ]
+  },
+  {
+    "text": "How long is the term of office for a Senator in the Philippines?",
+    "explanation": "Senators serve a term of 6 years and are limited to two consecutive terms.",
+    "choices": [
+      { "text": "3 years", "is_correct": false },
+      { "text": "4 years", "is_correct": false },
+      { "text": "6 years", "is_correct": true },
+      { "text": "9 years", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which branch of government is vested with the power to interpret the laws?",
+    "explanation": "The Judicial Power is vested in the Supreme Court and lower courts, as stated in Article VIII.",
+    "choices": [
+      { "text": "Legislative Branch", "is_correct": false },
+      { "text": "Executive Branch", "is_correct": false },
+      { "text": "Judicial Branch", "is_correct": true },
+      { "text": "Constitutional Commission", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the maximum number of years a President can serve in office?",
+    "explanation": "The President is limited to a single 6-year term without any possibility of re-election.",
+    "choices": [
+      { "text": "4 years", "is_correct": false },
+      { "text": "6 years", "is_correct": true },
+      { "text": "10 years", "is_correct": false },
+      { "text": "12 years", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which right ensures that no person shall be held to answer for a criminal offense without due process of law?",
+    "explanation": "The right to Due Process (Article III, Section 1) protects individuals from the arbitrary denial of life, liberty, or property.",
+    "choices": [
+      { "text": "Right to Privacy", "is_correct": false },
+      { "text": "Right to Due Process", "is_correct": true },
+      { "text": "Right to Information", "is_correct": false },
+      { "text": "Right to Bail", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What are the three independent Constitutional Commissions in the Philippines?",
+    "explanation": "Article IX identifies the Civil Service Commission (CSC), Commission on Elections (COMELEC), and Commission on Audit (COA).",
+    "choices": [
+      { "text": "CSC, COMELEC, and CHR", "is_correct": false },
+      { "text": "CSC, COMELEC, and COA", "is_correct": true },
+      { "text": "COA, CHR, and Ombudsman", "is_correct": false },
+      { "text": "COMELEC, COA, and PCGG", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The 'Writ of Habeas Data' is a remedy available to any person whose right to _______ is violated or threatened.",
+    "explanation": "The Writ of Habeas Data protects the right to informational privacy.",
+    "choices": [
+      { "text": "Life and Liberty", "is_correct": false },
+      { "text": "Property", "is_correct": false },
+      { "text": "Informational Privacy", "is_correct": true },
+      { "text": "Travel", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which branch of government has the 'Power of the Purse' or the power to appropriate money?",
+    "explanation": "The Legislative branch (Congress) has the power to authorize the spending of public funds through the General Appropriations Act.",
+    "choices": [
+      { "text": "Executive", "is_correct": false },
+      { "text": "Legislative", "is_correct": true },
+      { "text": "Judicial", "is_correct": false },
+      { "text": "Commission on Audit", "is_correct": false }
+    ]
+  },
+  {
+    "text": "How many Senators are there in the Philippine Senate?",
+    "explanation": "The Senate is composed of 24 Senators who are elected at large by the qualified voters of the Philippines.",
+    "choices": [
+      { "text": "12", "is_correct": false },
+      { "text": "24", "is_correct": true },
+      { "text": "50", "is_correct": false },
+      { "text": "250", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who is the Commander-in-Chief of all armed forces of the Philippines?",
+    "explanation": "According to Article VII, Section 18, the President is the Commander-in-Chief of the Armed Forces of the Philippines.",
+    "choices": [
+      { "text": "The Chief of Staff", "is_correct": false },
+      { "text": "The President", "is_correct": true },
+      { "text": "The Secretary of National Defense", "is_correct": false },
+      { "text": "The Senate President", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which right allows the state to take private property for public use upon payment of just compensation?",
+    "explanation": "This is known as the Power of Eminent Domain, found in Article III, Section 9.",
+    "choices": [
+      { "text": "Right to Property", "is_correct": false },
+      { "text": "Eminent Domain", "is_correct": true },
+      { "text": "Police Power", "is_correct": false },
+      { "text": "Taxation", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the term of office for a Member of the House of Representatives?",
+    "explanation": "Members of the House of Representatives serve for a term of 3 years and can serve up to three consecutive terms.",
+    "choices": [
+      { "text": "3 years", "is_correct": true },
+      { "text": "4 years", "is_correct": false },
+      { "text": "6 years", "is_correct": false },
+      { "text": "2 years", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which constitutional body has the power to settle all contests relating to the elections of the President and Vice-President?",
+    "explanation": "The Supreme Court, sitting en banc, acts as the Presidential Electoral Tribunal (PET).",
+    "choices": [
+      { "text": "COMELEC", "is_correct": false },
+      { "text": "Congress", "is_correct": false },
+      { "text": "Supreme Court", "is_correct": true },
+      { "text": "Sandiganbayan", "is_correct": false }
+    ]
+  },
+  {
+    "text": "According to Article II, Section 6, the separation of ______ and ______ shall be inviolable.",
+    "explanation": "The Constitution mandates the separation of Church and State.",
+    "choices": [
+      { "text": "Powers and Duties", "is_correct": false },
+      { "text": "Church and State", "is_correct": true },
+      { "text": "Military and Police", "is_correct": false },
+      { "text": "Politics and Business", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which right protects people from being tried twice for the same offense?",
+    "explanation": "This is the right against Double Jeopardy, found in Article III, Section 21.",
+    "choices": [
+      { "text": "Right to Remain Silent", "is_correct": false },
+      { "text": "Double Jeopardy", "is_correct": true },
+      { "text": "Ex Post Facto Law", "is_correct": false },
+      { "text": "Bill of Attainder", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the age of majority or the minimum age required to exercise the right of suffrage (voting)?",
+    "explanation": "Article V, Section 1 states that suffrage may be exercised by all citizens of the Philippines not otherwise disqualified by law, who are at least 18 years of age.",
+    "choices": [
+      { "text": "15 years old", "is_correct": false },
+      { "text": "18 years old", "is_correct": true },
+      { "text": "21 years old", "is_correct": false },
+      { "text": "16 years old", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the official national language of the Philippines according to the 1987 Constitution?",
+    "explanation": "Article XIV, Section 6 states that the national language of the Philippines is Filipino.",
+    "choices": [
+      { "text": "Tagalog", "is_correct": false },
+      { "text": "English", "is_correct": false },
+      { "text": "Filipino", "is_correct": true },
+      { "text": "Spanish", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which body has the sole power to try and decide all cases of impeachment?",
+    "explanation": "The Senate has the sole power to try and decide all cases of impeachment.",
+    "choices": [
+      { "text": "Supreme Court", "is_correct": false },
+      { "text": "The House of Representatives", "is_correct": false },
+      { "text": "The Senate", "is_correct": true },
+      { "text": "The Ombudsman", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The 'Writ of Amparo' is a remedy available to any person whose right to _______ is violated or threatened by an unlawful act of a public official.",
+    "explanation": "The Writ of Amparo protects the right to life, liberty, and security.",
+    "choices": [
+      { "text": "Property", "is_correct": false },
+      { "text": "Life, Liberty, and Security", "is_correct": true },
+      { "text": "Privacy", "is_correct": false },
+      { "text": "Education", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Under the Constitution, the Philippines is a _______ and _______ State.",
+    "explanation": "Article II, Section 1 states that 'The Philippines is a democratic and republican State.'",
+    "choices": [
+      { "text": "Socialist and Federal", "is_correct": false },
+      { "text": "Democratic and Republican", "is_correct": true },
+      { "text": "Monarchy and Unitary", "is_correct": false },
+      { "text": "Parliamentary and Secular", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which commission is responsible for the conduct of civil service examinations and the central personnel agency of the government?",
+    "explanation": "The Civil Service Commission (CSC) handles all matters regarding government employees and eligibility.",
+    "choices": [
+      { "text": "Professional Regulation Commission", "is_correct": false },
+      { "text": "Civil Service Commission", "is_correct": true },
+      { "text": "Commission on Higher Education", "is_correct": false },
+      { "text": "Department of Budget and Management", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who appoints the Chief Justice of the Supreme Court?",
+    "explanation": "The President appoints the Chief Justice and the Associate Justices of the Supreme Court from a list of nominees prepared by the Judicial and Bar Council.",
+    "choices": [
+      { "text": "The Senate President", "is_correct": false },
+      { "text": "The President", "is_correct": true },
+      { "text": "The Congress", "is_correct": false },
+      { "text": "The Judicial and Bar Council", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the term for a law that punishes an act which was not a crime at the time it was committed?",
+    "explanation": "The Constitution prohibits the passage of an 'Ex Post Facto Law' (Article III, Section 22).",
+    "choices": [
+      { "text": "Bill of Attainder", "is_correct": false },
+      { "text": "Ex Post Facto Law", "is_correct": true },
+      { "text": "Writ of Mandamus", "is_correct": false },
+      { "text": "Statutory Law", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following is NOT a qualification for a Senator?",
+    "explanation": "A Senator must be a natural-born citizen, at least 35 years old, able to read and write, a registered voter, and a resident of the Philippines for not less than two years.",
+    "choices": [
+      { "text": "At least 35 years old", "is_correct": false },
+      { "text": "Natural-born citizen", "is_correct": false },
+      { "text": "College Graduate", "is_correct": true },
+      { "text": "Registered Voter", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the title of Article II of the 1987 Constitution?",
+    "explanation": "Article II is titled 'Declaration of Principles and State Policies.'",
+    "choices": [
+      { "text": "Bill of Rights", "is_correct": false },
+      { "text": "Citizenship", "is_correct": false },
+      {
+        "text": "Declaration of Principles and State Policies",
+        "is_correct": true
+      },
+      { "text": "Suffrage", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who is the 'Tanodbayan' of the Philippines?",
+    "explanation": "The Ombudsman is known as the Tanodbayan, the protector of the people against government corruption.",
+    "choices": [
+      { "text": "The Solicitor General", "is_correct": false },
+      { "text": "The Ombudsman", "is_correct": true },
+      { "text": "The Chief Justice", "is_correct": false },
+      { "text": "The DOJ Secretary", "is_correct": false }
+    ]
+  },
+  {
+    "text": "When did the 1987 Constitution officially take effect?",
+    "explanation": "The 1987 Constitution was ratified on February 2, 1987, through a nationwide plebiscite.",
+    "choices": [
+      { "text": "February 2, 1987", "is_correct": true },
+      { "text": "January 1, 1987", "is_correct": false },
+      { "text": "June 12, 1987", "is_correct": false },
+      { "text": "February 25, 1986", "is_correct": false }
+    ]
+  },
+  {
     "text": "Which branch of the government has the power to interpret laws?",
     "explanation": "The Judicial Branch interprets laws and determines whether acts of the government are constitutional.",
     "choices": [

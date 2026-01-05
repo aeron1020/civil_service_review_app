@@ -340,6 +340,312 @@
     ]
   },
   {
+    "text": "As of early 2026, who is the current Secretary of the Department of Education (DepEd) of the Philippines?",
+    "explanation": "Following the reorganization of the cabinet, the Secretary of Education is the primary official overseeing the nation's K-12 system.",
+    "choices": [
+      { "text": "Sara Duterte", "is_correct": false },
+      { "text": "Sonny Angara", "is_correct": true },
+      { "text": "Rex Gatchalian", "is_correct": false },
+      { "text": "Ralph Recto", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine government agency is responsible for monitoring volcanic activity and earthquakes, such as the recent unrest of Kanlaon Volcano?",
+    "explanation": "PHIVOLCS (Philippine Institute of Volcanology and Seismology) provides technical information on earthquakes and volcanic eruptions.",
+    "choices": [
+      { "text": "PAGASA", "is_correct": false },
+      { "text": "PHIVOLCS", "is_correct": true },
+      { "text": "DENR", "is_correct": false },
+      { "text": "NDRRMC", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the name of the sovereign wealth fund of the Philippines that recently became operational to invest in national infrastructure?",
+    "explanation": "The Maharlika Investment Fund (MIF) is the Philippines' first sovereign wealth fund, intended to stimulate economic growth.",
+    "choices": [
+      { "text": "Philippine National Fund", "is_correct": false },
+      { "text": "Maharlika Investment Fund", "is_correct": true },
+      { "text": "Build Better More Fund", "is_correct": false },
+      { "text": "Agila Reserve Fund", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The 2024 United Nations Climate Change Conference, more commonly referred to as COP29, was hosted by which country?",
+    "explanation": "COP29 was held in Baku, Azerbaijan, focusing on climate finance for developing nations.",
+    "choices": [
+      { "text": "United Arab Emirates", "is_correct": false },
+      { "text": "Azerbaijan", "is_correct": true },
+      { "text": "Brazil", "is_correct": false },
+      { "text": "Egypt", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which country officially became the 32nd member of the North Atlantic Treaty Organization (NATO) in 2024?",
+    "explanation": "Sweden officially joined NATO in March 2024, following Finland's entry the previous year.",
+    "choices": [
+      { "text": "Ukraine", "is_correct": false },
+      { "text": "Finland", "is_correct": false },
+      { "text": "Sweden", "is_correct": true },
+      { "text": "Switzerland", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the primary purpose of the 'Bagong Pilipinas' campaign launched by the current administration?",
+    "explanation": "Bagong Pilipinas is the brand of governance and leadership, calling for a deep and fundamental transformation in all sectors of society.",
+    "choices": [
+      { "text": "A tourism slogan", "is_correct": false },
+      { "text": "A new currency design", "is_correct": false },
+      {
+        "text": "A brand of governance and transformation",
+        "is_correct": true
+      },
+      { "text": "An agricultural program", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who is the current Speaker of the House of Representatives in the 19th Congress of the Philippines?",
+    "explanation": "Ferdinand Martin Romualdez serves as the Speaker of the House of Representatives.",
+    "choices": [
+      { "text": "Juan Miguel Zubiri", "is_correct": false },
+      { "text": "Francis Escudero", "is_correct": false },
+      { "text": "Martin Romualdez", "is_correct": true },
+      { "text": "Alan Peter Cayetano", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which global tech company recently announced a massive investment in the Philippines to build its first regional cloud data center?",
+    "explanation": "Google (Alphabet Inc.) and other tech giants like Microsoft have been expanding digital infrastructure in the Philippines.",
+    "choices": [
+      { "text": "Apple", "is_correct": false },
+      { "text": "Google", "is_correct": true },
+      { "text": "Tesla", "is_correct": false },
+      { "text": "Netflix", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In 2024, the Philippines hosted the first-ever trilateral summit between the leaders of the Philippines, Japan, and which other country?",
+    "explanation": "The historic trilateral summit involved President Marcos Jr., PM Kishida of Japan, and President Biden of the United States.",
+    "choices": [
+      { "text": "Australia", "is_correct": false },
+      { "text": "United States", "is_correct": true },
+      { "text": "South Korea", "is_correct": false },
+      { "text": "Vietnam", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Filipino gymnast won two historic gold medals at the 2024 Paris Olympics?",
+    "explanation": "Carlos Yulo won gold in both the Floor Exercise and Vault at the Paris 2024 Summer Olympics.",
+    "choices": [
+      { "text": "EJ Obiena", "is_correct": false },
+      { "text": "Carlos Yulo", "is_correct": true },
+      { "text": "Hidilyn Diaz", "is_correct": false },
+      { "text": "Nesthy Petecio", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What does the acronym RCEP stand for, a major free trade agreement the Philippines recently joined?",
+    "explanation": "Regional Comprehensive Economic Partnership (RCEP) is a free trade agreement among Asia-Pacific nations.",
+    "choices": [
+      { "text": "Regional Council for Economic Progress", "is_correct": false },
+      {
+        "text": "Regional Comprehensive Economic Partnership",
+        "is_correct": true
+      },
+      { "text": "Retail Consumer Economic Program", "is_correct": false },
+      { "text": "Regional Cooperation for Export Policy", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who was elected as the new Senate President of the Philippines in May 2024, replacing Juan Miguel Zubiri?",
+    "explanation": "Senator Francis 'Chiz' Escudero was elected as the Senate President of the Philippines in May 2024.",
+    "choices": [
+      { "text": "Loren Legarda", "is_correct": false },
+      { "text": "Francis Escudero", "is_correct": true },
+      { "text": "Raffy Tulfo", "is_correct": false },
+      { "text": "Jinggoy Estrada", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The 'Reciprocal Access Agreement' (RAA), a landmark defense pact, was recently signed between the Philippines and which East Asian country?",
+    "explanation": "The RAA was signed between the Philippines and Japan to facilitate joint military exercises.",
+    "choices": [
+      { "text": "South Korea", "is_correct": false },
+      { "text": "Japan", "is_correct": true },
+      { "text": "China", "is_correct": false },
+      { "text": "Taiwan", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which virus caused a global health concern in late 2024 and 2025, leading the WHO to declare a Public Health Emergency of International Concern (PHEIC)?",
+    "explanation": "Mpox (formerly Monkeypox) outbreaks, particularly the Clade 1b strain, triggered global health alerts.",
+    "choices": [
+      { "text": "COVID-24", "is_correct": false },
+      { "text": "Mpox", "is_correct": true },
+      { "text": "Zika", "is_correct": false },
+      { "text": "Ebola", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the current official inflation target range of the Bangko Sentral ng Pilipinas (BSP)?",
+    "explanation": "The BSP aims to keep inflation within a target range of 2.0% to 4.0% to ensure price stability.",
+    "choices": [
+      { "text": "1.0% to 3.0%", "is_correct": false },
+      { "text": "2.0% to 4.0%", "is_correct": true },
+      { "text": "3.0% to 5.0%", "is_correct": false },
+      { "text": "0% to 2.0%", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which island province in the Philippines was declared 'Insurgency-Free' by the AFP and PNP in recent security assessments?",
+    "explanation": "Bohol and several other provinces have been declared insurgency-free, signaling a shift toward tourism and development.",
+    "choices": [
+      { "text": "Palawan", "is_correct": false },
+      { "text": "Bohol", "is_correct": true },
+      { "text": "Samar", "is_correct": false },
+      { "text": "Masbate", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In the 2024 US Presidential Election, who was elected as the 47th President of the United States?",
+    "explanation": "Donald Trump won the 2024 election, returning to the White House as the 47th President.",
+    "choices": [
+      { "text": "Joe Biden", "is_correct": false },
+      { "text": "Kamala Harris", "is_correct": false },
+      { "text": "Donald Trump", "is_correct": true },
+      { "text": "Ron DeSantis", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the 'SIM Registration Act' (Republic Act No. 11934) primarily aimed at preventing?",
+    "explanation": "The law was enacted to curb mobile phone-aided crimes such as text scams and spam.",
+    "choices": [
+      { "text": "Slow internet speeds", "is_correct": false },
+      { "text": "Text scams and digital fraud", "is_correct": true },
+      { "text": "Illegal signal boosters", "is_correct": false },
+      { "text": "Phone smuggling", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which Philippine agency recently launched the 'eGov PH' super app to centralize government services?",
+    "explanation": "The Department of Information and Communications Technology (DICT) launched the app to digitize government transactions.",
+    "choices": [
+      { "text": "DOST", "is_correct": false },
+      { "text": "DICT", "is_correct": true },
+      { "text": "DTI", "is_correct": false },
+      { "text": "NEDA", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The 'El Niño' phenomenon, which affected the Philippines in 2024, is characterized by what weather conditions?",
+    "explanation": "El Niño is characterized by unusually warm ocean temperatures, leading to dry spells and droughts in the Philippines.",
+    "choices": [
+      { "text": "Excessive rainfall and floods", "is_correct": false },
+      { "text": "Severe drought and heatwaves", "is_correct": true },
+      { "text": "Frequent volcanic eruptions", "is_correct": false },
+      { "text": "Cooler than average temperatures", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who is the current Secretary of the Department of Finance (DOF)?",
+    "explanation": "Ralph Recto was appointed as the Finance Secretary in early 2024, succeeding Benjamin Diokno.",
+    "choices": [
+      { "text": "Benjamin Diokno", "is_correct": false },
+      { "text": "Ralph Recto", "is_correct": true },
+      { "text": "Arsenio Balisacan", "is_correct": false },
+      { "text": "Amenah Pangandaman", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which country hosted the ASEAN Summit in 2025?",
+    "explanation": "Malaysia served as the ASEAN Chair for the year 2025.",
+    "choices": [
+      { "text": "Laos", "is_correct": false },
+      { "text": "Malaysia", "is_correct": true },
+      { "text": "Philippines", "is_correct": false },
+      { "text": "Thailand", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the name of the new bridge connecting the city of Samal to Davao City that is currently under construction?",
+    "explanation": "The Samal Island-Davao City (SIDC) Connector Bridge is a major infrastructure project in Mindanao.",
+    "choices": [
+      { "text": "Mindanao Grand Bridge", "is_correct": false },
+      { "text": "Samal-Davao Connector", "is_correct": true },
+      { "text": "Davao Gulf Bridge", "is_correct": false },
+      { "text": "Unity Bridge", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which AI-powered chatbot, developed by OpenAI, reached massive global popularity and triggered a race for artificial intelligence dominance?",
+    "explanation": "ChatGPT, developed by OpenAI, brought generative AI into the mainstream.",
+    "choices": [
+      { "text": "Gemini", "is_correct": false },
+      { "text": "Claude", "is_correct": false },
+      { "text": "ChatGPT", "is_correct": true },
+      { "text": "Copilot", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What does the 'Public Transport Modernization Program' (PTMP) aim to replace to improve commuting in the Philippines?",
+    "explanation": "The PTMP (formerly PUVMP) aims to replace traditional jeepneys with modern, safer, and eco-friendly units.",
+    "choices": [
+      { "text": "The MRT and LRT trains", "is_correct": false },
+      { "text": "Traditional jeepneys", "is_correct": true },
+      { "text": "Provincial buses", "is_correct": false },
+      { "text": "Tricycles and pedicabs", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The Philippines recently won a landmark case regarding its territory in the West Philippine Sea. Which international body issued the 2016 ruling that the Philippines continues to assert?",
+    "explanation": "The Permanent Court of Arbitration (PCA) in The Hague issued the ruling in favor of the Philippines.",
+    "choices": [
+      { "text": "International Criminal Court", "is_correct": false },
+      { "text": "Permanent Court of Arbitration", "is_correct": true },
+      { "text": "United Nations Security Council", "is_correct": false },
+      { "text": "International Court of Justice", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which government agency is primarily responsible for the distribution of the National ID (PhilSys)?",
+    "explanation": "The Philippine Statistics Authority (PSA) is the lead agency in implementing the PhilSys act.",
+    "choices": [
+      { "text": "NBI", "is_correct": false },
+      { "text": "PSA", "is_correct": true },
+      { "text": "Comelec", "is_correct": false },
+      { "text": "Department of Foreign Affairs", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who is the current Governor of the Bangko Sentral ng Pilipinas (BSP)?",
+    "explanation": "Eli Remolona Jr. was appointed as the BSP Governor in 2023.",
+    "choices": [
+      { "text": "Felipe Medalla", "is_correct": false },
+      { "text": "Eli Remolona Jr.", "is_correct": true },
+      { "text": "Benjamin Diokno", "is_correct": false },
+      { "text": "Nestor Espenilla", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which major sporting event will be co-hosted by the Philippines, Japan, and Indonesia in 2023, with the finals held in Manila?",
+    "explanation": "The FIBA Basketball World Cup 2023 was a major event where the Philippines hosted the final phase.",
+    "choices": [
+      { "text": "The Asian Games", "is_correct": false },
+      { "text": "The FIBA Basketball World Cup", "is_correct": true },
+      { "text": "The Southeast Asian Games", "is_correct": false },
+      { "text": "The World Volleyball Championship", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The 'Philippine Salt Industry Development Act' was recently signed into law to revitalize what sector?",
+    "explanation": "The law aims to modernize and expand the local salt industry to reduce reliance on imports.",
+    "choices": [
+      { "text": "Sugar industry", "is_correct": false },
+      { "text": "Salt industry", "is_correct": true },
+      { "text": "Rice industry", "is_correct": false },
+      { "text": "Mining industry", "is_correct": false }
+    ]
+  },
+  {
     "text": "Why is transparency important in public service?",
     "explanation": "Transparency promotes accountability, builds public trust, and helps prevent corruption in government.",
     "choices": [

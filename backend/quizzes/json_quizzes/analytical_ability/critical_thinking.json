@@ -10,6 +10,327 @@
     ]
   },
   {
+    "text": "If all mammals are warm-blooded and some mammals are aquatic, which of the following must be true?",
+    "explanation": "Since some mammals are aquatic and all mammals are warm-blooded, it follows that at least some aquatic animals (the mammals among them) must be warm-blooded.",
+    "choices": [
+      { "text": "All aquatic animals are mammals", "is_correct": false },
+      { "text": "Some aquatic animals are warm-blooded", "is_correct": true },
+      { "text": "All warm-blooded animals are mammals", "is_correct": false },
+      { "text": "No aquatic animals are cold-blooded", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Identify the next number in the sequence: 2, 6, 12, 20, 30, ___",
+    "explanation": "The difference between terms increases by 2 each time: 6-2=4, 12-6=6, 20-12=8, 30-20=10. The next difference is 12. 30+12 = 42.",
+    "choices": [
+      { "text": "38", "is_correct": false },
+      { "text": "40", "is_correct": false },
+      { "text": "42", "is_correct": true },
+      { "text": "44", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Statement: 'If it rains, the ground gets wet.' If the ground is NOT wet, what can be logically concluded?",
+    "explanation": "This follows the 'modus tollens' rule in logic: If P implies Q, then 'not Q' implies 'not P'.",
+    "choices": [
+      { "text": "It is raining", "is_correct": false },
+      { "text": "It is not raining", "is_correct": true },
+      { "text": "It will rain later", "is_correct": false },
+      { "text": "The ground will never be wet", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following is an assumption in this argument: 'The school should buy more computers because students need to improve their digital literacy.'",
+    "explanation": "The argument assumes that having more computers is a direct or necessary way for students to achieve better digital literacy.",
+    "choices": [
+      { "text": "Computers are expensive", "is_correct": false },
+      {
+        "text": "Students already know how to use computers",
+        "is_correct": false
+      },
+      {
+        "text": "More computers will lead to improved digital literacy",
+        "is_correct": true
+      },
+      {
+        "text": "Digital literacy is the most important subject",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Find the odd one out:",
+    "explanation": "A, B, and D are specific professions within the legal system, whereas Justice is an abstract concept or a goal of the system.",
+    "choices": [
+      { "text": "Judge", "is_correct": false },
+      { "text": "Lawyer", "is_correct": false },
+      { "text": "Justice", "is_correct": true },
+      { "text": "Witness", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 'A' is taller than 'B', and 'C' is shorter than 'B', who is the tallest?",
+    "explanation": "A > B and B > C, therefore A > B > C.",
+    "choices": [
+      { "text": "A", "is_correct": true },
+      { "text": "B", "is_correct": false },
+      { "text": "C", "is_correct": false },
+      { "text": "Cannot be determined", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Complete the analogy: 'Odometer is to Mileage as Compass is to _______'",
+    "explanation": "An odometer measures distance (mileage); a compass is used to determine or measure direction.",
+    "choices": [
+      { "text": "Speed", "is_correct": false },
+      { "text": "Direction", "is_correct": true },
+      { "text": "Needle", "is_correct": false },
+      { "text": "Hiking", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Statement 1: All successful people are hard workers. Statement 2: Some hard workers are unhappy. What can be concluded?",
+    "explanation": "Since all successful people are hard workers, they are a subset of hard workers. It is possible for some hard workers (including successful ones) to be unhappy, but the only definite link is that some hard workers are successful.",
+    "choices": [
+      { "text": "All successful people are unhappy", "is_correct": false },
+      { "text": "Some successful people are unhappy", "is_correct": false },
+      { "text": "Some hard workers are successful", "is_correct": true },
+      { "text": "Hard work always leads to success", "is_correct": false }
+    ]
+  },
+  {
+    "text": "In a certain code, 'DOG' is 'EPH'. How is 'CAT' written in that code?",
+    "explanation": "The pattern is +1 letter in the alphabet: C(+1)=D, A(+1)=B, T(+1)=U.",
+    "choices": [
+      { "text": "DBU", "is_correct": true },
+      { "text": "BZS", "is_correct": false },
+      { "text": "ECV", "is_correct": false },
+      { "text": "DAU", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which argument commits a 'Bandwagon' fallacy?",
+    "explanation": "A bandwagon fallacy suggests that because something is popular or 'everyone' is doing it, it must be right.",
+    "choices": [
+      {
+        "text": "You should vote for him because he is a good man",
+        "is_correct": false
+      },
+      {
+        "text": "You should buy this phone because everyone else is buying it",
+        "is_correct": true
+      },
+      {
+        "text": "If we allow this, the whole system will collapse",
+        "is_correct": false
+      },
+      {
+        "text": "He is wrong because he didn't finish college",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Find the missing number in the series: 1, 4, 9, 16, 25, ___",
+    "explanation": "The series consists of square numbers: 1², 2², 3², 4², 5². The next is 6² = 36.",
+    "choices": [
+      { "text": "30", "is_correct": false },
+      { "text": "35", "is_correct": false },
+      { "text": "36", "is_correct": true },
+      { "text": "49", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 'All birds fly' (Premise A) and 'Penguins are birds' (Premise B), but 'Penguins do not fly' (Fact), what can be said about the logic?",
+    "explanation": "The argument is valid in structure, but the major premise ('All birds fly') is factually false, making the conclusion 'Penguins fly' unsound.",
+    "choices": [
+      { "text": "The major premise is false", "is_correct": true },
+      { "text": "The minor premise is false", "is_correct": false },
+      { "text": "The logic is invalid", "is_correct": false },
+      { "text": "Penguins are not birds", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Identify the relationship: 'Symphony is to Composer as Book is to _______'",
+    "explanation": "A composer creates a symphony; an author creates a book.",
+    "choices": [
+      { "text": "Paper", "is_correct": false },
+      { "text": "Author", "is_correct": true },
+      { "text": "Reader", "is_correct": false },
+      { "text": "Library", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A person says: 'Every time I wear these socks, my team wins.' This is an example of what logical error?",
+    "explanation": "This is 'Post Hoc Ergo Propter Hoc' (False Cause), assuming that because B happened after A, A caused B.",
+    "choices": [
+      { "text": "Ad Hominem", "is_correct": false },
+      { "text": "False Analogy", "is_correct": false },
+      { "text": "False Cause", "is_correct": true },
+      { "text": "Circular Reasoning", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If tomorrow is Sunday, what was the day before yesterday?",
+    "explanation": "If tomorrow is Sunday, today is Saturday. Yesterday was Friday. The day before yesterday was Thursday.",
+    "choices": [
+      { "text": "Wednesday", "is_correct": false },
+      { "text": "Thursday", "is_correct": true },
+      { "text": "Friday", "is_correct": false },
+      { "text": "Saturday", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next letters in the sequence: AB, CD, EF, GH, ___",
+    "explanation": "The sequence follows the alphabet in pairs.",
+    "choices": [
+      { "text": "HI", "is_correct": false },
+      { "text": "IJ", "is_correct": true },
+      { "text": "JK", "is_correct": false },
+      { "text": "IK", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following is most essential for a 'Democracy'?",
+    "explanation": "While the others are common, the core of democracy is the participation or power of the citizens.",
+    "choices": [
+      { "text": "A King", "is_correct": false },
+      { "text": "Wealth", "is_correct": false },
+      { "text": "Citizens", "is_correct": true },
+      { "text": "Military", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If some doctors are surgeons and all surgeons are medical graduates, then:",
+    "explanation": "Since all surgeons are medical graduates, and some doctors are surgeons, it follows that those doctors who are surgeons must be medical graduates.",
+    "choices": [
+      { "text": "All doctors are medical graduates", "is_correct": false },
+      { "text": "Some medical graduates are doctors", "is_correct": true },
+      { "text": "No medical graduate is a doctor", "is_correct": false },
+      { "text": "All surgeons are doctors", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Select the word that is necessary to have a 'Desert':",
+    "explanation": "While deserts can have sand or heat, the defining geographic characteristic is lack of moisture (arid).",
+    "choices": [
+      { "text": "Sand", "is_correct": false },
+      { "text": "Cactus", "is_correct": false },
+      { "text": "Aridity", "is_correct": true },
+      { "text": "Heat", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A is the father of B, but B is not the son of A. How is this possible?",
+    "explanation": "If B is not the son, B must be the daughter.",
+    "choices": [
+      { "text": "B is the daughter", "is_correct": true },
+      { "text": "A is the mother", "is_correct": false },
+      { "text": "They are not related", "is_correct": false },
+      { "text": "B is the grandson", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Statement: Most employees in the company are hard-working. Jane is an employee. Conclusion: Jane is hard-working.",
+    "explanation": "Because the statement says 'most' and not 'all', we cannot conclude for certain that Jane is hard-working. It is only a probability.",
+    "choices": [
+      { "text": "Definitely True", "is_correct": false },
+      { "text": "Definitely False", "is_correct": false },
+      { "text": "Probably True but not certain", "is_correct": true },
+      { "text": "The premise is wrong", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next term: 80, 40, 20, 10, ___",
+    "explanation": "The sequence divides by 2 each time. 10 / 2 = 5.",
+    "choices": [
+      { "text": "0", "is_correct": false },
+      { "text": "2", "is_correct": false },
+      { "text": "5", "is_correct": true },
+      { "text": "8", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which word is the odd one out?",
+    "explanation": "Whale is a mammal; the others are types of fish.",
+    "choices": [
+      { "text": "Shark", "is_correct": false },
+      { "text": "Whale", "is_correct": true },
+      { "text": "Salmon", "is_correct": false },
+      { "text": "Tuna", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 5 workers can build a wall in 5 days, how many days will it take 1 worker to build the same wall?",
+    "explanation": "This is an inverse proportion. Total effort is 5 workers × 5 days = 25 worker-days. 1 worker will need 25 days.",
+    "choices": [
+      { "text": "1", "is_correct": false },
+      { "text": "5", "is_correct": false },
+      { "text": "10", "is_correct": false },
+      { "text": "25", "is_correct": true }
+    ]
+  },
+  {
+    "text": "In a Venn diagram, if Circle A is 'Filipinos' and Circle B is 'Athletes', what does the overlapping area represent?",
+    "explanation": "The intersection of two sets represents elements that belong to both sets.",
+    "choices": [
+      { "text": "All Filipinos", "is_correct": false },
+      { "text": "Filipinos who are athletes", "is_correct": true },
+      { "text": "Athletes who are not Filipinos", "is_correct": false },
+      { "text": "All people", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the assumption in: 'We should cancel the picnic because it might rain.'",
+    "explanation": "The conclusion (canceling) is based on the assumption that rain makes a picnic undesirable or impossible.",
+    "choices": [
+      { "text": "It is already raining", "is_correct": false },
+      { "text": "Rain is bad for a picnic", "is_correct": true },
+      { "text": "Everyone hates rain", "is_correct": false },
+      { "text": "The weather forecast is always right", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 'Some A are B' and 'Some B are C', which of the following MUST be true?",
+    "explanation": "In formal logic, two 'some' statements do not guarantee a link between the first and last terms.",
+    "choices": [
+      { "text": "Some A are C", "is_correct": false },
+      { "text": "All A are C", "is_correct": false },
+      { "text": "No A are C", "is_correct": false },
+      { "text": "None of the above", "is_correct": true }
+    ]
+  },
+  {
+    "text": "Which number comes next: 1, 2, 4, 7, 11, ___",
+    "explanation": "The increments are +1, +2, +3, +4. The next increment is +5. 11+5 = 16.",
+    "choices": [
+      { "text": "15", "is_correct": false },
+      { "text": "16", "is_correct": true },
+      { "text": "17", "is_correct": false },
+      { "text": "20", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If you are in a race and you pass the person in second place, what place are you in now?",
+    "explanation": "If you pass the 2nd person, you take their spot, which is 2nd place.",
+    "choices": [
+      { "text": "1st", "is_correct": false },
+      { "text": "2nd", "is_correct": true },
+      { "text": "3rd", "is_correct": false },
+      { "text": "Last", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of these is a 'Straw Man' fallacy?",
+    "explanation": "A straw man fallacy occurs when someone misrepresents an opponent's argument to make it easier to attack.",
+    "choices": [
+      { "text": "Attacking the person's character", "is_correct": false },
+      { "text": "Distorting an argument to attack it", "is_correct": true },
+      { "text": "Using circular logic", "is_correct": false },
+      { "text": "Claiming a slippery slope", "is_correct": false }
+    ]
+  },
+  {
     "text": "A box contains red, blue, and green balls. If 2 red balls are removed, the number of blue balls becomes twice the number of remaining red balls. Before removing the 2 red balls, the blue balls were equal to the red balls. If there are 6 green balls, how many red balls were originally inside the box?",
     "explanation": "Let R be original red balls. Blue = R. After removing 2 red balls → remaining red = R - 2. Given: blue = 2 × (R - 2). But blue = R. So R = 2(R - 2). Solve: R = 2R - 4 → 4 = R → R = 4.",
     "choices": [

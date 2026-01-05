@@ -448,5 +448,305 @@
       { "text": "144 km", "is_correct": true },
       { "text": "156 km", "is_correct": false }
     ]
+  },
+  {
+    "text": "A jacket is on sale for 20% off. If the original price is ₱1,500, how much is the discounted price?",
+    "explanation": "20% of 1,500 is 300 (0.20 * 1,500 = 300). Subtracting the discount from the original price: 1,500 - 300 = 1,200.",
+    "choices": [
+      { "text": "₱1,100", "is_correct": false },
+      { "text": "₱1,200", "is_correct": true },
+      { "text": "₱1,300", "is_correct": false },
+      { "text": "₱1,400", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 5 notebook cost ₱125, how much will 12 notebooks cost at the same rate?",
+    "explanation": "Find the price per notebook: 125 ÷ 5 = 25. Multiply by 12: 25 * 12 = 300.",
+    "choices": [
+      { "text": "₱250", "is_correct": false },
+      { "text": "₱275", "is_correct": false },
+      { "text": "₱300", "is_correct": true },
+      { "text": "₱325", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The ratio of boys to girls in a class is 3:5. If there are 40 students in total, how many are girls?",
+    "explanation": "Total parts = 3 + 5 = 8. Value per part = 40 ÷ 8 = 5. Girls = 5 parts * 5 = 25.",
+    "choices": [
+      { "text": "15", "is_correct": false },
+      { "text": "20", "is_correct": false },
+      { "text": "25", "is_correct": true },
+      { "text": "30", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A car travels 240 kilometers in 4 hours. What is its average speed in km/h?",
+    "explanation": "Speed = Distance ÷ Time. 240 ÷ 4 = 60 km/h.",
+    "choices": [
+      { "text": "50 km/h", "is_correct": false },
+      { "text": "60 km/h", "is_correct": true },
+      { "text": "70 km/h", "is_correct": false },
+      { "text": "80 km/h", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If $3x - 5 = 16$, what is the value of $x$?",
+    "explanation": "Add 5 to both sides: $3x = 21$. Divide by 3: $x = 7$.",
+    "choices": [
+      { "text": "5", "is_correct": false },
+      { "text": "6", "is_correct": false },
+      { "text": "7", "is_correct": true },
+      { "text": "8", "is_correct": false }
+    ]
+  },
+  {
+    "text": "An employee's daily rate is ₱600. If he works for 22 days and ₱500 is deducted for taxes, what is his net pay?",
+    "explanation": "Gross pay = 600 * 22 = 13,200. Net pay = 13,200 - 500 = 12,700.",
+    "choices": [
+      { "text": "₱12,200", "is_correct": false },
+      { "text": "₱12,500", "is_correct": false },
+      { "text": "₱12,700", "is_correct": true },
+      { "text": "₱13,200", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the average of 15, 20, 25, 30, and 35?",
+    "explanation": "Sum = 15+20+25+30+35 = 125. Average = 125 ÷ 5 = 25.",
+    "choices": [
+      { "text": "20", "is_correct": false },
+      { "text": "22", "is_correct": false },
+      { "text": "25", "is_correct": true },
+      { "text": "28", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 1/4 of a number is 12, what is 1/2 of that same number?",
+    "explanation": "If 1/4 is 12, the full number is 12 * 4 = 48. Half of 48 is 24.",
+    "choices": [
+      { "text": "18", "is_correct": false },
+      { "text": "24", "is_correct": true },
+      { "text": "36", "is_correct": false },
+      { "text": "48", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A rectangular garden has a length of 12m and a width of 8m. What is its perimeter?",
+    "explanation": "Perimeter = 2 * (length + width). 2 * (12 + 8) = 2 * 20 = 40m.",
+    "choices": [
+      { "text": "20m", "is_correct": false },
+      { "text": "32m", "is_correct": false },
+      { "text": "40m", "is_correct": true },
+      { "text": "96m", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A baker can make 48 cookies in 2 hours. How many cookies can he make in 5 hours?",
+    "explanation": "Cookies per hour = 48 ÷ 2 = 24. For 5 hours: 24 * 5 = 120.",
+    "choices": [
+      { "text": "100", "is_correct": false },
+      { "text": "110", "is_correct": false },
+      { "text": "120", "is_correct": true },
+      { "text": "140", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A bag contains 5 red marbles, 3 blue marbles, and 2 green marbles. What is the probability of picking a blue marble?",
+    "explanation": "Total marbles = 5+3+2 = 10. Blue marbles = 3. Probability = 3/10 or 0.3.",
+    "choices": [
+      { "text": "0.2", "is_correct": false },
+      { "text": "0.3", "is_correct": true },
+      { "text": "0.5", "is_correct": false },
+      { "text": "0.8", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If a dozen pens cost ₱144, how much would 3 pens cost?",
+    "explanation": "One dozen = 12. Price per pen = 144 ÷ 12 = 12. 3 pens = 12 * 3 = 36.",
+    "choices": [
+      { "text": "₱24", "is_correct": false },
+      { "text": "₱30", "is_correct": false },
+      { "text": "₱36", "is_correct": true },
+      { "text": "₱48", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Jane is 5 years older than Mark. The sum of their ages is 31. How old is Mark?",
+    "explanation": "Let Mark be x and Jane be x+5. x + (x+5) = 31 -> 2x = 26 -> x = 13.",
+    "choices": [
+      { "text": "13", "is_correct": true },
+      { "text": "15", "is_correct": false },
+      { "text": "18", "is_correct": false },
+      { "text": "26", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is 15% of 20% of 1,000?",
+    "explanation": "20% of 1,000 = 200. 15% of 200 = 30.",
+    "choices": [
+      { "text": "15", "is_correct": false },
+      { "text": "30", "is_correct": true },
+      { "text": "150", "is_correct": false },
+      { "text": "200", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A water tank is 2/5 full. If it needs 30 more liters to be full, what is the total capacity of the tank?",
+    "explanation": "If it is 2/5 full, 3/5 is empty. 3/5 of total = 30. Total = (30 * 5) / 3 = 50 liters.",
+    "choices": [
+      { "text": "45 liters", "is_correct": false },
+      { "text": "50 liters", "is_correct": true },
+      { "text": "60 liters", "is_correct": false },
+      { "text": "75 liters", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If the price of a commodity increases from ₱40 to ₱50, what is the percentage increase?",
+    "explanation": "Increase = 10. Percentage increase = (10/40) * 100 = 25%.",
+    "choices": [
+      { "text": "10%", "is_correct": false },
+      { "text": "20%", "is_correct": false },
+      { "text": "25%", "is_correct": true },
+      { "text": "30%", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A train travels at 80 km/h. How many minutes will it take to travel 20 km?",
+    "explanation": "Time = Distance / Speed = 20/80 = 1/4 hour. 1/4 * 60 minutes = 15 minutes.",
+    "choices": [
+      { "text": "10", "is_correct": false },
+      { "text": "15", "is_correct": true },
+      { "text": "20", "is_correct": false },
+      { "text": "25", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Find the next number in the series: 1, 4, 9, 16, 25, ___",
+    "explanation": "The series consists of squares of consecutive integers: 1^2, 2^2, 3^2, 4^2, 5^2. The next is 6^2 = 36.",
+    "choices": [
+      { "text": "30", "is_correct": false },
+      { "text": "34", "is_correct": false },
+      { "text": "36", "is_correct": true },
+      { "text": "40", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A man buys a shirt for ₱450 and sells it for ₱600. What is his profit percentage based on the cost price?",
+    "explanation": "Profit = 150. Profit % = (150/450) * 100 = 33.33%.",
+    "choices": [
+      { "text": "25%", "is_correct": false },
+      { "text": "33.33%", "is_correct": true },
+      { "text": "50%", "is_correct": false },
+      { "text": "15%", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A group of 4 workers can finish a task in 6 days. How many workers are needed to finish it in 3 days?",
+    "explanation": "Total worker-days = 4 * 6 = 24. To finish in 3 days: 24 / 3 = 8 workers.",
+    "choices": [
+      { "text": "6", "is_correct": false },
+      { "text": "8", "is_correct": true },
+      { "text": "10", "is_correct": false },
+      { "text": "12", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the greatest common factor (GCF) of 24 and 36?",
+    "explanation": "Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. The highest shared factor is 12.",
+    "choices": [
+      { "text": "6", "is_correct": false },
+      { "text": "8", "is_correct": false },
+      { "text": "12", "is_correct": true },
+      { "text": "18", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If 3/4 of a class of 40 students passed the exam, how many students failed?",
+    "explanation": "Students passed = 3/4 * 40 = 30. Students failed = 40 - 30 = 10.",
+    "choices": [
+      { "text": "5", "is_correct": false },
+      { "text": "10", "is_correct": true },
+      { "text": "15", "is_correct": false },
+      { "text": "20", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A rectangular box has dimensions 5cm x 4cm x 3cm. What is its volume?",
+    "explanation": "Volume = Length * Width * Height. 5 * 4 * 3 = 60 cubic cm.",
+    "choices": [
+      { "text": "45", "is_correct": false },
+      { "text": "50", "is_correct": false },
+      { "text": "60", "is_correct": true },
+      { "text": "75", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Convert 0.375 into a fraction in simplest form.",
+    "explanation": "0.375 = 375/1000. Dividing both by 125 gives 3/8.",
+    "choices": [
+      { "text": "3/4", "is_correct": false },
+      { "text": "3/8", "is_correct": true },
+      { "text": "5/8", "is_correct": false },
+      { "text": "1/4", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A clock shows 3:00. What is the angle between the hour and minute hands?",
+    "explanation": "Each hour represents 30 degrees (360/12). At 3:00, the hand is 3 hours away from 12: 3 * 30 = 90 degrees.",
+    "choices": [
+      { "text": "45°", "is_correct": false },
+      { "text": "60°", "is_correct": false },
+      { "text": "90°", "is_correct": true },
+      { "text": "120°", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If you add 12 to 3 times a number, the result is 30. What is the number?",
+    "explanation": "3x + 12 = 30 -> 3x = 18 -> x = 6.",
+    "choices": [
+      { "text": "4", "is_correct": false },
+      { "text": "5", "is_correct": false },
+      { "text": "6", "is_correct": true },
+      { "text": "8", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A car's gas tank is 1/8 full. After adding 15 liters, it becomes 1/2 full. What is the capacity of the tank?",
+    "explanation": "1/2 - 1/8 = 3/8. So 3/8 of total = 15. Total = (15 * 8) / 3 = 40 liters.",
+    "choices": [
+      { "text": "32 liters", "is_correct": false },
+      { "text": "40 liters", "is_correct": true },
+      { "text": "48 liters", "is_correct": false },
+      { "text": "60 liters", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the sum of the interior angles of a quadrilateral?",
+    "explanation": "A quadrilateral can be divided into two triangles. 2 * 180° = 360°.",
+    "choices": [
+      { "text": "180°", "is_correct": false },
+      { "text": "270°", "is_correct": false },
+      { "text": "360°", "is_correct": true },
+      { "text": "540°", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If the radius of a circle is 7, what is its approximate circumference? (Use π = 22/7)",
+    "explanation": "Circumference = 2πr = 2 * (22/7) * 7 = 44.",
+    "choices": [
+      { "text": "22", "is_correct": false },
+      { "text": "44", "is_correct": true },
+      { "text": "88", "is_correct": false },
+      { "text": "154", "is_correct": false }
+    ]
+  },
+  {
+    "text": "A person saves ₱1,200 which is 15% of his monthly salary. What is his monthly salary?",
+    "explanation": "0.15 * Salary = 1,200. Salary = 1,200 / 0.15 = 8,000.",
+    "choices": [
+      { "text": "₱7,500", "is_correct": false },
+      { "text": "₱8,000", "is_correct": true },
+      { "text": "₱9,000", "is_correct": false },
+      { "text": "₱10,000", "is_correct": false }
+    ]
   }
 ]

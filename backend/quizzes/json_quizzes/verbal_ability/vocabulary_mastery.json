@@ -550,5 +550,305 @@
       { "text": "pagkain o meryenda", "is_correct": false },
       { "text": "damit o kasuotan", "is_correct": false }
     ]
+  },
+  {
+    "text": "The government issued a **moratorium** on all new logging activities in the protected forest.",
+    "explanation": "A 'moratorium' is a temporary prohibition of an activity.",
+    "choices": [
+      { "text": "Permanent ban", "is_correct": false },
+      { "text": "Temporary suspension", "is_correct": true },
+      { "text": "Official endorsement", "is_correct": false },
+      { "text": "Public discussion", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the synonym for **AFFLUENT**:",
+    "explanation": "'Affluent' refers to having a great deal of money or wealth.",
+    "choices": [
+      { "text": "Impoverished", "is_correct": false },
+      { "text": "Influential", "is_correct": false },
+      { "text": "Wealthy", "is_correct": true },
+      { "text": "Arrogant", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The witness provided a **succinct** account of the event, leaving out no necessary details while keeping it brief.",
+    "explanation": "'Succinct' means briefly and clearly expressed.",
+    "choices": [
+      { "text": "Wordy", "is_correct": false },
+      { "text": "Concise", "is_correct": true },
+      { "text": "Confusing", "is_correct": false },
+      { "text": "Exaggerated", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the antonym of **PLACID**?",
+    "explanation": "'Placid' means calm and peaceful; its opposite is turbulent or disturbed.",
+    "choices": [
+      { "text": "Serene", "is_correct": false },
+      { "text": "Quiet", "is_correct": false },
+      { "text": "Turbulent", "is_correct": true },
+      { "text": "Lazy", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The candidate's **altruistic** motives were questioned by the critics during the campaign.",
+    "explanation": "'Altruistic' means showing a disinterested and selfless concern for the well-being of others.",
+    "choices": [
+      { "text": "Selfish", "is_correct": false },
+      { "text": "Generous", "is_correct": true },
+      { "text": "Ambitious", "is_correct": false },
+      { "text": "Deceptive", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The project was cancelled because the initial plan was not **feasible**.",
+    "explanation": "'Feasible' means possible to do easily or conveniently.",
+    "choices": [
+      { "text": "Profitable", "is_correct": false },
+      { "text": "Practicable", "is_correct": true },
+      { "text": "Expensive", "is_correct": false },
+      { "text": "Popular", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the synonym for **METICULOUS**:",
+    "explanation": "'Meticulous' means showing great attention to detail; very careful and precise.",
+    "choices": [
+      { "text": "Careless", "is_correct": false },
+      { "text": "Sloppy", "is_correct": false },
+      { "text": "Painstaking", "is_correct": true },
+      { "text": "Fast", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The judge was known for being **impartial** in all his rulings.",
+    "explanation": "'Impartial' means treating all rivals or disputants equally; fair and just.",
+    "choices": [
+      { "text": "Biased", "is_correct": false },
+      { "text": "Prejudiced", "is_correct": false },
+      { "text": "Unbiased", "is_correct": true },
+      { "text": "Strict", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The smell of freshly baked bread is **pervasive** in the morning.",
+    "explanation": "'Pervasive' means spreading widely throughout an area or a group of people.",
+    "choices": [
+      { "text": "Limited", "is_correct": false },
+      { "text": "Widespread", "is_correct": true },
+      { "text": "Faint", "is_correct": false },
+      { "text": "Unpleasant", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the antonym of **FRUGAL**?",
+    "explanation": "'Frugal' means sparing or economical with regard to money; its opposite is wasteful or extravagant.",
+    "choices": [
+      { "text": "Thrifty", "is_correct": false },
+      { "text": "Extravagant", "is_correct": true },
+      { "text": "Miserly", "is_correct": false },
+      { "text": "Prudent", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The speaker's **eloquent** speech moved the audience to tears.",
+    "explanation": "'Eloquent' means fluent or persuasive in speaking or writing.",
+    "choices": [
+      { "text": "Articulate", "is_correct": true },
+      { "text": "Dull", "is_correct": false },
+      { "text": "Confusing", "is_correct": false },
+      { "text": "Silent", "is_correct": false }
+    ]
+  },
+  {
+    "text": "His **adversary** in the chess match was much more experienced.",
+    "explanation": "An 'adversary' is one's opponent in a contest, conflict, or dispute.",
+    "choices": [
+      { "text": "Partner", "is_correct": false },
+      { "text": "Friend", "is_correct": false },
+      { "text": "Opponent", "is_correct": true },
+      { "text": "Teacher", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The team worked with **diligence** to meet the deadline.",
+    "explanation": "'Diligence' is careful and persistent work or effort.",
+    "choices": [
+      { "text": "Laziness", "is_correct": false },
+      { "text": "Haste", "is_correct": false },
+      { "text": "Persistence", "is_correct": true },
+      { "text": "Apathy", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The laws were **stringent** to ensure public safety.",
+    "explanation": "'Stringent' means strict, precise, and exacting.",
+    "choices": [
+      { "text": "Flexible", "is_correct": false },
+      { "text": "Lax", "is_correct": false },
+      { "text": "Strict", "is_correct": true },
+      { "text": "Unclear", "is_correct": false }
+    ]
+  },
+  {
+    "text": "He remains **resolute** in his decision to resign despite the offers.",
+    "explanation": "'Resolute' means admirably purposeful, determined, and unwavering.",
+    "choices": [
+      { "text": "Undecided", "is_correct": false },
+      { "text": "Determined", "is_correct": true },
+      { "text": "Fearful", "is_correct": false },
+      { "text": "Hesitant", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the synonym for **REDUNDANT**:",
+    "explanation": "'Redundant' means not or no longer needed or useful; superfluous.",
+    "choices": [
+      { "text": "Essential", "is_correct": false },
+      { "text": "Necessary", "is_correct": false },
+      { "text": "Superfluous", "is_correct": true },
+      { "text": "Unique", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The news had a **profound** impact on her life.",
+    "explanation": "'Profound' means very great or intense.",
+    "choices": [
+      { "text": "Superficial", "is_correct": false },
+      { "text": "Deep", "is_correct": true },
+      { "text": "Mild", "is_correct": false },
+      { "text": "Temporary", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The atmosphere in the room was **convivial** during the celebration.",
+    "explanation": "'Convivial' means friendly, lively, and enjoyable.",
+    "choices": [
+      { "text": "Hostile", "is_correct": false },
+      { "text": "Depressing", "is_correct": false },
+      { "text": "Cheerful", "is_correct": true },
+      { "text": "Formal", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the antonym of **OBSOLETE**?",
+    "explanation": "'Obsolete' means no longer produced or used; out of date. The antonym is current or contemporary.",
+    "choices": [
+      { "text": "Ancient", "is_correct": false },
+      { "text": "Current", "is_correct": true },
+      { "text": "Broken", "is_correct": false },
+      { "text": "Forgotten", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The evidence was **irrefutable**, proving his innocence beyond doubt.",
+    "explanation": "'Irrefutable' means impossible to deny or disprove.",
+    "choices": [
+      { "text": "Questionable", "is_correct": false },
+      { "text": "Uncontestable", "is_correct": true },
+      { "text": "Weak", "is_correct": false },
+      { "text": "Circumstantial", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The hiker was **wary** of the loose rocks on the steep trail.",
+    "explanation": "'Wary' means feeling or showing caution about possible dangers or problems.",
+    "choices": [
+      { "text": "Cautious", "is_correct": true },
+      { "text": "Reckless", "is_correct": false },
+      { "text": "Unaware", "is_correct": false },
+      { "text": "Confident", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Her **indomitable** spirit helped her overcome the tragedy.",
+    "explanation": "'Indomitable' means impossible to subdue or defeat.",
+    "choices": [
+      { "text": "Weak", "is_correct": false },
+      { "text": "Unconquerable", "is_correct": true },
+      { "text": "Yielding", "is_correct": false },
+      { "text": "Passive", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The CEO made a **prudent** investment that saved the company.",
+    "explanation": "'Prudent' means acting with or showing care and thought for the future.",
+    "choices": [
+      { "text": "Wise", "is_correct": true },
+      { "text": "Careless", "is_correct": false },
+      { "text": "Risky", "is_correct": false },
+      { "text": "Hasty", "is_correct": false }
+    ]
+  },
+  {
+    "text": "What is the synonym for **LOQUACIOUS**?",
+    "explanation": "'Loquacious' means tending to talk a great deal; talkative.",
+    "choices": [
+      { "text": "Silent", "is_correct": false },
+      { "text": "Talkative", "is_correct": true },
+      { "text": "Angry", "is_correct": false },
+      { "text": "Shy", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The detective found a **clandestine** meeting taking place in the basement.",
+    "explanation": "'Clandestine' means kept secret or done secretively.",
+    "choices": [
+      { "text": "Public", "is_correct": false },
+      { "text": "Secret", "is_correct": true },
+      { "text": "Noisy", "is_correct": false },
+      { "text": "Accidental", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The athlete showed **resilience** by returning to the sport after a major injury.",
+    "explanation": "'Resilience' is the capacity to recover quickly from difficulties; toughness.",
+    "choices": [
+      { "text": "Fragility", "is_correct": false },
+      { "text": "Fortitude", "is_correct": true },
+      { "text": "Fear", "is_correct": false },
+      { "text": "Speed", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the antonym for **BENEVOLENT**:",
+    "explanation": "'Benevolent' means well-meaning and kindly; the antonym is malevolent or unkind.",
+    "choices": [
+      { "text": "Kind", "is_correct": false },
+      { "text": "Malevolent", "is_correct": true },
+      { "text": "Helpful", "is_correct": false },
+      { "text": "Cheerful", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The document was **marred** by several ink stains.",
+    "explanation": "'Marred' means impaired the appearance of; disfigured.",
+    "choices": [
+      { "text": "Improved", "is_correct": false },
+      { "text": "Spoiled", "is_correct": true },
+      { "text": "Cleaned", "is_correct": false },
+      { "text": "Enhanced", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The instructions were **explicit**, leaving no room for doubt.",
+    "explanation": "'Explicit' means stated clearly and in detail, leaving no room for confusion or doubt.",
+    "choices": [
+      { "text": "Vague", "is_correct": false },
+      { "text": "Implicit", "is_correct": false },
+      { "text": "Clear", "is_correct": true },
+      { "text": "Hidden", "is_correct": false }
+    ]
+  },
+  {
+    "text": "His **apathetic** attitude towards the project discouraged the team.",
+    "explanation": "'Apathetic' means showing or feeling no interest, enthusiasm, or concern.",
+    "choices": [
+      { "text": "Enthusiastic", "is_correct": false },
+      { "text": "Indifferent", "is_correct": true },
+      { "text": "Passionate", "is_correct": false },
+      { "text": "Diligent", "is_correct": false }
+    ]
   }
 ]

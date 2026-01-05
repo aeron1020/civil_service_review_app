@@ -774,5 +774,317 @@
         "is_correct": false
       }
     ]
+  },
+  {
+    "text": "The group of researchers _______ to present their findings to the board tomorrow.",
+    "explanation": "The subject is 'group' (singular collective noun), so it requires the singular verb 'is'.",
+    "choices": [
+      { "text": "is", "is_correct": true },
+      { "text": "are", "is_correct": false },
+      { "text": "were", "is_correct": false },
+      { "text": "be", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Choose the correct sentence:",
+    "explanation": "When two subjects are joined by 'neither/nor', the verb agrees with the subject closer to it ('secretary', which is singular).",
+    "choices": [
+      {
+        "text": "Neither the manager nor the secretary are attending.",
+        "is_correct": false
+      },
+      {
+        "text": "Neither the manager nor the secretary is attending.",
+        "is_correct": true
+      },
+      {
+        "text": "Neither the manager nor the secretary have attended.",
+        "is_correct": false
+      },
+      {
+        "text": "Neither the manager nor the secretary were attending.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "The document was signed by the Director and _______.",
+    "explanation": "Use the objective case pronoun 'me' because it is the object of the preposition 'by'.",
+    "choices": [
+      { "text": "I", "is_correct": false },
+      { "text": "myself", "is_correct": false },
+      { "text": "me", "is_correct": true },
+      { "text": "mine", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The news about the upcoming holiday _______ spread quickly through the office.",
+    "explanation": "'News' is always singular in form and requires a singular verb.",
+    "choices": [
+      { "text": "has", "is_correct": true },
+      { "text": "have", "is_correct": false },
+      { "text": "were", "is_correct": false },
+      { "text": "are", "is_correct": false }
+    ]
+  },
+  {
+    "text": "If I _______ you, I would take the promotion without hesitation.",
+    "explanation": "This is a second conditional (subjunctive mood) expressing a hypothetical situation, which uses 'were' regardless of the subject.",
+    "choices": [
+      { "text": "am", "is_correct": false },
+      { "text": "was", "is_correct": false },
+      { "text": "were", "is_correct": true },
+      { "text": "be", "is_correct": false }
+    ]
+  },
+  {
+    "text": "She has _______ on the sofa for three hours already.",
+    "explanation": "The past participle of 'lie' (to recline) is 'lain'. 'Laid' is the past tense of 'lay' (to place something).",
+    "choices": [
+      { "text": "laid", "is_correct": false },
+      { "text": "lied", "is_correct": false },
+      { "text": "lain", "is_correct": true },
+      { "text": "lay", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The number of applicants _______ increasing every year.",
+    "explanation": "'The number' is always singular. ('A number' would be plural).",
+    "choices": [
+      { "text": "is", "is_correct": true },
+      { "text": "are", "is_correct": false },
+      { "text": "were", "is_correct": false },
+      { "text": "has", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The children are playing _______ toys in the garden.",
+    "explanation": "'Their' is the possessive pronoun. 'There' refers to place; 'They're' is a contraction for 'they are'.",
+    "choices": [
+      { "text": "there", "is_correct": false },
+      { "text": "their", "is_correct": true },
+      { "text": "they're", "is_correct": false },
+      { "text": "theirs", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Everyone _______ required to wear a formal attire during the event.",
+    "explanation": "Indefinite pronouns like 'everyone', 'someone', and 'nobody' are singular.",
+    "choices": [
+      { "text": "is", "is_correct": true },
+      { "text": "are", "is_correct": false },
+      { "text": "were", "is_correct": false },
+      { "text": "be", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The teacher, along with her students, _______ going on a field trip.",
+    "explanation": "Phrases like 'along with', 'as well as', and 'together with' do not change the number of the subject ('teacher').",
+    "choices": [
+      { "text": "is", "is_correct": true },
+      { "text": "are", "is_correct": false },
+      { "text": "were", "is_correct": false },
+      { "text": "am", "is_correct": false }
+    ]
+  },
+  {
+    "text": "You _______ not go to the office if you are feeling unwell.",
+    "explanation": "'Should' is used to give advice or recommendations.",
+    "choices": [
+      { "text": "must", "is_correct": false },
+      { "text": "should", "is_correct": true },
+      { "text": "would", "is_correct": false },
+      { "text": "will", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Please _______ the book on the table.",
+    "explanation": "'Lay' means to put or place something down. 'Lie' means to recline.",
+    "choices": [
+      { "text": "lie", "is_correct": false },
+      { "text": "lay", "is_correct": true },
+      { "text": "lain", "is_correct": false },
+      { "text": "laid", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Who is the _______ of the two brothers?",
+    "explanation": "When comparing two people or things, use the comparative degree ('taller'). Use 'tallest' for three or more.",
+    "choices": [
+      { "text": "taller", "is_correct": true },
+      { "text": "tallest", "is_correct": false },
+      { "text": "more tall", "is_correct": false },
+      { "text": "most tall", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The prize was divided _______ the three winners.",
+    "explanation": "Use 'between' for two items and 'among' for three or more.",
+    "choices": [
+      { "text": "between", "is_correct": false },
+      { "text": "among", "is_correct": true },
+      { "text": "within", "is_correct": false },
+      { "text": "into", "is_correct": false }
+    ]
+  },
+  {
+    "text": "She sang _______ during the choir competition.",
+    "explanation": "Use the adverb 'beautifully' to describe the action of singing.",
+    "choices": [
+      { "text": "beautiful", "is_correct": false },
+      { "text": "beautifully", "is_correct": true },
+      { "text": "more beautiful", "is_correct": false },
+      { "text": "beauty", "is_correct": false }
+    ]
+  },
+  {
+    "text": "None of the water _______ wasted during the process.",
+    "explanation": "'None' is singular when it refers to an uncountable noun like 'water'.",
+    "choices": [
+      { "text": "is", "is_correct": true },
+      { "text": "are", "is_correct": false },
+      { "text": "were", "is_correct": false },
+      { "text": "be", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Neither of the candidates _______ qualified for the position.",
+    "explanation": "'Neither' and 'Either' as subjects are always singular.",
+    "choices": [
+      { "text": "is", "is_correct": true },
+      { "text": "are", "is_correct": false },
+      { "text": "were", "is_correct": false },
+      { "text": "be", "is_correct": false }
+    ]
+  },
+  {
+    "text": "I _______ working in this company for five years now.",
+    "explanation": "The present perfect continuous ('have been') is used for actions that started in the past and continue to the present.",
+    "choices": [
+      { "text": "has been", "is_correct": false },
+      { "text": "am", "is_correct": false },
+      { "text": "have been", "is_correct": true },
+      { "text": "was", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The principal _______ the students for their outstanding performance.",
+    "explanation": "'Complimented' means to praise; 'Complemented' means to complete or enhance.",
+    "choices": [
+      { "text": "complemented", "is_correct": false },
+      { "text": "complimented", "is_correct": true },
+      { "text": "complement", "is_correct": false },
+      { "text": "compliment", "is_correct": false }
+    ]
+  },
+  {
+    "text": "One of my friends _______ coming to the party tonight.",
+    "explanation": "The subject is 'one', which is singular.",
+    "choices": [
+      { "text": "is", "is_correct": true },
+      { "text": "are", "is_correct": false },
+      { "text": "were", "is_correct": false },
+      { "text": "be", "is_correct": false }
+    ]
+  },
+  {
+    "text": "It’s _______ late to change the schedule.",
+    "explanation": "'Too' means to an excessive degree. 'Two' is the number; 'To' is a preposition.",
+    "choices": [
+      { "text": "to", "is_correct": false },
+      { "text": "too", "is_correct": true },
+      { "text": "two", "is_correct": false },
+      { "text": "toe", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The information provided _______ inaccurate.",
+    "explanation": "'Information' is an uncountable noun and always singular.",
+    "choices": [
+      { "text": "is", "is_correct": true },
+      { "text": "are", "is_correct": false },
+      { "text": "were", "is_correct": false },
+      { "text": "have been", "is_correct": false }
+    ]
+  },
+  {
+    "text": "I will go to the market _______ you want to join me or not.",
+    "explanation": "Use 'whether' when expressing a choice between alternatives.",
+    "choices": [
+      { "text": "if", "is_correct": false },
+      { "text": "whether", "is_correct": true },
+      { "text": "unless", "is_correct": false },
+      { "text": "since", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Either the teachers or the principal _______ responsible for the decision.",
+    "explanation": "When using 'either/or', the verb agrees with the subject closer to it ('principal').",
+    "choices": [
+      { "text": "is", "is_correct": true },
+      { "text": "are", "is_correct": false },
+      { "text": "were", "is_correct": false },
+      { "text": "be", "is_correct": false }
+    ]
+  },
+  {
+    "text": "This is the _______ task I have ever done.",
+    "explanation": "Use the superlative degree ('hardest') when comparing more than two things.",
+    "choices": [
+      { "text": "harder", "is_correct": false },
+      { "text": "hardest", "is_correct": true },
+      { "text": "more hard", "is_correct": false },
+      { "text": "most hard", "is_correct": false }
+    ]
+  },
+  {
+    "text": "_______ going to the beach this weekend.",
+    "explanation": "'They're' is the contraction for 'they are'.",
+    "choices": [
+      { "text": "Their", "is_correct": false },
+      { "text": "There", "is_correct": false },
+      { "text": "They're", "is_correct": true },
+      { "text": "Theirs", "is_correct": false }
+    ]
+  },
+  {
+    "text": "She _______ her keys on the counter before leaving.",
+    "explanation": "'Left' is the past tense of leave. 'Leave' is present.",
+    "choices": [
+      { "text": "left", "is_correct": true },
+      { "text": "leave", "is_correct": false },
+      { "text": "leaved", "is_correct": false },
+      { "text": "leaving", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The climate here _______ my health negatively.",
+    "explanation": "'Affect' is usually a verb (to influence); 'Effect' is usually a noun (a result).",
+    "choices": [
+      { "text": "effects", "is_correct": false },
+      { "text": "affects", "is_correct": true },
+      { "text": "affecting", "is_correct": false },
+      { "text": "effecting", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Ten pesos _______ too much for a single piece of candy.",
+    "explanation": "Amounts of money, time, or distance are treated as singular units.",
+    "choices": [
+      { "text": "is", "is_correct": true },
+      { "text": "are", "is_correct": false },
+      { "text": "were", "is_correct": false },
+      { "text": "be", "is_correct": false }
+    ]
+  },
+  {
+    "text": "He is the man _______ I saw at the park yesterday.",
+    "explanation": "Use 'whom' as the object of the verb 'saw' (you saw him).",
+    "choices": [
+      { "text": "who", "is_correct": false },
+      { "text": "whom", "is_correct": true },
+      { "text": "whose", "is_correct": false },
+      { "text": "which", "is_correct": false }
+    ]
   }
 ]
