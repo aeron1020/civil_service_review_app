@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Headline and Core Inflation Rates in the Philippines (January 2022 – July 2024)",
+    "description": "The figure shows the monthly trends of headline inflation and core inflation in the Philippines, expressed as percentage changes using 2018 as the base year (2018 = 100). Headline inflation reflects the overall price changes of goods and services, while core inflation excludes volatile items such as food and energy.",
+    "image": "https://api.freecsereview.online/media/datasets/inflation_rates_graph_j54g3EG.JPG",
+    "questions": [
+      {
+        "text": "During which period did the headline inflation rate reach its highest point according to the graph?",
+        "explanation": "The headline inflation curve peaks around January 2023, where it reaches its maximum value before declining.",
+        "choices": [
+          { "text": "July 2022", "is_correct": false },
+          { "text": "November 2022", "is_correct": false },
+          { "text": "January 2023", "is_correct": true },
+          { "text": "May 2023", "is_correct": false }
+        ]
+      },
+      {
+        "text": "Which statement best describes the overall trend of the core inflation rate from January 2022 to July 2024?",
+        "explanation": "Core inflation generally increased until early 2023 and then showed a steady decline toward mid-2024.",
+        "choices": [
+          {
+            "text": "It consistently decreased throughout the period",
+            "is_correct": false
+          },
+          {
+            "text": "It sharply fluctuated with no clear pattern",
+            "is_correct": false
+          },
+          {
+            "text": "It increased then gradually declined",
+            "is_correct": true
+          },
+          { "text": "It remained constant over time", "is_correct": false }
+        ]
+      },
+      {
+        "text": "In which month did the headline inflation rate fall below the core inflation rate for the first time?",
+        "explanation": "The graph shows the headline inflation dipping below the core inflation around August 2023.",
+        "choices": [
+          { "text": "May 2023", "is_correct": false },
+          { "text": "July 2023", "is_correct": false },
+          { "text": "August 2023", "is_correct": true },
+          { "text": "October 2023", "is_correct": false }
+        ]
+      },
+      {
+        "text": "Which of the following months shows the smallest gap between headline and core inflation rates?",
+        "explanation": "The two lines are closest around July 2023, indicating the smallest difference between the two rates.",
+        "choices": [
+          { "text": "March 2022", "is_correct": false },
+          { "text": "July 2023", "is_correct": true },
+          { "text": "January 2023", "is_correct": false },
+          { "text": "January 2024", "is_correct": false }
+        ]
+      },
+      {
+        "text": "Based on the graph, which inference is most reasonable?",
+        "explanation": "The graph suggests inflation pressures eased after early 2023, as both headline and core inflation trended downward.",
+        "choices": [
+          {
+            "text": "Inflation continued to rise steadily after 2023",
+            "is_correct": false
+          },
+          {
+            "text": "Core inflation is always higher than headline inflation",
+            "is_correct": false
+          },
+          {
+            "text": "Inflation pressures eased after early 2023",
+            "is_correct": true
+          },
+          {
+            "text": "Headline inflation remained unchanged throughout the period",
+            "is_correct": false
+          }
+        ]
+      }
+    ]
+  }
+]

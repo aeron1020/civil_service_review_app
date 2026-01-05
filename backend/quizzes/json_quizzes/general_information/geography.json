@@ -200,6 +200,106 @@
     ]
   },
   {
+    "text": "Which province is known as the 'Batanes of the West' and is famous for its rolling hills and the historic Las Casas Filipinas de Acuzar?",
+    "explanation": "Bataan is often compared to Batanes due to its scenic hills in Bagac, and it is home to the famous heritage site Las Casas Filipinas de Acuzar.",
+    "choices": [
+      { "text": "Bataan", "is_correct": true },
+      { "text": "Zambales", "is_correct": false },
+      { "text": "Pangasinan", "is_correct": false },
+      { "text": "Ilocos Norte", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Known as the 'Summer Capital of the Philippines,' in which province is Baguio City located?",
+    "explanation": "Baguio City is a highly urbanized city located within the province of Benguet in the Cordillera Administrative Region.",
+    "choices": [
+      { "text": "Ifugao", "is_correct": false },
+      { "text": "Benguet", "is_correct": true },
+      { "text": "Mountain Province", "is_correct": false },
+      { "text": "Kalinga", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following is the largest island in the Philippine archipelago?",
+    "explanation": "Luzon is the largest and most populous island in the Philippines, followed by Mindanao and Samar.",
+    "choices": [
+      { "text": "Mindanao", "is_correct": false },
+      { "text": "Samar", "is_correct": false },
+      { "text": "Luzon", "is_correct": true },
+      { "text": "Leyte", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The famous Chocolate Hills are a geological formation found in which province?",
+    "explanation": "The Chocolate Hills, consisting of at least 1,260 hills, are the most famous tourist attraction in Bohol.",
+    "choices": [
+      { "text": "Cebu", "is_correct": false },
+      { "text": "Bohol", "is_correct": true },
+      { "text": "Leyte", "is_correct": false },
+      { "text": "Negros Oriental", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which body of water is located to the east of the Philippine archipelago?",
+    "explanation": "The Pacific Ocean lies to the east of the Philippines, while the South China Sea (West Philippine Sea) lies to the west.",
+    "choices": [
+      { "text": "Celebes Sea", "is_correct": false },
+      { "text": "South China Sea", "is_correct": false },
+      { "text": "Sulu Sea", "is_correct": false },
+      { "text": "Pacific Ocean", "is_correct": true }
+    ]
+  },
+  {
+    "text": "Mayon Volcano, famous for its 'perfect cone' shape, is located in which province?",
+    "explanation": "Mayon Volcano is situated in the province of Albay in the Bicol Region.",
+    "choices": [
+      { "text": "Camarines Sur", "is_correct": false },
+      { "text": "Sorsogon", "is_correct": false },
+      { "text": "Albay", "is_correct": true },
+      { "text": "Quezon", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which city is known as the 'Queen City of the South'?",
+    "explanation": "Cebu City is the main center of commerce, trade, and education in the Visayas, earning it the nickname 'Queen City of the South.'",
+    "choices": [
+      { "text": "Davao City", "is_correct": false },
+      { "text": "Iloilo City", "is_correct": false },
+      { "text": "Cebu City", "is_correct": true },
+      { "text": "Bacolod City", "is_correct": false }
+    ]
+  },
+  {
+    "text": "The Underground River, one of the New 7 Wonders of Nature, is located in which Philippine province?",
+    "explanation": "The Puerto Princesa Subterranean River National Park is located in Palawan.",
+    "choices": [
+      { "text": "Palawan", "is_correct": true },
+      { "text": "Mindoro", "is_correct": false },
+      { "text": "Aklan", "is_correct": false },
+      { "text": "Surigao del Norte", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which region in the Philippines is also known as the 'Rice Granary of the Philippines'?",
+    "explanation": "Central Luzon (Region III) produces the largest share of the country's rice supply.",
+    "choices": [
+      { "text": "Ilocos Region", "is_correct": false },
+      { "text": "Cagayan Valley", "is_correct": false },
+      { "text": "Central Luzon", "is_correct": true },
+      { "text": "Western Visayas", "is_correct": false }
+    ]
+  },
+  {
+    "text": "Which of the following is the highest mountain in the Philippines?",
+    "explanation": "Mount Apo, located between Davao City and Davao del Sur, is the highest peak in the country with an elevation of 2,954 meters.",
+    "choices": [
+      { "text": "Mount Pulag", "is_correct": false },
+      { "text": "Mount Kanlaon", "is_correct": false },
+      { "text": "Mount Mayon", "is_correct": false },
+      { "text": "Mount Apo", "is_correct": true }
+    ]
+  },
+  {
     "text": "Which island group has the most number of provinces?",
     "explanation": "Luzon has the most provinces compared to Visayas and Mindanao.",
     "choices": [
