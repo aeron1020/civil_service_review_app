@@ -87,9 +87,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Civil Service Review | 3D Interactive Prep",
+  title: "Free Civil Service Exam Reviewer | Interactive Practice Tests",
   description:
-    "Master the Civil Service Exam with tactile, 3D interactive quizzes.",
+    "Master the Philippine Civil Service Exam with our comprehensive 3D interactive quiz platform. Featuring updated mock exams, real-time results, and detailed explanations for Professional and Sub-Professional levels",
 };
 
 export default function RootLayout({
