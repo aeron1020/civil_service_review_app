@@ -159,3 +159,14 @@ class QuizResult(models.Model):
 
         # Fallback
         return f"{username} - Random Quiz ({self.score}%)"
+
+
+class ReviewerMaterial(models.Model):
+    title = models.CharField(max_length=255)
+    pdf_file = models.FileField(upload_to='reviewers/') 
+    description = models.TextField(blank=True, null=True)
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+    is_active = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.title
