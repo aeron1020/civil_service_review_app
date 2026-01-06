@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import api from "@/app/lib/apiClient";
 import { Worker, Viewer } from "@react-pdf-viewer/core";
@@ -14,18 +14,21 @@ import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 export default function ReviewerPage() {
   const [materials, setMaterials] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
-  const [isMounted, setIsMounted] = useState(false); // CRITICAL: This stops the Vercel crash
+  const [isMounted, setIsMounted] = useState(false);
   const router = useRouter();
 
-  const defaultLayoutPluginInstance = defaultLayoutPlugin();
+  // FIX: Initialize the plugin instance only once using useMemo
+  // This prevents the PDF viewer from re-rendering/flickering unnecessarily
+  const defaultLayoutPluginInstance = useMemo(() => defaultLayoutPlugin(), []);
 
   useEffect(() => {
-    setIsMounted(true); // Only sets to true once the browser has loaded the page
+    setIsMounted(true);
     const getDocs = async () => {
       try {
         const res = await api.get("/quizzes/reviewers/");
         setMaterials(res.data);
       } catch (err) {
+        // Redirect to login if unauthorized
         router.push("/login?next=/reviewer");
       } finally {
         setLoading(false);
@@ -34,7 +37,7 @@ export default function ReviewerPage() {
     getDocs();
   }, [router]);
 
-  // Prevent rendering on server to avoid Build Exit 1
+  // Prevent rendering on server to avoid "window is not defined" or PDF worker errors
   if (!isMounted) return null;
 
   if (loading)
@@ -82,6 +85,7 @@ export default function ReviewerPage() {
               {/* Fancy PDF Container */}
               <div className="glass-card-3d p-2 rounded-[2.5rem] border border-white/10 overflow-hidden bg-black/40 shadow-2xl">
                 <div className="h-[850px] w-full rounded-[2.2rem] overflow-hidden relative">
+                  {/* Ensure the worker version matches the installed @react-pdf-viewer version */}
                   <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
                     <Viewer
                       fileUrl={doc.pdf_file}
