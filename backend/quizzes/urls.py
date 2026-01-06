@@ -1,7 +1,11 @@
 #quizzes/urls.py
-from django.urls import path
+from django.urls import path, include
 from . import views
-from .views import QuizByTypeView, QuizGroupedAPIView, RandomizedByTypeAPIView, RandomizedQuizSubmitAPIView, RandomizedQuizResultAPIView, UserSummaryAPIView
+from .views import ReviewerViewSet, QuizByTypeView, QuizGroupedAPIView, RandomizedByTypeAPIView, RandomizedQuizSubmitAPIView, RandomizedQuizResultAPIView, UserSummaryAPIView
+from rest_framework.routers import DefaultRouter
+
+router = DefaultRouter()
+router.register(r'reviewers', ReviewerViewSet, basename='reviewer')
 
 urlpatterns = [
     path('', views.QuizListAPIView.as_view(), name='quiz-list'),
@@ -19,6 +23,7 @@ urlpatterns = [
     path("user/summary/", UserSummaryAPIView.as_view(), name="user-summary"),
     path('results/my/', views.UserResultsAPIView.as_view(), name='user-results'),  
 
+    path('', include(router.urls)),
 
 ]
 

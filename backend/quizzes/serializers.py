@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Quiz, Passage, Question, Choice, QuizResult, DataSet
+from .models import Quiz, Passage, Question, Choice, QuizResult, DataSet, ReviewerMaterial
 
 class ChoiceSerializer(serializers.ModelSerializer):
     class Meta:
@@ -151,3 +151,9 @@ class QuizResultSerializer(serializers.ModelSerializer):
             return dict(Quiz.QUIZ_TYPES).get(obj.quiz_type, "Unknown Type")
         # Case 3: Fallback
         return "Unknown Type"
+    
+
+class ReviewerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ReviewerMaterial
+        fields = ['id', 'title', 'pdf_file', 'description', 'uploaded_at']

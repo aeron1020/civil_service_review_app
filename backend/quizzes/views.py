@@ -2,13 +2,15 @@ from rest_framework import generics, status
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated, AllowAny
+from rest_framework import viewsets, permissions
 
-from .models import Quiz, Question, Choice, QuizResult, Passage, DataSet
+from .models import Quiz, Question, Choice, QuizResult, Passage, DataSet, ReviewerMaterial
 from .serializers import (
     QuizSerializer,
     QuizResultSerializer,
     QuestionSerializer,
-    PassageSerializer, DataSetSerializer
+    PassageSerializer, DataSetSerializer,
+    ReviewerSerializer
 )
 
 import random
@@ -680,3 +682,10 @@ class UserSummaryAPIView(APIView):
             })
 
         return Response(summary)
+    
+
+class ReviewerViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = ReviewerMaterial.objects.filter(is_active=True).order_by('-uploaded_at')
+    serializer_class = ReviewerSerializer
+    # This is the "Gatekeeper" - only users with a valid JWT can enter
+    permission_classes = [permissions.IsAuthenticated]

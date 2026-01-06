@@ -54,11 +54,10 @@
 # class DataSetAdmin(admin.ModelAdmin):
 #     list_display = ('title', 'quiz')
 
-
 from django.contrib import admin
 from django.db.models import Count
 from django.utils.html import format_html
-from .models import Quiz, Passage, Question, Choice, QuizResult, DataSet
+from .models import Quiz, Passage, Question, Choice, QuizResult, DataSet, ReviewerMaterial
 
 # 1. Tighter, more functional Inlines
 class ChoiceInline(admin.TabularInline):
@@ -157,3 +156,8 @@ class QuizResultAdmin(admin.ModelAdmin):
             color, obj.score, obj.correct, obj.total
         )
     score_progress.short_description = "Result"
+
+
+@admin.register(ReviewerMaterial)
+class ReviewerMaterialAdmin(admin.ModelAdmin):
+    list_display = ('title', 'uploaded_at', 'is_active')
