@@ -102,6 +102,15 @@ CORS_ALLOW_CREDENTIALS = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
+# Match session to the 7-day refresh token
+SESSION_COOKIE_AGE = 604800 # 7 days
+CSRF_COOKIE_AGE = 604800    # 7 days
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+
+# --- SECURITY HANDSHAKE ---
+# Add this so Django trusts the HTTPS headers coming from NGINX
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 # This allows the cookie to be shared across subdomains
 CSRF_COOKIE_DOMAIN = ".freecsereview.online"
 SESSION_COOKIE_DOMAIN = ".freecsereview.online"
@@ -112,24 +121,23 @@ CSRF_COOKIE_SAMESITE = 'None'
 CORS_ALLOW_CREDENTIALS = True
 
 # --- JWT COOKIE SECURITY (Production Settings) ---
-JWT_ACCESS_COOKIE_NAME = "access"
-JWT_REFRESH_COOKIE_NAME = "refresh"
-JWT_COOKIE_SAMESITE = "None"
-SECURE_COOKIE_FOR_JWT = True  # Required for HTTPS
-CSRF_COOKIE_SECURE = True     # Required for HTTPS
-SESSION_COOKIE_SECURE = True  # Required for HTTPS
+# JWT_ACCESS_COOKIE_NAME = "access"
+# JWT_REFRESH_COOKIE_NAME = "refresh"
+# JWT_COOKIE_SAMESITE = "None"
+# SECURE_COOKIE_FOR_JWT = True  # Required for HTTPS
 
 # --- SIMPLE JWT CONFIG ---
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=5),
-    "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=60),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
     "ROTATE_REFRESH_TOKENS": True,
     "BLACKLIST_AFTER_ROTATION": True,
     "AUTH_COOKIE": "access",
     "AUTH_COOKIE_REFRESH": "refresh",
-    "AUTH_COOKIE_SECURE": True, # Required for HTTPS
+    "AUTH_COOKIE_SECURE": True, 
     "AUTH_COOKIE_HTTP_ONLY": True,
     "AUTH_COOKIE_SAMESITE": "None",
+    "AUTH_COOKIE_MAX_AGE": 604800, # 7 days in seconds
 }
 
 # --- STATIC & MEDIA ---
@@ -145,7 +153,7 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10,
     'DEFAULT_AUTHENTICATION_CLASSES': (
         "users.authentication.CookieJWTAuthentication",
-        "rest_framework.authentication.SessionAuthentication",
+        # "rest_framework.authentication.SessionAuthentication",
     ),
 }
 
