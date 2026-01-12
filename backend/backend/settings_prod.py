@@ -118,7 +118,6 @@ SESSION_COOKIE_DOMAIN = ".freecsereview.online"
 SESSION_COOKIE_SAMESITE = 'None'
 CSRF_COOKIE_SAMESITE = 'None'
 
-CORS_ALLOW_CREDENTIALS = True
 
 # --- JWT COOKIE SECURITY (Production Settings) ---
 # JWT_ACCESS_COOKIE_NAME = "access"
