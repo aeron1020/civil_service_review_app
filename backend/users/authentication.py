@@ -9,7 +9,10 @@ class CookieJWTAuthentication(JWTAuthentication):
             raw_token = self.get_raw_token(header)
         else:
             # 2. Fallback to Cookie
-            raw_token = request.COOKIES.get(settings.JWT_ACCESS_COOKIE_NAME)
+            # Use .get() on the dictionary to be safe
+            simple_jwt_settings = getattr(settings, 'SIMPLE_JWT', {})
+            cookie_name = simple_jwt_settings.get('AUTH_COOKIE', 'access')
+            raw_token = request.COOKIES.get(cookie_name)
 
         if not raw_token:
             return None
