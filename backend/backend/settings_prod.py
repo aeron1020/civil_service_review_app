@@ -229,10 +229,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # --- PRODUCTION SECURITY ---
 SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = False 
-
-# Fix: Ensure ALLOWED_HOSTS is a valid list even if the .env variable is missing
+# Split the string from .env into a list
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",")
-ALLOWED_HOSTS = [host.strip() for host in ALLOWED_HOSTS if host.strip()]
 
 # --- APPS ---
 INSTALLED_APPS = [
@@ -294,6 +292,9 @@ DATABASES = {
 }
 
 # --- CORS & CSRF ---
+FRONTEND_URL = os.getenv("FRONTEND_URL")
+# --- CORS & CSRF ---
+# We use a list here to allow multiple frontend addresses
 CORS_ALLOWED_ORIGINS = [
     "https://freecsereview.online",
     "https://freecserev-git-main-olsenaerons-projects.vercel.app",
@@ -305,27 +306,32 @@ CSRF_TRUSTED_ORIGINS = [
     "https://api.freecsereview.online",
 ]
 
+# Allow any Vercel preview URL from your account
 CORS_ALLOWED_ORIGIN_REGEXES = [
     r"^https://freecserev-.*\.vercel\.app$",
 ]
 
+# Standard production settings for cookies
 CORS_ALLOW_CREDENTIALS = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
-# Standardizing expiry to 1 day as per your latest request
-SESSION_COOKIE_AGE = 86400  # 1 day
-CSRF_COOKIE_AGE = 86400     # 1 day
+SESSION_COOKIE_AGE = 60 * 60 * 24  # 1 day
 SESSION_EXPIRE_AT_BROWSER_CLOSE = False
 
-# Security Handshake for NGINX
+CSRF_COOKIE_AGE = 60 * 60 * 24  # 1 day
+
+# SECURITY HANDSHAKE (Fixes 500 Error by trusting Nginx HTTPS)
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
+# This allows the cookie to be shared across subdomains
 CSRF_COOKIE_DOMAIN = ".freecsereview.online"
 SESSION_COOKIE_DOMAIN = ".freecsereview.online"
 
 SESSION_COOKIE_SAMESITE = 'None'
 CSRF_COOKIE_SAMESITE = 'None'
+
+CORS_ALLOW_CREDENTIALS = True
 
 # --- SIMPLE JWT CONFIG ---
 SIMPLE_JWT = {
@@ -335,15 +341,14 @@ SIMPLE_JWT = {
     "BLACKLIST_AFTER_ROTATION": True,
     "AUTH_COOKIE": "access",
     "AUTH_COOKIE_REFRESH": "refresh",
-    "AUTH_COOKIE_SECURE": True,
+    "AUTH_COOKIE_SECURE": True, # Required for HTTPS
     "AUTH_COOKIE_HTTP_ONLY": True,
     "AUTH_COOKIE_SAMESITE": "None",
-    # AUTH_COOKIE_MAX_AGE removed as it is not a standard SimpleJWT setting
 }
 
 # --- STATIC & MEDIA ---
 STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
@@ -363,6 +368,12 @@ AUTHENTICATION_BACKENDS = [
     "allauth.account.auth_backends.AuthenticationBackend",
 ]
 ACCOUNT_LOGIN_METHODS = {"username"}
+ACCOUNT_SIGNUP_FIELDS = {
+    "email": {"required": True},
+    "username": {"required": True},
+    "password1": {"required": True},
+    "password2": {"required": True},
+}
 ACCOUNT_AUTHENTICATION_METHOD = "username"
 ACCOUNT_USERNAME_REQUIRED = True
 ACCOUNT_EMAIL_REQUIRED = True
