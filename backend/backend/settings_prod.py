@@ -136,7 +136,7 @@ SIMPLE_JWT = {
     "AUTH_COOKIE_SECURE": True, 
     "AUTH_COOKIE_HTTP_ONLY": True,
     "AUTH_COOKIE_SAMESITE": "None",
-    "AUTH_COOKIE_MAX_AGE": 604800, # 7 days in seconds
+    # "AUTH_COOKIE_MAX_AGE": 604800, # 7 days in seconds
 }
 
 # --- STATIC & MEDIA ---
